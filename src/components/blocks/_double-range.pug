@@ -1,0 +1,11 @@
+.range  
+  .range__control
+    .range__container
+      |from
+      span.range__input.fromInputs 0
+    .range__container
+      |to
+      span.range__input.toInputs 1000000
+  .range__sliders
+    input.fromSliders(type="range" value="0" min="0" max="1000000")
+    input.toSliders(type="range" value="1000000" min="0" max="1000000")

@@ -1,0 +1,141 @@
+.filter-checked
+  padding-left: var(--aCalc32)
+  position: relative
+  width: 100%
+  +mob 
+    padding-left: 0
+  .svg-show 
+    opacity: 1
+  .svg-hide
+    opacity: 0
+  [icon-tgl-crt]
+    z-index: 1
+    position: absolute
+    left: 0
+    top: 0
+    +mob 
+      width: 100%
+    svg 
+      width: var(--aCalc24)
+      height: var(--aCalc24)
+      +mob 
+        width: 24px
+        height: 24px
+  .checker-wrapper
+    position: relative
+    max-width: max-content
+  .sprite-icon
+    position: absolute
+    transition: opacity .1s, transform .1s
+  .sprite-icon:nth-child(1)
+    opacity: 0
+    +mob 
+      display: none
+  .sprite-icon:nth-child(2)
+    opacity: 1
+    +mob 
+      display: none
+  .sprite-icon:nth-child(3)
+    position: absolute
+    right: 0
+    left: auto
+    opacity: 0
+    transform: 0
+    +mob 
+      opacity: 1
+  .checkboxes-list
+    max-height: 0
+    transition: max-height 0.15s
+    overflow: hidden
+  input.checker
+    cursor: pointer
+    position: absolute
+    appearance: auto
+    top: 0
+    left: 0
+    z-index: 200
+    -webkit-appearance: auto
+    display: block 
+    opacity: 0
+    width: 100%
+    height: aCalc(22)
+    +mob 
+      right: 0
+      width: 100%
+      height: 22px
+    &:checked ~ .checkboxes-list
+      max-height: aCalc(370)
+      overflow: auto
+      transition: max-height 0.25s
+      &::-webkit-scrollbar-track
+        background-color: $Gray
+      &::-webkit-scrollbar
+        width: aCalc(2)
+        +mob 
+          width: 2px
+        background-color: $Black
+      &::-webkit-scrollbar-thumb 
+        background-color: $Black
+      +mob 
+        max-height: 370px
+    &:checked + div
+      & .sprite-icon:nth-child(1) 
+        opacity: 1 !important
+      & .sprite-icon:nth-child(2) 
+        opacity: 0 !important
+      & .sprite-icon:nth-child(3) 
+        transform: rotate(90deg)
+  & > .chbox:first-child 
+    position: relative
+    &::before 
+      position: absolute
+      content: ""
+      width: var(--aCalc16)
+      height: aCalc(2)
+      color: $Black
+      background-color: $Black
+      z-index: 100
+      left: aCalc(-24)
+      border-radius: aCalc(2)
+      top: 50%
+      +mob 
+        left: -24px
+        border-radius: 2px
+        width: 16px
+        height: 2px
+    margin-bottom: var(--aCalc16)
+
+.checkboxes-list
+  margin-top: var(--aCalc16)
+  +mob 
+    margin-top: 16px
+  .chbox
+    cursor: pointer
+    display: flex
+    align-items: center
+    margin-bottom: var(--aCalc12)
+    padding-top: 1px 
+    padding-left: 1px 
+    &.chbox_inactive 
+      opacity: 0.5
+    // input:checked + .chbox__box 
+    //   @extend .chbox__box_active
+    div.h6 
+      margin-left: var(--aCalc8)
+      transition: color .3s
+      &:hover 
+        color: $Violet
+      +mob 
+          margin-left: 8px
+      span 
+        color: $GrayBlack
+        margin-left: var(--aCalc8)
+        +mob 
+          margin-left: 8px
+    +mob
+      margin-bottom: 12px
+  .chbox.chbox_radio
+    
+    // input:checked + .chbox__box
+    //   @extend .chbox__box_active
+    

@@ -1,0 +1,37 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/web-bundle.ts"
+  ],
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": false,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./app/js/",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types",
+      "./node_modules/@yandex/ymaps3-types"
+    ],
+    "paths": {
+      "ymaps3": [
+        "./node_modules/@yandex/ymaps3-types"
+      ]
+    }
+  },
+  "lib": [
+    "dom",
+    "dom.iterable",
+    "esnext"
+  ],
+
+}

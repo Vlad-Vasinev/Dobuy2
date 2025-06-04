@@ -1,0 +1,172 @@
+
+.catalog
+  margin-top: var(--aCalc24)
+  +mob
+    margin-top: 16px
+  .breadcrumbs
+    margin-bottom: var(--aCalc24)
+    +mob
+      padding: 0 16px
+
+.subcategory-grid
+  @extend .swiper
+  overflow: auto
+  margin-bottom: var(--aCalc24)
+  &::-webkit-scrollbar
+    display: none
+  +mob
+    width: 100%
+    margin-bottom: 16px
+    padding: 0 16px
+  &__wrapper
+    @extend .swiper-wrapper
+
+.subcategory-grid
+  // слайдер на мобильном
+  &:not(.swiper-initialized) &__wrapper
+    
+    +mob
+      display: grid
+      gap: 6px
+      grid-template-columns: unset
+      grid-auto-columns: calc( 39.6145% - 6px)
+      justify-content: flex-start
+      grid-auto-flow: column
+.subcategory-grid
+  // сетка когда меньше 8
+  &:not(.subcategory-grid_dsk-slider):not(.swiper-initialized) &__wrapper
+    +dsk
+      display: flex
+      gap: var(--gap)
+      +aProp(--gap, 6)
+      justify-content: center
+  &:not(.subcategory-grid_dsk-slider):not(.swiper-initialized) .subcategory-card
+    +dsk
+      width: calc((100% - var(--gap) * 6) / 7)
+
+.subcategory-grid
+  // сетка когда 8
+  &_dsk-slider
+    &:not(.swiper-initialized) .subcategory-card
+      +dsk
+        width: calc((100% - var(--gap) * 6) / 6.4856)
+  &_dsk-slider:not(.swiper-initialized) &__wrapper
+    +dsk
+      display: flex
+      +aProp(--gap, 24)
+      gap: var(--gap)
+      justify-content: flex-start
+  &:not(.swiper-initialized) .subcategory-card:nth-child(1n + 8)
+    display: none
+    +mob
+      display: block
+
+.subcategory-card
+  background-color: $WhiteGray
+  border-radius: var(--aCalc12)
+  text-align: center
+  aspect-ratio: 1
+  display: block
+  overflow: hidden
+  position: relative
+  +mob
+    border-radius: 12px
+    flex-shrink: 0
+  &__title
+    position: absolute
+    top: aCalc(20)
+    left: 0
+    right: 0
+    margin: 0 auto
+    margin-bottom: var(--aCalc8)
+    +mob
+      top: 12px
+  &__img
+    border-radius: inherit
+    +wah(100%)
+    img
+      +wah(100%)
+      object-fit: cover
+      border-radius: inherit
+
+.subcategory-grid
+  .subcategory-card
+    @extend .swiper-slide
+
+.catalog-content
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  gap: var(--aCalc80) aCalc(56)
+  margin: var(--aCalc24) 0 var(--aCalc80)
+  width: 100%
+  +mob
+    grid-template-columns: repeat(2, 1fr)
+    gap: 40px 15px
+    margin: 16px 0 40px
+
+.filter
+  padding: 0 var(--aCalc80) var(--aCalc40)
+  +wah(100%)
+  display: flex
+  flex-direction: column
+  &__inner
+    overflow: auto
+  &__section
+    display: flex
+    flex-direction: column
+    gap: var(--aCalc16)
+    +mob
+      gap: 16px
+  &__section + &__section
+    margin-top: var(--aCalc40)
+    +mob
+      margin-top: 40px
+  &__opt
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__bottom
+    margin-top: auto
+    button
+      width: 100%
+
+.filter-steps
+  &__step
+    display: flex
+    gap: 40px
+    flex-direction: column
+  &__opt, .textbtn
+    display: flex
+    justify-content: space-between
+    width: 100%
+  &__section
+    display: flex
+    flex-direction: column
+    gap: 16px
+
+    &_links
+      gap: 8px
+
+.catalog-mesh
+  display: grid
+  grid-template-columns: repeat(6, 1fr)
+  gap: aCalc(8)
+  +r($sm)
+    gap: 8px
+    grid-template-columns: repeat(2, 1fr)
+  .subcategory-card .h5 
+    padding: 0 aCalc(20)
+    text-align: left
+    +r($sm)
+      padding: 0 12px
+
+.subcategory-grid.sub-mesh
+  margin-top: 40px
+  margin-bottom: 0
+  +r($sm)
+    padding: 0
+    margin-top: 40px
+
+.subcategory-grid:not(.swiper-initialized) .catalog-mesh .subcategory-card:nth-child(1n+8)
+  display: block

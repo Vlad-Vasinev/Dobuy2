@@ -1,0 +1,21 @@
+
+
+template.tpl--modal
+  .modal
+    .modal__head
+      .modal__title
+        span 
+      button.modal__close(modal-close)
+        +svgIcon('close')
+    .modal__body
+        
+template.tpl--step-menu
+  .modal.modal_step-menu
+    .modal__head
+      button.modal__back(modal-back)
+        +svgIcon('arrow-left')
+      .modal__title
+        span 
+      button.modal__close(modal-close)
+        +svgIcon('close')
+    .modal__body

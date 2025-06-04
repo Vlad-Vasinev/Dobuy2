@@ -1,0 +1,24 @@
+{
+  "cards": [
+    "api/products/product3.json",
+    "api/products/product4.json",
+    "api/products/product3.json",
+    "api/products/product4.json",
+    "api/products/product3.json",
+    "api/products/product4.json",
+    "api/products/product3.json",
+    "api/products/product4.json",
+    "api/products/product3.json",
+    "api/products/product4.json",
+    "api/products/product3.json",
+    "api/products/product4.json"
+  ],
+  "suggestions": [
+    { "text": "covers 14 pro max", "href": "#" },
+    { "text": "covers iphone 15 pro max", "href": "#" },
+    { "text": "covers for airpods pro", "href": "#" },
+    { "text": "covers for iphone 15 pro max", "href": "#" },
+    { "text": "covers 13", "href": "#" },
+    { "text": "covers 13 pro max", "href": "#" }
+  ]
+}

@@ -1,0 +1,158 @@
+- var svgSpriteMono = 'img/spriteMono.svg'
+- var svgSprite = 'img/sprite.svg'
+
+mixin svgIcon(name, modClass)
+  if modClass == undefined
+    - var modClass = ''
+  else
+    - var modClass = ' ' + modClass
+  svg(class="sprite-icon" + modClass)
+    use(xlink:href= svgSpriteMono + '#' + name)
+
+mixin svgIconColor(name, modClass)
+  if modClass == undefined
+    - var modClass = ''
+  else
+    - var modClass = ' ' + modClass
+  svg(class="sprite-icon" + modClass)
+    use(xlink:href= svgSprite + '#' + name)
+
+
+mixin clone(sum=2)
+  - var c = 0
+  while c < sum
+    - index = c
+    block
+    - c++
+
+mixin cloneArr(arr)
+  each val, index in arr
+    - value = val
+    block
+
+//- Vlad's mixins
+mixin doubleRange(name="", minValue="", maxValue="")
+  .range  
+    .range__control
+      .range__container
+        |from
+        span.range__input.fromInputs=minValue
+      .range__container
+        |to
+        span.range__input.toInputs=maxValue
+    .range__sliders
+      input.fromSliders(type="range" name=(name + "from") value=minValue min=minValue max=maxValue)
+      input.toSliders(type="range" name=(name + "to") value=maxValue min=minValue max=maxValue)
+
+mixin uiInput(name="noname", inputType="text", value=undefined)
+  .ui-input.ui-input_label
+    input(type=inputType name=name required value=value)&attributes(attributes)
+    label.ui-input__float-label
+      block
+mixin uiInputPassword(name="noname")
+  .ui-input.ui-input_label(js-password-field)
+    input(type="password" name=name required)&attributes(attributes)
+    label.ui-input__float-label
+      block
+    .ui-input__toggle-pass( icon-tgl-trg)
+      svg(icon-tgl-crt)
+        +svgIcon('pass-hide')
+        +svgIcon('pass-show')
+
+
+mixin heartSvg
+  svg(width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+    path( fill="none" d='M18.75 4.414a5.255 5.255 0 0 1 1.708 1.177 5.445 5.445 0 0 1 1.141 1.762 5.58 5.58 0 0 1 0 4.158 5.446 5.446 0 0 1-1.141 1.761l-1.014 1.047-4.572 4.717a4 4 0 0 1-5.745 0l-4.571-4.717-1.014-1.047A5.52 5.52 0 0 1 2 9.432a5.52 5.52 0 0 1 1.542-3.84A5.183 5.183 0 0 1 7.264 4c1.396 0 2.734.572 3.721 1.59a1.412 1.412 0 0 0 2.029 0 5.255 5.255 0 0 1 1.708-1.177 5.122 5.122 0 0 1 4.028 0Z' stroke='currentcolor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
+mixin buttonHeart
+  button.button.button_heart&attributes(attributes)
+    +heartSvg
+mixin toggleSwitch(name="")
+  label.toggle-switch
+    input(name=name type='checkbox')
+    span.toggle-switch__slider
+
+mixin checkbox(name=undefined, value="")
+  label.chbox
+    // checkbox
+    input(type='checkbox' name=name value=value)&attributes(attributes)
+    block
+    
+mixin radio(name=undefined, value="")
+  label.chbox.chbox_radio
+    // radio
+    input(type='radio' name=name value=value)&attributes(attributes)
+    block
+
+mixin search-field(plchldr="")
+  form.search-field(action="/search")
+    .search-field__input 
+      input(minlength="1" required type="search" name="q" placeholder=plchldr)  
+    button.search-field__enter(type="submit")
+      +svgIcon('arrow-right')
+    .search-field__clear(dsk-v)
+      +svgIcon('close')
+    .search-field__clear(mob-v icon-tgl-crt)
+      +svgIcon('find')
+      +svgIconColor('input-clear')
+
+
+mixin l-video(poster="img/pv.webp", src=undefined)
+  video(loop lazy autoplay muted playsinline webkit-playsinline data-src=src preload='auto' poster=poster)
+    block
+
+mixin l-img(src, srcPrev="img/pv.webp")
+  img(lazy loading="lazy" data-src=src src=srcPrev)
+
+
+mixin l-picture(desk, deskPrev, mob, mobPrev)
+  picture
+    source(media="(min-width:768px)" srcset=deskPrev data-srcset=desk)
+    source(media="(max-width:768px)" srcset=mobPrev data-srcset=mob)
+    img(lazy src=mobPrev)
+
+mixin rollout(heading="list")
+  .filter-checked  
+    label.checker-wrapper 
+      span=heading
+    input.checker(type="checkbox")
+    div(icon-tgl-crt)
+      +svgIcon('minus')
+      +svgIcon('plus')
+    .checkboxes
+      +clone(10)
+        +checkbox('sas')
+          .chbox__box
+          div.h6 Choose brand
+            span 3
+
+mixin rolloutChecked(heading="list")
+  .filter-checked  
+    label.checker-wrapper 
+      span=heading
+    input.checker(type="checkbox")
+    div(icon-tgl-crt)
+      +svgIcon('minus')
+      +svgIcon('plus')
+      +svgIcon('arrow-next')
+    .checkboxes-list
+      +clone(14)
+        +checkbox('sas')
+          .chbox__box 
+          div.h6 Choose brand
+            span 3
+
+mixin rolloutRadio(heading="list")
+  .filter-checked  
+    label.checker-wrapper 
+      span=heading
+    input.checker(type="checkbox")
+    div(icon-tgl-crt)
+      +svgIcon('minus')
+      +svgIcon('plus')
+      +svgIcon('arrow-next')
+    .checkboxes-list
+      +clone(14)
+        +radio('sas')
+          .chbox__box
+          div.h6 Choose brand
+            span 3

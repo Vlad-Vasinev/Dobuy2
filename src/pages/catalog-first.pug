@@ -1,0 +1,7 @@
+extends ./shared/_layout
+prepend head
+  -var title = "Catalog first level"
+block content
+  include ../components/page-catalog/_catalog-first-level
+append modals
+  include ../components/page-catalog/_catalog-modals

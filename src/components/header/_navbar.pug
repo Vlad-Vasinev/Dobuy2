@@ -1,0 +1,11 @@
+.nav-mob
+  a.nav-mob__btn._active(catalog-open)
+    +svgIcon('catalog')
+  a.nav-mob__btn(data-nav-favorites)
+    +svgIcon('heart')
+    .icon-btn-count 12
+  a.nav-mob__btn(auth-open)
+    +svgIcon('profile')
+  a.nav-mob__btn(cart-open)
+    +svgIcon('cart')
+    .icon-btn-count 2

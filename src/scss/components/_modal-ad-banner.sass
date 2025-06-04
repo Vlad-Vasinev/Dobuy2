@@ -1,0 +1,156 @@
+// .modal.modal-ad-banner
+//     .modal-ad-banner__top-img
+      
+//     .modal__body.modal-ad-banner__body 
+//       .h1 Ломаем границы
+//       .h2 Просто положите товар в корзину <br/>и мы компенсируем затраты на пошлину
+//       a.button.button_hollow(modal-close) Закрыть
+.modal.modal-ad-banner
+  +dsk
+    display: block
+    height: auto
+    top: 50%
+    transform: translateY(-50%) scale(0.75)
+    opacity: 0.1
+    border-radius: var(--aCalc24)
+    width: 30.52vw
+    left: 34.74vw
+  &.cookies-modal
+    padding: 0
+    width: 0
+    height: 0
+  &.cookie-popup
+    width: aCalc(456)
+    padding: aCalc(16)
+    border-radius: aCalc(6)
+    top: auto 
+    bottom: aCalc(24)
+    left: auto 
+    right: aCalc(24)
+    +r($sm)
+      width: 100%
+      padding: 16px
+      bottom: 0
+      left: 0
+      right: 0
+    &._active
+      transform: translateY(0)
+      z-index: 1000
+    .modal__body
+      padding: 0
+      .p1
+    .modal__body-btns 
+      display: flex
+      gap: aCalc(8)
+      +r($sm)
+        gap: 8px
+      button, a 
+        background-color: #000000 
+        color: #ffffff
+        padding: aCalc(10) aCalc(16)
+        border-radius: aCalc(6)
+        +r($sm)
+          border-radius: 6px
+          padding: 10px 16px
+      .modal__close 
+        background-color: #4c00c9 
+      a 
+        color: #000000 
+        background-color: #f1f1f1
+  &.n-popup
+    width: 94vw !important
+    bottom: 12px
+    margin: 0
+    left: 12px
+    right: 12px
+    background-color: transparent !important
+    .modal__close
+      padding: 0
+      padding-bottom: 0 
+      margin: 0 !important
+      top: 10px !important
+      right: 10px !important
+      z-index: 100
+      svg 
+        width: 18px 
+        height: 18px
+    .modal__body
+      padding: 8px 16px 10px
+      background-color: #E0E0E0
+      border-radius: 10px
+      display: flex
+      align-items: center
+      // gap: 16px
+      gap: 0
+      img 
+        // width: 62px
+        // height: 54px
+        width: 103px
+        height: 103px
+        object-fit: cover
+      .n-h6
+        font-size: 16px 
+        line-height: 22px
+        font-weight: 500
+        color: #333333
+      .n-h8
+        font-size: 11px 
+        line-height: 110%
+        font-weight: 700
+        color: #4C00C9
+
+  &._active
+    +dsk
+      transform: translateY(-50%)
+      opacity: 1
+  .modal-ad-banner__top-img
+    border-radius: inherit
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
+    width: 100%
+    height: auto
+    img, video
+      border-radius: inherit
+      width: 100%
+      height: auto
+  .modal__head
+    display: block
+    position: relative
+    .modal__close
+      position: absolute
+      margin: var(--aCalc16)
+      top: 0
+      right: 0
+      +mob
+        margin: 15px
+  .modal__body
+    +dsk
+      display: grid
+      gap: var(--aCalc12)
+      padding: var(--aCalc32)
+    +mob
+      padding: 16px 16px 32px
+      display: grid
+      gap: var(--aCalc12)
+      +mob
+        gap: 12px
+    .button 
+      width: 100%
+      +dsk
+        margin-top: aCalc(20)
+      +mob
+        margin-top: 12px
+
+  &.modal_sheet .modal__close
+    display: block
+  &.modal_sheet .modal__head
+    padding: 0
+    
+    // &::after
+    //   position: absolute
+    //   top: 8px
+    //   left: 42%
+    //   width: auto
+    //   right: 42%
+    //   z-index: 1
+

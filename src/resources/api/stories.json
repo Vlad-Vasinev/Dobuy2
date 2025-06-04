@@ -1,0 +1,196 @@
+{
+  "type": "folders",
+  "folders": [
+  
+    {
+      "icon": "img/stories/0.png",
+      "title": "Dyson",
+      "preview": "../img/stories/storyPv0.webp",
+      "items": [
+        {
+          "type": "video",
+          "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "preview": "img/stories/storyPv0.webp",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+        },
+        {
+          "type": "video",
+          "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "preview": "img/stories/storyPv1.webp",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+        },
+        {
+          "type": "video",
+          "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+        },
+        {
+          "type": "video",
+          "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+        },
+        {
+          "type": "video",
+          "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+        },
+        {
+          "type": "video",
+          "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+        },
+        {
+          "type": "video",
+          "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+        },
+        {
+          "type": "video",
+          "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+        },
+        {
+          "type": "video",
+          "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+        }
+      ]
+    },
+    {
+      "icon": "img/stories/1.png",
+      "title": "Reviews",
+      "preview": "../img/stories/waffle-p.jpg",
+      "items": [
+        {
+          "type": "video",
+          "src": "img/stories/waffle.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 3</a>"
+        }
+      ]
+    },
+    {
+      "icon": "img/stories/2.png",
+      "title": "Beats",
+      "preview": "../img/stories/waffle-p.jpg",
+      "items": [
+        {
+          "type": "image",
+          "duration": "5",
+          "src": "img/stories/waffle-p.jpg",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 4</a>"
+        },
+        {
+          "type": "image",
+          "duration": "5",
+          "src": "img/stories/waffle-p.jpg",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 5</a>"
+        }
+      ]
+    },
+    {
+      "icon": "img/stories/1.png",
+      "title": "Reviews",
+      "preview": "../img/stories/waffle-p.jpg",
+      "items": [
+        {
+          "type": "video",
+          "src": "img/stories/waffle.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 6</a>"
+        }
+      ]
+    },
+    {
+      "icon": "img/stories/2.png",
+      "title": "Beats",
+      "preview": "../img/stories/waffle-p.jpg",
+      "items": [
+        {
+          "type": "image",
+          "duration": "5",
+          "src": "img/stories/waffle-p.jpg",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 7</a>"
+        },
+        {
+          "type": "image",
+          "duration": "5",
+          "src": "img/stories/waffle-p.jpg",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 8</a>"
+        }
+      ]
+    },
+    {
+      "icon": "img/stories/0.png",
+      "title": "Dyson",
+      "preview": "../img/stories/waffle-p.jpg",
+      "items": [
+        {
+          "type": "video",
+          "src": "img/stories/waffle.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+        },
+        {
+          "type": "image",
+          "duration": "5",
+          "src": "img/stories/waffle-p.jpg",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 9</a>"
+        },
+        {
+          "type": "video",
+          "src": "img/stories/waffle.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 10</a>"
+        }
+      ]
+    },
+    {
+      "icon": "img/stories/1.png",
+      "title": "Reviews",
+      "preview": "../img/stories/waffle-p.jpg",
+      "items": [
+        {
+          "type": "video",
+          "src": "img/stories/waffle.mp4",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 11</a>"
+        }
+      ]
+    },
+    {
+      "icon": "img/stories/2.png",
+      "title": "Beats",
+      "preview": "../img/stories/waffle-p.jpg",
+      "items": [
+        {
+          "type": "image",
+          "duration": "5",
+          
+          "src": "img/stories/waffle-p.jpg",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 12</a>"
+        },
+        {
+          "type": "image",
+          "duration": "5",
+          "src": "img/stories/waffle-p.jpg",
+          "preview": "img/stories/waffle-p.jpg",
+          "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 13</a>"
+        }
+      ]
+    }
+  ]
+}

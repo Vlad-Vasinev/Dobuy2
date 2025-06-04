@@ -1,0 +1,139 @@
+.snackbar
+  position: fixed
+  top: aCalc(72)
+  right: var(--aCalc32)
+  z-index: 108
+  //z-index: map-get($zindex, "modal") + 1
+  //pointer-events: none
+  &._active
+    //z-index: 111
+    z-index: 211
+  +mob
+    top: 32px
+    right: 16px
+    left: 16px
+    z-index: 108
+    // z-index: map-get($zindex, "modal") + 1
+  &__crt
+    width: aCalc(366)
+    min-height: aCalc(54)
+    transition: transform 0.5s 
+    +mob
+      min-height: unset
+      height: 112px
+      position: relative
+      
+      width: 100%
+    &._hide
+      transform: translateX(150%)
+      +mob
+        transform: translateY(-150%)
+    .snack-msg
+      &:last-child
+        position: relative
+        
+    .snack-msg
+      position: absolute
+      top: 0
+      right: 0
+      transition: transform 0.45s 0.1s
+      // z-index: map-get($zindex, "modal") + 5
+      
+      transform: translateX(150%)
+      +mob
+        transform: translateY(-150%)
+      &._active
+        transition-delay: 0.1s
+        transform: translateX(0%)
+        // position: relative
+        // z-index: map-get($zindex, "modal") + 10
+        +mob
+          transform: translateY(0%)
+
+      &._backlog
+      
+        transform: translateX(calc(min(var(--shiftCoeff, 0), 4) * -10% )) scale(calc((10 - min(var(--shiftCoeff, 0), 4)) * 10% ))
+        +mob
+          transform: translateY(calc(min(var(--shiftCoeff, 0), 4) * -20% )) scale(calc((10 - min(var(--shiftCoeff, 0), 4)) * 10% ))
+
+.snack-msg
+  background: $Black
+  padding: var(--aCalc16)
+  color: $White
+  border-radius: var(--aCalc12)
+  width: aCalc(366)
+  display: flex
+  justify-content: center
+  text-align: center
+  +mob
+    padding: 12px
+    width: 100%
+    border-radius: 12px
+  > svg
+    +wah(aCalc(22))
+    margin-right: aCalc(6)
+    +mob
+      margin-right: 6px
+      +wah(22px)
+
+.snack-msg
+  &_error
+    text-align: unset
+    background-color: #C54793
+    text-align: center
+.snack-msg
+  &_product
+    cursor: pointer
+    display: grid
+    grid-template-rows: auto 1fr
+    grid-template-columns: auto 1fr
+    text-align: unset
+    position: relative
+    z-index: map-get($zindex, "modal") + 12
+  &_product &__img
+    +wah(var(--aCalc80))
+    grid-column: 1/2
+    grid-row: 1/-1
+    margin-right: var(--aCalc16)
+    border-radius: var(--aCalc8)
+    +mob
+      +wah(64px)
+      align-self: center  
+      border-radius: 8px
+      margin-right: 16px
+    img
+      border-radius: inherit
+      +wah(100%)
+
+  &_product &__head
+    grid-column: 2/-1
+    grid-row: 1/2
+    margin-bottom: aCalc(6)
+    display: flex
+    align-items: center
+    gap: aCalc(6)
+    +mob
+      gap: 6px
+      margin-bottom: 6px
+    .h7
+    svg
+      +wah(aCalc(18))
+      +mob
+        +wah(18px)
+      
+  &_product &__body
+    // grid-column: 2/-1
+    // grid-row: 2/-1
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    max-height: calc(2em * 1.2)
+    @supports (-webkit-line-clamp: 2)
+      text-overflow: unset
+      white-space: unset
+      max-height: unset
+      display: -webkit-box
+      height: max-content
+      -webkit-line-clamp: 2
+      line-clamp: 2
+      -webkit-box-orient: vertical

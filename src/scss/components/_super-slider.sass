@@ -1,0 +1,123 @@
+
+.super-slider 
+  display: flex
+  gap: aCalc(42)
+  padding: var(--aCalc24) 0 var(--aCalc24) var(--aCalc24)
+  border-radius: var(--aCalc12)
+  overflow: hidden
+  position: relative
+  min-height: aCalc(620)
+  +r($sm)
+    flex-direction: column
+    gap: 24px
+    padding: 16px 0 16px 0
+    border-radius: 12px
+    min-height: unset
+  &__bg 
+    position: absolute
+    width: 100% 
+    height: 100%
+    left: 0
+    top: 0
+    img 
+      width: 100%
+      height: 100%
+      +r($sm)
+        object-position: left
+  &__info
+    position: relative
+    width: aCalc(268)
+    flex-shrink: 0
+    display: flex
+    flex-direction: column
+    +r($sm)
+      padding: 0 16px
+      width: unset
+    .h1, h1 
+      margin-bottom: aCalc(13)
+      color: $White
+    .p, p 
+      color: $White
+      margin-top: auto
+      +r($sm)
+        margin-top: 16px
+    img 
+      +r($sm)
+        display: none
+  &__content
+    z-index: 2
+    width: 100%
+    overflow: hidden
+    position: relative
+    align-self: flex-end
+    border-top-left-radius: var(--aCalc12)
+    border-bottom-left-radius: var(--aCalc12)
+    +mob
+      align-self: unset
+    .product-grid.product-grid_slider
+      overflow: unset
+      position: relative
+      // padding-top: aCalc(48)
+      padding-right: 24px
+      +r($sm)
+        padding-right: 32px
+        display: block
+      .product-grid__wrapper
+        cursor: pointer
+        +r($sm)
+          margin-left: 16px
+      &:not(.swiper-initialized)
+        .product-grid__wrapper
+    .prod-card__gallery
+    .prod-price__discount
+      +r($sm)
+        margin-left: 8px
+    .prod-price__old
+      +r($sm)
+        text-decoration: none
+    button.button_heart
+      border: none
+    .prod-card
+      background-color: $White
+      padding: var(--aCalc12)
+      border-radius: var(--aCalc8)
+      +r($sm)
+        padding: 12px
+        border-radius: 8px
+    .prod-card__btns, .prod-price, .prod-card__title
+      +r($sm)
+        padding-left: 0
+  &__navigation 
+    position: absolute
+    top: var(--aCalc24)
+    right: var(--aCalc24)
+    z-index: 1
+    .slider-navigation__prev, .slider-navigation__next 
+      display: block
+  .prod-card__badges 
+    margin-top: aCalc(12)
+    //margin-left: aCalc(12)
+    +r($sm)
+      margin-top: 12px
+      //margin-left: 12px
+
+.slider-navigation
+  display: flex 
+  gap: var(--aCalc16)
+  justify-content: flex-end
+  +mob
+    display: none
+  svg 
+    width: var(--aCalc24)
+    height: var(--aCalc24)
+    color: #ffffff
+  &__next, &__prev
+    cursor: pointer
+  // .slider-navigation__prev.swiper-button-disabled
+  //   svg 
+  //     path 
+  //       stroke: #cecaca !important
+  // .slider-navigation__next.swiper-button-disabled
+  //   svg 
+  //     path 
+  //       stroke: #cecaca !important

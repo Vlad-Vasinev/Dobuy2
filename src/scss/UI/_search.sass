@@ -1,0 +1,61 @@
+.search-field
+  
+  background-color: $WhiteGray
+  padding: var(--aCalc16) var(--aCalc24)
+  border-radius: 12px
+  display: grid
+  grid-template-columns: 1fr auto auto
+  align-items: center
+  gap: var(--aCalc16) 
+  +mob
+    gap: 8px 
+    border-radius: 12px
+    padding: 10px 16px
+  &__input
+    @extend .h2
+    grid-row: 1/2
+    input
+      font-size: inherit
+      line-height: inherit
+      font-weight: inherit
+      background-color: transparent
+      width: 100%
+      display: inline-block
+      &::placeholder
+        color: $GrayBlack
+      // animation: .5s linear 1s infinite alternate border-blink
+  
+  &__clear, &__enter
+    +wah(var(--aCalc32))
+    
+    cursor: pointer
+    grid-row: 1/2
+    +mob
+      +wah(24px)
+      
+    &:active
+      transform: scale(.95)
+    svg
+      +wah(100%)
+  &__clear
+    grid-column: 3/4
+    
+  &__enter
+    color: $White
+    padding: var(--aCalc4)
+    grid-column: 2/3
+    background-color: $Violet
+    border-radius: 50%
+    +mob
+      padding: 2px
+      display: none
+  &:not(._has-value) &__enter
+    display: none
+  
+  &._has-value [icon-tgl-crt]
+    @extend .icon-tgl-active
+
+.founded-content
+  margin-top: var(--aCalc80)
+  +mob 
+    margin-top: 40px

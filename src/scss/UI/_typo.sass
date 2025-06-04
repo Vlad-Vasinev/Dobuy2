@@ -1,0 +1,86 @@
+body
+  color: $baseTextColor
+  font-weight: 400
+
+  
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+div,
+span
+  color: inherit
+  font-family: $baseFont
+  font-weight: inherit
+  margin: 0
+  transition: color 0.2s linear
+
+div, span
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p
+    display: block
+
++heading('h1', 34, 40, 24, 28.8)
+  font-weight: 700
+  
+
++heading('h2', 24, 33, 18, 25)
+  font-weight: 700
+
++heading('h3', 20, 27, 16, 22)
+  font-weight: 700
+
++heading('h4',  18, 24, 16, 19)
+  font-weight: 700
+
++heading('h5', 16, 22, 14, 19)
+  font-weight: 700
++heading('h6', 16, 22, 14, 19)
+  font-weight: 500
+
+.h7
+  +fsa(13, 18, 12, 16)
+  font-weight: 500
+.h8
+  +fsa(12, 16, 11, 15)
+  font-weight: 700
+
+.h9
+  +fsa(11, 16, 10, 15)
+  font-weight: 700
+
+.h10
+  +fsa(10, 11, 10, 11)
+  font-weight: 700
+  
+
+
+p, ul, ol, div
+  +fsa(16, 22, 14, 19)
+  font-weight: 500
+ul, ol
+  li 
+    font-size: inherit
+    line-height: inherit
+
+table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+table
+  border-collapse: collapse
+  border-spacing: 0

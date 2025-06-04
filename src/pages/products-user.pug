@@ -1,0 +1,12 @@
+extends ./shared/_layout
+prepend head
+  -var title = "products for you"
+  <link rel="preload" as="image" href="img/head-banner/0p.jpg"/>
+prepend header
+  - var logoImg = "img/header-logo.svg"
+  - var logoWidth = 184
+block content
+  include ../components/products-user/_products-user
+append modals
+  include ../components/modals/_modal-banner
+  

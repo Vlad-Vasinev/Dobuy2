@@ -1,0 +1,67 @@
+.chat-w
+  display: block
+  // position: fixed
+  // left: unset
+  // bottom: var(--aCalc24)
+  // right: var(--aCalc24)
+  
+  cursor: pointer
+  z-index: 9
+  +mob
+    // bottom: unset
+    // right: 20px
+    // top: 8px
+    // z-index: map-get($zindex, header) + 1
+  a:nth-of-type(2)
+    animation: 6s linear 0s infinite alternate iconFade
+  @keyframes iconFade
+    0%
+      opacity: 1
+    45%
+      opacity: 1
+    55%
+      opacity: 0
+    100%
+      opacity: 0
+  &__icon,
+  &__close
+    display: block
+    position: absolute
+    +wah(var(--aCalc80))
+    +mob
+      +wah(32px)
+    svg
+      
+      display: block
+      width: 100%
+      height: 100%
+
+  &__icon
+    pointer-events: none
+    transition: transform 0.2s
+
+  &__close
+    position: relative
+    visibility: hidden
+    opacity: 0
+    z-index: -1
+    transition: visibility 0s step-start 0.22s, opacity 0.2s linear 0.02s
+  &._open &__close
+    visibility: visible
+    opacity: 1
+    transition: visibility 0s step-start, opacity 0.2s linear 0.02s
+  &._open
+    +aProp(--tgap, 10)
+    +mob
+      --tgap: 8px
+    a
+      animation: unset
+      pointer-events: all
+    a:nth-of-type(1)
+      transform: translateY(calc(-100% - var(--tgap, 10px)))
+      +mob
+        transform: translateY(calc(100% + var(--tgap, 10px)))
+    a:nth-of-type(2)
+      transform: translateY(calc(-200% - var(--tgap, 10px) * 2))
+      +mob
+        transform: translateY(calc(200% + var(--tgap, 10px) * 2))

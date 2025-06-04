@@ -1,0 +1,26 @@
+.reviews
+  .reviews__inner
+    .reviews__title
+      .h2 Customers love us for our speed and quality of delivery
+    .reviews__slider 
+      .reviews__wrapper
+        +clone(10)
+          .reviews-slide
+            .review-el
+              .review-el__primary
+                .review-el__stars 
+                  .rater(style="--rating: 4.5")
+                .review-el__title.h2 
+                  |Great service, great price, took Airpods pro 2, delivered to Tula in 7
+                  |days! Russian Post courier delivered to the apartment. Original headphones, everything works great,
+                  |there is a guarantee, happy with the purchase! I definitely recommend the store!
+              .review-el__secondary
+                .review-el__user
+                  .review-el__data
+                    .h5 Helena
+                    .h7 15 of November 2023
+                  .review-el__icon 
+                    img(src="img/reviews/reviews-user.png" alt="")
+      .progress-pag
+  .pagination-inprogress
+    <div class="swiper-pagination"></div>

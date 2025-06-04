@@ -1,0 +1,23 @@
+meta(charset='UTF-8')
+meta(name='viewport' content='width=device-width,initial-scale=1, maximum-scale=1')
+link(rel='shortcut icon' href='favicon.ico' type='image/x-icon')
+meta(http-equiv='X-UA-Compatible' content='ie=edge')
+meta(name='theme-color' content='#ffffff')
+style. 
+  body {
+    color: #000
+  }
+  a {
+    color: #000
+  }
+title=(title || 'localhost')
+// preload styles
+<link rel="preload" as="style" media="screen and (max-width:767px)" href="css/main.css" />
+// preload fonts
+<link rel="preload" href="fonts/VelaSans/VelaSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/VelaSans/VelaSans-Medium.woff2 " as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/VelaSans/VelaSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/VelaSans/VelaSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+link(rel='stylesheet' href='css/main.css')
+include ./_app-config.html

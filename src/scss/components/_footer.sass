@@ -1,0 +1,229 @@
+.footer
+  border-top: 1px solid #F3F3F3
+  background-color: #ffffff
+  padding: var(--aCalc80) aCalc(240) var(--aCalc80)
+  margin-top: aCalc(120)
+  +mob
+    // border: none
+    margin-top: 80px
+    padding: 0
+  &__mesh
+    display: grid
+    grid-template-columns: 1fr auto auto auto auto
+    grid-template-rows: auto auto
+    justify-content: space-between
+    column-gap: 100px
+    justify-content: flex-end
+    +mob
+      display: flex
+      flex-direction: column
+      padding: 0 0 84px
+      overflow: hidden
+      
+  &__item
+    +mob
+      padding: 16px
+    .h7
+      font-weight: 500
+    &-title
+      margin-bottom: var(--aCalc12)
+      +mob
+        margin: 0
+        display: flex
+        justify-content: space-between
+      svg
+        transition: transform .3s
+        +wah(24px)
+        +dsk
+          display: none
+        +mob
+          max-width: 24px
+          height: 24px
+    &_list-open
+      svg
+        transform: rotate(-180deg)
+  &__item_list
+    +mob
+      border-bottom: 1px solid $WhiteGray
+  &__item:nth-child(1)
+    grid-column: 1/2
+    grid-row: 1/2
+    order: 1
+    +mob
+      margin-top: 32px
+  &__list
+    display: flex
+    flex-direction: column
+    +fsa(24, 33, 14,20)
+    +mob
+      max-height: 0
+      transition: max-height 0.5s cubic-bezier(0, 1, 0, 1)
+      overflow: hidden
+    a
+      display: block
+      //padding: var(--aCalc4) 0
+      padding: aCalc(3) 0
+      +mob
+        padding: 3px 0
+        font-weight: 500
+      &:first-child
+        padding-top: 0
+        +mob
+          margin-top: 10px
+      &:last-child
+        padding-bottom: 0
+          
+  &__item_list#{&}__item_list-open &__list
+    //- список открыт
+    max-height: 3000px
+    transition: max-height 1s ease-in-out
+
+    &-el
+      transition: opacity 0.8s
+      opacity: 1
+  &__bottom-el
+    margin-top: aCalc(88)
+    order: 2
+    color: $Black
+    +mob
+      text-align: center
+      margin-top: 4px
+  &__bottom-el.h7
+    font-weight: 500
+  &__logo
+    max-width: var(--aCalc64)
+    height: var(--aCalc64)
+    width: 100%
+    background-color: $Violet
+    border-radius: aCalc(6)
+    display: grid
+    justify-content: center
+    align-content: center
+    margin-bottom: var(--aCalc32)
+    +mob
+      max-width: 56px
+      height: 56px
+      border-radius: 16px
+      margin: 0 auto 16px
+    img
+      // max-width: aCalc()
+      // width: 100%
+      // height: aCalc(38)
+      // +mob
+      //   max-width: 33px
+      //   height: 33px
+  &__text
+    max-width: aCalc(342)
+    width: 100%
+    text-transform: uppercase
+
+    color: $Black
+    margin-bottom: var(--aCalc24)
+    p
+      br
+        display: none
+        +mob
+          display: block
+    +mob
+      text-align: center
+      max-width: 303px
+      margin: 0 auto 32px
+
+.footer-credits
+  span
+    color: $Black
+  > span:first-child
+    display: block
+    margin-bottom: 8px
+  &__crt
+    display: flex
+    gap: var(--aCalc8)
+    width: max-content
+    +mob
+      margin: 0 auto
+      gap: 8px
+  &__item
+    height: var(--aCalc32)
+    width: max-content
+    +mob
+      height: 32px
+
+    &:hover
+      span
+        color: $Violet
+    span
+      transition: color .3s
+      color: $Black
+    img
+      height: 100%
+      width: auto
+  &__crt_icons &__item
+    height: aCalc(28)
+    display: flex
+    align-items: center
+    +mob
+      height: 28px
+
+    img
+      aspect-ratio: 1
+    span
+      margin-left: var(--aCalc8)
+      +mob
+        display: none
+  + &
+    margin-top: var(--aCalc24)
+    +mob
+      margin-top: 24px
+      text-align: center
+
+// .footer
+//   &__users
+//     margin-bottom: var(--aCalc24)
+//     +mob
+//       margin-bottom: 24px
+//       text-align: center
+//     &-title
+//       color: $Black
+//       margin-bottom: var(--aCalc8)
+//       +mob
+//         margin-bottom: 6px
+//     &-pay
+//       display: flex
+//       justify-content: flex-start
+//       column-gap: var(--aCalc8)
+//       +mob
+//         column-gap: 8px
+//         justify-content: center
+//       img
+//         max-width: var(--aCalc64)
+//         width: 100%
+//         height: var(--aCalc32)
+//         object-fit: contain
+//         +mob
+//           max-width: 64px
+//           height: 32px
+//     &-social
+//       display: flex
+//       justify-content: flex-start
+//       align-content: center
+//       column-gap: var(--aCalc8)
+//       +mob
+//         column-gap: 8px
+//         justify-content: center
+//   .social-icon:first-child
+//     margin-right: var(--aCalc8)
+//   .social-icon
+//     display: flex
+//     align-items: center
+//     img
+//       max-width: aCalc(28)
+//       width: 100%
+//       height: aCalc(28)
+//       +mob
+//         max-width: 28px
+//         height: 28px
+//     &__title
+//       color: $Black
+//       margin-left: aCalc(6)
+//       +mob
+//         display: none

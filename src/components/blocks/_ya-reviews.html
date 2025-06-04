@@ -1,0 +1,28 @@
+<div class="ya-reviews" id="ya-reviews">
+  <div class="ya-reviews__wrapper">
+    <iframe
+      src="https://yandex.ru/maps-reviews-widget/98053375189?comments"
+    ></iframe>
+  </div>
+  <script async>
+    const el = document.getElementById("ya-reviews");
+    if (el) {
+      if (window.innerWidth > 768) {
+        const iframe = el.querySelector("iframe");
+        if (iframe) {
+          iframe.onload = () => {
+            el.classList.add("_loaded");
+            el.style.setProperty(
+              "--ratio",
+              ((window.innerWidth * 0.4333) / 720).toFixed(4)
+            );
+          };
+        } else {
+          el.classList.add("_loaded");
+        }
+      } else {
+        el.classList.add("_loaded");
+      }
+    }
+  </script>
+</div>

@@ -1,0 +1,125 @@
+.mts-flex-scheme
+  &__wrapper
+    display: block
+  &__head
+    display: flex
+    align-items: center
+    margin-bottom: var(--aCalc16)
+    +mob
+      margin-bottom: 16px
+    svg 
+      +wah(var(--aCalc24))
+      margin-right: var(--aCalc8)
+      +mob
+        +wah(24px)
+        margin-right: 8px
+
+    span
+      b
+        font-weight: 700
+  &__button   
+    margin-top: var(--aCalc16)
+    +mob
+      margin-top: 16px
+    .button
+      width: 100%
+      background-color: #1D2023
+      border-color: #1D2023
+      svg
+        width: auto
+        height: var(--aCalc24)
+        +mob
+          height: 24px
+
+.mts-flex-track
+  display: flex
+  gap: var(--aCalc8)
+  +mob
+    gap: 8px
+  *
+    font-size: inherit
+    line-height: inherit 
+  &__item
+    flex: 1
+    color: $GrayBlack
+  &__track
+    width: 100%
+    background-color: #BCC3D080
+    margin-bottom: var(--aCalc8)
+    height: var(--aCalc8)
+    border-radius: var(--aCalc8)
+    +mob
+      margin-bottom: 8px
+      height: 8px
+      border-radius: 8px
+
+  &__date
+  &__price
+    font-weight: 700
+  &__item._active
+    color: $baseTextColor
+  &__item._active &__track
+    background-color: #26CD58
+
+[data-mts-flex-open]
+  cursor: pointer
+
+.mts-flex-info
+  padding: 0 var(--aCalc80) aCalc(120)
+  +mob
+    padding: 12px 24px 0px
+
+.mts-flex-info
+  text-align: center
+  // > .h2
+  > .h6
+    margin-top: var(--aCalc12)
+    +mob
+      margin-top: 6px
+  > img
+    height: aCalc(188)
+    width: auto
+    margin: 0 auto
+    +mob
+      height: 188px
+.mts-flex-info-list
+  margin-top: var(--aCalc40)
+  padding-top: var(--aCalc40)
+  border-top: 1px solid $WhiteGray
+  display: grid
+  gap: var(--aCalc24)
+  +mob
+    margin-top: 24px
+    padding-top: 24px
+    gap: 16px
+.mts-flex-info-list-item
+  display: grid
+  grid-template-columns: auto 1fr
+  text-align: left
+  align-items: center
+  row-gap: var(--aCalc4)
+  column-gap: var(--aCalc12)
+  +mob
+    row-gap: 4px
+    column-gap: 12px
+
+  &__icon
+    grid-row: 1/3
+    background-color: #F2F3F7
+    aspect-ratio: 1
+    padding: aCalc(14)
+    border-radius: var(--aCalc16)
+    +mob
+      padding: 14px
+      border-radius: 16px
+    svg
+      +wah(var(--aCalc24))
+      +mob
+        +wah(24px)
+  &__title
+    grid-row: 1/2
+    align-self: flex-end
+  &__subtitle
+    color: $BlackWhite
+    grid-row: 2/3
+    align-self: flex-start

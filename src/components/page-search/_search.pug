@@ -1,0 +1,36 @@
+- var pageTitle = "Search"
+- var breadcrumbText = ["Main", "Categories"]
+.page__block.page__block_margin-none
+  include ../blocks/_breadcrumbs
+.page__block.page__block_margin-none
+  include ../blocks/_page-title
+.page__block
+  .request
+    +search-field('I want to find')
+    .request__responce.h6
+      | On request 
+      span "airpods"
+      |found
+.page__block.page__block_margin-none.page__block_padding-none
+  hr.hr-line
+  .filters
+    .filters__el 
+      .textbtn(open-filter)
+        +svgIcon('filter')
+        span Filters
+    .filters__el 
+      .textbtn
+        span 523 
+        p products
+    .filters__el 
+      .textbtn
+        span By popularity
+        +svgIcon('arrow-down')
+  hr.hr-line
+.page__block.page__block_full-width-mob
+  .search-wrapper
+    .catalog-content 
+      +clone(18)
+        include ../blocks/_product-card
+    .button.button_small Load more
+    include ../blocks/_pagination

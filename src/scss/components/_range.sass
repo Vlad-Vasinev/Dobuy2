@@ -1,0 +1,115 @@
+.range 
+  $thumbDesk: var(--aCalc32)
+  $thumbMobile: 24px
+
+  width: 100%
+  &__sliders 
+    position: relative
+    
+    height: var(--aCalc16)
+    span 
+      pointer-events: all
+      width: $thumbDesk !important
+      height: $thumbDesk
+      background-color: $White
+      border-radius: 50%
+      cursor: pointer
+      border: aCalc(2) solid $Violet
+      transition: background .3s, transform .3s
+      position: relative
+      z-index: 2
+      display: block
+    +mob 
+      height: 12px
+  &__control 
+    position: relative
+    display: flex
+    justify-content: space-between
+    @extend .h5
+  &__container
+    display: flex
+    align-items: center
+    margin-bottom: aCalc(20)
+    +mob 
+      margin-bottom: 20px
+    span 
+      margin-left: aCalc(2)
+      color: $Black
+  input[type=range]::-moz-range-thumb 
+    -webkit-appearance: none
+    pointer-events: all
+    width: $thumbDesk
+    height: $thumbDesk
+    background-color: $White
+    border-radius: 50%
+    cursor: pointer
+    border: aCalc(2) solid $Violet
+    &:active
+      background-color: $Violet
+      z-index: 2000
+    +mob 
+      width: $thumbMobile
+      height: $thumbMobile
+  .fromSliders, .toSliders
+    &::-webkit-slider-thumb
+      -webkit-appearance: none
+      pointer-events: all
+      width: $thumbDesk
+      height: $thumbDesk
+      background-color: $White
+      border-radius: 50%
+      cursor: pointer
+      border: 2px solid $Violet
+      transition: background .3s, transform .3s
+      position: relative
+      z-index: 2
+      +mob 
+        width: 32px
+        height: 32px
+      &:active
+        z-index: 2000
+        background-color: $Violet
+  .fromSliders
+    &::-webkit-slider-thumb
+      &:active
+        transform: scale(0.8) translateX(aCalc(-8))
+        +mob 
+          transform: scale(0.8) translateX(-8px)
+  .toSliders
+    &::-webkit-slider-thumb
+      &:active
+        transform: scale(0.8) translateX(var(--aCalc8))
+        +mob 
+          transform: scale(0.8) translateX(8px)
+  input[type="number"] 
+    border: none
+    @extend .h5
+    color: $Black
+    flex: none
+    box-sizing: border-box
+    flex-grow: 1
+    &::placeholder
+      @extend .h5
+      color: $Black
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button 
+    opacity: 1
+  input[type="range"] 
+    -webkit-appearance: none
+    appearance: none
+    height: 2px
+    width: 100%
+    position: absolute
+    pointer-events: none
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button 
+    -webkit-appearance: none
+    margin: 0
+
+.thumb-transform-right 
+  &::-webkit-slider-thumb
+    transform: translateX(10px)
+
+.thumb-transform-left 
+  &::-webkit-slider-thumb
+    transform: translateX(-10px)

@@ -1,0 +1,184 @@
+{
+  "points": [
+    {
+      "geodata": "55.816011, 37.396712",
+      "projType": "Ready-made houses",
+      "objectData": {
+        "title": "Project 1",
+        "img": "",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    }, 
+    {
+      "geodata": "55.816011, 37.396712",
+      "projType": "Ready-made houses",
+      "objectData": {
+        "title": "Project 1312",
+        "img": "",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    }, 
+    {
+      "geodata": "55.814698, 37.670845",
+      "projType": "Ready-made houses",
+      "objectData": {
+        "title": "Project 2",
+        "img": "",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    }, 
+    {
+      "geodata": "55.878216, 37.744796",
+      "projType": "Ready-made houses",
+      "objectData": {
+        "title": "Project 3",
+        "img": "",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    }, 
+    {
+      "geodata": "55.830069, 37.606066",
+      "projType": "Ready-made houses",
+      "objectData": {
+        "title": "Project 4",
+        "img": "",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    }, 
+    {
+      "geodata": "55.829855, 37.604862",
+      "projType": "Ready-made houses",
+      "objectData": {
+        "title": "Project 5",
+        "img": "",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    }, 
+    {
+      "geodata": "55.826940, 37.603750",
+      "projType": "type2",
+      "objectData": {
+        "title": "Project 6",
+        "img": "img/galleryItem1.png",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    }, 
+    {
+      "geodata": "55.696565, 37.494704",
+      "projType": "type2",
+      "objectData": {
+        "title": "Project 7",
+        "img": "img/galleryItem1.png",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    }, 
+    {
+      "geodata": "55.696806, 37.489287",
+      "projType": "type2",
+      "objectData": {
+        "title": "Project 8",
+        "img": "img/galleryItem1.png",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    }, 
+    {
+      "geodata": "55.692530, 37.492273",
+      "projType": "type2",
+      "objectData": {
+        "title": "Project 9",
+        "img": "img/galleryItem1.png",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    },
+    {
+      "geodata": "55.734883, 37.686373",
+      "projType": "type2",
+      "objectData": {
+        "title": "Project 10",
+        "img": "img/galleryItem1.png",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    }, 
+    {
+      "geodata": "55.728046, 37.620316",
+      "projType": "type2",
+      "objectData": {
+        "title": "Project 11",
+        "img": "img/galleryItem1.png",
+        "href": "project-page.html",
+        "chars": [
+          { "key": "Square", "val": "62 м2" },
+          { "key": "Size:", "val": "9x11.4 м" },
+          { "key": "Number of floors:", "val": "2" }
+        ]
+      }
+    }
+  ],
+  "icons": {
+    "Ready-made houses": {
+      "color": "#2E5E5E",
+      "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='50' fill='none' viewBox='0 0 45 50'%3E%3Cpath fill='%232E5E5E' d='M45 22.5a22.5 22.5 0 0 1-18.85 22.2c-1.19.2-2.4 5.16-3.65 5.16-1.24 0-2.46-4.96-3.65-5.15A22.5 22.5 0 1 1 45 22.5Z'/%3E%3Cpath fill='%23fff' d='m14.37 20 6.73-6.62a2 2 0 0 1 2.8 0l6.73 6.63a1.94 1.94 0 0 1-1.37 3.32V28a2 2 0 0 1-2 2h-1.4a2 2 0 0 1-2-2v-1.98a1.35 1.35 0 1 0-2.71 0V28a2 2 0 0 1-2 2h-1.41a2 2 0 0 1-2-2v-4.67c-1.74 0-2.6-2.1-1.37-3.32Z'/%3E%3C/svg%3E"
+    },
+    
+    "type2": {
+      "color": "#D5B38E",
+      "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='50' fill='none' viewBox='0 0 45 50'%3E%3Cpath fill='%23D5B38E' d='M45 22.5a22.5 22.5 0 0 1-18.85 22.2c-1.19.2-2.4 5.16-3.65 5.16-1.24 0-2.46-4.96-3.65-5.15A22.5 22.5 0 1 1 45 22.5Z'/%3E%3Cpath fill='%23161616' d='m14.37 20 6.73-6.62a2 2 0 0 1 2.8 0l6.73 6.63a1.94 1.94 0 0 1-1.37 3.32V28a2 2 0 0 1-2 2h-1.4a2 2 0 0 1-2-2v-1.98a1.35 1.35 0 1 0-2.71 0V28a2 2 0 0 1-2 2h-1.41a2 2 0 0 1-2-2v-4.67c-1.74 0-2.6-2.1-1.37-3.32Z'/%3E%3C/svg%3E"
+
+    }
+  }
+}

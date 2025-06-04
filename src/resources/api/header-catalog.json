@@ -1,0 +1,1360 @@
+{
+  "list": [
+    {
+      "name": "Smartphones and gadgets",
+      "href": "#0",
+      "cards": ["api/products/product1.json", "api/products/product2.json"],
+      "image": "img/header/phone.jpg",
+      "subList": [
+        {
+          "name": "iPhone",
+          "href": "#1",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "iPhone 15",
+              "href": "#2",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "iPhone 15 Plus",
+              "href": "#3",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "iPhone 15 Pro",
+              "href": "#4",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "iPhone 15 Pro Max",
+              "href": "#5",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "iPhone 14 Pro",
+              "href": "#6",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Android",
+          "href": "#7",
+          "cards": [],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Google",
+              "href": "#8",
+              "cards": [],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Samsung",
+              "href": "#9",
+              "cards": [],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Xiaomi",
+              "href": "#10",
+              "cards": [],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Huawei",
+              "href": "#11",
+              "cards": [],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Smart-watches",
+          "href": "#12",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Apple Watch",
+              "href": "#13",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Apple Watch Series 9",
+              "href": "#14",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Apple Watch Ultra 2",
+              "href": "#15",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Apple Watch Hermes",
+              "href": "#16",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Ремешки для Apple Watch",
+              "href": "#17",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Samsung",
+              "href": "#18",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Android",
+              "href": "#19",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Headphones",
+          "href": "#20",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Apple",
+              "href": "#21",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Wireless",
+              "href": "#22",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Beats",
+              "href": "#23",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Sony",
+              "href": "#24",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Bose",
+              "href": "#25",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "bowers & wilkins",
+              "href": "#26",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Marshall",
+              "href": "#27",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Gaming Headphones",
+              "href": "#28",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Accessories",
+          "href": "#29",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "MagSafe",
+              "href": "#30",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Covers",
+              "href": "#31",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "AirTag",
+              "href": "#32",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Adapters and cables",
+              "href": "#33",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Columns",
+          "href": "#34",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "For parties",
+              "href": "#35",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "With backlight",
+              "href": "#36",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Small",
+              "href": "#37",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "JBL",
+              "href": "#38",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Marshall",
+              "href": "#39",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Sony",
+              "href": "#40",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        }
+      ],
+      "brands": [
+        { "img": "img/brands/logo1.png", "href": "#" },
+        { "img": "img/brands/logo2.png", "href": "#" },
+        { "img": "img/brands/logo3.png", "href": "#" },
+        { "img": "img/brands/logo4.png", "href": "#" },
+        { "img": "img/brands/logo5.png", "href": "#" }
+      ]
+    },
+    {
+      "name": "Laptops and computers",
+      "href": "#41",
+      "cards": ["api/products/product1.json", "api/products/product2.json"],
+      "image": "img/header/phone.jpg",
+      "subList": [
+        {
+          "name": "Laptops",
+          "href": "#42",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Apple",
+              "href": "#43",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Asus",
+              "href": "#44",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "HP",
+              "href": "#45",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Lenovo",
+              "href": "#46",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Gaming",
+              "href": "#47",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "For buisness",
+              "href": "#48",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Transformers",
+              "href": "#49",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Computers",
+          "href": "#50",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Apple",
+              "href": "#51",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "keyboards",
+              "href": "#52",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Mouses",
+              "href": "#53",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Displays",
+          "href": "#54",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "ASUS",
+              "href": "#55",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "LG",
+              "href": "#56",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "MSI",
+              "href": "#57",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Samsung",
+              "href": "#58",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Video cards",
+          "href": "#59",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Nvidia",
+              "href": "#60",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "AMD",
+              "href": "#61",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "VR glasses and kits",
+          "href": "#62",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "HTC",
+              "href": "#63",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Oculus",
+              "href": "#64",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Sony",
+              "href": "#65",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Printers",
+          "href": "#66",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Canon",
+              "href": "#67",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "HP",
+              "href": "#68",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Epson",
+              "href": "#69",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        }
+      ],
+      "brands": [
+        { "img": "img/brands/logo1.png", "href": "#" },
+        { "img": "img/brands/logo2.png", "href": "#" },
+        { "img": "img/brands/logo3.png", "href": "#" },
+        { "img": "img/brands/logo4.png", "href": "#" },
+        { "img": "img/brands/logo5.png", "href": "#" }
+      ]
+    },
+    {
+      "name": "Tablets",
+      "href": "#70",
+      "cards": ["api/products/product1.json", "api/products/product2.json"],
+      "image": "img/header/phone.jpg",
+      "subList": [
+        {
+          "name": "Apple",
+          "href": "#71",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "iPad Pro",
+              "href": "#72",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "iPad Air",
+              "href": "#73",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "iPad Mini",
+              "href": "#74",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "iPad 10",
+              "href": "#75",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Android",
+          "href": "#76",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Samsung",
+              "href": "#77",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Xiaomi",
+              "href": "#78",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Lenovo",
+              "href": "#79",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Accessories",
+          "href": "#80",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Covers Apple",
+              "href": "#81",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Apple Pencil",
+              "href": "#82",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "keyboards for iPad",
+              "href": "#83",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        }
+      ],
+      "brands": [
+        { "img": "img/brands/logo1.png", "href": "#" },
+        { "img": "img/brands/logo2.png", "href": "#" },
+        { "img": "img/brands/logo3.png", "href": "#" },
+        { "img": "img/brands/logo4.png", "href": "#" },
+        { "img": "img/brands/logo5.png", "href": "#" }
+      ]
+    },
+    {
+      "name": "Household goods",
+      "href": "#84",
+      "cards": ["api/products/product1.json", "api/products/product2.json"],
+      "image": "img/header/phone.jpg",
+      "subList": [
+        {
+          "name": "Beauty and care",
+          "href": "#85",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Hair dryers",
+              "href": "#86",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Stylers",
+              "href": "#87",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Rectifiers",
+              "href": "#88",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Toothbrushes",
+              "href": "#89",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Household appliances",
+          "href": "#90",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "SMEG",
+              "href": "#91",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Vacuum cleaners",
+              "href": "#92",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Air purification and humidification",
+              "href": "#93",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "For kitchen",
+              "href": "#94",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Coffee machines and capsules",
+              "href": "#95",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Multicookers",
+              "href": "#96",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Electric grills",
+              "href": "#97",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Accessories",
+          "href": "#98",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Storage",
+              "href": "#99",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Nozzles",
+              "href": "#100",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Interior items",
+              "href": "#101",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        }
+      ],
+      "brands": [
+        { "img": "img/brands/logo1.png", "href": "#" },
+        { "img": "img/brands/logo2.png", "href": "#" },
+        { "img": "img/brands/logo3.png", "href": "#" },
+        { "img": "img/brands/logo4.png", "href": "#" },
+        { "img": "img/brands/logo5.png", "href": "#" }
+      ]
+    },
+    {
+      "name": "Cameras",
+      "href": "#102",
+      "cards": ["api/products/product1.json", "api/products/product2.json"],
+      "image": "img/header/phone.jpg",
+      "subList": [
+        {
+          "name": "Accessories для камер"
+        },
+        {
+          "name": "Беззеркальные фотоаппараты",
+          "href": "#103",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Canon",
+              "href": "#104",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Nikon",
+              "href": "#105",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Panasonic",
+              "href": "#106",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Sony",
+              "href": "#107",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "SLR cameras",
+          "href": "#108",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Canon",
+              "href": "#109",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Nikon",
+              "href": "#110",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Instant cameras",
+          "href": "#111",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Canon",
+              "href": "#112",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Fujifilm",
+              "href": "#113",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Kodak",
+              "href": "#114",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Action cameras",
+          "href": "#115",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "DJI",
+              "href": "#116",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "GoPro",
+              "href": "#117",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Insta360",
+              "href": "#118",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        }
+      ],
+      "brands": [
+        { "img": "img/brands/logo1.png", "href": "#" },
+        { "img": "img/brands/logo2.png", "href": "#" },
+        { "img": "img/brands/logo3.png", "href": "#" },
+        { "img": "img/brands/logo4.png", "href": "#" },
+        { "img": "img/brands/logo5.png", "href": "#" }
+      ]
+    },
+    {
+      "name": "Game consoles",
+      "href": "#119",
+      "cards": ["api/products/product1.json", "api/products/product2.json"],
+      "image": "img/header/phone.jpg",
+      "subList": [
+        {
+          "name": "PlayStation",
+          "href": "#120",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "PlayStation Consoles",
+              "href": "#121",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Accessories для PS5",
+              "href": "#122",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Games for PS5",
+              "href": "#123",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Xbox",
+          "href": "#124",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Xbox Series Consoles",
+              "href": "#125",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Accessories for XBOX",
+              "href": "#126",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Games for Xbox",
+              "href": "#127",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Portative",
+          "href": "#128",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Valve Steam Deck",
+              "href": "#129",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Nintendo Switch",
+              "href": "#130",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Aya",
+              "href": "#131",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        }
+      ],
+      "brands": [
+        { "img": "img/brands/logo1.png", "href": "#" },
+        { "img": "img/brands/logo2.png", "href": "#" },
+        { "img": "img/brands/logo3.png", "href": "#" },
+        { "img": "img/brands/logo4.png", "href": "#" },
+        { "img": "img/brands/logo5.png", "href": "#" }
+      ]
+    },
+    {
+      "name": "TV and multimedia",
+      "href": "#132",
+      "cards": ["api/products/product1.json", "api/products/product2.json"],
+      "image": "img/header/phone.jpg",
+      "subList": [
+        {
+          "name": "TV",
+          "href": "#133",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "TV",
+              "href": "#134",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "4k",
+              "href": "#135",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "OLED",
+              "href": "#136",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Soundbars",
+          "href": "#137",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Bose",
+              "href": "#138",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Samsung",
+              "href": "#139",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "Sony",
+              "href": "#140",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Projectors",
+          "href": "#141",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "FullHD",
+              "href": "#142",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            },
+            {
+              "name": "4K",
+              "href": "#143",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        }
+      ],
+      "brands": [
+        { "img": "img/brands/logo1.png", "href": "#" },
+        { "img": "img/brands/logo2.png", "href": "#" },
+        { "img": "img/brands/logo3.png", "href": "#" },
+        { "img": "img/brands/logo4.png", "href": "#" },
+        { "img": "img/brands/logo5.png", "href": "#" }
+      ]
+    },
+    {
+      "name": "Musical equipment",
+      "href": "#144",
+      "cards": ["api/products/product1.json", "api/products/product2.json"],
+      "image": "img/header/phone.jpg",
+      "subList": [
+        {
+          "name": "Synthesizers",
+          "href": "#145",
+          "cards": ["api/products/product1.json", "api/products/product2.json"],
+          "image": "img/header/phone.jpg",
+          "subList": [
+            {
+              "name": "Yamaha",
+              "href": "#146",
+              "cards": [
+                "api/products/product1.json",
+                "api/products/product2.json"
+              ],
+              "image": "img/header/phone.jpg"
+            }
+          ]
+        }
+      ],
+      "brands": [
+        { "img": "img/brands/logo1.png", "href": "#" },
+        { "img": "img/brands/logo2.png", "href": "#" },
+        { "img": "img/brands/logo3.png", "href": "#" },
+        { "img": "img/brands/logo4.png", "href": "#" },
+        { "img": "img/brands/logo5.png", "href": "#" }
+      ]
+    },
+    {
+      "name": "News",
+      "href": "#147",
+      "image": "img/header/new.jpg",
+      "special": {
+        "mob": ["no-title"]
+      }
+    },
+    {
+      "name": "Stock",
+      "href": "#148",
+      "image": "img/header/sale.jpg",
+      "special": {
+        "mob": ["no-title"]
+      }
+    }
+  ],
+  "brands": [
+    { "img": "img/brands/logo1.png", "href": "#" },
+    { "img": "img/brands/logo2.png", "href": "#" },
+    { "img": "img/brands/logo3.png", "href": "#" },
+    { "img": "img/brands/logo4.png", "href": "#" },
+    { "img": "img/brands/logo5.png", "href": "#" }
+  ]
+}

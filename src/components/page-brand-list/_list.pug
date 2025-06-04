@@ -1,0 +1,37 @@
+- 
+  const brandlist = {
+    "A": [
+      "ACER",
+      "ADIDAS",
+      "AMAZFIT",
+      "APPLE",
+      "ASICS",
+      "ASTRO",
+      "ASUS",
+      "AUDEZE",
+      "AUDIO-TECHNICA"
+    ],
+    "B": [
+    "BACKBONE",
+    "BEATS",
+    "BENQ",
+    "BIDI BADU",
+    "BLACK+DECKER",
+    "BOSE",
+    "BOWERS & WILKINS"
+    ],
+    "C":[
+    "CANON",
+    "CATOOMUU",
+    ]
+  }
+.grouped-list
+    each val, key in brandlist
+      section(id=("s-" + key))
+        h2=key
+        ul
+          +clone(10)
+            for brand in val
+              li
+                a(href='#')=brand
+    

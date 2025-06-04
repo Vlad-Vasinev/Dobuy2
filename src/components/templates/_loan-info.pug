@@ -1,0 +1,22 @@
+template.tpl--loan-info-modal
+  .modal
+    .modal__head
+      .modal__title
+        span Purchase on credit
+      button.modal__close(modal-close)
+        +svgIcon('close')
+    .modal__body
+      .modal-text-inner
+        .h1._dsk Purchase on credit
+        img._mob(src="img/loan-img.png")
+        p.h2 
+          | To use the lending service
+          | add product to
+          |<svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" fill="none" viewBox="0 0 28 29"><circle cx="14" cy="14.5" r="14" fill="#4C00C9"/><path stroke="#fff" stroke-linecap="round" stroke-width="1.5" d="M6.5 7.75h.71c.976 0 1.786.745 1.856 1.707l.225 3.076m2.204 6.808h7.114c.905 0 1.678-.644 1.833-1.526l1.03-5.887c.197-1.125-.679-2.154-1.833-2.154h-8.544c-1.077 0-1.929.901-1.857 1.964l.401 5.887a1.852 1.852 0 0 0 1.856 1.716Z"/><path stroke="#fff" stroke-linecap="round" stroke-width="3" d="M10.59 21.386h.018m9.509 0h.018"/></svg>
+          | basket<br dsk-br/>
+          | and proceed to checkout
+        p 
+          | The minimum payment may vary depending on the bank you choose when applying for a 24-month loan. <br/>No additional services.
+          img._mob(src="img/loan-icon.png")
+
+        img._dsk(src="img/loan-img.png")

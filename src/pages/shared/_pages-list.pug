@@ -1,0 +1,59 @@
+div
+  style.
+    .pl {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    font-size: 16px;
+    line-height: 1.25;
+    width: 100%;
+    }
+    .pl .pl__trigger {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      bottom: 0;
+      left: 0;
+    }
+    .pl .pl__ctr {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      max-height: 80vh;
+      overflow: auto;
+      background-color: #fff;
+      display: none;
+    }
+    .pl._v .pl__ctr {
+      display: block;
+    }
+    .pl a {
+      display: block;
+      padding: 6px 8px;
+    }
+    .pl .pl__ul{
+      display: block;
+      padding-left: 8px;
+    }
+    .pl .pl__h{
+      font-size: 1.2em;
+      
+    }
+    .pl .pl__h::before{
+      content: '- ';
+      
+    }
+
+  .pl(title='list of pages')
+    .pl__trigger
+    .pl__ctr
+      include ./_pages-list-list
+  script.
+    (() => {
+    const pl = document.querySelector(".pl");
+    if (!pl) { return }
+    pl.querySelector('.pl__trigger').addEventListener('click', (e) => {
+      pl.classList.toggle('_v');
+    })
+    })();

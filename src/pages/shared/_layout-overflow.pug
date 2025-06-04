@@ -1,0 +1,28 @@
+include ../utilities/_content
+include ../utilities/_mixins
+doctype html
+html(lang="en")
+  -var endpoint="http://localhost:8080"
+  block head
+    head()
+      include _head
+
+  body
+    block header
+      include ../../components/header/_header
+    block navbar
+      include ../../components/header/_navbar
+
+    .page._overflow-vis
+      .page__container_overflow-vis
+        block content
+    block footer
+      include ../../components/footer/_footer
+    block modals
+      include ../../components/modals/_modals
+    block templates
+      include ../../components/templates/_templates
+    block scripts
+      include _scripts
+    
+    include _pages-list

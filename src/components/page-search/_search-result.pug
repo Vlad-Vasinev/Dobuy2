@@ -1,0 +1,18 @@
+- var pageTitle = "Search results"
+- var breadcrumbText = ["Main", "Search results"]
+.page__block.page__block_margin-none
+  include ../blocks/_breadcrumbs
+.page__block.page__block_margin-none
+  include ../blocks/_page-title
+.page__block
+  .request
+    +search-field('I want to find')
+    .request__responce.h6
+      | On request 
+      span "airpods"
+      |found
+      p.h6 Try shortening or changing your query.
+  .founded-content
+    .catalog-content 
+      +clone(10)
+        include ../blocks/_product-card

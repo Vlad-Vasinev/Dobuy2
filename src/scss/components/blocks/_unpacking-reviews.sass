@@ -1,0 +1,36 @@
+
+.unpacking-reviews
+  overflow: hidden
+  align-items: unset 
+  justify-content: unset
+  @extend .swiper
+  &:not(.swiper-initialized)
+    .unpacking-reviews__wrapper
+      gap: var(--aCalc24)
+      +r($sm)
+        gap: 8px
+  +r($sm)
+    overflow: unset
+  &__wrapper 
+    @extend .swiper-wrapper
+    &
+      justify-content: unset
+      +r($sm)
+        scrollbar-width: unset 
+        overflow: unset
+        padding-left: 0
+  .unpacking-el 
+    cursor: pointer
+    @extend .swiper-slide
+    width: unset
+    padding: 0
+    img, video 
+      width: aCalc(279)
+      height: aCalc(400)
+      border-radius: var(--aCalc12)
+      margin-bottom: var(--aCalc16)
+      +r($sm)
+        width: 100%
+        height: 400px
+        margin-bottom: 16px
+        border-radius: 12px

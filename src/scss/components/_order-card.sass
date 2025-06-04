@@ -1,0 +1,178 @@
+.no-orders
+  text-align: center
+  .button
+    margin-top: var(--aCalc24)
+    width: 100%
+    +mob
+      margin-top: 24px
+.order-cards-crt
+  display: flex
+  flex-direction: column
+  gap: var(--aCalc24)
+  +mob
+    gap: 12px
+.order-card
+  
+  padding: var(--aCalc16)
+  gap: var(--aCalc12)
+  border-radius: var(--aCalc12)
+  border: 1px solid $Gray
+  display: grid
+  grid-template-columns: auto auto
+  +mob
+    padding: 16px
+    gap: 8px
+    border-radius: 12px
+  > *
+    grid-column: 1/-1
+  &__name
+    @extend .h4
+    grid-column: 1/2
+  .order-status
+    grid-column: 2/3
+    justify-self: end
+    align-self: center
+  &__price
+    display: flex
+    align-items: center
+    justify-content: space-between
+    @extend .h4
+  &__delivery
+    @extend .h7
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__items-crt
+    display: flex
+    flex-wrap: wrap
+    gap: var(--aCalc4)
+    +mob
+      gap: 4px
+  
+  &__item
+    +wah(aCalc(50))
+    +mob
+      +wah(50px)
+    img
+      +wah(100%)
+      object-fit: contain
+
+  // &__pay-link
+    
+  &__pay-link, .track-placeholder, .button
+    width: 100%
+
+.track-label
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  &__code
+    display: grid
+    gap: 4px
+  &__link
+    color: $Violet
+
+.order-status
+  @extend .h4
+  
+  &_not-paid
+    // Ожидает оплаты
+    color: #F48400
+  &_paid
+    // Оплачено
+    color: #00C060
+  &_canceled
+    // Отменен
+    color: #EC5B5B
+  &_sended
+    // Отправлено
+    color: #1383EA
+  &_delivered
+    // Доставлено
+    color: #7733E4
+  
+.track-placeholder
+  @extend .button_small
+  text-transform: unset
+  background-color: rgba(255, 255, 255, 0)
+  border-color: $GrayBlack
+  color: $BlackWhite
+  &:hover
+    background-color: #fff0
+    border-color: $GrayBlack
+    color: $BlackWhite
+
+.order-detail
+  &__head 
+    +dsk
+      display: flex
+      justify-content: space-between 
+      align-items: center
+    .order-status
+      +mob
+        margin-top: 16px
+  &__items
+    margin-top: var(--aCalc24)
+    +mob
+      margin-top: 40px 
+  &__items-crt
+    display: grid
+    gap: var(--aCalc24)
+    +mob
+      gap: 16px
+    .prod-card
+      
+      grid-template-columns: min-content 1fr
+      grid-template-rows: min-content 1fr
+      align-items: flex-start
+      
+    .prod-card .prod-price
+      align-self: unset
+    .prod-card .prod-card__title
+      +dsk
+        margin-bottom: 8px
+    .prod-card .prod-card__gallery
+      +dsk
+        +wah(aCalc(72)) 
+  &__price
+    margin-top: var(--aCalc64)
+    +mob
+      margin-top: 40px 
+    .summary-price
+    .button
+      width: 100%
+      margin-top: var(--aCalc24)
+      +mob
+        margin-top: 16px
+  &__section
+    margin-top: var(--aCalc64)
+    +mob
+      margin-top: 40px 
+  .h2 
+    margin-bottom: var(--aCalc24)
+    +mob
+      margin-bottom: 16px
+  &__heading
+    @extend .h2
+    width: 100%
+    display: block
+    border-bottom: 1px solid $WhiteGray
+    padding-bottom: var(--aCalc8)
+    margin-bottom: var(--aCalc24)
+    +mob
+      padding-bottom: 4px
+      margin-bottom: 16px
+    
+    > * + *
+      margin-top: var(--aCalc8)
+      +mob
+        margin-top: 6px
+  > .track-placeholder
+    width: 100%
+    margin: var(--aCalc24) 0
+    +mob
+      margin: 12px 0
+  .summary-price
+    tr + tr td
+      +mob
+        padding-top: 6px

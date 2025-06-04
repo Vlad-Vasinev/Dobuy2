@@ -1,0 +1,29 @@
+
+.ya-review 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: aCalc(16)
+  border-radius: aCalc(12)
+  border: 1px solid #F3F0F7
+  height: aCalc(54)
+  width: aCalc(342)
+  margin-left: 0
+  background-color: transparent
+  +r($sm)
+    padding: 16px
+    border-radius: 12px
+    width: 303px
+    margin: 0 auto
+    height: unset
+  &__right 
+    display: flex
+    gap: aCalc(6)
+    +r($sm)
+      gap: 6px
+    img, svg 
+      width: aCalc(20)
+      height: aCalc(20)
+      +r($sm)
+        width: 20px
+        height: 20px

@@ -1,0 +1,89 @@
+{
+  "type": "singles",
+  "singleItems": [
+    {
+      "title": "Review 1",
+      "preview": "../img/stories/storyPv0.webp",
+      "item": {
+        "type": "video",
+        "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "preview": "img/stories/storyPv0.webp",
+        "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+      }
+    },
+    {
+      "title": "Review 2",
+      "preview": "../img/stories/waffle-p.jpg",
+      "item": {
+        "type": "video",
+        "src": "img/stories/waffle.mp4",
+        "preview": "img/stories/waffle-p.jpg",
+        "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 3</a>"
+      }
+    },
+    {
+      "title": "Review 3",
+      "preview": "../img/stories/waffle-p.jpg",
+      "item": {
+        "type": "image",
+        "duration": "5",
+        "src": "img/stories/waffle-p.jpg",
+        "preview": "img/stories/waffle-p.jpg",
+        "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 4</a>"
+      }
+    },
+    {
+      "title": "Review 4",
+      "preview": "../img/stories/waffle-p.jpg",
+      "item": {
+        "type": "video",
+        "src": "img/stories/waffle.mp4",
+        "preview": "img/stories/waffle-p.jpg",
+        "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 6</a>"
+      }
+    },
+    {
+      "title": "Review 5",
+      "preview": "../img/stories/waffle-p.jpg",
+      "item": {
+        "type": "image",
+        "duration": "5",
+        "src": "img/stories/waffle-p.jpg",
+        "preview": "img/stories/waffle-p.jpg",
+        "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 7</a>"
+      }
+    },
+    {
+      "title": "Review 6",
+      "preview": "../img/stories/waffle-p.jpg",
+      "item": {
+        "type": "video",
+        "src": "img/stories/waffle.mp4",
+        "preview": "img/stories/waffle-p.jpg",
+        "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Go to product</a>"
+      }
+    },
+    {
+      "title": "Review 7",
+      "preview": "../img/stories/waffle-p.jpg",
+      "item": {
+        "type": "video",
+        "src": "img/stories/waffle.mp4",
+        "preview": "img/stories/waffle-p.jpg",
+        "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 11</a>"
+      }
+    },
+    {
+      "title": "Review 8",
+      "preview": "../img/stories/waffle-p.jpg",
+      "item": {
+        "type": "image",
+        "duration": "5",
+
+        "src": "img/stories/waffle-p.jpg",
+        "preview": "img/stories/waffle-p.jpg",
+        "desk": "<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Styler Dyson</span>\n<span class=\"h2\" style=\"--bg: #4C00C9; --tc: #fff\">Airwrap Complete Long</span>\n<a class=\"button\" style=\"--bg: #4C00C9; --tc: #fff\" href=\"/styler-dyson\">Story 12</a>"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+.amount-panel
+  display: grid
+  align-items: center
+  &__val, &__minus, &__plus
+    grid-row: 1/2
+    
+  &__val
+    height: max-content
+    
+    min-width: 3.5em
+    span
+      @extend .h5
+      display: block
+      margin: auto
+      text-align: center
+  &__minus, &__plus  
+    background-color: $WhiteGray
+    +wah(var(--aCalc32))
+    padding: aCalc(6)
+    border-radius: 100%
+    +mob
+      +wah(32px)
+      padding: 6px
+    svg
+      +wah(100%)
+    &:disabled
+      color: $GrayBlack
+  &__minus
+    
+  &__plus
+

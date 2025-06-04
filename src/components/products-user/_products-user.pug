@@ -1,0 +1,34 @@
+- var pageTitle = "Products for you"
+- var breadcrumbText = ["Main", "Catalog", "Smartphones and gadgets"]
+section.page__block
+  include ../blocks/_breadcrumbs
+  include ../blocks/_page-title
+  .article.product-user
+    .order-detail
+      .order-detail__items
+        .order-detail__items-crt
+          +clone(3)
+            a.prod-card.prod-card_flat.prod-card_static(href="/product")
+              .prod-card__gallery
+                img.prod-card__image(lazy src="img/product/4/img0.png")
+              .prod-card__title 
+                span Smartphone Apple iPhone 15 Pro 128 GB, "titanium blue", 1 SIM + eSIM
+              .prod-price
+                .prod-price__discount
+                  span.prod-price__old 135 000 ₽ 
+                  .badge.badge_sale -15%
+                span.prod-price__val 119 999 ₽
+      .order-detail__price
+        .order-detail__heading Cost of goods
+        table.summary-price 
+          tbody
+            tr.summary-price__tr_clear
+              td Order amount
+              td 30 000 ₽
+            tr.summary-price__tr_sale
+              td Discount
+              td -2 000 ₽
+            tr.summary-price__tr_total
+              td Total
+              td 28 000 ₽
+        .button.button_small Add to cart

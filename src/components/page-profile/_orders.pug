@@ -1,0 +1,50 @@
+extends ./_profile
+block content
+  .sticky-menu__content.customer-info__content
+    .h1._dsk Current orders
+    .sign
+      .h6 
+        | If you have paid for your order, please send us a receipt of payment
+        a.hl(href="#") Telegram
+        | .
+      .h6 This will speed up the processing of your order.
+    
+    .order-cards-crt
+      
+      .order-card
+        a.order-card__name(href="/profile-order-detail") Order No. 1980
+        .order-status.order-status_not-paid Awaiting payment
+        .sign.sign_gray-info 
+          span.h6 The order will be activated within 24 hours.
+        .order-card__price
+          span For payment
+          span 56 999 ₽
+        .order-card__delivery
+          span Estimated delivery date:
+          span January 10, 2024
+        a.order-card__items-crt(href="/profile-order-detail")
+          +clone(2)
+            .order-card__item
+              img(src="img/product/1/img0.png")
+        .track-placeholder Tracking number will appear here soon
+        a.button.button_small.order-card__pay-link(href="#") Pay
+      .order-card
+        a.order-card__name(href="/profile-order-detail") Order №1980
+        .order-status.order-status_paid Paid
+        .order-card__price
+          span For payment
+          span 400 999 ₽
+        .order-card__delivery
+          span Estimated delivery date:
+          span January 10, 2024
+        a.order-card__items-crt(href="/profile-order-detail")
+          +clone(5)
+            .order-card__item
+              img(src="img/product/1/img0.png")
+        .track-label
+          .track-label__code(js-copy data-copy-msg="Трек-номер скопирован!")
+            .h4 Tracking number
+            .textbtn
+              span CL104882771RU
+              +svgIcon('copy')
+          a.track-label__link(href="#") Track your order

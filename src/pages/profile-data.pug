@@ -1,0 +1,31 @@
+extends ./shared/_layout
+prepend head
+  -var title = "Personal account"
+block content
+  include ../components/page-profile/_user-data
+append templates
+  include ../components/templates/_address-input.pug
+  template.tpl--profile--status-complete
+    .ud-status
+      +svgIcon('check')
+      span Delivery details are filled in
+  template.tpl--profile--status-not-complete
+    .ud-status.ud-status_false
+      +svgIcon('close')
+      span Delivery details are not filled in
+  template.tpl--profile--address-item
+    .prof-address
+      span.h2 
+      button.prof-address__del
+        span Delete address
+      .address-input
+        .ui-input.ui-input_label.ui-input_popup
+          input(type=inputType name='city-input')
+          label.ui-input__float-label
+            | Location
+        .ui-input.ui-input_label.ui-input_popup
+          input(type=inputType name='address-input')
+          label.ui-input__float-label
+            | Delivery address
+append modals
+  include ../components/page-order/_order-modals.pug

@@ -1,0 +1,3116 @@
+[
+  {
+    "code": "YARS2",
+    "name": "YARS2, Ярославль, ул. Большая Октябрьская",
+    "uuid": "4c0f595c-4dee-405b-885b-e89efb289b45",
+    "nearest_station": "Мукомольный пер.",
+    "work_time": "Пн-Пт 09:00-20:00, Сб-Вс 09:00-18:00",
+    "phones": [
+      {
+        "number": "+79201249404"
+      }
+    ],
+    "email": "e.ivanova@cdek.ru",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": true,
+    "have_cashless": false,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "site": "https://www.cdek.ru/contacts/g_yaroslavl_ul_bolshaya_oktyabrskaya_d_392.html",
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/f3949c4b-84fb-4484-a692-0bf928962968"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/38998316-cb7d-4cd0-8993-824556d9870b"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "09:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "09:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "09:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "09:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "09:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "09:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "09:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "09:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 100000,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "09:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150000",
+      "longitude": 39.881985,
+      "latitude": 57.622135,
+      "address": "ул. Большая Октябрьская, 39",
+      "address_full": "150000, Россия, Ярославская область, Ярославль, ул. Большая Октябрьская, 39",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS4",
+    "name": "YARS4, Ярославль, пр-т Московский",
+    "uuid": "024b5227-edd8-418a-9751-961cbefef056",
+    "address_comment": "Подразделение находится в ТЦ Пирамида остановка Арена 2 000. Вход в торговый центр на 2 этаж и на право.",
+    "nearest_station": "Арена 2000",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+74852440525"
+      }
+    ],
+    "email": "a.strukova@cdek.ru",
+    "note": "Подразделение находится в ТЦ Пирамида остановка Арена 2 000. Вход в торговый центр на 2 этаж и на право.",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "site": "https://www.cdek.ru/contacts/g_yaroslavl_ul_moskovskiy_prospekt_d90.html",
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/4a45de6c-2b98-4007-8543-6b9fabd0defa"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/4b9d178b-719b-48ad-9eb8-3f0e1d03dd8b"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/9b3c0151-8746-499c-9ac5-4bca71b40918"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/d34a85c6-deac-4d56-abc4-2d8509d6a861"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 1000,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150030",
+      "longitude": 39.85462,
+      "latitude": 57.58536,
+      "address": "пр-т Московский, 90",
+      "address_full": "150030, Россия, Ярославская область, Ярославль, пр-т Московский, 90",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS5",
+    "name": "YARS5, Ярославль, ул. Республиканская",
+    "uuid": "17f69ae8-6767-4bd3-bbcd-562cbb9a8a61",
+    "address_comment": "БЦ Красный маяк. От остановки направо в 5 м проезд - вход на территорию БЦ. После шлагбаума налево к  корпусу №7. Первый подъезд, первый этаж. Вывеска «СДЭК» перед входом, рядом вывеска \"сервисный центр «BOSH». Напротив магазин \"Технопоинт\".",
+    "nearest_station": "Октябрьская площадь",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+74852679592"
+      }
+    ],
+    "email": "i.sotskova@cdek.ru",
+    "note": "БЦ Красный маяк. От остановки направо в 5 м проезд - вход на территорию БЦ. После шлагбаума налево к  корпусу №7. Первый подъезд, первый этаж. Вывеска «СДЭК» перед входом, рядом вывеска \"сервисный центр «BOSH». Напротив магазин \"Технопоинт\".",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "site": "https://www.cdek.ru/contacts/g_yaroslavl_ul_respublikanskaya_d3.html",
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/354cbfbc-46d7-4a6c-97af-49099ab1052c"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/0a4fee47-c7e2-47ce-a932-5656c5daad87"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/14801dd1-1641-4bcb-adff-870450aded83"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 50,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150003",
+      "longitude": 39.884068,
+      "latitude": 57.640743,
+      "address": "ул. Республиканская, 3, корп.7",
+      "address_full": "150003, Россия, Ярославская область, Ярославль, ул. Республиканская, 3, корп.7",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS6",
+    "name": "YARS6, Ярославль, пр-т Ленина",
+    "uuid": "0557f9b0-b886-4e5d-abdc-0ce97869872a",
+    "address_comment": "Напротив ДК Добрынина (бывший магазин «Тройка»)",
+    "nearest_station": "Юбилейная площадь",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+79045586794"
+      }
+    ],
+    "email": "a.strukova@cdek.ru",
+    "note": "Напротив ДК Добрынина (бывший магазин «Тройка»)",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/1a7265e6-99f7-44be-a174-024ee28e439e"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/fb040d81-4a2c-456f-b744-481cd53a0adc"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/bcabe554-5b02-4621-bcf8-0a229955e7b7"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/e436e339-e8db-4b4e-9b65-156ed9590183"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 1000,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150040",
+      "longitude": 39.86055,
+      "latitude": 57.633286,
+      "address": "пр-т Ленина, 37/73",
+      "address_full": "150040, Россия, Ярославская область, Ярославль, пр-т Ленина, 37/73",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": true
+  },
+  {
+    "code": "YARS7",
+    "name": "YARS7, Ярославль, Пр-т Машиностроителей",
+    "uuid": "5879574a-4c38-4c49-a1d5-6e3d8e673f57",
+    "address_comment": "Выйдя на остановке Кинотеатр Аврора, и 50 метров налево в сторону проспекта Авиаторов.",
+    "nearest_station": "Кинотеатр Аврора",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+79159835430"
+      }
+    ],
+    "email": "a.strukova@cdek.ru",
+    "note": "Выйдя на остановке Кинотеатр Аврора, и 50 метров налево в сторону проспекта Авиаторов.",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/3ad8f19c-72d0-414d-abf9-9a33ad7ba33e"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/2897e5b0-f903-48e5-821a-8781f09adac8"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/9b8ee1aa-cabe-452c-bbb9-401285dc6eb3"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/4f6e0c65-2a1f-441f-9e7f-37c322fbaecc"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/d3b9571a-4c0f-4512-a1d1-5646b7362ada"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/d1dd500c-bd69-40e5-beb5-e564a1e18df2"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 500,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150051",
+      "longitude": 39.946533,
+      "latitude": 57.652702,
+      "address": "Пр-т Машиностроителей, 5/2",
+      "address_full": "150051, Россия, Ярославская область, Ярославль, Пр-т Машиностроителей, 5/2",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS12",
+    "name": "YARS12, Ярославль, Ленинградский пр-т",
+    "uuid": "2857b249-d0b8-4a05-a8d2-a833eb6398de",
+    "address_comment": "Вход под аркой - магазин «Цветы»",
+    "nearest_station": "ул. Колесовой, ул. Урицкого",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+74852679593"
+      }
+    ],
+    "email": "i.sotskova@cdek.ru",
+    "note": "Вход под аркой - магазин «Цветы»",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 50,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150052",
+      "longitude": 39.794765,
+      "latitude": 57.67854,
+      "address": "Ленинградский пр-т, 47",
+      "address_full": "150052, Россия, Ярославская область, Ярославль, Ленинградский пр-т, 47",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS14",
+    "name": "YARS14, Ярославль, пр-т Фрунзе",
+    "uuid": "9bcf37a2-d871-4b9b-b686-f0b0e3fa5438",
+    "address_comment": "через дорогу справа от магазина \"Магнит\" далее после Арки 5 подъезд на 1 этаже первой фасадной линии проспекта Фрунзе.",
+    "nearest_station": "Ул. Академика Колмогорова",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+74852230570"
+      }
+    ],
+    "email": "a.strukova@cdek.ru",
+    "note": "через дорогу справа от магазина \"Магнит\" далее после Арки 5 подъезд на 1 этаже первой фасадной линии проспекта Фрунзе.",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": false,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/1d2bae3a-0015-46c7-9fcb-538bc33b753d"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/8422fab5-b2d1-46d6-9176-5a7a21b464a2"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/3f706277-a843-4c62-a385-dcc8cdada76e"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/ab7cf767-0e1f-439c-a6a1-af56cb4da59e"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 500,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150006",
+      "longitude": 39.91033,
+      "latitude": 57.583176,
+      "address": "пр-т Фрунзе, 39",
+      "address_full": "150006, Россия, Ярославская область, Ярославль, пр-т Фрунзе, 39",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS15",
+    "name": "YARS15, Ярославль, ул. Бабича",
+    "uuid": "b9d24d5e-2b4d-49db-8402-6340b36a7849",
+    "address_comment": "ТЦ Кристалл ,остановка 14 микрорайон пересечение с Бабича, перекресток ТЦ Альтаир и улица Бабича,1 этаж вход при входе в торговый центр",
+    "nearest_station": "ул. Волгоградская ,14 микрорайон ,ул. Бабича",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+79045584358"
+      }
+    ],
+    "email": "a.strukova@cdek.ru",
+    "note": "ТЦ Кристалл ,остановка 14 микрорайон пересечение с Бабича, перекресток ТЦ Альтаир и улица Бабича,1 этаж вход при входе в торговый центр",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": false,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/d4b0c333-24d4-4bbe-9ac1-3c541fb7df6c"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/5dabb94d-17d9-4aca-9794-ec8ff83506e9"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/43fb3243-f589-4811-8f37-e344557b6b78"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/6be525b9-eae4-4cee-a298-becb12e2505e"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/5fbbe2ad-bf0e-4bde-be74-8cfe3cd22c0a"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 500,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150064",
+      "longitude": 39.766468,
+      "latitude": 57.698048,
+      "address": "ул. Бабича, 19",
+      "address_full": "150064, Россия, Ярославская область, Ярославль, ул. Бабича, 19",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS18",
+    "name": "YARS18, Ярославль, УЛ. БОЛЬШАЯ ОКТЯБРЬСКАЯ",
+    "uuid": "554dd411-0ea9-47f3-87ae-4ef8347e1184",
+    "address_comment": "От остановки «Большая Октябрьская улица» через проспект Толбухина 150 м в направлении Совкомбанка.",
+    "nearest_station": "ул. Большая Октябрьская",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+79301292001"
+      }
+    ],
+    "email": "s.obidennov@cdek.ru",
+    "note": "От остановки «Большая Октябрьская улица» через проспект Толбухина 150 м в направлении Совкомбанка.",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/0288a876-e5be-442b-bc01-bbf7b1a0b867"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/1e08a62d-4d81-423e-a1fd-5d60248f3b86"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/99be6259-e928-44c2-8a6d-6a1c2c24e45d"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 300,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150049",
+      "longitude": 39.85632,
+      "latitude": 57.62102,
+      "address": "УЛ. БОЛЬШАЯ ОКТЯБРЬСКАЯ, 124/15",
+      "address_full": "150049, Россия, Ярославская область, Ярославль, УЛ. БОЛЬШАЯ ОКТЯБРЬСКАЯ, 124/15",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS20",
+    "name": "YARS20, Ярославль, ЛЕНИНГРАДСКИЙ ПР-КТ",
+    "uuid": "9f3a1dcf-fb14-4391-aad1-0559857ddb6b",
+    "nearest_station": "Проспект Дзержинского",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+79301292001"
+      }
+    ],
+    "email": "s.obidennov@cdek.ru",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 200,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150045",
+      "longitude": 39.783203,
+      "latitude": 57.687546,
+      "address": "ЛЕНИНГРАДСКИЙ ПР-КТ, 52",
+      "address_full": "150045, Россия, Ярославская область, Ярославль, ЛЕНИНГРАДСКИЙ ПР-КТ, 52",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS30",
+    "name": "YARS30, Ярославль, пр-т Машиностроителей",
+    "uuid": "eaf9513a-2343-49b5-99fd-288f5ff61b65",
+    "address_comment": "В 190 м от остановки общественного транспорта (ул. Сахарова), напротив ТЦ Глобус, Леруа Мерлен.",
+    "nearest_station": "ул. Сахарова",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+79300762077"
+      }
+    ],
+    "email": "i.sotskova@cdek.ru",
+    "note": "В 190 м от остановки общественного транспорта (ул. Сахарова), напротив ТЦ Глобус, Леруа Мерлен.",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 50,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150067",
+      "longitude": 39.961006,
+      "latitude": 57.639717,
+      "address": "пр-т Машиностроителей, 52",
+      "address_full": "150067, Россия, Ярославская область, Ярославль, пр-т Машиностроителей, 52",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS46",
+    "name": "YARS46, Ярославль, ул. Кривова",
+    "uuid": "84a3d9a3-7c20-44bb-a910-e9ba3a7f2a0a",
+    "address_comment": "Пекарня Корица",
+    "nearest_station": "ул. Кривова, д 57",
+    "work_time": "Пн-Вс 08:00-21:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Пекарня Корица",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 2,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 3,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 4,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 5,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 6,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 7,
+        "time": "08:00/21:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 35,
+        "height": 45,
+        "depth": 38
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150048",
+      "longitude": 39.85681,
+      "latitude": 57.584206,
+      "address": "ул. Кривова, 57",
+      "address_full": "150048, Россия, Ярославская область, Ярославль, ул. Кривова, 57",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS49",
+    "name": "YARS49, Ярославль, проезд Ушакова",
+    "uuid": "6a23fec4-c757-4bb9-a4c7-6ed557c1924e",
+    "address_comment": "Войти в супермаркет Магнит Косметик через центральный вход, на 1 этаже около входа расположен постамат.",
+    "nearest_station": "Крестобогородская",
+    "work_time": "Пн-Вс 09:00-21:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в супермаркет Магнит Косметик через центральный вход, на 1 этаже около входа расположен постамат.",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 2,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 3,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 4,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 5,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 6,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 7,
+        "time": "09:00/21:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 35,
+        "height": 45,
+        "depth": 38
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150057",
+      "longitude": 39.85906,
+      "latitude": 57.578247,
+      "address": "проезд Ушакова, 2Б",
+      "address_full": "150057, Россия, Ярославская область, Ярославль, проезд Ушакова, 2Б",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS50",
+    "name": "YARS50, Ярославль, пр-т Московский",
+    "uuid": "76076cd0-9309-4c45-b10a-f3e699ed3940",
+    "address_comment": "Войти в отделение банка Совкомбанк через центральный вход, на 1 этаже",
+    "nearest_station": "пр-т Фрунзе",
+    "work_time": "Пн-Сб 09:00-18:00, Вс 09:00-16:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в отделение банка Совкомбанк через центральный вход, на 1 этаже",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "09:00/18:00"
+      },
+      {
+        "day": 2,
+        "time": "09:00/18:00"
+      },
+      {
+        "day": 3,
+        "time": "09:00/18:00"
+      },
+      {
+        "day": 4,
+        "time": "09:00/18:00"
+      },
+      {
+        "day": 5,
+        "time": "09:00/18:00"
+      },
+      {
+        "day": 6,
+        "time": "09:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "09:00/16:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 44,
+        "height": 36,
+        "depth": 42
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150030",
+      "longitude": 39.872955,
+      "latitude": 57.59777,
+      "address": "пр-т Московский, 115",
+      "address_full": "150030, Россия, Ярославская область, Ярославль, пр-т Московский, 115",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS51",
+    "name": "YARS51, Ярославль, пр-т Машиностроителей",
+    "uuid": "646cf79a-9e93-4fc6-a5be-b07ccf821814",
+    "address_comment": "Войти в отделение банка Совкомбанк через центральный вход, на 1 этаже",
+    "nearest_station": "ул. Саукова",
+    "work_time": "Пн-Пт 09:00-19:00, Сб 09:00-17:00, Вс 09:00-16:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в отделение банка Совкомбанк через центральный вход, на 1 этаже",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "09:00/19:00"
+      },
+      {
+        "day": 2,
+        "time": "09:00/19:00"
+      },
+      {
+        "day": 3,
+        "time": "09:00/19:00"
+      },
+      {
+        "day": 4,
+        "time": "09:00/19:00"
+      },
+      {
+        "day": 5,
+        "time": "09:00/19:00"
+      },
+      {
+        "day": 6,
+        "time": "09:00/17:00"
+      },
+      {
+        "day": 7,
+        "time": "09:00/16:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 32,
+        "height": 39,
+        "depth": 42
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150051",
+      "longitude": 39.949017,
+      "latitude": 57.64952,
+      "address": "пр-т Машиностроителей, 22",
+      "address_full": "150051, Россия, Ярославская область, Ярославль, пр-т Машиностроителей, 22",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS52",
+    "name": "YARS52, Ярославль, пр-т Московский",
+    "uuid": "e5e37b1e-b5b6-416e-90e2-951183d28498",
+    "address_comment": "Войти в супермаркет Перекректок через центральный вход, на 1 этаже",
+    "nearest_station": "Автовокзал",
+    "work_time": "Пн-Вс 00:00-23:59",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в супермаркет Перекректок через центральный вход, на 1 этаже",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "00:00/23:59"
+      },
+      {
+        "day": 2,
+        "time": "00:00/23:59"
+      },
+      {
+        "day": 3,
+        "time": "00:00/23:59"
+      },
+      {
+        "day": 4,
+        "time": "00:00/23:59"
+      },
+      {
+        "day": 5,
+        "time": "00:00/23:59"
+      },
+      {
+        "day": 6,
+        "time": "00:00/23:59"
+      },
+      {
+        "day": 7,
+        "time": "00:00/23:59"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 32,
+        "height": 39,
+        "depth": 42
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150030",
+      "longitude": 39.86933,
+      "latitude": 57.59518,
+      "address": "пр-т Московский, 125",
+      "address_full": "150030, Россия, Ярославская область, Ярославль, пр-т Московский, 125",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS54",
+    "name": "YARS54, Ярославль, ул. Комсомольская",
+    "uuid": "dde2eaaa-8d02-4553-a3dd-4edc5ef43648",
+    "address_comment": "Войти в отделении банка Совкомбанк через центральный вход, на 1 этаже около входа",
+    "nearest_station": "ул. Комсомольская",
+    "work_time": "Пн-Пт 09:00-19:00, Сб 09:00-17:00, Вс 09:00-16:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в отделении банка Совкомбанк через центральный вход, на 1 этаже около входа",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "09:00/19:00"
+      },
+      {
+        "day": 2,
+        "time": "09:00/19:00"
+      },
+      {
+        "day": 3,
+        "time": "09:00/19:00"
+      },
+      {
+        "day": 4,
+        "time": "09:00/19:00"
+      },
+      {
+        "day": 5,
+        "time": "09:00/19:00"
+      },
+      {
+        "day": 6,
+        "time": "09:00/17:00"
+      },
+      {
+        "day": 7,
+        "time": "09:00/16:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 32,
+        "height": 39,
+        "depth": 42
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150000",
+      "longitude": 39.886547,
+      "latitude": 57.622818,
+      "address": "ул. Комсомольская, 22",
+      "address_full": "150000, Россия, Ярославская область, Ярославль, ул. Комсомольская, 22",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS55",
+    "name": "YARS55, Ярославль, ул. 8 Марта",
+    "uuid": "ee0f3a49-94b0-447f-bd0c-9b852ee6891c",
+    "address_comment": "Войти в супермаркет Магнит Косметик через центральный вход, на 1 этаже около входа",
+    "nearest_station": "ул. 8 Марта",
+    "work_time": "Пн-Вс 09:00-21:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в супермаркет Магнит Косметик через центральный вход, на 1 этаже около входа",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 2,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 3,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 4,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 5,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 6,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 7,
+        "time": "09:00/21:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 35,
+        "height": 45,
+        "depth": 38
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150029",
+      "longitude": 39.8215,
+      "latitude": 57.605392,
+      "address": "ул. 8 Марта, 15",
+      "address_full": "150029, Россия, Ярославская область, Ярославль, ул. 8 Марта, 15",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS56",
+    "name": "YARS56, Ярославль, пр-т Машиностроителей",
+    "uuid": "d449f597-eacd-46b9-a34d-2a1ebf5dbdcb",
+    "address_comment": "Войти в супермаркет Магнит Косметик через центральный вход, на 1 этаже около входа",
+    "nearest_station": "Кинотеатр Аврора",
+    "work_time": "Пн-Вс 09:00-21:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в супермаркет Магнит Косметик через центральный вход, на 1 этаже около входа",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 2,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 3,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 4,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 5,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 6,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 7,
+        "time": "09:00/21:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 35,
+        "height": 45,
+        "depth": 38
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150055",
+      "longitude": 39.94464,
+      "latitude": 57.652428,
+      "address": "пр-т Машиностроителей, 10",
+      "address_full": "150055, Россия, Ярославская область, Ярославль, пр-т Машиностроителей, 10",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS57",
+    "name": "YARS57, Ярославль, ул. Новое Творогово",
+    "uuid": "56014f73-a3a6-4725-bfbc-580408ab82a2",
+    "address_comment": "Войти в супермаркет Магнит Косметик через центральный вход, на 2 этаже около входа",
+    "nearest_station": "ул. Гудованцева",
+    "work_time": "Пн-Вс 09:00-21:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в супермаркет Магнит Косметик через центральный вход, на 2 этаже около входа",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 2,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 3,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 4,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 5,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 6,
+        "time": "09:00/21:00"
+      },
+      {
+        "day": 7,
+        "time": "09:00/21:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 35,
+        "height": 45,
+        "depth": 38
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150029",
+      "longitude": 39.812428,
+      "latitude": 57.607624,
+      "address": "ул. Новое Творогово, 2",
+      "address_full": "150029, Россия, Ярославская область, Ярославль, ул. Новое Творогово, 2",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS59",
+    "name": "YARS59, Ярославль, ул. Урицкого",
+    "uuid": "22872e44-edad-4a14-ae88-661453a24bb6",
+    "address_comment": "Войти в пекарню Корица через центральный вход, на 1 этаже около входа",
+    "nearest_station": "Дом одежды",
+    "work_time": "Пн-Вс 08:00-21:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в пекарню Корица через центральный вход, на 1 этаже около входа",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 2,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 3,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 4,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 5,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 6,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 7,
+        "time": "08:00/21:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 35,
+        "height": 45,
+        "depth": 38
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150042",
+      "longitude": 39.804638,
+      "latitude": 57.685772,
+      "address": "ул. Урицкого, 7",
+      "address_full": "150042, Россия, Ярославская область, Ярославль, ул. Урицкого, 7",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS61",
+    "name": "YARS61, Ярославль, пр-т Ленина",
+    "uuid": "6b9132e3-ce54-43f6-bd8d-6fb29e49e2d8",
+    "address_comment": "Войти в пекарню Корица через центральный вход, на 1 этаже около входа",
+    "nearest_station": "пл. Карла Маркса",
+    "work_time": "Пн-Вс 08:00-21:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в пекарню Корица через центральный вход, на 1 этаже около входа",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 2,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 3,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 4,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 5,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 6,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 7,
+        "time": "08:00/21:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 35,
+        "height": 45,
+        "depth": 38
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150040",
+      "longitude": 39.865383,
+      "latitude": 57.63563,
+      "address": "пр-т Ленина, 29/51",
+      "address_full": "150040, Россия, Ярославская область, Ярославль, пр-т Ленина, 29/51",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS77",
+    "name": "YARS77, Ярославль, пр-т. Авиаторов",
+    "uuid": "737d5bb6-e945-4521-a2a0-889127fad5ba",
+    "address_comment": "Почтомат Халва. Войти в супермаркет Дикси через центральный вход, на 1 этаже в прикассовой зоне расположен почтомат",
+    "nearest_station": "-",
+    "work_time": "Пн-Вс 08:00-23:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Почтомат Халва. Войти в супермаркет Дикси через центральный вход, на 1 этаже в прикассовой зоне расположен почтомат",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 2,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 3,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 4,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 5,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 6,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 7,
+        "time": "08:00/23:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 15,
+    "dimensions": [
+      {
+        "width": 39,
+        "height": 19,
+        "depth": 47
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150062",
+      "longitude": 39.9502,
+      "latitude": 57.657192,
+      "address": "пр-т. Авиаторов, 100",
+      "address_full": "150062, Россия, Ярославская область, Ярославль, пр-т. Авиаторов, 100",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS78",
+    "name": "YARS78, Ярославль, пр-т. Машиностроителей",
+    "uuid": "b8681ae7-bbd5-4c66-b29f-0178043a171b",
+    "address_comment": "Войти в ТЦ Яркий через центральный вход, на 2 этаже около магазина Sharm  расположен постамат",
+    "nearest_station": "ул. Папанина",
+    "work_time": "Пн-Вс 10:00-22:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в ТЦ Яркий через центральный вход, на 2 этаже около магазина Sharm  расположен постамат",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/22:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/22:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/22:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/22:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/22:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/22:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/22:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 15,
+    "dimensions": [
+      {
+        "width": 35,
+        "height": 45,
+        "depth": 38
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150065",
+      "longitude": 39.95301,
+      "latitude": 57.645485,
+      "address": "пр-т. Машиностроителей, 30/18",
+      "address_full": "150065, Россия, Ярославская область, Ярославль, пр-т. Машиностроителей, 30/18",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS80",
+    "name": "YARS80, Ярославль, ул. Спартаковская",
+    "uuid": "59516ff2-b6d3-4dc5-96e2-b828be397836",
+    "address_comment": "Войти в супермаркет Дикси через центральный вход, на 1 этаже около входа расположен постамат",
+    "nearest_station": "ул. Спартаковская",
+    "work_time": "Пн-Вс 08:00-23:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "note": "Войти в супермаркет Дикси через центральный вход, на 1 этаже около входа расположен постамат",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 2,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 3,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 4,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 5,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 6,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 7,
+        "time": "08:00/23:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 15,
+    "dimensions": [
+      {
+        "width": 35,
+        "height": 45,
+        "depth": 38
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150034",
+      "longitude": 39.82581,
+      "latitude": 57.72101,
+      "address": "ул. Спартаковская, 35",
+      "address_full": "150034, Россия, Ярославская область, Ярославль, ул. Спартаковская, 35",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS81",
+    "name": "YARS81, Ярославль, ул. Ньютона",
+    "uuid": "ce706f18-0e7c-46ac-bdca-6e4621d6473a",
+    "address_comment": "Вниз от остановки \"Улица Ньютона\" пройти два дома, ориентир - магазин \"Магнит\".",
+    "nearest_station": "ул. Ньютона",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+79944082071"
+      }
+    ],
+    "email": "a.strukova@cdek.ru",
+    "note": "Вниз от остановки \"Улица Ньютона\" пройти два дома, ориентир - магазин \"Магнит\".",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": false,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/9a228c0e-aa03-4312-b086-b2663afa1c71"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/4a8aab1f-1e9d-4ae9-bc47-f0f2aab18003"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/6e29d133-852b-48c9-a41a-8c71e8ceb398"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/a7bbcf5d-79c6-42c7-b782-123860206611"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/405dc24c-1940-45b3-bf50-af5d97b2dba6"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 300,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150035",
+      "longitude": 39.860962,
+      "latitude": 57.57191,
+      "address": "ул. Ньютона, 63",
+      "address_full": "150035, Россия, Ярославская область, Ярославль, ул. Ньютона, 63",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS82",
+    "name": "YARS82, Ярославль, ул. Спартаковская",
+    "uuid": "8aa296c0-f9c3-47f8-8593-29cd1fcc00ed",
+    "address_comment": "Выйдя на остановке ул. Спартаковская, пройти 100 метров до ТЦ \"Оптима\" справа от торгового центра",
+    "nearest_station": "ул. Спартаковская",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+79992201843"
+      }
+    ],
+    "email": "se.kuznetsov@cdek.ru",
+    "note": "Выйдя на остановке ул. Спартаковская, пройти 100 метров до ТЦ \"Оптима\" справа от торгового центра",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/4c7f5e4d-bc45-4009-a863-f6e6b56cc1b8"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/ad02f18e-e368-4507-aacf-627441968839"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/b2d47b96-640f-4ec8-ab23-9d2db3d8f73a"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/722274d5-5252-4085-aa6b-45fad3a27fea"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/190aceb9-ac01-4193-8e42-3ec39d161204"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 50,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150034",
+      "longitude": 39.822872,
+      "latitude": 57.723866,
+      "address": "ул. Спартаковская, 19В, модуль 14",
+      "address_full": "150034, Россия, Ярославская область, Ярославль, ул. Спартаковская, 19В, модуль 14",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS83",
+    "name": "YARS83, Ярославль, шоссе Тутаевское",
+    "uuid": "d9751797-83e1-45f4-8662-48c3edfab96a",
+    "address_comment": "Дзержинский район, Брагино, мкрн. Яблоневый посад, пересечение ул. Панина и Тутаевское шоссе, жилой дом 1 этаж, нежилое помещение со стороны ул. Панина\n\n",
+    "nearest_station": "Яблоневый посад/Мостоотряд",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+79092764402"
+      }
+    ],
+    "email": "t.drach@cdek.ru",
+    "note": "Дзержинский район, Брагино, мкрн. Яблоневый посад, пересечение ул. Панина и Тутаевское шоссе, жилой дом 1 этаж, нежилое помещение со стороны ул. Панина\n\n",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/3d445454-73ab-4f2d-8d51-f9a714a22103"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/dd8e5427-e630-4780-9b4a-d8662028b41b"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/850afc50-564f-4ea8-909a-d44ab08f212b"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 300,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150033",
+      "longitude": 39.790634,
+      "latitude": 57.69967,
+      "address": "шоссе Тутаевское, 93Б",
+      "address_full": "150033, Россия, Ярославская область, Ярославль, шоссе Тутаевское, 93Б",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS84",
+    "name": "YARS84, Ярославль, ул. Чкалова",
+    "uuid": "dccf43b2-c17a-4b3e-b644-3cf470555e55",
+    "address_comment": "От остановки ул. Жукова 100м в сторону ул. Добрынина в торце здания дома 52 по Чкалова",
+    "nearest_station": "ул. Жукова",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+79301292001"
+      }
+    ],
+    "email": "s.obidennov@cdek.ru",
+    "note": "От остановки ул. Жукова 100м в сторону ул. Добрынина в торце здания дома 52 по Чкалова",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": true,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/fe202780-9a88-4dce-aceb-1747d045443c"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/ea5fa4ac-3e65-4d4a-ada7-ff775ca0058d"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/9db5d1b2-2e77-4225-9df2-37ca699db2ed"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/7da376a7-f3a2-4d8e-9848-686654cae95f"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/a5d59acd-0473-4f1a-ac87-5652403856ef"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/970c0d61-619e-469c-93d5-ede3d02c0aa4"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-14",
+        "date_end": "2025-02-14",
+        "time_start": "10:15",
+        "time_end": "20:00",
+        "is_working": true
+      },
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 50,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-14",
+        "time": "10:15/20:00",
+        "is_working": true
+      },
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150043",
+      "longitude": 39.827114,
+      "latitude": 57.638153,
+      "address": "ул. Чкалова, 52",
+      "address_full": "150043, Россия, Ярославская область, Ярославль, ул. Чкалова, 52",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS88",
+    "name": "YARS88, Ярославль, пр-т Машиностроителей",
+    "uuid": "395fd217-3e16-4fac-8141-6c92479c6d52",
+    "address_comment": "В 190 м от остановки общественного транспорта (ул. Сахарова), напротив ТЦ Глобус, Леруа Мерлен.",
+    "nearest_station": "Ул. Сахарова",
+    "work_time": "Пн-Вс 10:00-20:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "email": "i.sotskova@cdek.ru",
+    "note": "В 190 м от остановки общественного транспорта (ул. Сахарова), напротив ТЦ Глобус, Леруа Мерлен.",
+    "type": "POSTAMAT",
+    "owner_code": "CDEK",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/361f1343-9615-4df1-975b-e6c5a053b368"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/59f5880e-8459-4964-bd9e-ca08cd9e3da6"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/20:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-12",
+        "date_end": "2025-02-12",
+        "time_start": "13:00",
+        "time_end": "20:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 64,
+        "height": 36,
+        "depth": 40
+      }
+    ],
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-12",
+        "time": "13:00/20:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150067",
+      "longitude": 39.961025,
+      "latitude": 57.639732,
+      "address": "пр-т Машиностроителей, 52",
+      "address_full": "150067, Россия, Ярославская область, Ярославль, пр-т Машиностроителей, 52",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS89",
+    "name": "YARS89, Ярославль, пр-т Ленинградский",
+    "uuid": "dd606ae3-2462-41ab-8955-14d91fcdd4a4",
+    "address_comment": "Вход под аркой - магазин «Цветы»",
+    "nearest_station": "Ул. Урицкого",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "email": "i.sotskova@cdek.ru",
+    "note": "Вход под аркой - магазин «Цветы»",
+    "type": "POSTAMAT",
+    "owner_code": "CDEK",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/95ab56ff-a096-453d-8682-707881853a8d"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/c4c22c08-725e-4a66-ae32-1ee575da9c1b"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 30,
+    "dimensions": [
+      {
+        "width": 64,
+        "height": 36,
+        "depth": 40
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150052",
+      "longitude": 39.794792,
+      "latitude": 57.678562,
+      "address": "пр-т Ленинградский, 47",
+      "address_full": "150052, Россия, Ярославская область, Ярославль, пр-т Ленинградский, 47",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS90",
+    "name": "YARS90, Ярославль, ул. Балтийская",
+    "uuid": "7aacec4f-dfdc-46e8-b6b1-f2619a673669",
+    "address_comment": "Войти в супермаркет Дикси через центральный вход, на 1 этаже около входа расположен постамат.",
+    "nearest_station": "Улица Судостроителей",
+    "work_time": "Пн-Вс 08:00-23:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "email": "support@pochtomat.ru",
+    "note": "Войти в супермаркет Дикси через центральный вход, на 1 этаже около входа расположен постамат.",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/cae7edcd-2fa5-44a2-b8d6-d6c8b55b8aa3"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/ffb42c41-f501-47c2-a84f-47de9734cbef"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 2,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 3,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 4,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 5,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 6,
+        "time": "08:00/23:00"
+      },
+      {
+        "day": 7,
+        "time": "08:00/23:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 15,
+    "dimensions": [
+      {
+        "width": 35,
+        "height": 45,
+        "depth": 38
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150006",
+      "longitude": 39.924904,
+      "latitude": 57.573345,
+      "address": "ул. Балтийская, 16",
+      "address_full": "150006, Россия, Ярославская область, Ярославль, ул. Балтийская, 16",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS91",
+    "name": "YARS91, Ярославль, пр-зд Моторостроителей",
+    "uuid": "d22b5287-8f18-4580-9841-84900db9124c",
+    "address_comment": "Вход с улицы Строителей\nДобраться можно на Автобусе 23, 57, 58, 62 ,97с, Маршрутке 97. Пройти по улице Бабича до улицы Строителей, далее налево по улице Строителей.",
+    "nearest_station": "Строителей",
+    "work_time": "Пн-Пт 10:00-20:00, Сб-Вс 10:00-18:00",
+    "phones": [
+      {
+        "number": "+79956340670"
+      }
+    ],
+    "email": "p.chelin@cdek.ru",
+    "note": "Вход с улицы Строителей\nДобраться можно на Автобусе 23, 57, 58, 62 ,97с, Маршрутке 97. Пройти по улице Бабича до улицы Строителей, далее налево по улице Строителей.",
+    "type": "PVZ",
+    "owner_code": "CDEK",
+    "take_only": false,
+    "is_handout": true,
+    "is_reception": true,
+    "is_dressing_room": true,
+    "is_ltl": false,
+    "have_cashless": true,
+    "have_cash": true,
+    "have_fast_payment_system": false,
+    "allowed_cod": true,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/5e86a8a1-aed6-4c3e-be2b-d86dff08cbc0"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/35d835db-fa1f-46f2-b692-9b4c50e35e2c"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/fa491157-e914-43f1-a2c8-aee455902d35"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/70fe7431-ff11-4e49-bd38-97d6a8911f3f"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 2,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 3,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 4,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 5,
+        "time": "10:00/20:00"
+      },
+      {
+        "day": 6,
+        "time": "10:00/18:00"
+      },
+      {
+        "day": 7,
+        "time": "10:00/18:00"
+      }
+    ],
+    "work_time_exception_list": [
+      {
+        "date_start": "2025-02-23",
+        "date_end": "2025-02-23",
+        "time_start": "10:00",
+        "time_end": "18:00",
+        "is_working": true
+      }
+    ],
+    "weight_min": 0,
+    "weight_max": 35,
+    "work_time_exceptions": [
+      {
+        "date": "2025-02-23",
+        "time": "10:00/18:00",
+        "is_working": true
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150064",
+      "longitude": 39.766838,
+      "latitude": 57.704136,
+      "address": "пр-зд Моторостроителей, 2",
+      "address_full": "150064, Россия, Ярославская область, Ярославль, пр-зд Моторостроителей, 2",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  },
+  {
+    "code": "YARS92",
+    "name": "YARS92, Ярославль, ул. Панина",
+    "uuid": "6eeedf47-0851-4a7e-95e1-c672e0ec9c68",
+    "address_comment": "Войти в Пекарню \"Корица\" через центральный вход, на 1 этаже расположен постамат.\n",
+    "nearest_station": "Школа №90",
+    "work_time": "Пн-Вс 08:00-21:00",
+    "phones": [
+      {
+        "number": "+74950090405"
+      }
+    ],
+    "email": "support@pochtomat.ru",
+    "note": "Войти в Пекарню \"Корица\" через центральный вход, на 1 этаже расположен постамат.\n",
+    "type": "POSTAMAT",
+    "owner_code": "Халва",
+    "take_only": true,
+    "is_handout": true,
+    "is_reception": false,
+    "is_dressing_room": false,
+    "is_ltl": false,
+    "have_cashless": false,
+    "have_cash": false,
+    "have_fast_payment_system": false,
+    "allowed_cod": false,
+    "office_image_list": [
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/ecc4548f-d159-4025-ac5b-369a3df83363"
+      },
+      {
+        "url": "https://gateway.cdek.ru/file-storage/web/object/office-photo/d3417ad4-f209-4925-940a-d6b5bec52999"
+      }
+    ],
+    "work_time_list": [
+      {
+        "day": 1,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 2,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 3,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 4,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 5,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 6,
+        "time": "08:00/21:00"
+      },
+      {
+        "day": 7,
+        "time": "08:00/21:00"
+      }
+    ],
+    "work_time_exception_list": [],
+    "weight_min": 0,
+    "weight_max": 15,
+    "dimensions": [
+      {
+        "width": 35,
+        "height": 45,
+        "depth": 38
+      }
+    ],
+    "location": {
+      "country_code": "RU",
+      "region_code": 35,
+      "region": "Ярославская область",
+      "city_code": 146,
+      "city": "Ярославль",
+      "fias_guid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+      "postal_code": "150064",
+      "longitude": 39.77989,
+      "latitude": 57.69452,
+      "address": "ул. Панина, 12В",
+      "address_full": "150064, Россия, Ярославская область, Ярославль, ул. Панина, 12В",
+      "city_uuid": "d12accda-7d2c-4e07-9e13-ca8a6da6e308"
+    },
+    "fulfillment": false
+  }
+]

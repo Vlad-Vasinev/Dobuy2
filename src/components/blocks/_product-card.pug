@@ -1,0 +1,45 @@
+
+
+.prod-card(data-item-id=((cardContent && cardContent.id) || "0000"))
+  if (hideBadges == undefined ? true : !hideBadges)
+    .prod-card__badges
+      .badge.badge_new 
+        p.h9 New
+      .badge.badge_hit HIT
+      .badge.badge_hit.badge_hit_sale
+        p.h9 price reduced
+      
+  a.prod-card__gallery(href="/product")
+    .prod-card-slider
+      .prod-card-slider__wrapper
+        each card, key in ((cardContent && cardContent.images) || (prodCardDef && prodCardDef.images))
+          - var src = ((cardContent ? cardContent.prevs[key] : prodCardDef.prevs[key] ))
+          .prod-card-slider__slide
+            img(data-src=card lazy-slide loading="lazy" src=(card.src || "img/pv.webp") alt="")
+      .prod-card-pag
+  a.prod-card__title(href="/product")
+    span Smartphone Samsung Galaxy S23 Ultra 12/256 GB, black phantom
+  
+  .prod-price
+    if (saleType == undefined)
+      .badge-duty-sale(info-popup="duty-sale-info")
+        .badge-duty-sale__icon
+          img(src="img/duty-icon.png" alt="")
+        span -11 344 ₽ 
+      span.prod-price__duty-sale-span
+        |discount on
+        <br/>
+        |duty
+      span.prod-price__val 119 999 ₽
+      .prod-price__discount
+        span.prod-price__old 135 000 ₽ 
+    else if (saleType && saleType == 'normal')
+      .badge.badge_sale -15%
+  .prod-card__btns
+    button.button.button_buy
+      +svgIcon('cart-add')
+      span buy
+    if isFav
+      +buttonHeart._active
+    else
+      +buttonHeart

@@ -1,0 +1,39 @@
+.color-param
+  --c: #fff
+  +wah(aCalc(30))
+  border: 1px solid $WhiteGray
+  padding: 4px
+  border-radius: aCalc(15)
+  transition: border 0.1s, width 0.3s
+  +mob
+    border-radius: 15px
+    +wah(30px)
+  &::before
+    display: block
+    content: ''
+    border-radius: inherit
+    background-color: var(--c)
+    +wah(100%)
+  &:hover
+    border-color: $VioletWhite1
+  &._active, &:active, &_active
+    border-color: $Violet
+  &_checked
+    border-color: $Violet
+    width: aCalc(54)
+    +mob
+      width: 54px
+  &_disabled
+    opacity: 0.5
+    border-color: $WhiteGray
+
+
+
+.chbox
+  input:active + .color-param 
+    @extend .color-param_active
+  input:checked + .color-param 
+    @extend .color-param_checked
+  input:disabled + .color-param
+    @extend .color-param_disabled
+    

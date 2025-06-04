@@ -1,0 +1,53 @@
+.fill-button
+  @extend .button
+  // background-color: #BE48B4
+  position: relative
+  cursor: pointer
+  overflow: hidden
+  transform: scale(1)
+  transition: background 0s 0s ease, transform .5s ease-out, color .3s
+  color: #fff
+  height: max-content
+  width: max-content
+  &:before
+    left: 50%
+    top: 50%
+    right: auto
+    bottom: auto
+
+    background: #d283ca
+    width: 150%
+    aspect-ratio: 1
+    // height: 120%
+    padding-top: 100%
+    transform: scale(0) translate(-50%,-50%)
+    transform-origin: var(--x) var(--y)
+    content: ""
+    position: absolute
+    border-radius: 50%
+    pointer-events: none
+    transition-property: transform,background-color,border-color,box-shadow,color
+    transition-duration: .6s,.8s,.8s,.8s,.4s
+    z-index: -1
+  &._horizontal:before
+    width: 150%
+  &._vertical:before
+    width: auto
+    height: 150%
+  &:active
+    transform: scale(.97)
+    transition: transform .12s ease-out
+  &.hovered
+    transition: background-color 0.1s 0.2s, color 0.4s
+    &:before
+      +dsk
+        transform: scale(1) translate(-50%, -50%)
+        z-index: -1
+  &._white
+    color: #202020
+    background: #fff
+    &:before
+      // background-color: #d283ca
+    +hover
+      +dsk
+        color: #fff

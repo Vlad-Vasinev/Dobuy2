@@ -1,0 +1,28 @@
+
+.pagination 
+  
+  &__list
+    display: flex
+    max-width: max-content
+    margin: 0 auto
+    > *
+      width: aCalc(36)
+      height: aCalc(34)
+      display: grid 
+      justify-content: center
+      align-items: center
+      border-radius: var(--aCalc12)
+      +mob 
+        width: 36px
+        height: 34px
+        border-radius: 12px
+    > * + *
+      margin-left: var(--aCalc4)
+      +mob 
+        margin-left: 4px
+  a.pagination_active 
+    border: 1px solid $VioletWhite1
+  > .button
+    margin: 0 auto var(--aCalc24)
+    +mob 
+      margin: 0 auto 24px

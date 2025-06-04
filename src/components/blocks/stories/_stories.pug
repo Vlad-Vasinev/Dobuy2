@@ -1,0 +1,92 @@
+mixin stories-folder
+  .stories-folder
+    .stories-folder__title
+      img
+      span
+    .stories-folder__pag
+    .stories-folder__wrapper
+      block
+    .stories-folder__nav
+      .stories-folder__prev
+      .stories-folder__next
+    .stories-folder__desc
+
+mixin stories-single
+  .stories-folder.stories-folder_single
+    .stories-folder__title
+      span
+    .stories-folder__wrapper
+      block
+    .stories-folder__desc
+
+
+mixin stories-item-img
+  .stories-item.stories-item_image
+    img(loading="lazy" lazy-slide)
+    .stories-item__desc
+mixin stories-item-video
+  .stories-item.stories-item_video
+    video(muted playsinline webkit-playsinline preload='none' lazy-slide)
+    .stories-item__desc
+    
+
+.stories(data-content="api/stories.json")
+  .stories__inner
+    - 
+      var storiesSrc = [
+        'Dyson Dyson Dyson Dyson',
+        'Reviews',
+        'Beats',
+        'Delivery',
+        'Vacuum cleaner',
+        'Apple',
+        'PlayStation 5',
+        'Samsung'
+      ]
+    each text, i in storiesSrc
+      .stories-pv
+        .stories-pv__img
+          +l-img('img/stories/' + i + '.png')
+        .stories-pv__title
+          span=text
+
+template.tpl--stories--fs
+  .stories-fs
+    .stories-fs__bg
+    .stories-slider
+      .stories-slider__wrapper
+      .stories-nav
+        .stories-nav__prev
+          .stories-nav__icon
+            svg(xmlns='http://www.w3.org/2000/svg' width='20' height='21' fill='none' viewBox='0 0 20 21')
+              path(stroke='currentcolor' stroke-linecap='round' stroke-width='2' d='m14.17 2.76-8.34 7.5 8.34 7.5')
+        .stories-nav__pag  
+        .stories-nav__next
+          .stories-nav__icon
+            svg(xmlns='http://www.w3.org/2000/svg' width='20' height='21' fill='none' viewBox='0 0 20 21')
+              path(stroke='currentcolor' stroke-linecap='round' stroke-width='2' d='m14.17 2.76-8.34 7.5 8.34 7.5')
+    .stories-fs__unmute
+      .button.button_small.button_white
+        span Unmute
+        +svgIcon('unmute')
+    button.stories-fs__close(type="button")
+      svg(xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32')
+        path(fill='currentcolor' d='m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z')
+        path(fill='currentcolor' d='m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z')
+
+
+template.tpl--stories--folder
+  +stories-folder
+
+template.tpl--stories--single
+  +stories-single
+
+template.tpl--stories--fs--item
+  .stories-slider__item
+
+template.tpl--stories--item--image
+  +stories-item-img
+
+template.tpl--stories--item--video
+  +stories-item-video
+

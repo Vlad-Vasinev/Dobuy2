@@ -1,0 +1,50 @@
+- var pageTitle = "One of the Blog pages"
+- var breadcrumbText = ["Main", "One of the Blog pages"]
+- var amount = 4
+.page__block
+    include ../blocks/_breadcrumbs
+    include ../blocks/_page-title
+    .article 
+        .article__info
+            p.h6 12.02.24
+            div(data-share-popup)
+              .textbtn(data-share-popup-trg)
+                +svgIcon('share')
+                span._dsk Share
+            
+        .article__img 
+            img(lazy src="img/pv.webp" data-src="/img/blog-specific-page/blog-specific-page-img.png" alt="")
+        p.h6 
+            |The popularity of Steam Deck, released in 2022, has led to the emergence of a
+            |new category of portable gaming PCs. They are at the intersection of PC gaming and
+            |Nintendo consoles, offering players a unique experience. In this article, we will analyze the
+            |TOP 3 best devices from this category and answer the question of which console will win
+            |in the confrontation between Steam Deck vs Rog Ally vs Lenovo Legion Go.
+        h2 Design
+        p.h6 
+            |The popularity of Steam Deck, released in 2022, has led to the emergence of a
+            |new category of portable gaming PCs. They are at the intersection of PC gaming and
+            |Nintendo consoles, offering players a unique experience. In this article, we will analyze the
+            |TOP 3 best devices from this category and answer the question of which console will win
+            |in the confrontation between Steam Deck vs Rog Ally vs Lenovo Legion Go.
+        p.h6 Lenovo Legion Go has a unique feature - a removable gamepad, like Switch. Other models have a solid and non-separable body.
+        h2 Screen
+        p.h6 
+            |The popularity of Steam Deck, released in 2022, has led to the emergence of a
+            |new category of portable gaming PCs. They are at the intersection of PC gaming and
+            |Nintendo consoles, offering players a unique experience. In this article, we will analyze the
+            |TOP 3 best devices from this category and answer the question of which console will win
+            |in the confrontation between Steam Deck vs Rog Ally vs Lenovo Legion Go.
+        p.h6 Lenovo Legion Go has a unique feature - a removable gamepad, like Switch. Other models have a solid and non-separable body.
+        h2 Performance
+        p.h6 
+            |«На бумаге» Rog Ally и Lenovo Legion Go превосходят Steam Deck. Они вышли позже и предлагают более мощное железо. Процессоры:
+        p.h6 They also have faster RAM. The Valve console runs on 16GB LPDDR5-5500, Lenovo has 16GB 7500Mhz LPDDR5X, and ASUS has 16GB LPDDR5-6400.
+        p.h6 However, in reality, it is not so obvious. Steam Deck still shows itself well thanks to better optimization. Developers adapt games to the console, and it works better at 5 W. Other consoles are more powerful, but do not have the same smooth optimization.
+        p.h6 However, in reality, it is not so obvious. Steam Deck still performs well thanks to better optimization. Developers adapt games to the console, and it works better at 5W. Other consoles are more powerful, but do not have the same smooth optimization.
+        h2 Storage
+        p.h6 
+            |By this criterion, all consoles are equal. Manufacturers release models only with solid-state
+            |drives with a capacity of 256 and 512 GB. Lenovo Legion Go also has an improved version with a 1 TB SSD. Considering the narrow use of consoles, 512 GB is more than enough for comfortable playing 10-20 projects.
+        h2 Buy Steam Deck
+        include ../blocks/_prod-gird-slider-mob

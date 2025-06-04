@@ -1,0 +1,240 @@
+// ---
+// Глобальные стили, которые влияют на весь документ
+// ---
+
+html
+  box-sizing: border-box
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+  outline: none
+
+html
+  height: 100%
+  height: -webkit-fill-available
+
+:root
+  --swiper-theme-color: unset
+  --sale-active: none
+  color: #000
+
+
+body,
+html
+  background-color: #fff
+  font-family: $baseFont
+
+  font-size: 16px
+  min-width: 320px
+  max-width: 100%
+
+  margin: 0
+
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+body
+  min-height: 100vh
+  min-height: 100dvh
+  min-height: -webkit-fill-available
+
+// МАССИВ z-index-ов 
+// использование: z-index: map-get($zindex, var)
+$zindex: ( "modal": 200, "overlay": 190, "header": 110, "header-top": 100, "dropdown": 90, "footer": 80 )
+a[href] object
+  cursor: pointer
+  svg
+    cursor: pointer
+
+.page
+  // min-height: calc(100vh - var(--header-height))
+  margin-top: aCalc(69)
+  width: 100%
+  font-family: $baseFont
+  -webkit-text-size-adjust: 100%
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  transition: transform 0.4s ease-in-out
+  position: relative
+  z-index: 0
+  +r($sm)
+    margin-top: unset
+
+.page__body
+  margin: 0
+  min-width: 320px
+  min-height: 100%
+  font-size: 16px
+
+img
+  height: auto
+  max-width: 100%
+
+  object-fit: cover
+  display: block
+video
+  display: block
+
+svg
+  display: block
+p svg, span svg
+  display: inline-block
+  vertical-align: sub
+  // [fill] 
+  //   transition: fill 0.3s
+.sprite-icon
+  fill: currentcolor
+  +wah(24px)
+  +dsk
+    +wah(var(--aCalc24))
+
+a
+  text-decoration: none
+a
+  &:hover
+    color: $Violet
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    margin: 0
+    display: block
+.is-hidden, .display-none
+  display: none !important
+
+.btn-reset
+  border: none
+  padding: 0
+  background-color: transparent
+  cursor: pointer
+
+.list-reset
+  list-style: none
+  margin: 0
+  padding: 0
+
+button
+  padding: 0
+  border: none
+  font: inherit
+  color: inherit
+  background-color: transparent
+  cursor: pointer
+
+input
+  -webkit-appearance: none
+  appearance: none
+  border: none
+  border-radius: 0
+  background-color: #fff
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration
+    display: none
+
+textarea
+  border: none
+  overflow: auto
+  outline: none
+
+  -webkit-box-shadow: none
+  -moz-box-shadow: none
+  box-shadow: none
+
+  resize: none
+
+.visually-hidden
+  position: absolute
+  overflow: hidden
+  margin: -1px
+  border: 0
+  padding: 0
+  width: 1px
+  height: 1px
+  clip: rect(0 0 0 0)
+
+.loading-icon-bg
+
+  // background-image: url(../img/loadingIcon.gif)
+  background-repeat: no-repeat
+  background-size: var(--aCalc24)
+  background-position: center
+  +mob
+    background-size: 32px
+
+.container
+  margin: 0 auto
+  padding: 0 var(--container-offset)
+  max-width: var(--container-width)
+
+// focus
+// .js-focus-visible :focus:not(.focus-visible)
+//   outline: none
+
+._mob, [mob-v]
+  +dsk
+    display: none !important
+._dsk, [dsk-v]
+  +mob
+    display: none !important
+
+br.mob-br, br[mob-br]
+  +dsk
+    display: none
+
+br.dsk-br, br[dsk-br]
+  +mob
+    display: none
+
+[js-copy]
+  cursor: pointer
+
+.dis-scroll
+  position: fixed
+  left: 0
+  top: 0
+  overflow: hidden
+  width: 100%
+  height: 100%
+  overscroll-behavior: none
+
+  .page--ios &
+    position: relative
+
+#captcha ~ div[style*="transition: visibility 0s"] > div:not([style*="width: 100%;"])
+  position: fixed !important
+  +mob
+    top: 0 !important
+  +dsk
+    top: 25vh !important
+
+.appearance-animation
+  animation: 0.3s ease-out 1 forwards appear
+  opacity: 0
+  @keyframes appear
+    0%
+      opacity: 0.0001
+
+    100%
+      opacity: 0.9999
+
+.title-head 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: aCalc(24)
+  +r($sm)
+    margin-bottom: 16px
+    padding: 0 15px
+  .page-block-head
+    margin-bottom: 0
+    +r($sm)
+      width: 220px
+  .btn-all
+    margin-right: 0

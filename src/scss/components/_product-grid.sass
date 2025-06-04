@@ -1,0 +1,184 @@
+
+$slides: var(--slidesVar)
+$slides-mob: 2
+.product-grid
+  // сетка без интерактива
+  display: grid
+  grid-template-columns: repeat($slides, minmax(0, 1fr))
+  grid-template-rows: max-content
+  grid-auto-rows: max-content
+  gap: var(--aCalc24)
+  +mob
+    $slides: 2
+    gap: 24px
+    grid-template-columns: repeat($slides, minmax(0, 1fr))
+  .product-grid_slider
+    &__head
+      display: flex
+      justify-content: space-between
+      margin-bottom: var(--aCalc24)
+      align-items: center
+      // +r($sm)
+      //   margin-bottom: 16px
+      .page-block-head
+        margin-bottom: 0
+        +r($sm)
+          margin-bottom: 16px
+          padding: 0 15px
+  // &.product-grid_slider.product-grid_slider-mob 
+  //   .product-grid__wrapper
+  //     grid-template-columns: repeat(3, minmax(0, 1fr))
+
+.product-grid
+  --slidesVar: 5
+  &_slider
+    @extend .swiper
+    display: block
+    +dsk
+      overflow: hidden
+    +mob
+      overflow: visible
+    
+  &_slider &__wrapper
+    @extend .swiper-wrapper
+  &_slider:not(.swiper-initialized) &__wrapper
+    display: grid
+    gap: var(--aCalc40) var(--aCalc20)
+    
+    grid-template-columns: repeat($slides, minmax(0, 1fr))
+    +mob
+      gap: 15px
+      // grid-auto-columns: 48vw
+      grid-auto-columns: 52.412%
+      grid-template-columns: unset
+      grid-auto-flow: column
+    
+  &_slider .prod-card
+    @extend .swiper-slide
+    display: grid
+    min-width: 0
+    height: auto
+    overflow: hidden
+    // +dsk
+    //   max-height: aCalc(380)
+    +mob
+      max-width: 100vw
+  &_slider:not(.swiper-initialized) .prod-card
+    margin: 0
+    // &:nth-child(n + #{5 + 1} )
+    //   display: none
+    // &:nth-child(n + #{2 + 1} )
+    //   +mob
+    //     display: none
+  .slider-navigation
+    // position: absolute
+    // top: aCalc(-24)
+    // right: 0
+    //margin-bottom: aCalc(24)
+    .slider-navigation__prev, .slider-navigation__next
+      display: block !important
+  
+.article //article
+  .product-grid
+    &_slider:not(.swiper-initialized) .prod-card
+      margin: 0
+      &:nth-child(n + #{5 + 1} )
+        display: flex
+        flex-direction: column
+        .prod-price 
+          margin-top: auto
+      &:nth-child(n + #{2 + 1} )
+        +mob
+          display: none
+
+//to-do css vars
+
+.super-slider
+  .product-grid_slider:not(.swiper-initialized) .product-grid__wrapper
+    display: grid
+    gap: var(--aCalc8)
+    grid-auto-columns: calc((100% - var(--aCalc24)) / 3.5)
+    grid-auto-flow: column
+    grid-template-columns: unset
+    $slides: 3.5
+    +mob 
+      grid-auto-columns: 65.910%
+      gap: 8px
+  .product-grid_slider:not(.swiper-initialized) .prod-card
+    &:nth-child(n + #{4 + 1} )
+      display: none
+    &:nth-child(n + #{2 + 1} )
+      +mob
+        display: none
+    
+.product-grid
+  &_slider-mob &__wrapper
+    +dsk
+      display: grid
+      grid-template-columns: repeat($slides, minmax(0, 1fr))
+      grid-template-rows: max-content
+      grid-auto-rows: max-content
+      gap: var(--aCalc24)
+      overflow: visible
+      +mob
+        $slides: 2
+        gap: 24px
+        grid-template-columns: repeat($slides, minmax(0, 1fr))
+  &_slider-mob:not(.swiper-initialized) &__wrapper
+    +mob
+      grid-auto-columns: 58.667vw
+      
+  
+
+
+// fix badge blinking 
+.product-grid
+  .badge
+    +mob
+      -webkit-transform: translate3d(0, 0, 0)
+
+.product-grid
+  &_slider &__wrapper &__slide
+    max-height: aCalc(380)
+    height: 100%
+    +mob
+      max-height: 180px
+.product-grid
+  &_slider-mob &__wrapper &__slide
+    +mob
+      max-height: 180px
+      height: 100%
+
+.watch-all-card
+  @extend .swiper-slide
+  &__inner
+    background-color: $WhiteGray
+    border-radius: 12px
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    display: flex 
+    width: 100%
+    height: 100%
+    span
+      margin-top: 8px
+    svg
+      width: 36px
+      height: 36px
+
+//- Нарушение BEM, но он используется как slide-class для swiper
+.prod-card.prod-card_static.watch-all-card
+  display: none
+  padding-right: 15px
+  +mob
+    display: block
+    width: 100%
+    height: auto
+    
+.slider-navigation__prev.swiper-button-disabled
+  svg 
+    opacity: 0.4
+
+.slider-navigation__next.swiper-button-disabled
+  svg 
+    opacity: 0.4

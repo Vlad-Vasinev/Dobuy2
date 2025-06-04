@@ -1,0 +1,154 @@
+
+section.page__block.page__block_full-width.page__block_header-pull
+  include ../blocks/_head-banner
+section.page__block.page__block_full-width-mob.page__block_margin-none
+  include ../blocks/stories/_stories
+section.page__block.page__block_full-width-mob
+  - var amount = 12
+  include ../blocks/_prod-gird-slider-head
+
+section.page__block.page__block_full-width-mob
+  - var amount = 8
+  .title-head
+    <h2 class="page-block-head">Apple is the pinnacle of perfection</h2>
+    <a class="btn-all" href="#"><span>All</span>
+      <svg class="sprite-icon">
+        <use xlink:href="img/spriteMono.svg#arrow-next"></use>
+      </svg>
+    </a>
+  include ../blocks/_mixed-grid-left
+
+section.page__block.page__block_full-width-mob
+  .selection-slider(data-content="api/unpacking.json")
+    .selection-slider__head
+      h2.page-block-head A selection of images from Ekaterina Galas
+      a.btn-all(href="#")
+        span All
+        +svgIcon('arrow-next')
+      .slider-navigation
+        .slider-navigation__prev
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12L4.25736 12M10.7574 20L4.87868 14.1213C3.70711 12.9497 3.70711 11.0503 4.87868 9.87868L10.7574 4" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        .slider-navigation__next
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12L19.7426 12M13.2426 4L19.1213 9.87868C20.2929 11.0503 20.2929 12.9497 19.1213 14.1213L13.2426 20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+    .selection-slider__wrapper
+      +clone(11) 
+        a.selection-item(href="#")
+          .selection-item__author 
+            .selection-item__styler 
+              img(src="img/selection/kate.jpg" alt="")
+            .selection-item__author-info 
+              p Stylist DoBuy
+              p @malina-elena
+          .product-grid_slider-dsk.product-grid_slider
+            .prod-card(data-item-id=((cardContent && cardContent.id) || "0000"))
+              .prod-price
+              .rod-side__add-to-cart
+              .prod-card__gallery(href="/product")
+                .prod-card-slider
+                  .prod-card-slider__wrapper
+                    each card, key in ((cardContent && cardContent.images) || (prodCardDef && prodCardDef.images))
+                      - var src = ((cardContent ? cardContent.prevs[key] : prodCardDef.prevs[key] ))
+                      .prod-card-slider__slide
+                        img(data-src="img/selection/selection-img.jpg" lazy-slide loading="lazy" src=("img/selection/selection-img.jpg" || "img/pv.webp") alt="")
+                  .prod-card-pag
+              .prod-card__title(href="/product")
+                span.selection-item__title Smartphone Samsung Galaxy S23 Ultra 12/256 GB, black phantom
+                .selection-item__subtitle Sport
+
+section.page__block
+  .banner-grid._different
+    .banner 
+      .banner__img
+        img(lazy src="img/pv.webp" data-src="img/banner/banner-2.jpg" alt="")
+      .banner__btn
+        a.button.button_small.button_white(href="#" target="_blank")
+          span Text
+          ._icon
+            img(src="img/banner/arrow-banner.svg")
+    .banner 
+      .banner__img 
+        img(lazy src="img/pv.webp" data-src="img/banner/banner-3.jpg" alt="")
+        
+      .banner__btn
+        a.button.button_small.button_white(href="#" target="_blank")
+          span More details
+          ._icon 
+            img(src="img/banner/arrow-banner.svg")
+
+section.page__block.page__block_full-width-mob
+  - var amount = 12
+  include ../blocks/_prod-gird-slider-head
+
+section.page__block
+  .block-mixed 
+    .block-mixed__wrapper 
+      .block-mixed__column
+        .block-mixed__column-item 
+          img(src="img/block-mixed-2.jpg" alt="")
+          .h2 Original Nike Products
+        .block-mixed__column-item 
+          +l-video
+            <source data-src="img/banner-video/telegram.mp4" type="video/mp4">
+            <source data-src="img/banner-video/telegram.webm" type="video/webm">
+          .h2 Perfumery and cosmetics
+      .block-mixed__ordinary
+        img(src="img/block-mixed-1.jpg")
+        .h2 Original Kiehl's Cosmetics
+
+section.page__block.page__block_full-width-mob
+  .title-head
+    <h2 class="page-block-head">PlayStation 5 Pro – the most powerful console</h2>
+    <a class="btn-all" href="#"><span>All</span>
+      <svg class="sprite-icon">
+        <use xlink:href="img/spriteMono.svg#arrow-next"></use>
+      </svg>
+    </a>
+  - var amount = 8
+  include ../blocks/_mixed-grid-left
+
+section.page__block.page__block_full-width-mob
+  - var amount = 12
+  include ../blocks/_prod-gird-slider-head
+
+section.page__block
+  .banner-grid._different
+    .banner 
+      .banner__title 
+        .h2(style='color: #ffffff') Secure payment
+      .banner__img 
+        img(lazy src="img/pv.webp" data-src="img/banner/banner-3.jpg" alt="")
+      .banner__btn
+        a.button.button_small.button_white(href="#" target="_blank")
+          span Text
+          ._icon
+            img(src="img/banner/arrow-banner.svg")
+    .banner 
+      .banner__title
+        .h2(style='color: #ffffff')
+          |Free delivery by courier to any locality in Russia: 8-12 days
+      .banner__img 
+        img(lazy src="img/pv.webp" data-src="img/banner/banner-4.jpg" alt="")
+        
+      .banner__btn
+        a.button.button_small.button_white(href="#" target="_blank")
+          span More details
+          ._icon 
+            img(src="img/banner/arrow-banner.svg")
+
+section.page__block
+  include ../blocks/_items-reviews
+
+section.page__block.page__block_full-width-mob
+  .title-head
+    <h2 class="page-block-head">Dyson – advanced care technologies</h2>
+    <a class="btn-all" href="#"><span>All</span>
+      <svg class="sprite-icon">
+        <use xlink:href="img/spriteMono.svg#arrow-next"></use>
+      </svg>
+    </a>
+  - var amount = 8
+  include ../blocks/_mixed-grid-left

@@ -1,0 +1,130 @@
+
+  
+
+.chbox
+  cursor: pointer
+  input
+    opacity: 0
+    width: 0
+    height: 0
+    display: block
+
+.param
+  @extend .h5
+  text-transform: uppercase 
+  padding: var(--aCalc10) var(--aCalc8)
+  border: 1px solid #DCDAE1
+  border-radius: var(--aCalc8)
+  transition: all 0.2s, outline-width 0s
+  width: max-content
+  display: block
+  +mob
+    border-radius: 8px
+    padding: 8px
+  &:hover
+    border-color: #878787
+    
+  &_disabled
+    pointer-events: none
+    color: #DCDAE1
+    border-color: #DCDAE1
+  &_color
+    padding: var(--aCalc9)
+    +mob
+      padding: 8px
+    > div, > span 
+      +wah(var(--aCalc24))
+      border-radius: aCalc(5)
+      background-color: var(--c)
+      +mob
+        +wah(19px)
+        border-radius: 5px
+  &_checked
+    border-width: 1px
+    border-color: $Violet
+    &:hover
+      border-color: $Violet
+      
+a.param
+  &:focused, &:focus-visible
+    border-color: #DCDAE1
+  &:hover
+    color: $baseTextColor
+  
+
+.chbox
+  input:focus-visible + .param, input.focus-visible + .param
+    outline-color: #878787
+  input:checked + .param
+    border-width: 1px
+    border-color: $Violet
+  input:not(:disabled) + * 
+    cursor: pointer
+  input:disabled + .param
+    color: #DCDAE1
+    border-color: #DCDAE1
+    &_color
+      > div, > span 
+        opacity: 0.4
+.chbox
+  &_inline
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    > span
+      margin-left: var(--aCalc8)
+      +mob
+        margin-left: 8px
+    input:disabled ~ *
+      opacity: 0.5
+      
+
+.chbox
+  
+  &__box
+    flex: 0 0 auto
+    transition: all .1s
+    border-radius: var(--aCalc4)
+    border: 1px solid $VioletWhite1
+    outline: none
+    width: aCalc(20)
+    height: aCalc(20)
+    background-color: $White
+    +mob 
+      border-radius: 4px
+      width: 20px
+      height: 20px
+  &__box_active, 
+  #{&} input:checked ~ &__box, 
+  #{&} input:checked ~ * &__box,
+  &_df-chkd input[checked] ~ &__box
+    background-color: $Violet
+    outline-color: transparent
+  
+  &_radio &__box
+    border-radius: 50%
+    border: none 
+    position: relative
+    outline-color: transparent
+    outline: none
+    &::before 
+      position: absolute
+      content: ""
+      border: 1px solid $VioletWhite1
+      width: 100% 
+      height: 100%
+      left: 0
+      top: 0
+      border-radius: 50%
+      transition: border .1s
+  &_radio &__box_active, &_radio > input:checked ~ &__box, &_radio > input:checked ~ * &__box
+    background-color: transparent
+    &::before
+      background-color: transparent
+      border-width: var(--aCalc8)
+      border-color: $Violet
+      outline-color: transparent
+      border-color: $Violet
+      border-width: var(--aCalc8)
+      +mob 
+        border-width: 6px

@@ -1,0 +1,24 @@
+
+.super-slider 
+  .super-slider__bg 
+    img(src="img/super-slider/super-img.jpg" alt="")
+  .super-slider__info
+    .h1 Super price of the week
+    img(src="img/super-slider/percentage-img.png" alt="")
+    p
+      |Every week we publish products with a really low price,
+      |stay tuned, look for your benefit!
+  .super-slider__navigation
+    .slider-navigation
+      .slider-navigation__prev
+        +svgIcon('arrow-left')
+      .slider-navigation__next
+        +svgIcon('arrow-right')
+    
+  .super-slider__content
+    .product-grid.product-grid_slider
+      .product-grid__wrapper
+        +clone(5)
+          - var sal = true
+          include ./_product-card
+          

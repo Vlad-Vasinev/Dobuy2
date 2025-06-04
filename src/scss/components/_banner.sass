@@ -1,0 +1,77 @@
+
+.banner 
+  position: relative
+  width: auto
+  height: aCalc(640)
+  +mob
+    height: 314px
+  &__img 
+    height: 100%
+    border-radius: aCalc(6)
+    +mob
+      border-radius: 0
+    img, video
+      display: block
+      +wah(100%)
+      border-radius: inherit
+      object-fit: cover
+      
+      +mob
+        width: 100%
+        
+  &__img
+    video 
+      +mob 
+        min-height: 220px
+  &__title 
+    width: aCalc(407)
+    position: absolute
+    //top: var(--aCalc24)
+    left: aCalc(24)
+    right: 0
+    bottom: aCalc(26)
+
+    // margin: 0 auto
+    //padding: 0 var(--aCalc24)
+    color: #ffffff
+    z-index: 1
+    +mob 
+      // padding: 0 16px
+      // top: 16px
+      bottom: 15px 
+      left: 15px
+      width: 300px
+  &__btn 
+    position: absolute
+    bottom: var(--aCalc24)
+    left: 0 
+    right: 0 
+    display: grid
+    justify-content: center
+    display: none
+    +mob
+      bottom: 16px
+  &__link 
+    text-transform: uppercase
+    margin: 0 auto
+    max-width: max-content
+
+.banner-grid._different
+  .banner__title 
+    width: aCalc(545)
+    top: var(--aCalc24)
+    left: 0
+    right: 0 
+    bottom: unset
+    margin: 0 auto
+    padding: 0 var(--aCalc24)
+    text-align: center
+    +r($sm)
+      width: 283px
+      padding: 0
+      top: 12px
+  .banner__btn
+    display: grid
+  .banner__img 
+    +r($sm)
+      border-radius: 6px

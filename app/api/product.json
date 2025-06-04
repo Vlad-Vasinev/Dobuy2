@@ -1,0 +1,22 @@
+{
+  "id": "1312",
+  "title": "Smartphone Samsung Galaxy S23 Ultra 12/256 GB, black phantom",
+  "price": {
+    "value": "119 999 ₽",
+    "discount": {
+      "old": "135 000 ₽",
+      "sale": "-15%"
+    }
+  },
+  "badges": [
+    { "type": "new", "val": "NEW" },
+    { "type": "hit", "val": "HIT" }
+  ],
+  "images": [
+    "img/product/item0.png",
+    "img/product/item1.png",
+    "img/product/item2.png",
+    "img/product/item3.png",
+    "img/product/item4.png"
+  ]
+}

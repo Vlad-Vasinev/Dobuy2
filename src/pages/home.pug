@@ -1,0 +1,12 @@
+extends ./shared/_layout
+prepend head
+  -var title = "Home"
+  <link rel="preload" as="image" href="img/head-banner/0p.jpg"/>
+prepend header
+  - var logoImg = "img/header-logo.svg"
+  - var logoWidth = 184
+block content
+  include ../components/page-home/_home
+append modals
+  include ../components/modals/_modal-banner
+  

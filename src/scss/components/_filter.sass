@@ -1,0 +1,71 @@
+.filters 
+  display: grid
+  padding: var(--aCalc16) $page-bloks-x-padding
+  grid-auto-flow: column
+  grid-auto-columns: 1fr
+  align-items: center
+  +mob 
+    overflow: auto
+    padding: 16px $page-bloks-x-padding-mobile
+  &__el
+    justify-self: center
+    position: relative
+    &:first-child
+      justify-self: flex-start
+    &:last-child
+      justify-self: flex-end
+  &__el:nth-child(2)
+    +mob
+      justify-self: flex-end
+
+  span, p
+    font-weight: 500
+
+.filters-drop
+  &:not(._active)
+    display: none
+  top: 100%
+  right: 0
+
+  z-index: 3
+  position: absolute
+  margin-top: var(--aCalc8)
+  &__inner
+    box-shadow: 0px 4px 15px 0px #0000001A
+    height: max-content
+    border-radius: var(--aCalc12)
+    background-color: $White
+    padding: var(--aCalc24)
+    display: flex
+    flex-direction: column
+    white-space: nowrap
+    align-items: flex-start
+    > *
+      padding: aCalc(6) 0
+      &:first-child
+        padding-top: 0
+      &:last-child
+        padding-bottom: 0
+        
+        
+.filters-drop
+  +mob
+    display: none
+
+.switch-wrapper
+  $animationSpeed: 0.1s
+  .toggle-switch input + .toggle-switch__slider
+    position: relative
+    background-color: $WhiteGray 
+  .toggle-switch input + .toggle-switch__slider::before
+    background-color: #ffffff 
+    border: aCalc(2) solid $Violet
+    z-index: 99
+    +mob 
+      border-width: 2px
+  .toggle-switch input:checked + .toggle-switch__slider::before
+    border-width: var(--aCalc12)
+    background-color: $White
+    +mob 
+      border-width: 8px
+  

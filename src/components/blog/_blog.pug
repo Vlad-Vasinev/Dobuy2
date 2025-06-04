@@ -1,0 +1,18 @@
+
+.page__block.page__block_margin-none
+  include ../blocks/_breadcrumbs
+.page__block.page__block_margin-none
+  include ../blocks/_page-title
+.page__block
+  .blog 
+    .blog__mesh 
+      +clone(8)
+        a(href="#" target="blank").blog__item
+          .blog__item-img
+            img(lazy src="img/pv.webp" data-src="/img/blog/blog-img-1.png" alt="")
+          .h2.blog__item-link
+            span.h6.blog__item-data 12.02.24
+            |What's the difference between Steam Deck, ASUS ROG Ally, Lenovo Legion Go?
+    .blog__btn.button.button_small.button_white Load more
+    include ../blocks/_pagination
+        

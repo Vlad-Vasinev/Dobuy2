@@ -1,0 +1,50 @@
+block vars
+
+.page__block.page__block_margin-none
+  include ../blocks/_breadcrumbs
+.page__block.page__block_margin-none
+  include ../blocks/_page-title
+
+
+block subcategoryGrid
+  if(subCards)
+    .page__block.page__block_full-width-mob
+      .subcategory-grid
+        .subcategory-grid__wrapper
+          - var value
+          +cloneArr(subCards)
+            a.subcategory-card(href="#s")
+              .h5.subcategory-card__title Android 
+              .subcategory-card__img 
+                img(src=value alt="")
+
+.page__block.page__block_margin-none.page__block_padding-none
+  include ./_catalog-filters.pug
+.page__block.page__block_full-width-mob
+  .catalog-content 
+    +clone(20)
+      include ../blocks/_product-card
+  include ../blocks/_pagination
+
+.page__block.page__block_full-width-mob
+  .catalog-content 
+    +clone(1)
+      include ../blocks/_product-cardFixed
+    +clone(1)
+      include ../blocks/_product-cardFixed2
+    +clone(3)
+      include ../blocks/_product-card
+  include ../blocks/_pagination
+
+.page__block.page__block_full-width
+  hr.hr-line
+.page__block
+  .article
+    .h1 Guarantee
+    .h2 All products on the dobuy.ru website are original, which means they are covered by the manufacturer's warranty.
+    p Warranty support for products from abroad may have its limitations. How can you find out what they are? Before placing an order, visit the manufacturer's website or the page of its official representative in the Russian Federation. Find and study the technical specifications of the product and the warranty conditions to make sure that they meet your requirements.
+    .h2 If a warranty case occurs
+    p Contact the official service center - contacts of such centers are posted on the official website of the manufacturer or in the documents attached to the product.
+    p You can also contact paid services to determine the reasons for the device breakdown.
+    p If the warranty case is confirmed, you will be able to contact us for assistance in returning the device under warranty to the manufacturer's company, for example Apple Dubai. In this case, the costs of sending the device for subsequent return under warranty are at your expense.
+    p As a rule, it is quite easy to find the necessary information on the Internet, but if you encounter difficulties and do not understand how to place a warranty claim or do not know what to do next, write to us. The caring DoBuy support service will do everything possible to solve your problem.

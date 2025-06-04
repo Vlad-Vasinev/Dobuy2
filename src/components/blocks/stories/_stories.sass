@@ -1,0 +1,450 @@
+
+.stories-item
+  @extend .swiper-slide
+  position: relative
+  border-radius: inherit
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  img, video
+    border-radius: inherit
+    width: 100%
+    height: 100%
+    object-fit: cover
+    &::-webkit-media-controls-fullscreen-button
+      display: none
+  &__desc
+    display: none
+
+  &_video
+
+    video[data-src]
+
+      &:not(.is-loaded)
+        filter: none
+    &:not(._loaded)::before
+      display: block
+      content: ''
+      position: absolute
+      top: -1%
+      border-radius: inherit
+      left: -1%
+      +wah(102%)
+      backdrop-filter: blur(10px)
+      z-index: 3
+  &._loading
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%23fff' stroke-dasharray='62' stroke-linecap='round' stroke-width='4'%3E%3CanimateTransform attributeName='transform' dur='3s' keyTimes='0;1' repeatCount='indefinite' type='rotate' values='0 50 50;360 50 50' /%3E%3C/circle%3E%3C/svg%3E")
+
+      background-repeat: no-repeat
+      background-size: 100%
+      display: block
+      content: ''
+      top: calc(50% - aCalc(40))
+      left: calc(50% - aCalc(40))
+      bottom: unset
+      right: unset
+      position: absolute
+      z-index: 4
+      width: aCalc(80)
+      height: aCalc(80)
+      +mob
+        top: calc(50% - 20px)
+        left: calc(50% - 20px)
+        width: 40px
+        height: 40px
+
+.stories-folder
+  @extend .swiper
+  position: relative
+
+  width: 100%
+  height: 100%
+  border-radius: inherit
+
+  &__desc
+    @extend .appearance-animation
+    position: absolute
+    left: 0
+    bottom: 0
+    padding: aCalc(30)
+    width: 100%
+    z-index: 5
+    +mob
+      padding: 15px
+
+    span
+      display: block
+      &:not(:first-child)
+        margin-top: aCalc(4)
+        +mob
+          margin-top: 2px
+    .button
+
+      // style="--bg: #FFFFFF';--tc: '#100030';"
+      margin-top: aCalc(16)
+      background-color: var(--bg, #4c00c9)
+      color: var(--tc, #fff)
+      border-color: var(--bg, #4c00c9)
+      &:hover
+        border-color: var(--bg, #4c00c9)
+        background-color: var(--bg, #4c00c9)
+        transform: scale(1.05)
+        color: var(--tc, #fff)
+      +mob
+        margin-top: 12px
+
+  &__title
+    @extend .h6
+    position: absolute
+    z-index: 3
+    display: flex
+    margin: aCalc(26) aCalc(8)
+    align-items: center
+    +mob
+      margin: 26px 8px
+    img
+      +wah(aCalc(40))
+      border-radius: 50%
+      +mob
+        +wah(32px)
+    span
+      margin-left: aCalc(8)
+      +mob
+        margin-left: 8px
+  &__pag
+
+    &.swiper-pagination-bullets
+      position: absolute
+      z-index: 4
+      top: 0
+      left: 0
+      bottom: unset
+      display: flex
+      width: 100%
+      padding: aCalc(8)
+      gap: aCalc(4)
+      --dur: 30s
+      +mob
+        padding: 10px
+        gap: 4px
+
+      .swiper-pagination-bullet
+        height: 2px
+        border-radius: 4px
+        flex: 1
+        margin: 0
+        background-color: #ffffff66
+        opacity: 1
+        position: relative
+
+        &:only-child
+          display: block !important
+        &::before
+          content: ''
+          background-color: #fff
+          display: block
+          position: relative
+          border-radius: inherit
+          height: 100%
+          width: 100%
+
+      .swiper-pagination-bullet.swiper-pagination-bullet-active
+        &::before
+          animation: 9999s linear 0s loading
+          animation-duration: var(--dur)
+          animation-play-state: paused
+          animation-fill-mode: forwards
+          animation-iteration-count: 1
+          animation-play-state: running
+
+      .swiper-pagination-bullet.swiper-pagination-bullet-active ~ .swiper-pagination-bullet
+        background-color: #ffffff66
+        &::before
+          width: 0
+
+    @keyframes loading
+      0%
+        width: 0%
+      100%
+        width: 100%
+
+  &__wrapper
+    @extend .swiper-wrapper
+    border-radius: inherit
+  &__nav
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: space-between
+    top: 0
+    left: 0
+    z-index: 3
+    pointer-events: none
+  &__next, &__prev
+    cursor: pointer
+  &__prev
+    width: 30%
+    pointer-events: all
+    // background-color: #88f8
+  &__next
+    width: 30%
+    pointer-events: all
+.stories-folder
+  &_single &__desc
+    padding-top: 0
+    padding-bottom: 0
+    margin-bottom: 76px
+    +mob
+      margin-bottom: 100px
+
+  &_single &__title
+    margin: aCalc(16)
+    +mob
+      margin: 16px
+      margin-top: 34px
+    span
+      margin: 0
+
+.stories-slider__item:not(.swiper-slide-active) .stories-folder .stories-folder__desc
+  opacity: 1
+  animation-direction: reverse
+  animation-fill-mode: forwards
+
+.stories
+  margin: aCalc(16) 0 aCalc(80)
+  +mob
+    margin: 24px 0 32px
+
+  &__inner
+    display: flex
+    // align-items: center
+    align-items: baseline
+    justify-content: center
+    // min-height: 114px
+    padding: aCalc(17) 0
+    padding-bottom: aCalc(120)
+
+    padding: 0
+    margin: 0
+    +mob
+      +hideScroll
+      overflow: auto
+      justify-content: flex-start
+      padding: 0 14px
+
+// Кружочек с превью 
+.stories-pv
+  // width: aCalc(106)
+  width: aCalc(82)
+  padding: 0 aCalc(9)
+  border-radius: 100%
+  cursor: pointer
+  +mob
+    flex-shrink: 0
+    width: 76px
+    padding: 0 3px
+  &__img
+    border-radius: 100%
+    padding: 3px
+    aspect-ratio: 1
+    //border: 1px solid $WhiteGray
+    border: 1px solid #4C00C9
+    overflow: hidden
+    img
+      width: 100%
+      height: unset
+      // height: 100%
+      border-radius: inherit
+  &__title
+    @extend  .h7
+    text-align: center
+    margin-top: aCalc(8)
+    +mob
+      margin-top: 6px
+      text-overflow: ellipsis
+      white-space: nowrap
+      overflow: hidden
+
+.stories-fs
+  position: fixed
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  background-color: #0C0C0C
+  z-index: map-get($zindex, "modal")
+  color: #fff
+  transition: visibility 0s 0.11s, opacity 0.1s
+  visibility: hidden
+  opacity: 0
+  // display: none
+  &._active
+    transition: visibility 0s 0s, opacity 0.1s 0.01s
+    visibility: visible
+    opacity: 1
+
+  &__unmute
+    // только на мобильном
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    margin: 68px 0 0 12px
+    padding: 4px 8px 8px 4px
+    +dsk
+      display: none
+    .button
+      padding: 4px 7px
+      color: $Black
+      +font-size-mob(12, 12)
+      svg
+        +wah(20px)
+      span + svg 
+        margin-left: 4px
+    &._hidden
+      visibility: hidden
+      opacity: 0
+      transition: visibility 0s 0.11s, opacity 0.1s
+  &__bg
+    position: absolute
+    top: 0
+    left: 0
+    transition: visibility 0s 0.11s, opacity 0.1s
+  &__close
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 1
+    margin: aCalc(13)
+    padding: aCalc(16)
+    cursor: pointer
+    +mob
+      padding: 8px
+      margin: 16px 8px 0 0
+    svg
+      +wah(aCalc(24))
+      +mob
+        +wah(24px)
+
+.stories-slider
+  @extend .swiper
+  position: relative
+  width: 100%
+  +aProp("--slideHeight", 872)
+  +aProp("--slideWidth", 490)
+  height: var(--slideHeight)
+  margin-top: aCalc(104)
+  margin-top: calc((100vh - var(--slideHeight))/2)
+  +mob
+    height: 100%
+    margin-top: 0
+  &__wrapper
+    @extend .swiper-wrapper
+    +mob
+      height: calc(100% - 72px)
+
+  &__item
+    @extend .swiper-slide
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    transition: transform 0.3s
+    border-radius: aCalc(12)
+    +mob
+      border-radius: 0px
+    .stories-folder
+      > *, &:before
+        transition: opacity 0.2s
+    &:not(.swiper-slide-active)
+      +dsk
+        transform: scale(74%)
+      .stories-folder
+        opacity: 0.9
+        > *, &:before
+          opacity: 0
+        .stories-item:first-child
+          opacity: 1
+
+.stories-nav
+  +dsk
+    position: fixed
+    z-index: 1
+    top: 0
+    width: calc(100%)
+    height: 0
+  +mob
+    display: flex
+    justify-content: center
+    align-items: center
+
+    height: 70px
+  .stories-nav__pag
+    display: flex
+    width: max-content
+    gap: 12px
+    margin: 0 32px
+    +dsk
+      display: none
+    .swiper-pagination-bullet
+      opacity: 0.5
+      margin: 0
+      background-color: $White
+      width: 6px
+      height: 6px
+      transition: all 0.1s
+      &-active
+        transform: scale(1.33)
+        opacity: 1
+  .stories-nav__icon
+    height: aCalc(24)
+    width: auto
+    +mob
+      height: 24px
+    svg
+      height: 100%
+      width: auto
+  .stories-nav__prev, .stories-nav__next
+
+    +dsk
+      cursor: pointer
+      height: 100vh
+      position: absolute
+      top: 0
+      bottom: 0
+      +aProp(--navMargin, 80)
+      width: calc((100% - var(--slideWidth)) / 2 - var(--navMargin))
+      display: flex
+      align-items: center
+
+  .stories-nav__prev
+    left: 0
+    justify-content: end
+  .stories-nav__prev &__icon
+  .stories-nav__next
+    right: 0
+    justify-content: start
+  .stories-nav__next &__icon
+    transform: rotateZ(180deg)
+
+.stories-folder, .stories-slider .stories-slider__item
+  &::before
+    display: block
+    height: aCalc(120)
+    background: linear-gradient(180deg, #202020 0%, rgba(32, 32, 32, 0) 100%)
+    content: ''
+    position: absolute
+    z-index: 2
+    top: -1px
+    right: -1px
+    left: -1px
+    min-width: 100%
+    border-top-left-radius: inherit
+    border-top-right-radius: inherit
+    +mob
+      height: 70px
+
+.stories-slider .stories-slider__item
+  &::before
+    z-index: 0

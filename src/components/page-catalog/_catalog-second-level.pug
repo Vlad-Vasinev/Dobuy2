@@ -1,0 +1,15 @@
+extends ./_layout
+block vars 
+  - var pageTitle = "Android Smartphones"
+  - var breadcrumbText = ["Main", "Catalog", "Smartphones and gadgets", "Android"]
+
+prepend subcategoryGrid
+  .page__block.page__block_full-width-mob
+    .subcategory-grid
+      .subcategory-grid__wrapper.swiper-wrapper
+        +clone(4)
+          a.subcategory-card.swiper-slide(href='/catalog/smartfony-i-gadzhety/iphone/iphone-15/')
+            h5.subcategory-card__title iPhone 15
+            .subcategory-card__img
+              img(src="img/subcategory/transform.jpg" alt)
+          

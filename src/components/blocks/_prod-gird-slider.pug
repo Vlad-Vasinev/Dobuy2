@@ -1,0 +1,15 @@
+.product-grid.product-grid_slider
+  .slider-navigation
+    .slider-navigation__prev
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 12L4.25736 12M10.7574 20L4.87868 14.1213C3.70711 12.9497 3.70711 11.0503 4.87868 9.87868L10.7574 4" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    .slider-navigation__next
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 12L19.7426 12M13.2426 4L19.1213 9.87868C20.2929 11.0503 20.2929 12.9497 19.1213 14.1213L13.2426 20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+  .product-grid__wrapper
+    - var index
+    +clone(amount || 10)
+      - var cardContent = prodCards[index] || prodCardDef
+      include ./_product-card

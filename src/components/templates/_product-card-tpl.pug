@@ -1,0 +1,66 @@
+
+
+template.tpl--prod-card
+  .prod-card( data-item-id).prod-card_placeholder
+    .prod-card__badges
+    a.prod-card__gallery
+      
+    a.prod-card__title 
+      span
+    .prod-price
+      .badge-duty-sale(info-popup="duty-sale-info")
+        .badge-duty-sale__icon
+          img(src="img/duty-icon.png" alt="")
+        span
+      span.prod-price__duty-sale-span duty discount
+      .badge.badge_sale
+      span.prod-price__val 
+      .prod-price__discount
+        span.prod-price__old 
+    .prod-card__btns
+      button.button.button_buy
+        +svgIcon('cart-add')
+        span buy
+      +buttonHeart
+
+template.tpl--prod-card-slider
+  .prod-card-slider
+    .prod-card-slider__wrapper
+    .prod-card-pag
+
+template.tpl--prod-card-slider-slide
+  .prod-card-slider__slide
+    img(data-src src)
+
+
+
+
+template.tpl--cart--prod-card
+  .prod-card.prod-card_cart-item.prod-card_placeholder(data-item-id)
+    a.prod-card__gallery
+      img.prod-card__image(lazy src)
+      .prod-card__counter
+        span.h6
+    a.prod-card__title 
+      span
+    .prod-price
+      .badge-duty-sale(info-popup="duty-sale-info")
+        .badge-duty-sale__icon
+          img(src="img/duty-icon.png" alt="")
+        span
+      span.prod-price__duty-sale-span duty discount
+      .badge.badge_sale
+      span.prod-price__val 
+      .prod-price__discount
+        span.prod-price__old
+    button.prod-card__options
+      +svgIcon("dots")  
+    .amount-panel.prod-card__amount
+      button.amount-panel__minus            
+        +svgIcon("minus")
+      .amount-panel__val            
+        span 
+      button.amount-panel__plus
+        +svgIcon("plus")
+    button.prod-card__delete
+      +svgIcon("delete")

@@ -1,0 +1,10 @@
+extends ./shared/_layout
+prepend head
+  -var title = "Product"
+block navbar
+  include ../components/header/_navbar-product
+  
+block content
+  include ../components/page-product/_product2.pug
+append modals
+  include ../components/page-product/_prod-modals.pug

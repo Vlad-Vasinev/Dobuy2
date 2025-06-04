@@ -1,0 +1,10 @@
+.product-grid.product-grid_slider.product-grid_slider-mob 
+  .product-grid__wrapper
+    - var index
+    +clone(amount || 4)
+      - cardId = ("000" + index)
+      include ./_product-card
+    .prod-card.prod-card_static.watch-all-card
+      a.watch-all-card__inner(href="#")
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36"><rect width="36" height="36" fill="#4C00C9" rx="18"/><path fill="#fff" fill-rule="evenodd" d="M18.712 26.53a.75.75 0 0 1 0-1.06l5.879-5.879c.246-.246.423-.534.53-.841H10a.75.75 0 0 1 0-1.5h15.122a2.241 2.241 0 0 0-.531-.841l-5.879-5.879a.75.75 0 1 1 1.061-1.06l5.879 5.878a3.75 3.75 0 0 1 0 5.304l-5.879 5.878a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd"/></svg>
+        span.h5 See all

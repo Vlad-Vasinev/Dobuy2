@@ -1,0 +1,322 @@
+
+.sticky-menu.customer-info
+  +dsk
+    grid-template-columns: 1fr aCalc(830) 1fr
+    column-gap: var(--aCalc24)
+  .sticky-menu__side
+    +dsk
+      // min-width: aCalc(342)
+      width: max-content
+      justify-self: flex-start
+      grid-column: 1/2
+  .sticky-menu__content
+    +dsk
+      grid-row: 1/3
+      grid-column: 2/3
+    &.customer-info__content_wide
+      grid-column: 2/4
+.customer-info
+  +dsk
+    margin-top: var(--aCalc24)
+  +mob
+    // margin-top: calc(24px + var(--header-border, 24px))
+  &__side
+    white-space: nowrap
+    +mob
+      padding-bottom: 24px
+  &__content
+    &_wide
+      grid-column: 2 / 4
+.page__block_full-width-mob
+  .customer-info
+    &__content
+      +mob
+        padding: 0 15px
+
+.profile.customer-info
+  +dsk
+    grid-template-columns: 1fr aCalc(708) 1fr
+    
+  .customer-info__content
+    +dsk
+      padding-top: var(--aCalc64)
+    .sign, .order-cards-crt
+      margin: var(--aCalc24) 0
+      +mob
+        margin: 12px 0
+    .order-card > .sign
+      margin: var(--aCalc4) 0
+      +mob
+        margin: 8px 0
+    .no-orders
+      +dsk
+        margin: var(--aCalc24) 0
+    > .h1
+      margin-bottom: var(--aCalc24)
+      +mob
+        margin-bottom: 16px
+    .catalog-content
+      +mob
+        width: auto
+        margin: 0 -15px
+.profile
+  &__exit-mob
+    @extend ._mob
+    padding: 16px 15px
+    border: 0 solid $WhiteGray
+    border-width: 1px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 24px
+  &__support-mob
+    @extend ._mob
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 2px
+    margin-top: 40px
+    img
+      +wah(64px)
+      margin-bottom: 10px
+
+.inline-counter
+  @extend .h7
+  display: inline-flex
+  +wah(aCalc(22))
+  align-items: center
+  justify-content: center
+  border-radius: 100%
+  // aspect-ratio: 1
+  // height: min-content
+  background-color: $Violet
+  color: $White
+  vertical-align: middle
+  margin-left: var(--aCalc8)
+  +mob
+    margin-left: 8px
+    +wah(20px)
+  &_zero
+    background-color: $GrayBlack
+
+.prof-side
+  display: flex
+  flex-direction: column
+  gap: var(--aCalc40)
+  +mob
+    display: block
+
+  &__sect
+    img
+      +wah(var(--aCalc64))
+      margin-bottom: var(--aCalc8)
+    ul
+      +mob
+        display: flex
+        overflow: auto
+        gap: 4px
+        padding: 0 15px
+        position: relative
+        padding-right: 0
+        &::after 
+          content: ""
+          padding: 7px
+        +hideScroll
+
+      li
+        +mob
+          color: $BlackWhite
+      li + li 
+        +dsk
+          margin-top: var(--aCalc12)
+      li a
+        white-space: nowrap
+        display: flex
+        align-items: center
+        +dsk
+          padding: aCalc(6) 0
+          &:first-child
+            padding-top: 0
+          &:last-child
+            padding-bottom: 0
+        +mob
+          padding: 12px
+          border-radius: 12px
+          border: 1px solid $WhiteGray
+      li._active
+        +dsk
+          color: $Violet
+        +mob
+          // order: -1
+          color: $Black
+        a
+          +mob
+            background-color: $WhiteGray
+
+.prof-addresses
+  &__head
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: var(--aCalc24)
+    white-space: nowrap
+    +mob
+      display: block
+      margin-bottom: 16px
+  &__amount
+    @extend .h3
+    color: $BlackWhite
+  &__crt
+    display: flex
+    flex-direction: column
+    gap: var(--aCalc16)
+    +mob
+      gap: 12px
+  &__empty
+  &__crt:not(:empty) ~ &__empty
+    display: none
+  &__bottom
+    margin-top: var(--aCalc24)
+    +mob
+      margin-top: 16px
+    &._hidden
+      display: none
+    button
+
+.prof-address
+  display: grid
+  grid-template-columns: auto auto
+  row-gap: var(--aCalc24)
+  +mob
+
+    row-gap: 8px
+  &__del
+    color: $Violet
+    padding: 5.5px 0
+    justify-self: flex-end
+
+  .address-input
+    grid-column: 1/-1
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: var(--aCalc24)
+    +mob
+      grid-template-columns: auto
+      gap: 8px
+
+.prof-user-inputs
+  .ui-input + .ui-input
+    margin-top: var(--aCalc16)
+    +mob
+      margin-top: 12px
+  &__status
+    @extend .h6
+    margin-top: var(--aCalc4)
+    +mob
+      margin-top: 4px
+    span
+      line-height: 1
+
+  > .button
+    margin-top: var(--aCalc24)
+    +mob
+      margin-top: 16px
+
+.ud-status
+  color: $Green1
+  display: flex
+  gap: aCalc(6)
+  align-items: center
+  +mob
+    gap: 6px
+  svg
+    +wah(var(--aCalc24))
+    +mob
+      +wah(24px)
+  &_false
+    color: $Red
+
+.prof-user-data
+  > * + *
+    margin-top: var(--aCalc80)
+    +mob
+      margin-top: 40px
+  > .h1 + *, > h1 + *
+    margin-top: var(--aCalc24)
+    +mob
+      margin-top: 16px
+
+  // .prof-user-inputs 
+  // .prof-addresses
+
+.sprite-icon
+
+.sticky-menu
+  &__content
+
+.sticky-menu.customer-info.customer-info_list
+  .customer-info__side
+    +dsk
+      width: 100%
+    +mob
+      width: max-content
+      position: fixed
+      right: 6px
+      z-index: 1
+  .customer-info__content
+
+.grouped-list
+  display: grid
+  // margin-top: aCalc(68)
+  gap: var(--aCalc40)
+  +dsk
+    justify-content: center
+  +mob
+    gap: 40px
+
+  section
+    // отступы нужны чтобы при навигации через анкорные ссылки 
+    // (при скролле элемент притягивается к самому верху страницы) 
+    padding-top: var(--aCalc96)
+    margin-top: aCalc(-96)
+    position: relative
+    +mob
+      margin-top: -84px
+      padding-top: 84px
+  h2, .h2
+    color: $BlackWhite
+    margin-bottom: var(--aCalc24)
+    +mob
+      margin-bottom: 12px
+  ul
+    @extend .h1
+    position: relative
+    z-index: 1
+    li + li
+      margin-top: var(--aCalc8)
+    
+
+.customer-list-nav
+  
+  nav
+    display: flex
+    flex-direction: column
+    color: $GrayDark
+    +mob
+      align-items: center
+    +dsk
+      
+    a
+      
+      +dsk
+        padding: 2px 3px
+      +mob
+        flex-grow: 1
+        text-align: center
+        align-self: stretch
+        padding: 2px 3px
+      &._active
+        color: $Violet
+
+h1 + .customer-info_list
+  margin-top: 24px

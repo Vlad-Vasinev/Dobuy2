@@ -1,0 +1,26 @@
+
+
+.nav-mob.nav-mob_product
+  a.nav-btn(href="#")
+    .btnS Check availability
+    .prod-price
+      span.prod-price__val._not-available  119 999 ₽
+      .prod-price__discount
+        span.prod-price__old 135 000 ₽ 
+        .badge.badge_sale -15%
+  .nav-mob__btn-ctr
+    .nav-mob__show(icon-tgl-trg)
+      svg(icon-tgl-crt)
+        +svgIcon('burger')
+        +svgIcon('close')
+      .icon-btn-count 14
+    .nav-mob__btn(catalog-open)
+      +svgIcon('catalog')
+    a.nav-mob__btn(data-nav-favorites)
+      +svgIcon('heart')
+      .icon-btn-count 12
+    .nav-mob__btn(auth-open)
+      +svgIcon('profile')
+    .nav-mob__btn(cart-open)
+      +svgIcon('cart')
+      .icon-btn-count 2

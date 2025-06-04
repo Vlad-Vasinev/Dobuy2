@@ -1,0 +1,542 @@
+.prod-card
+  width: 100%
+  height: auto
+  
+  display: grid
+  //grid-template-rows: max-content
+  // grid-template-rows: auto 1fr auto auto
+  grid-template-rows: auto auto 1fr auto
+  grid-auto-rows: auto
+  position: relative
+  +mob
+    grid-template-rows: auto auto auto 1fr
+  &__badges
+    //position: absolute
+    z-index: 2
+    display: flex
+    align-items: center
+    align-items: stretch
+    gap: aCalc(2)
+    // gap: var(--aCalc4)
+    width: 100%
+    flex-wrap: wrap
+    height: aCalc(16)
+    +mob
+      gap: 2px
+      height: 19px
+      padding-left: 15px
+    .badge-filler
+      min-height: unset
+      height: aCalc(16)
+      +r($sm) 
+        height: unset
+        min-height: 18px
+  &__btns
+    display: flex
+    gap: var(--aCalc4)
+    +mob
+      gap: 4px
+      padding-left: 15px
+    button, .button
+      @extend .h8
+      border-radius: aCalc(6)
+      padding: aCalc(5) var(--aCalc8)
+      +mob
+        border-radius: 6px
+        padding: 5px 8px
+      svg, .sprite-icon
+        +wah(aCalc(22))
+        +mob
+          +wah(20px)
+    a.button.button_small._link
+      height: 100%
+      background-color: #e5e2ec
+      border: none 
+      color: #121212
+      transition: color .3s, background-color .3s
+      &:hover
+        color: #ffffff
+        background-color: var(--theme-color-base, #4c00c9)
+    // &-available
+    //   color: #ffffff
+
+  &__title
+    @extend .h6
+    margin-bottom: var(--aCalc12)
+    font-size: aCalc(14)
+    line-height: 130%
+    +lineLimit(2)
+    +mob
+      margin-bottom: 8px
+      padding-left: 15px
+      font-size: 14px
+    width: 100%
+  &__title + .prod-price
+    //margin-top: var(--aCalc4)
+    // +mob
+    //   margin-top: 4px
+
+  &__split
+    margin-bottom: var(--aCalc4)
+    +mob
+      margin-bottom: 4px
+      padding-left: 15px
+    &:empty
+      display: none
+      margin: 0
+
+  &__gallery
+    display: block
+    //grid-row: 1/2
+    overflow: hidden
+    //margin-top: aCalc(4)
+    margin-bottom: var(--aCalc12)
+    //padding-right: var(--aCalc40)
+    height: aCalc(240)
+    img 
+      object-fit: cover
+    +mob
+      margin-bottom: 12px
+      height: unset
+      // padding-right: 40px
+      .prod-card-slider
+  &__image
+    width: 100%
+    height: auto
+    aspect-ratio: 1
+  .prod-price
+    margin-bottom: var(--aCalc8)
+    display: grid
+    flex-direction: column
+    +mob
+      padding-left: 15px
+      margin-bottom: 8px
+    .badge 
+      +dsk
+        padding: var(--aCalc4)
+    .prod-price__duty-sale-span
+      font-size: aCalc(10)
+      font-weight: 700
+      line-height: 110%
+      text-transform: uppercase
+      margin-left: aCalc(6)
+      +r($sm)
+        font-size: 10px
+        margin-left: 6px
+        margin-bottom: 4px
+        grid-row: 1
+        grid-column: 2
+
+.prod-card
+  &_placeholder
+    @extend .loading-pulse-eff
+    pointer-events: none
+  &_placeholder &__btns
+    background-color: $WhiteGray
+    > *
+      visibility: hidden
+  &_placeholder &__badges
+    visibility: hidden
+  &_placeholder &__title
+    background-color: $WhiteGray
+    min-width: 8em
+    min-height: 2.75em
+    span
+      display: none
+
+  &_placeholder &__gallery
+    width: calc(100% - var(--aCalc40))
+    background-color: $WhiteGray
+    padding-bottom: calc(100% - var(--aCalc40))
+    aspect-ratio: 1
+    .prod-card-slider
+      width: 0
+      height: 0
+
+  &_placeholder .prod-price
+    background-color: $WhiteGray
+    min-height: 1.5em
+    > *
+      visibility: hidden
+
+.prod-price
+  display: grid
+  width: 100%
+  grid-template-columns: repeat(2, auto)
+  // grid-auto-flow: column
+  justify-content: flex-start
+  white-space: nowrap
+  +mob
+    width: max-content
+    align-items: flex-start
+    flex-direction: column
+    gap: 0
+    display: flex
+    flex-direction: column
+  &__discount, &__old, &__val
+    transition: opacity 0.2s
+    &:empty
+      opacity: 0 
+  &__discount
+    display: flex
+    align-items: center
+    width: 100%
+    grid-row: 2
+    grid-column: 2
+    font-size: aCalc(15)
+    font-weight: 800
+    +r($sm)
+      grid-row: 3
+      font-size: 16px
+    .badge 
+      margin-left: auto
+      margin-left: aCalc(6)
+      +mob
+        margin-left: 6px
+      
+  &__old
+    @extend .h5
+    color: $GrayBlack
+    margin-left: var(--aCalc8)
+    position: relative
+    text-decoration: line-through
+    +mob
+      // margin-left: 0
+      // margin-left: 6px
+      margin-left: 4px
+
+  &__val
+    @extend .h4
+    color: $baseTextColor
+    grid-row: 2
+    grid-column: 1
+    font-size: aCalc(15)
+    font-weight: 800
+    display: flex
+    align-items: center
+    +r($sm)
+      grid-row: 3
+      font-size: 16px
+  .prod-price__duty-sale-span
+    +r($sm)
+      grid-row: 2
+  > .badge, > .badge-duty-sale
+    margin-bottom: var(--aCalc4)
+    grid-row: 1
+    grid-column: 1
+    +mob
+      margin-bottom: 4px
+  &__duty-sale-span
+    @extend .h8
+    color: $GrayBlack
+    text-transform: uppercase
+    align-self: left
+    +dsk 
+      margin-bottom: var(--aCalc4)
+      //margin-left: aCalc(6)
+      margin-left: 0
+    +mob
+      grid-row: 3
+      grid-column: 1/3
+      margin-top: 4px
+  ._empty
+    display: none
+    margin: 0
+.prod-price
+  &_large &__old
+  &_large &__val
+    @extend .h2
+
+.prod-available
+  @extend .h7
+  display: flex
+  align-items: center
+  
+  &::before
+    display: block
+    content: ''
+    +wah(var(--aCalc8))
+    border-radius: 100%
+    margin-right: var(--aCalc8)
+    background-color: $Green1
+    +mob
+      margin-right: 8px
+      +wah(8px)
+.prod-available.prod-available_not
+  // @extend .h4
+  &::before
+    background-color: #FF5D60
+    // display: none
+    
+      
+
+.prod-card
+  &_banner
+    grid-column: 1/3
+    border: none
+
+.prod-card-slider
+  @extend .swiper
+  &:not(.swiper-initialized)
+  &__wrapper
+    @extend .swiper-wrapper
+  &.swiper-horizontal 
+    height: 100%
+  &:not(.swiper-initialized) &__wrapper
+
+  &__slide
+    @extend .swiper-slide
+    aspect-ratio: 1
+    width: 100%
+    overflow: hidden
+    position: relative
+    span 
+      img 
+        position: absolute !important
+        right: aCalc(0)
+        top: 0
+        z-index: 100
+        // width: aCalc(43)
+        // height: aCalc(47)
+        width: aCalc(85)
+        height: aCalc(76)
+        +r($sm)
+          // width: 32px
+          // height: 32px
+          width: 75px
+          height: 75px
+    img
+      width: 100%
+      //width: 83%
+      height: 100%
+      object-fit: contain
+    &:first-child
+      visibility: visible
+  // &__slide
+  //   width: auto !important
+  &.swiper-initialized &__slide:not(:first-child):not(.swiper-slide-active)
+    opacity: 0
+    img[src=""]
+      visibility: hidden
+  &:not(.swiper-initialized) &__slide
+    &:nth-child(n+2)
+      display: none
+  &__hover-area
+    display: flex
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 10
+  &__hover-item
+    height: 100%
+    width: auto
+    flex: 1
+  
+
+.prod-card-pag
+  --vb: 3
+  position: absolute
+  z-index: 1
+  bottom: 0
+  left: 0
+  right: 0
+  margin: 0 auto
+  // margin: 0.1042vw
+  overflow: hidden
+  max-width: calc( var(--vb) * 0.4168vw + 2px ) 
+  +mob
+    max-width: calc( var(--vb) * 8px + 2px ) 
+    
+    left: unset 
+    right: 0
+  &-wrapper
+    display: flex
+    width: auto
+    transition: transform 0.5s
+    transform: translateX(calc( (var(--offset, 0) * -0.4168vw )))
+    margin: 0.1042vw
+    +mob
+      transform: translateX(calc( (var(--offset, 0) * -8px )))
+      margin: 2px
+
+    &:empty
+      display: none
+
+  &-bullet
+    +wah(0.2084vw)
+    margin: 0 0.1042vw
+    background-color: $Gray
+    border-radius: 100%
+    z-index: 2
+    transition: all 0.1s
+    flex-shrink: 0
+    +mob
+      +wah(4px)
+      margin: 0 2px
+    &:only-child
+      display: none
+    &._active
+      background-color: $Violet
+      transform: scale(1.5)
+
+.prod-card
+  &_flat
+    display: grid
+    grid-template-columns: auto 1fr
+    grid-template-rows: auto auto
+  &_flat &__badges
+    display: none
+  &_flat &__btns
+    display: none
+  &_flat &__title
+    grid-column: 2/3
+    grid-row: 1/2
+    padding: 0
+    margin: 0
+    margin-bottom: 6px
+  &_flat &__image
+    object-fit: contain
+  &_flat &__gallery
+    align-self: center
+
+    grid-column: 1/2
+    grid-row: 1/3
+    +wah(64px)
+    padding: 0
+    margin: 0
+    margin-right: 8px
+  &_flat .prod-price
+    padding: 0
+    grid-column: 2/3
+    grid-row: 2/3
+    display: flex
+    flex-direction: row
+    grid-auto-flow: column
+    justify-content: flex-start
+    align-items: center
+    align-self: center
+    margin: 0
+    gap: aCalc(6)
+    +mob
+      gap: 6px
+    &__duty-sale-span
+      display: none
+    &__discount
+      width: auto
+    &__val, &__old, > .badge, .badge-duty-sale
+      margin: unset
+      // margin-right: var(--aCalc8)
+      // +mob
+      //   margin-right: 4px
+
+.flat-prod-cart-container
+  display: flex
+  flex-direction: column
+  gap: 16px
+  margin-bottom: aCalc(60)
+  +r($sm)
+    margin-bottom: 40px
+  // .prod-card
+  //   @extend .prod-card_flat
+
+.prod-card
+  &_cart-item
+    @extend .prod-card_flat
+    grid-template-columns: auto auto 1fr auto
+    +mob
+      grid-template-columns: auto 1fr auto
+
+  &_cart-item &__gallery
+    position: relative
+    overflow: visible
+    +dsk
+      margin-right: var(--aCalc16)
+      +wah(aCalc(72))
+  &_cart-item &__delete
+    grid-row: 1/2
+    grid-column: 4/5
+    width: max-content
+    height: max-content
+    +mob
+      display: none
+    svg
+      +wah(24)
+  &_cart-item &__amount
+    grid-row: 2/3
+    grid-column: 2/3
+    +mob
+      display: none
+  &_cart-item &__title
+    grid-row: 1/2
+    grid-column: 2/4
+    justify-self: flex-end
+    margin-bottom: aCalc(18)
+    +mob
+      grid-column: 2/3
+      margin-bottom: 8px
+      padding-right: 8px
+  &_cart-item &__options
+    grid-row: 1/2
+    grid-column: 3/4
+    align-self: flex-start
+    +wah(24px)
+    +dsk
+      display: none
+    svg
+      +wah(100%)
+  &_cart-item &__counter
+    position: absolute
+    color: $White
+    bottom: -4px
+    right: -4px
+    background-color: $Violet
+    aspect-ratio: 1
+    width: 20px
+    height: 20px
+    display: grid 
+    place-items: center
+    border-radius: 100%
+    +dsk
+      display: none
+    &._hidden
+      display: none
+  &_cart-item .prod-price
+    grid-column: 3/5
+    grid-row: 2/3
+    justify-self: flex-end
+    justify-content: flex-end
+    +mob
+      grid-column: 2/4
+    &__discount
+      order: 1
+      gap: aCalc(8)
+      +r($sm)
+       gap: 8px
+    &__old
+      order: 1
+    &__val
+      order: 2
+
+.split-badge
+  @extend .h7
+  @extend .scale-on-click
+  color: $White
+  background-color: #8F8FFF
+  padding: aCalc(1) aCalc(6)
+  padding-left: aCalc(20)
+  border-radius: aCalc(6)
+  display: flex
+  width: max-content
+  position: relative
+  align-items: center
+  cursor: pointer
+  +mob
+    padding: 3px 6px 4px 20px
+    border-radius: 6px
+  svg
+    position: absolute
+    left: var(--aCalc4)
+    +wah(var(--aCalc16))
+    +mob
+      left: 4px
+      +wah(16px)

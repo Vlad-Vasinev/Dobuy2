@@ -1,0 +1,62 @@
+// width
+@mixin r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+
+@mixin ro($width, $orientation: landscape)
+  @media only screen and (max-width: $width+ "px") and (orientation: $orientation)
+    @content
+
+@mixin rmin($width)
+  @media only screen and (min-width: $width+ "px")
+    @content
+
+// height
+@mixin rh($height)
+  @media only screen and (max-height: $height + "px")
+    @content
+
+@mixin rhmin($height)
+  @media only screen and (min-height: $height + "px")
+    @content
+
+@mixin mob
+  @include r($sm)
+    @content
+@mixin dsk
+  @include rmin($sm1)
+    @content
+
+$maxWidth: 3840
+$maxWidthContiner: 1920
+$minWidth: 1280
+
+// размер как в макете
+@mixin aProp($property, $startSize)
+  $minSize: round(calc($startSize / 1920) * 1280)
+  $addSize: round($startSize - $minSize)
+  #{$property}: calc(#{$minSize}px + #{$addSize} * var(--vw-f))
+
+:root
+  --vw-f: calc((100vw - #{$minWidth}px) / (#{$maxWidthContiner - $minWidth}))
+  // много раз повторяющиеся значения можно вычислить один раз
+  +aProp(--aCalc4, 4)
+  +aProp(--aCalc8, 8)
+  +aProp(--aCalc9, 9)
+  +aProp(--aCalc10, 10)
+  +aProp(--aCalc12, 12)
+  +aProp(--aCalc16, 16)
+  +aProp(--aCalc20, 20)
+  +aProp(--aCalc24, 24)
+  +aProp(--aCalc32, 32)
+  +aProp(--aCalc40, 40)
+  +aProp(--aCalc60, 60)
+  +aProp(--aCalc64, 64)
+  +aProp(--aCalc80, 80)
+  +aProp(--aCalc96, 96)
+
+@function aCalc($startSize)
+  $minSize: round(calc($startSize / 1920 ) * 1280)
+  $addSize: round($startSize - $minSize)
+  $result: calc(#{$minSize}px + #{$addSize} * var(--vw-f))
+  @return $result

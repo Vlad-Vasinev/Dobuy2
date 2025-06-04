@@ -1,0 +1,57 @@
+extends ./_profile
+block content
+  .sticky-menu__content.customer-info__content
+    .order-detail
+      .order-detail__head  
+        .h1 Order №1978
+        .order-status.order-status_paid Paid
+      .sign.sign_gray-info 
+        span.h6 The order will be activated within 24 hours.
+      .sign
+        .track-label
+          .track-label__code(js-copy data-copy-msg="Tracking number copied!")
+            .h4 Tracking number
+            .textbtn
+              span CL104882771RU
+              +svgIcon('copy')
+          a.track-label__link(href="#") Track your order
+      .order-detail__items
+        .h2 Products on order
+        .order-detail__items-crt
+          +clone(3)
+            a.prod-card.prod-card_flat.prod-card_static(href="/product")
+              .prod-card__gallery
+                img.prod-card__image(lazy src="img/product/4/img0.png")
+              .prod-card__title 
+                span Smartphone Apple iPhone 15 Pro 128 GB, "titanium blue", 1 SIM + eSIM
+              .prod-price
+                span.prod-price__val 119 999 ₽
+                .prod-price__discount
+                  span.prod-price__old 135 000 ₽ 
+                  .badge.badge_sale -15%
+      .order-detail__price
+        .order-detail__heading Order amount
+        table.summary-price 
+          tbody
+            tr.summary-price__tr_clear
+              td Order amount
+              td 30 000 ₽
+            tr.summary-price__tr_sale
+              td Discount
+              td -2 000 ₽
+            tr.summary-price__tr_total
+              td Total
+              td 28 000 ₽
+        .button.button_small Pay
+    .order-detail__section
+      .order-detail__heading Recipient
+      div Vlad ValdVladdd
+      div +7 (919) 999-99-99
+      div ik@netlab.pro
+      
+    .order-detail__section
+      .order-detail__heading Delivery details
+      div Mytishchi, 1st Rupasovsky Lane 17B, Apt. 99
+      div EMS Russia post
+      div ik@netlab.pro
+      

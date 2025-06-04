@@ -1,0 +1,48 @@
+extends ./_profile
+
+mixin uiInputPopup(name="noname", inputType="text", value=undefined)
+  .ui-input.ui-input_label.ui-input_popup
+    input(type=inputType name=name value=value)&attributes(attributes)
+    label.ui-input__float-label
+      block
+block content
+  .sticky-menu__content.customer-info__content
+    .prof-user-data
+      .h1 Data for customs declaration
+      form.prof-user-inputs(data-action=endpoint+"/user-data" )
+        +uiInput('name', 'text', "Ivan")
+          | Name
+        +uiInput('surname', 'text', "Ivanov")
+          | Second name
+        +uiInput('patronymic', 'text', "")(required=undefined)
+          | Surname
+        +uiInput('tel', 'tel', '+7 (999) 999-99-99')
+          | Phone
+        .prof-user-inputs__status
+          .ud-status.ud-status_false
+            +svgIcon('close')
+            span Delivery details are not filled in
+        button.button.button_small(type="submit") Save
+      .prof-addresses(data-action=endpoint+"/user-address")
+        .prof-addresses__head
+          .h1 My delivery addresses
+          .prof-addresses__amount
+            | Saved 
+            span.prof-addresses__counter 1 
+            |  from 
+            span 3
+        .prof-addresses__crt
+          +clone(2)
+            .prof-address(data-id="0001")
+              span.h2 Address 1
+              button.prof-address__del
+                span Delete address 
+              .address-input
+                +uiInputPopup('city-input', 'text', 'Mytishchi, Moscow region')
+                  | Location
+                +uiInputPopup('address-input', 'text', "1st Rupasovsky Lane 17B, Apt. 99")
+                  | elivery address*
+        .prof-addresses__empty
+          .h2 You have no saved addresses.
+        .prof-addresses__bottom 
+          button.button.button_small(name="add-address" type="button") Add address

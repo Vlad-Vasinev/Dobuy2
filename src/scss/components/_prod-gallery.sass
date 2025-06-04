@@ -1,0 +1,148 @@
+.prod-gallery
+  @extend .swiper
+  width: 100%
+  position: relative
+  +dsk
+    padding-left: aCalc(122)
+  +mob
+    padding: 0 32px
+  &__wrapper
+    @extend .swiper-wrapper
+    grid-row: 1/2 
+    grid-column: 2/3 
+    
+  &__item
+    @extend .swiper-slide
+    aspect-ratio: 1
+    img
+      +wah(100%)
+      object-fit: contain
+
+  .image-pag
+    position: absolute
+    z-index: 1
+    top: 0
+    left: 0
+    &-bullet
+  .bullet-pag
+    position: absolute
+    bottom: 0
+    left: 0
+    z-index: 1
+
+.image-pag
+  display: flex
+  flex-direction: column
+  gap: var(--aCalc8)
+  +mob
+    display: none
+  &-bullet
+    border-radius: var(--aCalc4)
+    border: 1px solid #DCDAE1
+    cursor: pointer
+    +wah(aCalc(76))
+    opacity: 0.5
+    transition: opacity 0.1s border 0.1s
+    &:hover
+      opacity: 1
+    &._active
+      opacity: 1
+      border-color: $Violet
+    img
+      border-radius: inherit
+      object-fit: contain
+      +wah(100%)
+
+.bullet-pag
+  &.swiper-pagination-bullets
+    width: max-content
+    display: flex
+    gap: 6px
+    .swiper-pagination-bullet  
+      margin: 0
+      background-color: $Gray
+      opacity: 1
+      transition: background 0.2s, transform 0.2s
+      +wah(6px)
+      transform: scale(0.75)
+      &-active
+        transform: scale(1)
+        
+        background-color: $Violet
+
+.fancybox__container 
+  --fancybox-color: #333
+  --fancybox-bg: #fff
+
+.fancybox__nav 
+  --f-button-next-pos: 12px
+  --f-button-prev-pos: 12px
+  --f-button-width: 48px
+  --f-button-height: 48px
+  --f-button-color: #333
+  --f-button-hover-color: #333
+  --f-button-bg: #e5e7eb
+  --f-button-hover-bg: #e5e7eb
+  --f-button-active-bg: #e5e7eb
+
+  --f-button-svg-height: 20px
+  --f-button-svg-width: 20px
+  --f-button-svg-stroke-width: 3
+  --f-button-svg-filter: none
+
+.fancybox__toolbar 
+  --f-button-color: #0d0c22
+  --f-button-hover-color: #0d0c22
+  --f-button-bg: transparent
+  --f-button-hover-bg: transparent
+  --f-button-active-bg: transparent
+  --f-button-svg-stroke-width: 1.5
+  --f-button-svg-filter: none
+  background: #fff
+  border-bottom: 1px solid #e5e7eb
+  text-shadow: none
+
+.fancybox__slide
+  padding: 12px 0px
+
+.fancybox__thumbs.is-classic 
+  --f-thumb-opacity: 1
+  --f-thumb-hover-opacity: 1
+  --f-thumb-selected-opacity: 1
+  --f-thumb-width: 68px
+  --f-thumb-height: 68px
+  --f-thumb-gap: 12px
+  --f-thumb-offset: 5px
+  --f-thumb-outline: 0
+
+.fancybox__thumbs.is-classic .f-thumbs__slide 
+  border: 1px solid #d1d5db
+  border-radius: 4px
+  transition: all 0.2s
+
+.fancybox__thumbs.is-classic .f-thumbs__slide:hover,
+.fancybox__thumbs.is-classic .f-thumbs__slide.is-nav-selected 
+  border: 1px solid #6b7280
+
+.fancybox-image
+  height: 90%
+  +r($sm)
+    height: 100%
+
+.fancybox__thumbs.is-classic .f-thumbs__slide
+  border: 1px solid #f2f5f8
+
+.fancybox__thumbs.is-classic .f-thumbs__slide:hover, .fancybox__thumbs.is-classic .f-thumbs__slide.is-nav-selected
+  border: 1px solid #000000
+
+.is-compact .fancybox__footer 
+  background-color: transparent
+  // background-color: #d3d3e8
+
+.f-button
+  +r($sm)
+    width: 38px
+    height: 38px 
+  svg 
+    width: 16px
+    height: 16px

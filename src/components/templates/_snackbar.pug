@@ -1,0 +1,33 @@
+template.tpl--snackbar--crt
+  .snackbar
+    .snackbar__crt
+template.tpl--snackbar--msg
+  .snack-msg
+    span(tpl-text) 
+template.tpl--snackbar--msg-error
+  .snack-msg.snack-msg_error
+    span(tpl-text) 
+template.tpl--snackbar--msg-copied
+  .snack-msg
+    include ./snack-icons/snack-copy.svg
+    span(tpl-text)
+template.tpl--snackbar--msg-saved
+  .snack-msg
+    include ./snack-icons/snack-heart.svg
+    span(tpl-text) Changes saved
+template.tpl--snackbar--msg-cart
+  .snack-msg.snack-msg_product(cart-open)
+    .snack-msg__img
+      img(tpl-img )
+    .snack-msg__head
+      include ./snack-icons/snack-cart.svg
+      span.h7 added to cart
+    p.snack-msg__body.h6(tpl-text)
+template.tpl--snackbar--msg-fav
+  a.snack-msg.snack-msg_product(href="/profile-favs" data-nav-favorites)
+    .snack-msg__img
+      img(tpl-img )
+    .snack-msg__head
+      include ./snack-icons/snack-heart.svg
+      span.h7 added to favorites
+    p.snack-msg__body.h6(tpl-text)

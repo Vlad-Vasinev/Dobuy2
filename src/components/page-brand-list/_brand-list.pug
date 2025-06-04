@@ -1,0 +1,14 @@
+.page__block.page__block_margin-none
+  include ../blocks/_breadcrumbs
+section.page__block
+  h1 List of brands
+  .sticky-menu.sticky-menu_mob.customer-info.customer-info_list(data-sticky-container) 
+    .sticky-menu__side.customer-info__side
+      .customer-list-nav
+        nav
+          for val in ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "R", "T", "V", "W", "X", "Y", "Z", "А...Я "]
+            a(href=("#s-" + val))=val
+              
+
+    .sticky-menu__content.customer-info__content
+      include ./_list

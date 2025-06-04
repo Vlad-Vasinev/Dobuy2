@@ -1,0 +1,62 @@
+extends ./_layout
+block vars 
+  - var pageTitle = "Catalog"
+  - var breadcrumbText = ["Main", "Catalog", "Smartphones and gadgets"]
+block subcategoryGrid
+  - 
+    let subCards = [
+      "img/subcategory/videokarti.jpg",
+      "img/subcategory/lenovo.jpg",
+      "img/subcategory/noutbuk.jpg",
+      "img/subcategory/monitor.jpg",
+      "img/subcategory/vr.jpg",
+      "img/subcategory/transform.jpg",
+      "img/subcategory/transform.jpg",
+      "img/subcategory/transform.jpg",
+      "img/subcategory/transform.jpg"
+    ]
+  .page__block.page__block_full-width-mob
+    .subcategory-grid.subcategory-grid_dsk-slider
+      .subcategory-grid__wrapper
+        - var value
+        +cloneArr(subCards)
+          a.subcategory-card(href="#")
+            .h5.subcategory-card__title Android 
+            .subcategory-card__img 
+              img(src=value alt="")
+  - 
+    subCards = [
+      "img/subcategory/videokarti.jpg",
+      "img/subcategory/lenovo.jpg",
+      "img/subcategory/noutbuk.jpg",
+      "img/subcategory/monitor.jpg",
+      "img/subcategory/vr.jpg",
+      "img/subcategory/transform.jpg",
+      "img/subcategory/transform.jpg"
+    ]
+  .page__block.page__block_full-width-mob
+    .subcategory-grid
+      .subcategory-grid__wrapper
+        - var value
+        +cloneArr(subCards)
+          a.subcategory-card(href="#")
+            .h5.subcategory-card__title Android 
+            .subcategory-card__img 
+              img(src=value alt="")
+  - 
+    subCards = [
+      "img/subcategory/videokarti.jpg",
+      "img/subcategory/lenovo.jpg",
+      "img/subcategory/noutbuk.jpg",
+      "img/subcategory/monitor.jpg",
+    ]
+  .page__block.page__block_full-width-mob
+    .subcategory-grid
+      .subcategory-grid__wrapper
+        - var value
+        +cloneArr(subCards)
+          a.subcategory-card(href="#")
+            .h5.subcategory-card__title Android 
+            .subcategory-card__img 
+              img(src=value alt="")
+    

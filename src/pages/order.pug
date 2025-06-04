@@ -1,0 +1,15 @@
+extends ./shared/_layout
+
+prepend head
+  -var title = "Order"
+block navbar
+  include ../components/header/_navbar-order
+block header
+  include ../components/header-order/_header-order
+  
+block content
+  include ../components/page-order/_order.pug
+append modals
+  include ../components/page-order/_order-modals.pug
+append templates
+  include ../components/templates/_address-input.pug

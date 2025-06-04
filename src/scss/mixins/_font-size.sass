@@ -1,0 +1,18 @@
+
+@mixin font-size-desk($fontSize, $lineHeight)
+  font-size: aCalc($fontSize)
+  line-height: aCalc($lineHeight)
+
+@mixin font-size-mob($fontSize, $lineHeight)
+  font-size: $fontSize + px
+  line-height: $lineHeight + px
+
+@mixin fsa($fontSize, $lineHeight, $fontSizeMob, $lineHeightMob)
+  +font-size-desk($fontSize, $lineHeight)
+  +mob
+    +font-size-mob($fontSizeMob, $lineHeightMob)
+
+@mixin heading($selector, $fontSize, $lineHeight, $fontSizeMob, $lineHeightMob)
+  #{$selector}, .#{$selector}
+    +fsa($fontSize, $lineHeight, $fontSizeMob, $lineHeightMob)
+    @content

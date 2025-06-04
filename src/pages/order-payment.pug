@@ -1,0 +1,7 @@
+extends ./shared/_layout
+block header
+  include ../components/header-order/_header-order
+prepend head
+  -var title = "Order payment"
+block content
+  include ../components/page-order-payment/_order-payment

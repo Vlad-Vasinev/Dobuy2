@@ -1,0 +1,157 @@
+section.page__block.page__block_margin-none
+  include ../blocks/_breadcrumbs
+section.page__block
+  .sticky-menu.product(data-sticky-container) 
+    .product__gallery
+      include ./_prod-gallery
+    .sticky-menu__side.product__side
+      //-include ./_product-side
+      .prod-side
+        .prod-side__section
+          h1.h2.prod-side__title=(productData && productData.title) || "Smartphone Apple iPhone 15 Pro Max 256 GB, titanium blue, 1 SIM + eSIM"
+          //- include ./_prod-options-overflow.html
+          .prod-options
+            span Storage
+            .prod-options__line
+              a.param(href="#") 
+                span 128 GB
+              a.param.param_checked(href="#") 
+                span 256 GB
+              .param.param_disabled() 
+                span 512 GB
+            span Color 
+            .prod-options__line
+              a.color-param(style="--c: #373738" href="#" title="цвет#1")
+              a.color-param.color-param_checked(style="--c: #373738" title="цвет#2" href="#")
+              .color-param.color-param_disabled(style="--c: #373738" title="цвет#3")
+        .prod-side__section.prod-side__section_buy-btn
+          .prod-side__buy-btn.prod-side__buy-btn_duty-sale.prod-side__buy-btn_newBtn
+            .wrapper-content
+              .duty-sale-inline
+                .badge-duty-sale(info-popup="duty-sale-info")
+                  .badge-duty-sale__icon
+                    img(src="img/duty-icon.png" alt="")
+                  span -11 344 ₽ 
+                span.h10 duty discount
+              .prod-price.prod-price_large
+                span.prod-price__val 119 999 ₽
+                  .prod-price__discount
+                    span.prod-price__old 135 000 ₽ 
+                    .badge.badge_sale -15%
+                  .badge.badge_hit.badge_hit_sale
+                    p.h10 price reduced
+              .prod-available.prod-available_not
+                span Not available for order
+              .duty-badge
+                span 
+                  | There will be a duty ≈
+                  span 5 003 ₽
+                .duty-badge__info(info-popup="duty-info")
+                  +svgIcon('info')
+            .button.button_small.prod-side__add-to-cart(data-item-id="1312") Add to cart
+            .prod-side__txt-btns
+              a.textbtn(href="#")
+                img(src="img/apple-logo.svg")
+                span All Apple products
+              button.textbtn.textbtn_heart.prod-side__add-to-fav
+                +heartSvg
+                span._dsk Add to favorites
+              div(data-share-popup)
+                .textbtn(data-share-popup-trg)
+                  +svgIcon('share')
+                  span._dsk Share
+            a.button.button_small._link(href="#") Check availability
+          .prod-side__buy-btn.prod-side__buy-btn_newBtn
+            .wrapper-content._column
+              //-.left-content
+              .prod-price.prod-price_large
+                span.prod-price__val 119 999 ₽
+                .prod-price__discount
+                  span.prod-price__old 135 000 ₽ 
+                  .badge.badge_sale -15%
+              .prod-available
+                span Available to order
+              .prod-available.prod-available_not
+                span Not available for order
+            .button.button_small.prod-side__add-to-cart(data-item-id="1312") Add to cart
+            .prod-side__txt-btns
+              a.textbtn(href="#")
+                img(src="img/apple-logo.svg")
+                span All Apple products
+              button.textbtn.textbtn_heart.prod-side__add-to-fav
+                +heartSvg
+                span._dsk Add to favorites
+              div(data-share-popup)
+                .textbtn(data-share-popup-trg)
+                  +svgIcon('share')
+                  span._dsk Share
+        
+        .prod-side__section
+          .prod-side__flex
+            .sign-delivery
+              .sign-delivery__icons
+                .deliv-icon.deliv-icon_orange
+                  img(src="/img/product/cdek.svg")
+              .sign-delivery__text
+                .h5 
+                  |To the pick-up point
+                  |in 8-10 days
+                .h7(style="color: #4C00C9") Free shipping with absolute guarantee
+            .sign-delivery
+              .sign-delivery__icons
+                .deliv-icon.deliv-icon_orange
+                  img(src="/img/product/ems.png")
+              .sign-delivery__text
+                .h5 
+                  | To any region of Russia in 8-10 days
+                .h7(style="color: #4C00C9") Free shipping with absolute guarantee
+          .prod-side__grid
+            .sign-advantage
+              span Product from the UAE
+              .sign-advantage__icon
+                img(src="img/sign/flag.png")
+            .sign-advantage
+              span Original product
+              .sign-advantage__icon
+                img(src="img/sign/check.svg")
+
+          .sticky-menu__content.product__description
+            //-include ../blocks/_ya-reviews.html
+            .product-desc
+              .product-desc__inner
+                h2 About product
+                p The units sold come with a slot for 1 physical SIM and an eSIM. If you need a unit with 2 physical SIM slots, please contact support.
+                p iPhone 15 Pro Max is a combination of aesthetics and functionality. For the first time, the iPhone frame is made of titanium, making it the lightest iPhone Pro ever and able to withstand the most demanding workloads.
+                p The heart of the iPhone 15 Pro Max is the new A17 Pro processor. This is the first mobile chip made using a 3 nm process technology, ensuring instant response of the device to any commands and optimal energy saving. And the new 6-core graphics chip works 20% faster and supports ray tracing at the hardware level.
+              button.h6.hl(open-description) Read description
+            .product-chars
+              table
+                tbody
+                  tr
+                    td.h6 Screen
+                    td.h5 6.43" (2400x1080)
+                  tr
+                    td.h6 Built-in memory
+                    td.h5 128 GB
+                  tr
+                    td.h6 RAM
+                    td.h5 6 GB
+                  tr
+                    td.h6 Operation system
+                    td.h5 Bluetooth, NFC, Wi-Fi
+                  tr
+                    td.h6 Wireless interfaces
+                    td.h5 Bluetooth, NFC, Wi-Fi
+              button.h6.hl(open-chars) All characteristics
+        
+                
+
+section.page__block 
+ include ../blocks/_mixed-grid.pug
+section.page__block
+  h2.page-block-head Top sellers
+  - var amount = 8
+  include ../blocks/_prod-gird-slider
+.page__block 
+
+  

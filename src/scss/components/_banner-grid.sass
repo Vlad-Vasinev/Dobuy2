@@ -1,0 +1,82 @@
+.banner-grid
+  display: grid
+  gap: 0 var(--aCalc24)
+  grid-template-columns: repeat(2, 1fr)
+  +mob 
+    gap: 16px 0
+    grid-template-columns: repeat(1, 1fr)
+  &._different
+    gap: 0 var(--aCalc20)
+    grid-template-columns: aCalc(564) aCalc(856)
+    +mob 
+      gap: 8px 0
+      grid-template-columns: repeat(1, 1fr)
+    .button.button_small
+      background-color: transparent
+      color: $White
+      position: relative
+      display: flex
+      ._icon 
+        img, svg
+          width: aCalc(24)
+          height: aCalc(24)
+          +r($sm)
+            width: 24px
+            height: 24px
+    .banner 
+      +r($sm)
+        height: 345px
+      .button_small.button_white
+        text-transform: unset
+        padding: aCalc(4) aCalc(16)
+        +r($sm)
+          padding: 4px 14px
+          border-radius: 6px
+  .banner
+    &__img 
+      img, video
+        //min-height: unset
+        +mob 
+          //min-height: 312px
+  // &__el 
+  //   position: relative
+  // &__title 
+  //   position: absolute
+  //   top: var(--aCalc24)
+  //   left: 0
+  //   right: 0
+  //   margin: 0 auto 
+  //   text-align: center
+  //   +mob 
+  //     top: 16px
+  // &__decor 
+  //   position: absolute
+  //   top: 50%
+  //   transform: translateY(-50%)
+  //   left: 0 
+  //   right: 0
+  //   margin: 0 auto
+  //   max-width: max-content
+  //   img
+  //     +wah(100%)
+  //     object-fit: cover
+  //     +mob 
+
+  // &__content
+  //   +wah(100%)
+  //   img, video
+  //     +wah(100%)
+  //     min-height: aCalc(640)
+  //     object-fit: cover
+  //     border-radius: var(--aCalc12)
+  //     +mob
+  //       min-height: 312px
+  //       border-radius: 12px
+  // &__link
+  //   position: absolute
+  //   bottom: var(--aCalc24)
+  //   margin: 0 auto 
+  //   left: 0
+  //   right: 0
+  //   +mob 
+  //     bottom: 16px

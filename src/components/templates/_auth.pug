@@ -1,0 +1,112 @@
+template.tpl--auth-modal
+  //- .auth-modal 
+  .modal__body
+    .modal__step.auth-modal__step( default-step step-name="auth")
+      .auth-modal__step-inner
+        .h1 Welcome to DoBuy
+        p.h6 We will send you an email with a confirmation code.
+        form.auth-modal-form(data-action=endpoint+"/auth" name="auth" noValidate)
+          .auth-modal-form__field
+            +uiInput('login')(autocomplete="username")
+              block label
+                | Enter phone or email
+          .auth-modal-form__field.auth-modal-form__field_hidden._hidden
+            +uiInputPassword('password')(autocomplete="current-password")
+              block label
+                | Enter password
+          .auth-modal-form__field.auth-modal-form__field_flex
+            button.hl.h6.auth-modal__pass-res(open-step="password-recovery" type="button" ) I don't remember my password
+            .auth-modal-form__error-label
+              span 
+          .auth-modal-form__buttons
+            button.button(type="submit") Log in
+            .button.button_hollow(open-step="registration") register
+    .modal__step.auth-modal__step(step-name="password-recovery")
+      .auth-modal__back(modal-back)
+        +svgIcon('arrow-left')
+      .auth-modal__step-inner
+        .h1 Password recovery
+        p.h6 Enter the email address you used when placing orders on DoBuy. We will send you instructions on how to reset your password
+        form.auth-modal-form( data-action=endpoint+"/password-reset" name="password-reset" noValidate)
+          .auth-modal-form__field
+            +uiInput('email', 'email')
+              block label
+                | Enter your e-mail
+          .auth-modal-form__buttons
+            button.button(type="submit") Restore
+    .modal__step.auth-modal__step(step-name="password-recovery-sended")
+      .auth-modal__back(modal-back)
+        +svgIcon('arrow-left')
+      .auth-modal__step-inner
+        .h1 Password recovery
+        p.h6 A link to reset your password has been sent to your email. Check your email.
+    .modal__step.auth-modal__step(step-name="code-check")
+      .auth-modal__back(modal-back)
+        +svgIcon('arrow-left')
+      .auth-modal__step-inner
+        .h1 Confirm your phone
+        p.h3.auth-modal-form__entered-tel +7 (999) 999-99-99
+        p.h6 Enter the code from the SMS
+        form.auth-modal-form(data-action=endpoint+"/code" name="code-check")
+          .auth-modal-form__field
+            .ui-input.ui-input_code
+              input#authsmscode(type='text' name='code' required data-length='4' autocomplete='one-time-code' placeholder="••••" inputmode='numeric' pattern='\\d{4}' maxlength='4')
+          .auth-modal-form__field.auth-modal-form__resend-code
+            p.h6
+              | The code has been sent, you can request a repeat one via
+              span.timer 
+              |  seconds
+            button.hl.h6(name="resend-code" type="button") Resend code
+          .auth-modal-form__buttons
+            button.button(type="submit") Confirm
+    .modal__step.auth-modal__step(step-name="registration")
+      .auth-modal__back(modal-back)
+        +svgIcon('arrow-left')
+      .auth-modal__step-inner
+        .h1 Registration in DoBuy
+        p.h6
+          span Already have an account?
+          span.hl(open-step="auth") Log in
+        form.auth-modal-form( data-action=endpoint+"/register" name="registration" noValidate)
+          .auth-modal-form__field
+            +uiInput('name')
+              block label
+                | Enter your named
+          .auth-modal-form__field
+            +uiInput('email', 'email')(autocomplete="email")
+              block label
+                | Enter your e-mail
+          .auth-modal-form__field
+            +uiInput('tel', 'tel')(autocomplete="tel")
+              block label
+                | Phone
+          .auth-modal-form__field
+            +uiInputPassword('password')(autocomplete="new-password")
+              block label
+                | Create a password
+          .auth-modal-form__field
+            +uiInputPassword('password-rep')(autocomplete="new-password")
+              block label
+                | Repeat password
+          .auth-modal-form__field.auth-modal-form__field_xm
+            label.chbox.chbox_inline
+              input(type='checkbox' name="policy-confirm" required)
+              .chbox__box
+              span.h6 I agree with the <a href="#" class="hl">privacy policy</a> and <a href="#" class="hl">offer</a>
+          .auth-modal-form__error-label
+            span
+          .auth-modal-form__buttons
+            button.button(type="submit") register  
+    
+    .modal__step.auth-modal__step(step-name="greetings")
+      .auth-modal__step-inner
+        .h1 Thank you for registering on our website!
+        p.h6 A confirmation email has been sent to your email address. Follow the link to confirm your registration!
+        .button.modal__close(href="#") Close
+    .modal__test 
+      .h5(open-step="auth") Enter
+      .h5(open-step="password-recovery") Password recovery
+      .h5(open-step="password-recovery-sended") Message by mail
+      .h5(open-step="code-check") Code review
+      .h5(open-step="registration") Registration
+      .h5(open-step="greetings") Thank you

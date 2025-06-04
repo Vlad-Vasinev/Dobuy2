@@ -1,0 +1,745 @@
+
+.sticky-menu
+  --menuHeight: auto
+  width: 100%
+  position: relative
+  +dsk
+    display: grid
+    grid-template-rows: var(--menuHeight, auto) auto
+    grid-template-columns: aCalc(832) auto
+    // column-gap: aCalc(145)
+
+  &__side
+    +dsk
+      width: aCalc(464)
+      justify-self: flex-end
+      grid-column: 2/3
+      grid-row: 1/2
+      top: var(--beforeSDTop)
+      left: var(--beforeSDLeft)
+      &._fixed
+        // Возможно нужно будет переделать элемент с positon: absolute
+        // Есть в прошлых версиях файла, просто вернуть
+        position: fixed
+        top: var(--beforeSDTop) !important
+
+  &__content
+    +dsk
+      grid-column: 1/2
+      grid-row: 2/3
+
+.product
+
+  &__gallery
+    grid-column: 1/2
+    .prod-gallery
+      +mob
+        margin: 0 -16px
+        width: auto
+        margin-bottom: 20px
+      .bullet-pag
+        padding: 0 16px
+  &__side
+
+  &__description
+    display: flex
+    gap: var(--aCalc40)
+    flex-direction: column
+    margin-top: var(--aCalc80)
+    +mob
+      gap: 40px
+      margin-top: 40px
+    .ya-reviews
+      +mob
+        order: 100
+
+.prod-side
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  gap: 24px
+  .mts-flex-scheme
+    display: unset
+  &__section
+    h1 + *
+      margin-top: var(--aCalc12)
+      +mob
+        margin-top: 24px
+    &_buy-btn
+      border-top: 1px solid $WhiteGray
+      padding-top: var(--aCalc16)
+      +mob
+        padding-top: 12px
+  &__flex 
+    display: flex
+    justify-content: space-between
+    gap: aCalc(6)
+    margin-bottom: aCalc(8)
+    +r($sm)
+      gap: 6px
+      margin-bottom: 12px
+    .deliv-icon.deliv-icon_orange
+      //margin-bottom: aCalc(12)
+      padding: 0
+      background-color: unset
+      svg, img 
+        width: aCalc(100)
+        height: aCalc(52)
+        +r($sm)
+          width: 85px
+          height: 44px
+  &__grid
+    display: grid
+    width: 100%
+    grid-template-columns: 1fr 1fr
+    gap: 8px
+    .sign-loan,
+    .sign-delivery,
+    .sign-social
+      grid-column: 1/-1
+    .sign-advantage
+  &__grid-item-stretch
+    grid-column: 1/-1
+  &__signs
+    display: flex
+    justify-content: space-between
+    +r($sm)
+      gap: 8px
+    .sign-bg,
+    .sign-delivery,
+    .sign-advantage,
+    .sign-social
+      cursor: pointer
+      display: block
+      padding: var(--aCalc16)
+      background-color: $WhiteGray
+      border-radius: var(--aCalc12)
+      width: aCalc(228)
+      +mob
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 50%
+        border-radius: 12px
+        padding: 16px
+      & > div 
+        +r($sm)
+          order: 0
+      span 
+        display: block
+      // span:first-child 
+      //   margin-block: aCalc()
+      .sign-advantage__icon
+        margin-top: var(--aCalc16)
+        margin-right: 0
+        display: flex
+        justify-content: space-between
+        +r($sm)
+          order: 1
+          width: 100%
+          margin-top: 16px
+        img:first-child 
+          width: var(--aCalc40)
+          height: var(--aCalc40)
+          +r($sm)
+            width: 40px
+            height: 40px
+        img:last-child 
+          align-self: end
+  &__buy-btn
+    display: grid
+    // margin-bottom: var(--aCalc16)
+    +dsk
+      grid-template-columns: auto auto
+    +mob
+      // margin: 0
+    .duty-badge
+      +dsk
+        // justify-self: flex-end
+        grid-column: 2
+        justify-self: flex-start
+        align-self: center
+        grid-row-start: 1
+        margin-bottom: aCalc(10)
+      +mob
+        margin-top: 2px
+    .info-popup
+      +mob
+        right: unset
+        left: 0
+    .prod-price
+      grid-column: 1/2
+      grid-row: 1/2
+      +mob
+        grid-auto-flow: column
+        gap: 8px
+    .prod-available
+      +dsk
+        margin-top: aCalc(2)
+        grid-row: 2/3
+      +mob
+        margin-top: 12px
+    &_duty-sale
+      .duty-badge
+        +mob
+          grid-row: 3
+      .duty-sale-inline
+        grid-row: 1
+        grid-column: 1/2
+        margin-bottom: aCalc(6)
+        +mob
+          grid-column: 1/3
+          margin-bottom: 6px
+        
+
+      .prod-available
+        grid-row: 3
+        +mob
+          grid-row: 4
+
+      // .prod-price
+      //   grid-row: 2
+      //   margin-top: aCalc(6)
+      //   display: flex
+      //   flex-direction: column
+      //   +mob
+      //     margin-top: 6px
+    .prod-price
+      grid-row: unset
+      //margin-top: aCalc(6)
+      display: flex
+      // flex-direction: column
+      // +mob
+      //   margin-top: 6px
+    &.prod-side__buy-btn_newBtn 
+      .prod-side__add-to-cart
+        grid-row: unset
+      .wrapper-content 
+        //display: flex 
+        //gap: aCalc(60)
+        justify-content: space-between
+        display: grid
+        grid-template-columns: auto auto
+        +r($sm)
+          display: flex
+          flex-direction: column
+        &._column 
+          display: flex
+          flex-direction: column
+        .prod-price__discount
+          width: max-content
+          margin-left: aCalc(8)
+          +r($sm)
+            margin-left: 6px
+        .prod-price.prod-price_large
+          +r($sm)
+            order: 1
+            flex-direction: row
+            align-items: center
+            gap: 4px
+        .duty-badge 
+          +r($sm)
+            order: 2
+        .prod-available
+          +r($sm)
+            order: 3
+        .prod-available.prod-available_not
+          +r($sm)
+            order: 3
+        .duty-sale-inline
+          +r($sm)
+            display: none
+      .left-content
+        flex-shrink: 0
+      .right-content
+        flex-shrink: 0
+      .prod-price__old
+        margin-left: 0
+      .duty-badge
+        +r($sm)
+          margin-top: 0
+          padding-top: 0
+  &__buy-btn &__add-to-cart
+    width: 100%
+    grid-column: 1/3
+    margin-top: var(--aCalc16)
+    grid-row: 4
+    +mob
+      display: none
+  .button.button_small._link
+    margin-top: var(--aCalc16)
+    width: 100%
+    grid-column: 1 / 3
+    +r($sm)
+      display: none
+    // &._link
+    //   +mob
+    //     display: block
+    //     padding: 16px
+    //     text-align: center
+    //     border-radius: 12px
+    //     margin-top: 12px
+  &__buy-btn &__txt-btns
+    grid-column: 1/3
+  &__txt-btns
+    display: flex
+    gap: var(--aCalc16)
+    margin-top: var(--aCalc16)
+    +mob
+      margin-top: 12px
+      border-top: 1px solid $WhiteGray
+      padding-top: 12px 
+      gap: 16px
+    .textbtn
+      @extend .h7
+      &:first-child
+        margin-right: auto
+
+.prod-options
+  display: grid
+  grid-template-columns: auto 1fr
+  gap: var(--aCalc8) aCalc(6)
+  align-items: center
+  +mob
+    grid-template-columns: auto
+    margin-top: 24px
+    gap: 4px
+  &:empty
+    display: none
+  span
+    +dsk
+      min-width: var(--aCalc80)
+  &__line
+    display: flex
+    flex-wrap: wrap
+    gap: 4px
+    +dsk
+      gap: var(--aCalc8)
+      grid-column: 2/-1
+  &__line + span
+    +mob
+      margin-top: 12px
+
+.deliv-icon
+  +fsa(18, 18, 16, 16)
+  border-radius: var(--aCalc8)
+  +mob
+    border-radius: 8px
+  img
+    width: auto
+    height: var(--aCalc40)
+    border-radius: inherit
+    +mob
+      height: 40px
+  svg
+    +wah(aCalc(26))
+    +mob
+      +wah(26px)
+  &_orange
+    display: flex
+    align-items: center
+    gap: 7px
+    padding: 7px 13px
+    background-color: $Yellow1
+    span
+      white-space: nowrap
+
+.sign-bg,
+.sign-delivery,
+
+.sign-social
+  display: block
+  padding: var(--aCalc16)
+  background-color: $WhiteGray
+  border-radius: var(--aCalc12)
+  +mob
+    border-radius: 12px
+    padding: 12px
+
+.sign
+  padding: var(--aCalc16)
+  border-radius: var(--aCalc12)
+  border: 1px solid $Gray
+  +mob
+    border-radius: 12px
+    padding: 16px
+  &_gray-info
+    padding: aCalc(5) var(--aCalc16)
+    border-radius: var(--aCalc8)
+    border: none
+    background-color: $WhiteGray
+    color: $BlackWhite
+    text-align: center
+    +mob
+      padding: 3px 16px 6px
+      border-radius: 8px
+      
+.sign
+  &_sp-btwn
+    display: flex 
+    justify-content: space-between
+    align-items: center
+  &_bg
+    border-color: $WhiteGray
+    background-color: $WhiteGray
+  &__text
+  &__icon
+    +wah(aCalc(44))
+    +mob
+      +wah(40px)
+
+    img
+      +wah(100%)
+      object-fit: contain
+
+
+.sign-delivery
+  &__icons
+    display: flex
+    gap: aCalc(6)
+    +mob
+      gap: 6px
+  &__text
+    margin-top: var(--aCalc16)
+    +mob
+      margin-top: 16px
+    * + *
+      margin-top: aCalc(6)
+      +mob
+        margin-top: 4px
+
+.sign-advantage
+  @extend .h7
+  display: flex
+  align-items: center
+  span
+  &__icon
+    order: -1
+    margin-right: var(--aCalc8)
+    +mob
+      margin-right: 8px
+    img
+      +wah(aCalc(26))
+      +mob
+        +wah(26px)
+
+.sign-media-bg
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  border-radius: inherit
+  position: absolute
+  z-index: 0
+  video,img
+    +wah(100%)
+    object-fit: cover
+    border-radius: inherit
+.sign-social
+  position: relative
+  width: 100%
+  color: $White !important
+  display: block
+  width: 100%
+  padding: var(--aCalc24)
+  +mob
+    padding: 16px
+  &__content
+    position: relative
+    z-index: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    > span
+      +dsk
+        margin-bottom: var(--aCalc24)
+        max-width: aCalc(422)
+      +mob
+        max-width: 226px
+    span
+      svg
+        display: inline-block
+        height: aCalc(14)
+        vertical-align: middle
+
+        +mob
+          height: 12px
+    svg
+      +wah(var(--aCalc24))
+      +mob
+        +wah(24px)
+
+.sign-loan
+  @extend .sign-bg
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  padding: var(--aCalc9) var(--aCalc16)
+  +mob
+    padding: 9px 16px
+  > *
+    flex: 0 0 auto
+  &__img
+    width: auto
+    height: aCalc(34)
+    margin-right: aCalc(14)
+    +mob
+      height: 34px
+      margin-right: 14px
+
+    img
+      height: 100%
+      width: auto
+  &__text
+    vertical-align: center
+  &__info
+    margin-left: auto
+    
+    svg
+      color: $GrayBlack
+
+.product-desc
+  &__inner
+    position: relative
+    * + *
+      margin-top: var(--aCalc24)
+      +mob
+        margin-top: 16px
+    &::after
+      display: block
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 85.71%)
+      content: ''
+      height: aCalc(63)
+      +mob
+        height: 51px
+  &_short &__inner
+    &::after
+      display: none
+
+
+  > button
+    margin-top: 16px
+
+.product-chars
+  width: 100%
+  table
+    width: 100%
+    td:first-child
+      width: 100%
+      color: $BlackWhite
+      position: relative
+      padding-right: var(--aCalc16)
+      display: flex
+      white-space: nowrap
+      &::after
+        display: block
+        content: ""
+        width: 100%
+        margin-left: var(--aCalc16)
+        border-bottom: 2px dotted $Gray
+        //margin-right: var(--aCalc16)
+        color: $Gray
+        bottom: 0
+        +mob
+          display: none
+      +mob
+        padding-right: 10px
+    td:last-child
+      // 
+    td
+      padding-top: var(--aCalc8)
+      +mob
+        padding-top: 6px
+  button.h6.hl
+    margin-top: var(--aCalc16)
+    width: max-content
+    +mob
+      margin-top: 16px
+.product
+  .reviews
+    margin-bottom: 100px
+    +mob
+      order: 1
+      margin: 0 -16px
+      margin-bottom: 0
+      margin-top: 36px
+    &__inner
+      padding: var(--aCalc24) 0
+      +mob
+        padding: 16px 0
+      &__slider
+        margin-top: var(--aCalc24)
+        +dsk
+          &:not(.swiper-initialized) .reviews__wrapper
+            display: grid
+            grid-auto-flow: row
+            transform: none
+            grid-template-columns: 1fr
+            justify-content: center
+            gap: aCalc(118)
+            &:not(.swiper-initialized) div.reviews-slide:nth-child(1n+2)
+              display: none
+    .progress-pag
+      margin: 0
+      margin-top: aCalc(20)
+      
+
+
+.product-description-modal,
+.product-chars-modal
+  .modal__body
+    overflow: auto
+
+.duty-badge
+  @extend .h7
+  color: $Violet
+  display: flex
+  // align-items: center
+  justify-content: flex-start
+  white-space: nowrap
+  width: max-content
+  //padding: aCalc(2) 0
+  // +mob
+  //   padding: 2px 0
+  span
+    flex: 0 0 content
+  &__info
+    flex: 0 0 auto
+    margin-left: 6px
+    cursor: pointer
+    svg
+      display: block
+      +wah(aCalc(18))
+      +mob
+        +wah(18px)
+  &_sign
+    background-color: $Gray
+    padding: aCalc(6) var(--aCalc12)
+    border-radius: aCalc(6)
+    width: 100%
+    +mob
+      padding: 6px 12px
+      border-radius: 6px
+    span:first-child
+      margin-right: auto
+
+.product-full-chars,
+.modal-text-inner
+  padding: 0 var(--aCalc80) aCalc(120)
+  +mob
+    padding: 20px 16px 80px
+
+.modal-text-inner
+  a
+    color: $Violet
+  p
+    svg
+      display: inline-block
+      vertical-align: middle
+      margin-left: var(--aCalc12)
+      margin-right: var(--aCalc8)
+      +mob
+        display: none
+        margin-left: 12px
+        margin-right: 8px
+  > img
+    +wah(aCalc(165))
+    +mob
+      +wah(165px)
+  p + p, p + img
+    margin-top: var(--aCalc24)
+    +mob
+      margin-top: 22px
+  img + p
+    margin-top: var(--aCalc24)
+    +mob
+      margin-top: 15px
+  p > img
+    +mob
+      height: 100px
+      width: auto 
+      margin-top: 36px
+
+  
+
+
+
+.product-full-chars
+  &__inner
+    table
+      width: 100%
+      th
+        @extend .h3
+        text-align: left
+        +mob
+          width: 100%
+      td
+        padding: 0
+      tr
+        td
+          &:first-child
+            @extend .h6
+            padding-right: aCalc(20)
+            color: $BlackWhite
+            +dsk
+              white-space: nowrap
+            +mob
+              padding-right: 10px
+              width: 46%
+          &:last-child
+            
+            @extend .h5
+            +mob
+              width: 54%
+        & + tr
+          td
+            padding-top: var(--aCalc8)
+            +mob
+              padding-top: 6px
+          th
+            padding-top: var(--aCalc24)
+            +mob
+              padding-top: 24px
+
+.ya-reviews
+  overflow: hidden
+  width: 100%
+  transition: background 0.1s 0.1s
+  position: relative
+  
+  
+  +mob
+    height: 450px
+  +dsk
+    margin: 0 auto
+    aspect-ratio: 760/476
+  &:not(._loaded)
+    background-color: $WhiteGray
+  &:not(._loaded) iframe 
+    opacity: 0
+  &__wrapper
+    height: 500px
+    +mob
+      width: 100%
+      position: relative
+    +dsk
+      width: 760px
+      transform-origin: top left
+      transform: scale(var(--ratio))
+  iframe
+    display: block
+    border: none
+    box-sizing: border-box
+    height: 100%
+    top: -20px
+    left: -20px
+    position: absolute
+    width: 100%
+    
+    +mob
+      width: calc(100% + 40px)

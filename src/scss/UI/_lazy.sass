@@ -1,0 +1,49 @@
+[lazy][data-src], [lazy-slide][data-src], [data-srcset] ~ img[lazy]
+  transition: all 0.3s 0.1s
+  filter: none
+  z-index: -1
+  border-radius: inherit
+  &:not(.is-loaded)
+    filter: blur(10px)
+    
+
+  
+
+
+// [js-lazy], [prod]
+//   overflow: hidden
+//   position: relative
+
+//   img
+//     &[srcset], &[data-src]
+//       opacity: 0
+//       transition: opacity 0.2s ease-out
+//       +wah(100%)
+//   img
+//     &[data-src][src]
+//       opacity: 1
+//   &::before
+//     top: -10%
+//     left: -10%
+//     content: ''
+//     display: block
+//     position: absolute
+//     width: 120%
+//     height: 120%
+//     z-index: -1
+//     transition: opacity 0.2s, visibility 0s 0.31s
+//     @extend .loading-icon-bg
+//     backdrop-filter: blur(3px)
+
+//   &.is-loaded
+//     overflow: unset
+//     &::before
+//       visibility: hidden
+//       opacity: 0
+//     img
+//       opacity: 1
+// video[lazy-video]
+//   opacity: 0
+//   transition: opacity 0.2s
+//   &.is-loaded
+//     opacity: 1

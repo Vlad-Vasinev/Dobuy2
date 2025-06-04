@@ -1,0 +1,379 @@
+/* UI */
+
+input, textarea
+  font-family: $baseFont
+  border-radius: 0
+
+.grecaptcha-badge
+  display: none !important
+
+.ui-input
+  position: relative
+  @extend .h6 
+  +mob
+    +font-size-mob(14, 20)
+    font-weight: 500
+  input, &__float-label
+    font-size: inherit
+    line-height: inherit
+    font-weight: inherit
+  &__hidden-error
+    display: none
+  &__bottom-error
+    position: absolute
+    margin-top:  var(--aCalc4)
+    color: #f45b63
+    +mob
+      margin-top: 4px
+  &__float-label
+    position: absolute
+    +aProp(left, 16)
+    top: 30%
+    pointer-events: none
+    color: $BlackWhite
+    transition: 0.2s ease
+    transition-property: top, font-size, color
+
+    +mob
+      top: 30.357%
+      left: 16px
+    span.required
+      color: #f45b63
+    &_error
+      color: #FA8190
+  input:focus ~ &__float-label
+    color: $Black
+  &:hover &__float-label
+    +dsk
+      color: $Black
+  &.is-focused &__float-label, input[value]:not([value=""]) ~ &__float-label
+    @extend .h7
+    +aProp(top, 9)
+    +mob
+      top: 9px
+  
+  
+  input.has-error ~ &__float-label
+    visibility: hidden
+  input.has-error ~ &__float-label_error
+    visibility: unset
+
+  // input.has-error:focus ~ &__bottom-error
+  //   display: none
+  input, textarea
+    -webkit-appearance: none
+    display: block
+    width: 100%
+    // height: 100%
+    background-color: $WhiteGray
+    //border-radius: 6px
+    box-shadow: none
+    color: inherit
+
+    padding: aCalc(18) aCalc(15)
+
+    border: 1.5px solid $WhiteGray
+    +aProp(border-radius, 8)
+    
+    transition: all 0.2s ease
+    transition-property: padding, color, background, font-size, line-height
+    +mob
+      border-radius: 8px
+      padding: 18px 15px
+    &::placeholder
+      color: $GrayBlack
+    &:not(:focus).has-error
+      border-color: #FA8190
+    // &.is-valid
+      //border-color: #5ad321
+    
+  
+  &__clear
+    position: absolute
+    right: 0
+    bottom: 0  
+    height: 100%
+    padding-right: 24px
+    cursor: pointer
+    padding: aCalc(17.5)
+    padding-right: var(--aCalc24)
+    
+    width: max-content
+    +mob
+      padding: 13.5px
+      padding-right: 16px
+      max-width: 56px
+    [icon-tgl-crt]
+      +wah(var(--aCalc32))
+      +mob
+        +wah(24px)
+    img, svg
+      +wah(100%)
+      object-fit: contain
+  &__arrow, &__icon
+    position: absolute
+    height: 100%
+    
+    
+    padding: var(--aCalc12) aCalc(18)
+    bottom: 0
+    right: 0 
+    +mob
+      padding: 8px 10px
+    svg
+      height: 100%
+      width: auto
+      aspect-ratio: 1
+  
+  &__msg
+    @extend .h7
+    position: absolute
+    margin-top: var(--aCalc4)
+    top: 100%
+    +mob
+      margin-top: 2px
+    &_error
+      color: #F5495E
+    &_success
+      color: #3FA562
+    &._hidden
+      display: none
+
+.ui-input
+  &_label.is-focused input, input[value]:not([value=""])
+    background-color: #fff
+    color: $Black
+    border-color: $Gray
+    padding-top: aCalc(27)
+    padding-bottom: var(--aCalc9)
+    +mob
+      padding-top: 26px
+      padding-bottom: 10px
+  &_label:hover input
+    +dsk
+      border-color: $Gray
+  
+.ui-input
+  &_code
+    +fsa(24, 33, 18, 25)
+    font-weight: 700
+    margin-bottom: 24px
+  &_code input
+    padding: aCalc(14) var(--aCalc24)
+    text-align: center
+    letter-spacing: 0.2em
+    text-indent: 0.2em
+    
+    +mob
+      padding: 15px 24px
+    &::placeholder 
+      color: $GrayBlack
+      letter-spacing: inherit
+      text-indent: inherit
+
+.ui-input
+  
+  &_promocode
+    +fsa( 20, 27, 16, 22)
+    font-weight: 700
+    border-radius: var(--aCalc12)
+    +mob
+      border-radius: 12px
+  &_promocode:hover
+  &_promocode:hover input, &_promocode.is-focused input 
+    border-color: $Violet
+  
+  &_promocode input
+    border: 2px dashed #AFA9BA
+    padding: aCalc(15) var(--aCalc24) aCalc(15)
+    text-transform: uppercase
+    +mob
+      
+      padding: 14px 16px 14px
+
+    &::placeholder
+      text-transform: none
+      color: $BlackWhite    
+  &_promocode  
+  &_promocode &__arrow
+    color: $GrayBlack
+    +mob
+      padding: 9px
+    svg
+      
+      transition: color 0.1s, background 0.1s
+      padding: aCalc(6)
+      border-radius: 100%
+      +mob
+        padding: 6px
+  &_promocode.is-focused &__arrow
+    cursor: pointer
+    color: $White
+    svg
+      background-color: $Violet
+    // color: $White
+
+.ui-input
+  &__toggle-pass
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    display: flex
+    align-items: center
+    padding: 0 var(--aCalc16)
+    color: $GrayBlack
+    cursor: pointer
+    &:hover
+      color: $Black
+    +mob
+      padding: 0 16px
+    svg
+      +wah(var(--aCalc24)) 
+      +mob
+        +wah(24px)
+  
+.ui-input
+  &_popup
+  &_popup:not(.is-focused) &__change
+    display: none
+  &_popup &__change
+    @extend .h6
+    color: $Violet
+    position: absolute
+    // height: 100%
+    padding: aCalc(37) aCalc(20) aCalc(23) 0
+    //padding: aCalc(29) aCalc(20) aCalc(8) 0
+    bottom: 0
+    right: 0
+    +mob
+      padding: 29px 20px 16px 0
+  &_popup.textarea 
+    svg 
+      width: aCalc(25)
+      +r($sm)
+        width: 24px
+  &_popup.is-focused &__arrow
+    display: none
+  &_popup &__arrow
+    position: absolute
+    height: 100%
+    padding: aCalc(21)
+    bottom: 0
+    right: 0  
+    +mob
+      padding: 20px
+  &_popup input
+    padding: aCalc(21) var(--aCalc16) aCalc(21)
+    background-color: $White
+    +mob
+      padding: 21px 16px 21px
+  &_popup textarea
+    width: 100%
+    padding: aCalc(21) 15.5% aCalc(21) var(--aCalc16)
+    background-color: $White
+    +mob
+      padding: 28px 90px 28px 15px
+      overflow: hidden
+  &_popup.is-focused input, &_popup input[value]:not([value=""])
+    padding: aCalc(28) var(--aCalc16) aCalc(14)
+    +mob
+      padding: 28px 16px 14px
+  &_popup.is-focused textarea, &_popup textarea[value]:not([value=""])
+    padding: aCalc(28) 15.5% aCalc(14) var(--aCalc16)
+    +mob
+      padding: 28px 90px 28px 15px
+      overflow: hidden
+  
+  &_popup &__float-label
+    top: aCalc(21)
+    left: var(--aCalc16)
+    +mob
+      top: 21px
+      left: 16px
+      
+  &_popup.is-focused &__float-label
+    top: var(--aCalc10)
+    +mob
+      top: 10px
+    
+  
+
+// .inputs-container-inline
+//   display: flex
+//   flex-wrap: nowrap
+//   gap: 17px
+//   .ui-input
+//     flex: 0 3 auto
+
+.sugg-drop
+  @extend .h6
+  width: 100%
+  position: absolute
+  top: 100%
+  left: 0
+  box-shadow: 0px 4px 15px 0px #0000001A
+  background-color: #fff
+  z-index: 2
+  border-radius: var(--aCalc12)
+  padding: aCalc(18) 0
+  padding-right: var(--aCalc16) 
+  +mob
+    margin-top: 2px
+    border-radius: 12px
+    padding: 12px 0
+    padding-right: 16px 
+  &._loading
+    pointer-events: none
+    opacity: 1 !important
+    &::after
+      opacity: 0.75
+      background-size: var(--aCalc60)
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%239189A0' stroke-dasharray='62' stroke-linecap='round' stroke-width='4'%3E%3CanimateTransform attributeName='transform' dur='3s' keyTimes='0;1' repeatCount='indefinite' type='rotate' values='0 50 50;360 50 50' /%3E%3C/circle%3E%3C/svg%3E")
+      +wah(100%)
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      background-repeat: no-repeat
+      background-position: center
+      background-color: #fff
+      +mob
+        background-size: 32px
+
+  // display: none
+  &:not(._open)
+    display: none
+  &__inner
+    @extend .styled-scroll
+    border-radius: inherit
+    max-height: aCalc(238)
+    overflow: auto
+    font-size: inherit
+    line-height: inherit
+    display: block
+    
+    +mob
+      max-height: 189px
+    
+
+  &__item, li
+    display: block
+    font-size: inherit
+    line-height: inherit
+    padding: 6px 24px
+    cursor: pointer
+    +mob
+      padding: 4px 16px
+
+    b
+      font-weight: 800
+      color: $Violet
+    &:first-child
+      // padding-top: 24px
+      // padding-top: 0
+    &:last-child
+      // padding-bottom: 0
+      // padding-bottom: 24px
+      
+  

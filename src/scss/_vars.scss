@@ -1,0 +1,58 @@
+$ms: 369;
+$sm: 767;
+$lg: 1023;
+$xl: 1200;
+$hd: 1439;
+$uhd: 1919;
+
+$ms1: $ms + 1;
+$sm1: $sm + 1;
+$lg1: $lg + 1;
+$xl1: $xl + 1;
+$hd1: $hd + 1;
+
+//$listHeight: --list-height;
+
+$baseTextColor: #121212;
+$baseFont: "Vela Sans", "Helvetica", "Ubuntu", "Cantarell", "Arial", sans-serif,
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$Black: #100030;
+$BlackWhite: #8C8697;
+
+// $Violet: #4c00c9;
+// $VioletWhite: #7733e4;
+// $VioletWhite1: #c3a8ee;
+// $VioletWhite2: #B659FF;
+$Violet: var(--theme-color-base, #4c00c9);
+$VioletWhite: var(--theme-color-base-light, #7733e4);
+$VioletWhite1: var(--theme-color-base-light-1, #c3a8ee);
+$VioletWhite2: var(--theme-color-base-light-2, #B659FF);
+
+$LightSilver: #D9D9D9;
+$Yellow: #ffb119;
+$Yellow1: #FFB11A;
+$ScotchBonnet: #FE9D00;
+$Green: #6bd36f;
+$Green1: #00C060;
+$Green2: #10B118;
+
+$Red: #F5495E;
+$EosinPink: #FF5ABD;
+// $GrayBlack: #afa9ba;
+// $Gray: #e5e2ec;
+$GrayDark: #9189A0;
+$GrayBlack: var(--theme-gray-black, #afa9ba);
+$Gray: var(--theme-gray, #e5e2ec);
+$Gray3: #F2F2F2;
+$WhiteGray: #f3f0f7;
+$White: #ffffff;
+$TGBlue: #1399EA;
+$VioletBlue: #4C00C9;
+
+$SoftIris: #E5E2EC;
+
+$pb-margin-between: aCalc(140);
+$pb-margin-between-mobile: 60px;
+$page-bloks-x-padding: aCalc(240);
+$page-bloks-x-padding-mobile: 15px;

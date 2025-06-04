@@ -1,0 +1,1077 @@
+.order.sticky-menu
+  // grid-template-rows: max-content auto
+  +dsk
+    grid-template-columns: aCalc(830) auto
+  .sticky-menu__content
+    +dsk
+      grid-row: 1/3
+.order
+  +mob
+    display: grid
+    grid-template-columns: auto
+    grid-auto-flow: row
+  &__side
+    grid-row: 2
+    +mob
+      margin-top: 40px
+  &__content
+
+    // grid-row: 1/3
+    // height: 200px
+
+.order-summary
+  background-color: $WhiteGray
+  padding: var(--aCalc32)
+  border-radius: var(--aCalc12)
+  width: 100%
+  transition: visibility 0s 0s, opacity 0.25s 5ms
+  +mob
+    border-radius: 12px
+    padding: 16px 11px
+  &:not(._loaded)
+    opacity: 0
+    visibility: hidden
+
+  &__empty
+    position: absolute
+    left: 0
+    top: 0
+    padding: auto
+    width: 100%
+    padding: inherit
+    z-index: 1
+    > * + *
+      margin-top: var(--aCalc16)
+      +mob
+        margin-top: 16px
+  &._empty
+    position: relative
+    > *
+      opacity: 0
+  &._empty &__empty
+    display: block
+    opacity: 1
+
+  &:not(._empty) &__empty
+    display: none
+
+  &__head
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    +mob
+      align-items: center
+    .hl
+      cursor: pointer
+  &__products
+    display: grid
+    width: 100%
+    grid-template-columns: repeat(4, 1fr)
+    gap: var(--aCalc8)
+    margin-top: var(--aCalc24)
+    min-height: aCalc(94)
+    +mob
+      grid-template-columns: repeat(5, 1fr)
+      gap: 9px
+      margin-top: 16px
+      min-height: 62px
+
+  &__product
+    position: relative
+    +wah(100%)
+    background-color: $White
+    aspect-ratio: 1
+    border-radius: var(--aCalc8)
+    +mob
+      border-radius: 8px
+
+    img
+      border-radius: inherit
+      +wah(100%)
+      object-fit: contain
+    span
+      bottom: 0
+      right: 0
+      margin: var(--aCalc4)
+      padding: aCalc(2) var(--aCalc8)
+      background-color: #FFFFFF66
+      border-radius: var(--aCalc12)
+      backdrop-filter: blur(3px)
+      position: absolute
+      line-height: 1
+      +mob
+        margin: 2px
+        padding: 2px 7px
+        border-radius: 6px
+  .promocode-input
+    margin-top: var(--aCalc40)
+    +mob
+      margin-top: 24px
+  .summary-price
+    min-height: aCalc(71)
+    margin-top: var(--aCalc40)
+    +mob
+      margin-top: 32px
+    &__tr_total
+      td
+        padding-top: var(--aCalc16)
+        +mob
+          padding-top: 8px
+    &__item
+      &_total
+        margin-top: var(--aCalc8)
+  
+  .button
+    width: 100%
+  > button
+    margin-top: var(--aCalc40)
+    +mob
+      display: none
+
+.order-summary 
+  .duty-badge
+    margin-top: var(--aCalc16)
+    +mob
+      margin-top: 8px
+
+.promocode-input
+  width: 100%
+  // height: var(--aCalc60)
+
+.order-steps
+  display: flex
+  flex-direction: column
+  .order-step + .order-step
+    margin-top: var(--aCalc60)
+    +mob
+      margin-top: 40px
+  &._blocked
+    opacity: 0.5
+    pointer-events: none
+    // вернуться
+    // a
+    //   pointer-events: all
+
+.order-step
+  position: relative
+  padding-left: aCalc(122)
+  +mob
+    padding: 0
+  &__number
+    position: absolute
+    left: 0
+    top: 0
+    +mob
+      display: none
+  &__opt-crt
+    display: grid
+    grid-template-columns: 1fr
+    gap: var(--aCalc8)
+    margin-bottom: aCalc(8)
+    +mob
+      gap: 8px
+    &_two-col
+      +dsk
+        grid-template-columns: repeat(2, 1fr)
+
+  .order-step__opt-crt-cdek
+    .cdek-open
+      display: none
+      background-color: transparent
+      color: #4C00C9
+      margin-top: 16px
+      border: 1px solid #C3A8EE
+      +r($sm)
+        margin-top: 16px
+      &-btn
+        margin-top: 16px
+    .linkForWidjet
+      p + p 
+        margin-top: aCalc(4)
+        +r($sm)
+          margin-top: 4px
+  &__section
+    > span
+      margin-bottom: var(--aCalc24)
+      display: block
+      +mob
+        margin-bottom: 6px
+
+    > span:first-of-type
+      margin-top: 0
+
+    > * + span
+      margin-top: var(--aCalc40)
+      +mob
+        margin-top: 40px
+    .ui-input + .ui-input
+      margin-top: var(--aCalc16)
+      +mob
+        margin-top: 6px
+    .sign-order-customs
+      width: 100%
+      //margin-top: var(--aCalc4)
+      +mob
+        margin-top: 8px
+  &__section + &__section
+    margin-top: var(--aCalc60)
+    +mob
+      margin-top: 16px
+
+.order-side
+  display: flex
+  flex-direction: column
+  gap: var(--aCalc8)
+  +mob
+    margin: 0 -11px
+    gap: 4px
+  .sale-banner.prod-card
+    margin-top: aCalc(32)
+    margin-bottom: aCalc(32)
+    +r($sm)
+      margin-top: 32px
+      margin-bottom: 32px
+.sign-sp-offer
+  position: relative
+  border-radius: var(--aCalc12)
+  +mob
+    border-radius: 12px
+  &__badge
+    padding: aCalc(3) aCalc(6)
+    background-color: $Yellow
+    border-radius: var(--aCalc4)
+    width: max-content
+    color: $Black
+    +mob
+      border-radius: 4px
+      padding: 3px 6px
+  &__content
+    position: relative
+    display: flex
+    flex-direction: column
+    gap: aCalc(6)
+    padding: var(--aCalc16) var(--aCalc32)
+    border-radius: inherit
+    color: $White
+    +mob
+      gap: 4px
+      padding: 12px 11px
+
+.order-opt
+  display: grid
+  grid-template-columns: auto auto
+  padding: var(--aCalc24)
+  border-radius: var(--aCalc12)
+  border: 1px solid $Gray
+  align-items: center
+  transition: all 0.1s
+  &:hover
+    border-color: $Violet
+  &.order-opt__new
+    display: block
+    //margin-bottom: aCalc(8)
+    +r($sm)
+      margin-bottom: 6px
+    img, svg 
+      width: aCalc(116)
+      height: aCalc(32)
+      +r($sm)
+        width: 102px
+        height: 28px
+    .order-opt__icon-crt, .h7
+      margin-bottom: aCalc(16)
+      +r($sm)
+        margin-bottom: 16px
+    .h7
+      color: #8C8697
+    .button.button_small 
+      width: 100%
+  +mob
+    border-radius: 12px
+    padding: 16px
+  &__name
+    display: flex
+    gap: var(--aCalc8)
+    align-items: center
+    grid-column: 1/-1
+    margin-bottom: var(--aCalc16)
+    +mob
+      gap: 8px
+      margin-bottom: 16px
+
+  &__delivery-date
+    grid-column: 2
+    place-self: flex-end
+    color: $GrayBlack
+    display: flex
+    flex-direction: column
+    gap: aCalc(2)
+    text-align: right
+    +mob
+      gap: 2px
+
+  &__icon-crt
+    display: flex
+    gap: var(--aCalc10)
+    +mob
+      gap: 10px
+
+    img
+      height: var(--aCalc32)
+      width: auto
+      +mob
+        height: 20px
+
+.order-step__opt-crt_list
+  +dsk
+    .order-opt
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &__wrapper 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: aCalc(16)
+      &._text
+        display: block
+        //margin-bottom: aCalc(8)
+      &__name
+        margin: 0
+      &__icon-crt
+        gap: var(--aCalc8)
+        align-items: center
+        img
+          height: aCalc(26)
+        .mts-flex 
+          position: relative
+          padding-left: aCalc(8)
+          +r($sm)
+            padding-left: 8px
+          &::before 
+            position: absolute
+            content: ""
+            left: 0
+            top: 0
+            height: aCalc(26)
+            width: 1px
+            background-color: #D9D9D9
+            +r($sm)
+              height: 20px
+          img
+            width: aCalc(84)
+            height: aCalc(26)
+            object-fit: contain
+            +r($sm)
+              width: 73px
+              height: 20px
+            //object-fit: contain
+  +mob 
+    .order-opt
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &__wrapper 
+        margin-bottom: 16px
+      &__wrapper 
+        display: flex
+        justify-content: space-between
+        align-items: center
+      &._text
+        display: block
+      &__name
+        margin: 0
+    .mts-flex 
+      padding-left: 8px
+      position: relative
+      &::before 
+        position: absolute
+        content: ""
+        left: 0
+        top: 0
+        width: 1px
+        background-color: #D9D9D9
+        height: 20px
+      img
+        width: 73px
+        height: 20px
+        object-fit: contain
+          
+
+.address-input-modal, .city-input-modal, .city-input-cdek-modal
+  .modal__body
+    padding: 0 var(--aCalc80) var(--aCalc80)
+    overflow: auto
+    display: flex
+    flex-direction: column
+    +mob
+      padding: 16px
+.address-input-modal
+  display: flex
+  flex-direction: column
+  .address-form
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+.cdek-map
+  display: none
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 998
+  &:before
+    content: ''
+    width: 100%
+    height: 100%
+    position: fixed
+    background: $Black
+    opacity: 0.2
+  &-inner
+    width: aCalc(1440)
+    height: aCalc(968)
+    background: $White
+    position: relative
+    padding: var(--aCalc32)
+    border-radius: var(--aCalc16)
+    overflow: hidden
+    +mob
+      width: 100%
+      height: 100%
+    &-map
+      width: 100%
+      height: 100%
+    .cdek-modal__close
+      position: absolute
+      top: var(--aCalc12)
+      right: var(--aCalc12)
+      +mob
+        top: 12px
+        right: 12px
+        z-index: 10
+      .sprite-icon
+        width: var(--aCalc16)
+        height: var(--aCalc16)
+        +mob
+          width: 24px
+          height: 24px
+    .cdek-pvz-info
+      display: flex
+      width: aCalc(350)
+      padding: var(--aCalc32) 0 var(--aCalc32) var(--aCalc32)
+      position: absolute
+      top: var(--aCalc32)
+      right: var(--aCalc32)
+      bottom: var(--aCalc32)
+      background: $White
+      transform: translateX(0)
+      transition: transform .4s ease-out
+      z-index: 10
+      +mob()
+        width: auto
+        padding: 56px 12px 24px
+        left: var(--aCalc32)
+      &-inner
+        width: 100%
+        display: flex
+        flex-direction: column
+        gap: var(--aCalc16)
+        position: relative
+        +mob
+          gap: 20px
+        &-back
+          display: none
+          position: absolute
+          top: 8px
+          left: 8px
+          +mob
+            display: flex
+        &-badge
+          position: absolute
+          top: 0
+          right: 0
+          color: $GrayBlack
+        &-title
+          font-size: var(--aCalc20)
+          font-weight: 600
+          +mob
+            font-size: 24px
+        &-description
+          color: $GrayDark
+          +mob
+            font-size: 16px
+        &-works
+          display: flex
+          gap: var(--aCalc8)
+          color: $GrayDark
+          font-size: var(--aCalc14)
+          +mob
+            gap: 12px
+          &-val
+            font-size: var(--aCalc16)
+            color: $Black
+            +mob
+              font-size: 14px
+        &-button
+          width: 100%
+          +mob
+            height: 48px
+            margin-top: auto
+      &.hidden
+        transform: translateX(100%)
+
+  &.is-opened
+    display: flex
+.city-form, .city-cdek-form
+  ul
+    li
+      cursor: pointer
+      padding: aCalc(6) 0
+      +mob
+        padding: 6px 0
+      b
+        font-weight: 800
+      &:hover
+        color: $Violet
+      &:first-child
+        padding-top: 0
+      &:last-child
+        padding-bottom: 0
+
+  &__input
+    margin-bottom: var(--aCalc40)
+    +mob
+      margin-bottom: 24px
+    .ui-input
+      @extend .h2
+      input
+        padding: var(--aCalc16) var(--aCalc24)
+        +mob
+          padding: 12px 16px
+  &__sugg-crt
+  &__defaults
+    p
+      margin-bottom: var(--aCalc40)
+      +mob
+        margin-bottom: 24px
+  &._empty
+  &:not(._active) &__sugg-crt
+    display: none
+
+  &._active &__defaults
+    display: none
+
+.address-form
+  +mob
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+  ul li
+    cursor: pointer
+  input._hidden
+    display: none
+  &__crt
+    display: grid
+    gap: var(--aCalc24)
+    grid-template-columns: 1fr 1fr
+    +mob
+      display: flex
+      gap: 12px
+      flex-direction: column
+    div:nth-child(1)
+      grid-column: 1/-1
+  &__field-wrap
+    .chbox
+      margin-top: var(--aCalc8)
+      +mob
+        margin-top: 12px
+  &__city
+    display: flex
+    justify-content: space-between
+    cursor: pointer
+    margin-bottom: var(--aCalc40)
+    +mob
+      margin-bottom: 24px
+    input, div
+
+      font-size: inherit
+      line-height: inherit
+      font-weight: inherit
+    input
+      padding: 0
+      color: inherit
+  &__bottom
+    margin-top: auto
+    button
+      width: 100%
+.address-select
+  &__crt
+    display: flex
+    flex-direction: column
+    gap: var(--aCalc16)
+    +mob
+      gap: 16px
+  .chbox
+
+.address-input
+  .chbox.chbox_inline
+    margin-top: var(--aCalc16)
+    +mob
+      margin-top: 16px
+
+.address-pick
+  &__result
+    display: none
+
+.sign-order-customs, .sign-gray-bg
+  display: flex
+  flex-direction: column
+  gap: var(--aCalc12)
+  padding: var(--aCalc24)
+  border-radius: var(--aCalc12)
+  background-color: $Gray
+  +mob
+
+    border-radius: 12px
+    gap: 12px
+    padding: 16px
+
+// variable
+//order-banner: display: var(--sale-active)
+
+.sale-banner.no-card
+  display: var(--sale-active)
+  margin-bottom: aCalc(60)
+  +r($sm)
+    margin-bottom: 40px
+  &.sale-banner_first
+  &.sale-banner_second
+  &.sale-banner_hide 
+    display: none 
+  &.sale-banner_block
+    display: block
+  .sale-banner__info
+    display: flex
+    gap: aCalc(16)
+    +r($sm)
+      gap: 8px
+    img
+      width: aCalc(72)
+      height: aCalc(72)
+      object-fit: cover
+      border-radius: aCalc(8)
+      +r($sm)
+        width: 64px
+        height: 64px
+        border-radius: 8px
+  picture 
+    flex-shrink: 0
+  .prod-price
+    display: flex
+    align-items: flex-end
+    width: max-content
+    margin-left: auto
+    +r($sm)
+      margin: 0
+      padding: 0
+      align-self: flex-end
+  .button_buy
+    //display: var(--sale-active)
+    border-radius: aCalc(12)
+    border: 1px solid $SoftIris
+    overflow: hidden
+    position: relative
+    background-color: transparent
+    +r($sm)
+      border-radius: 12px
+      text-align: left
+    &:hover 
+      background-color: transparent
+    img
+      width: 100%
+      height: 100%
+  &.sale-banner_enlarged
+    padding: aCalc(16)
+    border-radius: aCalc(12)
+    border: 1px solid $SoftIris
+    +r($sm)
+      border-radius: 12px
+    .sale-banner__info 
+      padding: 0
+      display: flex
+      justify-content: space-between
+      +r($sm)
+        padding: 12px
+      .sale-banner__text 
+        color: $Black
+        button 
+          width: unset
+          overflow: unset
+          color: $VioletBlue
+          border: 0
+          margin-top: aCalc(8)
+          +r($sm)
+            margin-top: 8px
+      img 
+        width: aCalc(79)
+        height: aCalc(79)
+        object-fit: cover
+        border-radius: aCalc(8)
+        +r($sm)
+          width: 68px
+          height: 68px
+          border-radius: 8px
+
+.sale-banner.prod-card
+  display: var(--sale-active)
+  margin-bottom: aCalc(60)
+  +r($sm)
+    margin-bottom: 40px
+  &.sale-banner_first
+  &.sale-banner_second
+  &.sale-banner_hide 
+    display: none 
+  &.sale-banner_block
+    display: block
+  .sale-banner__info
+    display: flex
+    gap: aCalc(16)
+    +r($sm)
+      gap: 8px
+    img
+      width: aCalc(72)
+      height: aCalc(72)
+      object-fit: cover
+      border-radius: aCalc(8)
+      +r($sm)
+        width: 64px
+        height: 64px
+        border-radius: 8px
+  picture 
+    flex-shrink: 0
+  .prod-price
+    display: flex
+    align-items: flex-end
+    width: max-content
+    margin-left: auto
+    +r($sm)
+      margin: 0
+      padding: 0
+      align-self: flex-end
+  .button_buy
+    //display: var(--sale-active)
+    border-radius: aCalc(12)
+    border: 1px solid $SoftIris
+    overflow: hidden
+    position: relative
+    background-color: transparent
+    +r($sm)
+      border-radius: 12px
+      text-align: left
+    &:hover 
+      background-color: transparent
+    img
+      width: 100%
+      height: 100%
+  &.sale-banner_enlarged
+    padding: aCalc(16)
+    border-radius: aCalc(12)
+    border: 1px solid $SoftIris
+    +r($sm)
+      border-radius: 12px
+    .sale-banner__info 
+      padding: 0
+      display: flex
+      justify-content: space-between
+      +r($sm)
+        padding: 12px
+      .sale-banner__text 
+        color: $Black
+        button 
+          width: unset
+          overflow: unset
+          color: $VioletBlue
+          border: 0
+          margin-top: aCalc(8)
+          +r($sm)
+            margin-top: 8px
+      img 
+        width: aCalc(79)
+        height: aCalc(79)
+        object-fit: cover
+        border-radius: aCalc(8)
+        +r($sm)
+          width: 68px
+          height: 68px
+          border-radius: 8px
+
+.cdek-map
+  .marker
+    &:hover
+      cursor: pointer
+  .clusterer-change
+    padding: 8px 16px
+    border-radius: 12px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .clusterer-change__section
+    display: flex
+    align-items: center
+    width: 100%
+    justify-content: space-between
+    gap: 10px
+    height: 48px
+
+  .clusterer-change__buttons
+    display: flex
+    flex-direction: column
+    gap: 8px
+    padding: 8px 0
+
+  .clusterer-change__input__label
+    font-size: 14px
+
+  .clusterer-change__input
+    max-width: 60px
+    height: 32px
+    font-size: 16px
+    text-align: center
+    border: none
+    border-radius: 8px
+    background: rgba(92, 94, 102, 0.06)
+    font-size: 16px
+    outline: none
+    transition: border-color 0.2s ease
+
+  .clusterer-change__btn
+    border: none
+    cursor: pointer
+    width: 172px
+    padding: 8px 16px
+    color: #050d33
+    font-size: 14px
+    font-weight: 15
+    background-color: rgba(92, 94, 102, 0.06)
+    border-radius: 8px
+    transition: background-color 0.2s
+
+  .clusterer-change__btn:hover
+    background-color: rgba(92, 94, 102, 0.06)
+  .clusterer-change__btn:active
+    background-color: rgba(92, 94, 102, 0.06)
+
+  .circle
+    position: absolute
+    width: 40px
+    height: 40px
+    color: var(--interact-action)
+    border-radius: 50%
+    background-color: rgba(255, 255, 255, 0.7)
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
+    transform: translate(-50%, -50%)
+
+  .circle:hover
+    color: #2e4ce5
+    cursor: pointer
+
+  .circle-content
+    position: absolute
+    top: 50%
+    left: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 90%
+    height: 90%
+    border-radius: 50%
+    background-color: currentColor
+    transform: translate3d(-50%, -50%, 0)
+
+  .circle-text
+    font-size: 16px
+    font-weight: 500
+    line-height: 20px
+    color: #fff
+  .pin
+    transform: translate(-50%, -100%)
+
+  .divider
+    width: 100%
+    border: none
+    border-top: 1px solid rgba(92, 94, 102, 0.1)
+    margin: 8px 0
+
+
+  .info_window
+    padding: 8px 12px 8px 32px
+    border-radius: 8px
+    background-color: #313133
+    background-image: url('./info-icon.svg')
+    background-position: 8px 50%
+    background-repeat: no-repeat
+    gap: 8px
+    color: #f2f5fa
+    font-size: 14px
+    line-height: 20px
+  .popup
+    display: flex
+    flex-direction: column
+    width: 254px
+    background: #fff
+    gap: 4px
+
+  .popup.second_variant
+    gap: 32px
+    width: 211px
+
+  .popup__content
+    display: flex
+    flex-direction: column
+    gap: 16px
+    padding: 8px
+
+  .popup__text
+    display: flex
+    white-space: break-spaces
+    flex-direction: column
+    gap: 8px
+
+  .popup__buttons
+    display: flex
+    flex-direction: column
+    gap: 12px
+
+  .popup__buttons__block
+    display: flex
+    gap: 4px
+
+  .close_icon
+    border: none
+    background-color: transparent
+    position: absolute
+    background-image: url('./close-icon.svg')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    width: 16px
+    height: 16px
+    cursor: pointer
+    right: 8px
+
+  .popup__text_title
+    color: #050d33
+    font-weight: 500
+    line-height: 28px
+    font-size: 20px
+
+  .popup__text_content
+    color: #7b7d85
+    font-size: 14px
+    line-height: 20px
+    font-weight: 400
+
+  .button_close
+    padding: 7px
+    font-size: 16px
+    cursor: pointer
+    color: var(--text-text-prim-btn)
+    border: none
+    border-radius: 8px
+    outline: none
+    background-color: var(--interact-interact-btn-accent)
+    transition: background-color 0.2s
+
+  .button_close:hover
+    background-color: var(--interact-interact-btn-accent)
+
+  .button_close:active
+    background-color: var(--interact-interact-btn-accent)
+
+  .button
+    padding: 8px
+    width: 100%
+    cursor: pointer
+    line-height: 16px
+    font-size: 14px
+    color: #050d33
+    border: none
+    border-radius: 8px
+    outline: none
+    background: rgba(92, 94, 102, 0.06)
+    font-weight: 500
+    transition: background-color 0.2s
+
+  .button:hover
+    background: rgba(92, 94, 102, 0.06)
+
+  .button:active
+    background: rgba(92, 94, 102, 0.06)
+  .title
+    font-size: 20px
+    font-weight: 500
+    margin: 0
+  .description
+    line-height: 20px
+    font-size: 14px
+    margin: 0
+    color: #7b7d85ff
+  .balloon
+    display: flex
+    flex-direction: column
+    box-sizing: border-box
+    row-gap: 8px
+    border-radius: 12px
+    padding: 8px 4px
+    height: 100%
+    width: 350px
+    overflow: hidden
+  .skeleton-title
+    height: 20px
+    width: 45%
+    position: relative
+    border-radius: 4px
+    overflow: hidden
+    margin: 0 0 8px 0
+  .description-container
+    display: flex
+    flex-direction: column
+    row-gap: 8px
+  .skeleton-title,
+  .skeleton-description
+    background-color: rgba(0, 0, 0, 0.05)
+  .skeleton-description
+    height: 9px
+    position: relative
+    border-radius: 4px
+    overflow: hidden
+    margin: 0
+  .skeleton-title::after,
+  .skeleton-description::after
+    content: ''
+    position: absolute
+    top: 0
+    left: -100%
+    width: 100%
+    height: 100%
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0) 100%)
+    animation: loading 2s infinite
+  .w40
+    width: 40%
+  .w60
+    width: 60%
+  .w70
+    width: 70%
+  .w80
+    width: 80%
+  @keyframes loading
+    0%
+      transform: translateX(-100%)
+    100%
+      transform: translateX(200%)

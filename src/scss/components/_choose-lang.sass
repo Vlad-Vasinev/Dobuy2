@@ -1,0 +1,128 @@
+
+.choose-lang 
+  position: relative
+  width: aCalc(100)
+  margin: 0 aCalc(6) 0 aCalc(12)
+  +r($sm)
+    width: unset
+    order: 3
+    margin: 0
+    flex-shrink: 0
+    margin-left: auto
+  &__top 
+    display: flex
+    align-items: center
+    padding: aCalc(11) aCalc(12)
+    cursor: pointer
+    gap: aCalc(6)
+    border-top: 1px solid #F3F0F7
+    border-left: 1px solid #F3F0F7
+    border-right: 1px solid #F3F0F7
+    border-bottom: 1px solid #F3F0F7
+    border-radius: aCalc(12)
+    border-bottom-right-radius: aCalc(12)
+    border-bottom-left-radius: aCalc(12)
+    // border-top-left-radius: aCalc(12)
+    justify-content: space-between
+    position: relative
+    z-index: 1
+    +r($sm)
+      gap:  4px
+      padding: 12px 12px 12px 15px
+      border-radius: 12px
+      border-bottom-right-radius: 12px
+      border-bottom-left-radius: 12px
+      //border: none
+    &._active
+      border-bottom: none
+      border-bottom-right-radius: 0
+      border-bottom-left-radius: 0
+      img.choose-lang__arrow  
+        transform: rotate(180deg)
+    img, svg
+      transition: transform .3s
+      width: aCalc(20)
+      height: auto
+      +r($sm)
+        width: 18px
+
+  &__body
+    position: absolute
+    // bottom: aCalc(-122)
+    bottom: aCalc(-133)
+    display: flex
+    flex-direction: column
+    width: 100%
+    z-index: 10
+    border-bottom-left-radius: aCalc(12)
+    border-bottom-right-radius: aCalc(12)
+    +r($sm)
+      border-bottom-left-radius: 12px
+      border-bottom-right-radius: 12px
+      bottom: -123px
+      // bottom: -114px
+  &__el 
+    cursor: pointer
+    padding: aCalc(11) aCalc(12)
+    display: flex
+    gap: aCalc(6)
+    align-items: center
+    transition: background-color .3s, border-color .3s
+    background-color: #ffffff
+    display: none
+    +r($sm)
+      gap: 6px
+      padding: 11px 15px
+    &:hover 
+      background-color: #F3F0F7
+    &._active
+      display: flex
+      border-right: 1px solid #F3F0F7
+      border-left: 1px solid #F3F0F7
+    &._active:last-child
+      border-bottom: 1px solid #F3F0F7
+      border-bottom-left-radius: aCalc(12)
+      border-bottom-right-radius: aCalc(12)
+      +r($sm)
+        border-bottom-left-radius: 12px
+        border-bottom-right-radius: 12px
+    img, svg
+      width: aCalc(20)
+      height: auto
+      object-fit: cover
+      border-radius: aCalc(2)
+      +r($sm)
+        width: 18px
+        border-radius: 2px
+
+.modal.modal-side-bottom.modal-lang 
+  //min-height: 210px
+  //height: 263px !important
+  height: auto !important
+  max-height: var(--app-height)
+  top: auto 
+  bottom: 0
+  border-top-left-radius: 24px
+  border-top-right-radius: 24px
+  transform: translateX(0) translateY(100%)
+  &._active
+    transform: translateX(0) translateY(0)
+  .modal__head 
+    padding: 18px 15px
+    border-bottom: 0
+  .modal__body-el
+    padding: 16px 15px
+    transition: background-color .3s
+    display: flex
+    align-items: center
+    gap: 6px
+    border-bottom: 1px solid #F3F0F7
+    &:first-child
+      border-top: 1px solid #F3F0F7
+    &:hover 
+      background-color: #F3F0F7
+    img, svg 
+      width: 18px 
+      height: 100%
+      border-radius: 2px
+      //-object-fit: cover

@@ -1,0 +1,60 @@
+{
+  "cart": {
+    "orderCost": {
+      "clearTotal": "30 000 ₽",
+      "salses": [
+        {
+          "name": "Скидка",
+          "value": "-2 000 ₽"
+        },
+        {
+          "name": "Скидка за второй товар",
+          "value": "-3 000 ₽"
+        }
+      ],
+      "sumSale": "-17%",
+      "finalTotal": "25 000 ₽"
+    },
+    "items": [
+      {
+        "id": "0001",
+        "amount": "1",
+        "title": "Смартфон Samsung Galaxy S23 Ultra 12/256 Гб, зеленый",
+        "price": {
+          "value": "119 999 ₽",
+          "discount": {
+            "old": "135 000 ₽",
+            "sale": "-15%"
+          }
+        },
+        "images": ["img/product/1/img0.png"]
+      },
+      {
+        "id": "0002",
+        "amount": "1",
+        "title": "Смартфон Apple iPhone 15, 128 ГБ, розовый, 1 SIM + eSIM",
+        "price": {
+          "value": "119 999 ₽",
+          "discount": {
+            "old": "135 000 ₽",
+            "sale": "-15%"
+          }
+        },
+        "images": ["img/product/2/img1.jpg"]
+      },
+      {
+        "id": "0003",
+        "amount": "2",
+        "title": "Беспроводные наушники Apple AirPods Max, белые",
+        "price": {
+          "value": "229 500 ₽",
+          "discount": {
+            "old": "270 000 ₽",
+            "sale": "-15%"
+          }
+        },
+        "images": ["img/product/3/img0.png"]
+      }
+    ]
+  }
+}

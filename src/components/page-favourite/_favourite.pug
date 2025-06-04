@@ -1,0 +1,18 @@
+- var pageTitle = "Favorite"
+- var breadcrumbText = ["Main", "Favorite"]
+.page__block.page__block_margin-none
+  include ../blocks/_breadcrumbs
+.page__block.page__block_margin-none
+  include ../blocks/_page-title
+.page__block.page__block_margin-none.page__block_padding-none
+  hr.hr-line
+  .filters 
+    .filters__el 
+      .textbtn
+        span 6 
+        p products
+  hr.hr-line
+.page__block.page__block_full-width-mob
+  .catalog-content 
+    +clone(4)
+      include ../blocks/_product-card

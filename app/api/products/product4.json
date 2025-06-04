@@ -1,0 +1,22 @@
+{
+  "id": "0004",
+  "title": "Apple Airpods Wireless Headphones (3rd Generation) Lightning",
+  "price": {
+    "value": "119 999 ₽",
+    "discount": {
+      "old": "135 000 ₽",
+      "sale": "-15%"
+    }
+  },
+  "href": "#",
+  "badges": [
+    { "type": "new", "val": "NEW" },
+    { "type": "hit", "val": "HIT" }
+  ],
+  "images": [
+    "img/product/4/img0.png",
+    "img/product/4/img1.png",
+    "img/product/4/img2.png",
+    "img/product/4/img3.png"
+  ]
+}

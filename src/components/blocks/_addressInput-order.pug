@@ -1,0 +1,32 @@
+.tabs.address-pick
+  .tabs__head
+    .button.button_small.button_hollow._active.old-address(open-tab="select") Choose address
+    .button.button_small.button_hollow(open-tab="input") new address
+  .tabs__body
+    .address-input.tabs__tab(tab-name="input")
+      +uiTextAreaPopup('city-input', 'text')(order-ignore)
+        | Locality22*
+      +uiTextAreaPopup('address-input', 'text')(order-ignore)
+        | Delivery address*
+      label.chbox.chbox_default-checked.chbox_inline
+        input(type='checkbox' name="save-new-address")
+        .chbox__box
+        span.h6 Save address
+    .address-select.tabs__tab._active(tab-name="select")
+      fieldset.address-select__crt(order-ignore)
+        label.chbox.chbox_inline.chbox_radio
+          -var val = '{"city": "Мытищи, Московская обл", "street": "1-й Рупасовский переулок", "house": "17Б", "apart": "99", "postindex": "000111"}'
+          input(type='radio' name="address-saved" value=val checked)&attributes(attributes)
+          .chbox__box
+          span.h6 Mytishchi, Moscow region, 1st Rupasovsky lane 17B, apt. 99
+        label.chbox.chbox_inline.chbox_radio
+          -var val = '{"city": "Москва", "street": "Берсеневский переулок", "house": "2 ст. 1", "apart": "офис 312", "postindex": "000222"}'
+          input(type='radio' name="address-saved" value=val)&attributes(attributes)
+          .chbox__box
+          span.h6 Moscow, Bersenevsky lane 2 building 1, office 312.
+  .address-pick__result
+    input(type="text" name="city")
+    input(type="text" name="postindex")
+    input(type="text" name="street")
+    input(type="text" name="house")
+    input(type="text" name="apart")

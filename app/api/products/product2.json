@@ -1,0 +1,22 @@
+{
+  "id": "0002",
+  "title": "Smartphone Samsung Galaxy S23 Ultra 12/256 GB, green",
+  "price": {
+    "value": "119 999 ₽",
+    "discount": {
+      "old": "135 000 ₽",
+      "sale": "-15%"
+    }
+  },
+  "href": "#",
+  "badges": [
+    { "type": "new", "val": "NEW" },
+    { "type": "hit", "val": "HIT" }
+  ],
+  "images": [
+    "img/product/2/img0.png",
+    "img/product/2/img1.png",
+    "img/product/2/img2.png"
+  ]
+}
+

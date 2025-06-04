@@ -1,0 +1,12 @@
+
+- var pageTitle = "Favorite"
+- var breadcrumbText = ["Main", "Favorite"]
+.page__block.page__block_margin-none
+  include ../blocks/_breadcrumbs
+.page__block.page__block_margin-none
+  include ../blocks/_page-title-extended
+.page__block.page__block_full-width-mob
+  .favourite-empty 
+    h2.page-block-head Top sellers
+    - var amount = 12
+    include ../blocks/_prod-gird-slider

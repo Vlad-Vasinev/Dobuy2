@@ -1,0 +1,254 @@
+
+.selection-grid 
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  gap: aCalc(80) aCalc(20)
+  margin-bottom: aCalc(80)
+  +r($sm)
+    grid-template-columns: repeat(2, 1fr)
+    gap: 40px 5px
+    margin-bottom: 40px
+  .prod-card-pag 
+    left: 0
+    right: 0
+    margin: aCalc(6) auto 0
+    +r($sm)
+      margin: 5px auto 0
+
+.selection-item 
+  +r($sm)
+    width: 100%
+    height: auto
+  img, video 
+    border-radius: aCalc(6)
+    margin-bottom: aCalc(16)
+    width: 100%
+    height: aCalc(502)
+    +r($sm)
+      height: auto
+      margin-bottom: 12px
+      border-radius: 0
+      object-fit: cover
+      margin-bottom: 0
+      height: 100%
+  .prod-card-slider
+    height: 100%
+    padding-bottom: aCalc(16)
+    +r($sm)
+      padding-bottom: 10px
+  .prod-card-slider__wrapper .prod-card-slider__slide
+    border-radius: aCalc(6)
+    overflow: hidden
+    +r($sm)
+      border-radius: 0
+    img 
+      object-fit: cover
+      height: 100%
+  .prod-card__gallery
+    margin-top: 0 
+    height: aCalc(502)
+    margin-bottom: 0
+    +r($sm)
+      height: 271px
+  .prod-card__title
+    overflow: unset
+    -webkit-line-clamp: unset
+    margin-bottom: 0
+    margin-top: aCalc(16)
+    +r($sm)
+      padding-left: 8px
+    .selection-item__title
+      margin-bottom: aCalc(4)
+      +r($sm)
+        margin-bottom: 4px
+  &__title 
+    margin-bottom: aCalc(4)
+    font-size: aCalc(14)
+    line-height: aCalc(18)
+    font-weight: 500
+    +r($sm)
+      margin-bottom: 4px
+      line-height: 15px
+      font-size: 12px
+      padding: 0
+  &__subtitle 
+    margin-top: aCalc(4)
+    opacity: 0.4
+    font-size: aCalc(14)
+    line-height: aCalc(18)
+    font-weight: 500
+    +r($sm)
+      line-height: 15px
+      font-size: 12px
+      padding: 0
+      margin-top: 4px
+  &.selection-item_quote
+    padding: aCalc(24)
+    border-radius: aCalc(8)
+    height: aCalc(502)
+    +r($sm)
+      border-radius: aCalc(8)
+      display: none
+    img, video 
+      border-radius: aCalc(48)
+      width: aCalc(80)
+      height: aCalc(80)
+      margin-bottom: aCalc(12)
+      +r($sm)
+        border-radius: 48px
+        margin-bottom: 0
+    .selection-item__title
+      margin-bottom: 0
+      font-size: aCalc(20)
+      line-height: aCalc(24)
+      font-weight: 700
+      +r($sm)
+        margin-bottom: 4px
+    .selection-item__subtitle
+      opacity: 0.4
+    .selection-item__quote
+      margin-top: aCalc(24)
+      +r($sm)
+        margin-top: 16px
+
+.sticky-menu-wrapper
+  overflow: visible
+  display: flex
+  gap: aCalc(20)
+  justify-content: space-between
+  position: relative
+  +r($sm)
+    flex-direction: column
+  .sticky-menu_hide 
+    display: none
+    +r($sm)
+      display: block
+  .sticky-menu__img
+    display: none 
+    +r($sm)
+      display: block
+  .sticky-menu-el 
+    width: aCalc(564)
+    flex-shrink: 0
+    +r($sm)
+      width: 100%
+    .product 
+      // +r($sm)
+      //   display: none
+    .image-pag 
+      flex-direction: row
+      margin-top: 8px
+    .prod-gallery__item img
+      object-fit: cover
+    .bullet-pag
+      +r($sm)
+        display: none
+    .image-pag-bullet
+      opacity: 1
+      width: unset
+      height: unset
+      border: none
+      border-radius: aCalc(8)
+      img 
+        width: aCalc(56)
+        height: aCalc(56)
+        border-radius: aCalc(8)
+        object-fit: cover
+    .product__gallery
+      +r($sm)
+        overflow-x: hidden
+    .prod-gallery
+      padding-bottom: 0
+      padding-left: 0
+      height: aCalc(684)
+      +r($sm)
+        height: 343px
+        padding: 0
+        height: 387px
+        margin-bottom: 8px
+    img, .product
+      position: sticky
+      width: 100%
+      top: aCalc(93)
+      border-radius: aCalc(6)
+      left: 0
+      +r($sm)
+        border-radius: 0
+  .sticky-menu-sample 
+    .catalog-content
+      gap: aCalc(40) aCalc(20) 
+      grid-template-columns: repeat(3, 1fr)
+      +r($sm)
+        grid-template-columns: repeat(2, 1fr)
+        gap: 40px 15px
+
+.selection-slider 
+  @extend .swiper
+  +r($sm)
+    padding-left: 15px
+  .prod-card-slider__slide
+    +r($sm)
+      border-radius: 6px !important
+  .slider-navigation
+    height: aCalc(24)
+  .prod-card__gallery
+    height: aCalc(380)
+    +r($sm)
+      height: 271px
+  .prod-card-pag 
+    left: 0
+    right: 0
+    margin: aCalc(6) auto 0
+  &__wrapper 
+    @extend .swiper-wrapper
+  &:not(.swiper-initialized)
+    .selection-slider__wrapper 
+      display: grid
+      gap: var(--aCalc20)
+      grid-template-columns: repeat(5, 1fr)
+      +r($sm)
+        gap: 8px
+        grid-auto-columns: 54.812%
+        -ms-grid-columns: unset
+        grid-template-columns: unset
+        grid-auto-flow: column
+      .selection-item:nth-child(n + 6)
+        display: none
+  .selection-item
+    @extend .swiper-slide
+    img 
+      height: aCalc(392)
+      +r($sm)
+        height: auto
+    &__author
+      display: flex
+      gap: aCalc(4)
+      +r($sm)
+        gap: 4px
+      &-title
+      &-subtitle 
+    &__styler 
+      img 
+        width: aCalc(42)
+        height: aCalc(42)
+        border-radius: aCalc(48)
+        +r($sm)
+          width: 36px
+          height: 36px
+          border-radius: 48px
+  &__head 
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    margin-bottom: aCalc(24)
+    +r($sm)
+      padding-right: 15px
+      margin-bottom: 16px
+      align-items: flex-start
+    .page-block-head
+      margin-bottom: 0
+      +r($sm)
+        width: 190px 
+        //max-width: 167px
+  .prod-card-slider__slide img
+    object-fit: cover

@@ -1,0 +1,72 @@
+.toggle-switch {
+  $bg: transparent;
+  $border: $Gray;
+  $thumbColor: $Gray;
+
+  $bgActive: $WhiteGray;
+  $borderActive: $WhiteGray;
+  $thumbColorActive: $Violet;
+
+  @include aProp(--tt-height, 40);
+
+  @include aProp(--tt-padding, 4);
+
+  $animationSpeed: 0.2s;
+  //----
+
+  position: relative;
+  display: block;
+  height: var(--tt-height);
+  width: calc((var(--tt-height) - var(--tt-padding)) * 2);
+  @include mob {
+    --tt-height: 32px;
+    --tt-padding: 4px;
+  }
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    display: block;
+  }
+
+  .toggle-switch__slider {
+    display: block;
+    // position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: $bg;
+    border-radius: $bg;
+    border: 1px solid $border;
+    transition: $animationSpeed;
+    border-radius: calc(var(--tt-height) / 2);
+
+    padding: var(--tt-padding);
+    &:before {
+      border-radius: 50%;
+    }
+  }
+
+  .toggle-switch__slider:before {
+    // position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    display: block;
+    aspect-ratio: 1;
+    left: 0px;
+    bottom: 0px;
+    background-color: $thumbColor;
+    transition: $animationSpeed;
+  }
+  input:checked + .toggle-switch__slider {
+    background-color: $bgActive;
+    border-color: $borderActive;
+  }
+
+  input:checked + .toggle-switch__slider:before {
+    transform: translateX(100%);
+    background-color: $thumbColorActive;
+  }
+}

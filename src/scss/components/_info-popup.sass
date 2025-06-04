@@ -1,0 +1,184 @@
+[info-popup]
+  position: relative
+  cursor: help
+.info-popup, .share-popup
+  z-index: 100
+  position: absolute
+  top: 100%
+  left: 0
+  width: aCalc(322)
+  color: $baseTextColor
+  white-space: normal
+  +mob
+    width: 322px
+  a
+    color: $Violet
+  &__inner
+    width: 100%
+    box-shadow: 0px 4px 24px 0px #0000001A
+    background-color: $White
+    border: 1px solid #F3F2F5
+    padding: var(--aCalc16)
+    border-radius: var(--aCalc4)
+    +mob
+      padding: 16px
+      border-radius: 4px
+    // 
+    +fsa(14, 16, 14, 16)
+    font-weight: 500
+    //
+    *
+      font-size: inherit
+      font-weight: inherit
+      line-height: inherit
+    //
+    > *:not(img) + *
+      display: block
+      margin-top: var(--aCalc10)
+
+// обновление попапов, они теперь тёмные
+.info-popup
+  a
+    color: $VioletWhite1
+  &__inner
+    @extend .h7
+    color: $White
+    border: none
+    background: #09001C99
+    backdrop-filter: blur(30px)
+    border-radius: var(--aCalc8)
+
+    &::before
+      content: ""
+      position: absolute
+      width: var(--aCalc12)
+      height: aCalc(6)
+      bottom: 100%
+      z-index: 101
+      left: 0
+      margin: 0 11px
+      clip-path: polygon( 61.785% 23.57%,100% 100%,0% 100%,38.215% 23.57%,38.215% 23.57%,40.281% 20.055%,42.541% 17.322%,44.946% 15.369%,47.449% 14.198%,50% 13.807%,52.551% 14.198%,55.054% 15.369%,57.459% 17.322%,59.719% 20.055%,61.785% 23.57% )
+      background-color: #09001C99
+      // filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1))
+  &_top 
+    top: unset
+    bottom: 100%
+  &_top &__inner
+    &::before
+      bottom: unset
+      top: (100%)
+      transform: rotateZ(180deg)
+  &_right-center, &_left-center
+    top: 50%
+    transform: translateY(-50%)
+    left: 100%
+    padding-left: var(--aCalc12)
+  &_right-center &__inner, &_left-center &__inner
+    position: relative
+    &::before
+      clip-path: polygon( 23.57% 38.215%,100% 0%,100% 100%,23.57% 61.785%,23.57% 61.785%,20.055% 59.719%,17.322% 57.459%,15.369% 55.054%,14.198% 52.551%,13.807% 50%,14.198% 47.449%,15.369% 44.946%,17.322% 42.541%,20.055% 40.281%,23.57% 38.215% )
+      width: aCalc(6)
+      height: var(--aCalc12)
+      bottom: unset
+      top: calc(50% - aCalc(6))
+      left: unset
+      right: 100%
+      margin: 0
+      
+      
+  &_left-center
+    left: unset
+    right: 100%
+    padding-left: unset
+    padding-right: var(--aCalc12)
+  &_left-center &__inner
+    right: 0
+    left: unset
+    &::before
+      left: 100%
+      right: unset
+      transform: scale(-1, -1)
+    
+// плашки "кредит" и "будет пошлина"
+.sign-loan, .duty-badge
+  position: relative
+  [info-popup]
+    position: static
+  .info-popup
+    left: unset 
+    right: 0
+    top: 0  
+    &__inner::before
+      left: unset
+      right: 0
+  
+.product-grid_slider:not(.product-grid_slider-mob), .hdr-drop_search .hdr-drop__result
+  .info-popup
+    @extend .info-popup_top
+
+  .badge-duty-sale .info-popup
+    padding: 0
+    padding-bottom: 7px    
+
+
+.badge-duty-sale .info-popup
+  padding-top: aCalc(7)
+  
+.sign-loan .info-popup
+  padding-top: aCalc(58)
+    
+.duty-badge .info-popup
+  padding-top: aCalc(36)
+  +mob  
+    padding-top: 36px
+.summary-price tr .info-popup
+  @extend .info-popup_right-center
+  
+  // +dsk
+  //   top: 0
+  //   padding-top: aCalc(34)
+  // +mob
+  //   padding-bottom: 26px
+.prod-card .info-popup
+  width: aCalc(260)
+
+.mixed-grid 
+  .prod-card .info-popup
+    width: 198%
+  .info-popup, .share-popup 
+    top: -120%
+
+.prod-card.prod-card_cart-item .info-popup
+  @extend .info-popup_left-center
+  padding-top: 0 
+  width: aCalc(400)
+
+.order-summary 
+  .info-popup
+    +mob
+      padding: 0
+      padding-bottom: 36px
+      top: unset
+      bottom: 0
+
+[data-share-popup]
+  position: relative
+
+.share-popup
+  left: unset
+  right: 0
+  width: auto
+  &__inner
+    border-radius: var(--aCalc12)
+    +mob
+      border-radius: 12px
+
+.modal
+  &_info-popup &__body
+    padding-bottom: 40px
+    text-align: center
+    img
+      width: auto
+      height: 112px
+      +mob
+        margin: 0 auto 8px

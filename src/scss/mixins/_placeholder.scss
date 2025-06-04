@@ -1,0 +1,15 @@
+@mixin placeholder(){
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    @content;
+  }
+  
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    @content;
+  }
+  
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    @content;
+  }
+
+}
+

@@ -1,0 +1,93 @@
+.page__order-info
+  max-width: aCalc(708)
+  margin: 0 auto
+  +mob
+    max-width: unset
+    margin: 0
+  .button
+    width: 100%
+    margin-bottom: var(--aCalc16)
+    +mob
+      margin-bottom: 16px
+  .h1, .h2, h1, h2
+    margin-bottom: var(--aCalc24)
+    +mob
+      margin-bottom: 16px
+  
+  
+  .sign-qr-payment, .sign-order-info
+    margin-bottom: var(--aCalc16)
+    +mob
+      margin-bottom: 16px            
+
+.sign-qr-payment, .sign-order-info
+  padding: var(--aCalc24)
+  border-radius: var(--aCalc12)
+  border: 1px solid $Gray
+  +mob
+    padding: 24px
+    border-radius: 12px
+
+
+.sign-order-info
+  display: flex
+  flex-direction: column
+  gap: var(--aCalc16)
+  +mob
+    gap: 8px
+    padding: 16px
+  &__el
+    display: flex
+    align-items: center
+    gap: var(--aCalc8)
+    +mob
+      gap: 8px
+    svg
+      +wah(var(--aCalc24))
+      align-self: flex-start
+      +mob
+        +wah(24px)
+    
+    // span
+    //   color: $Black
+
+  .sign-order-info__el + .sign-order-info__el
+    margin-top: var(--aCalc16)
+    +mob
+      margin: 0
+  &__text
+    margin-left: var(--aCalc8)
+    +mob
+      margin: 0
+
+.sign-qr-payment
+  display: flex
+  align-items: center
+  +mob
+    align-items: flex-start
+    flex-direction: column
+  &__img
+    +mob
+      width: 100%
+    img
+      height: aCalc(175)
+      width: 100%
+      object-fit: contain
+      +mob
+        min-width: 175px
+        width: 59%
+        height: auto
+        
+  &__info
+    margin-left: var(--aCalc16)
+    +mob
+      margin: 0
+      margin-top: 16px
+    .h4
+      margin-bottom: var(--aCalc16)
+      +mob
+        margin-bottom: 8px
+  .sign-qr-payment__step + .sign-qr-payment__step
+    margin-top: aCalc(2)
+    +mob
+      margin-top: 2px

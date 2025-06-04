@@ -1,0 +1,105 @@
+block vars
+  - var pageTitle = "Clothes and accessories in old style"
+  - var breadcrumbText = ["Main", "Catalog", "Images"]
+
+.page__block.page__block_margin-none
+  include ../blocks/_breadcrumbs
+.page__block.page__block_margin-none
+  include ../blocks/_page-title
+
+.page__block._overflow-vis.page__block_full-width-mob 
+  .h6.page__text
+    |Despite the fact that the French brand Longchamp has existed since
+    |1948, its most famous model is considered to be the functional
+    |Le Pliage made of nylon and leather. What is its special feature?
+    |Firstly, the bag is very practical, as its name suggests.
+    |Translated from French as "foldable".
+    |The fact is that a fabric bag can be folded in three counts
+    | - so it will take up much less space in a closet, suitcase
+    |or another bag. Secondly, the model is budget-friendly. And thirdly, the bag
+    |Le Pliage is a new it-bag, which is loved by fashionistas from all over the world.
+  .sticky-menu-wrapper
+    .sticky-menu-el
+      .product
+        .h1
+        .prod-side__add-to-cart(data-item-id="_1")
+        .prod-gallery.prod-gallery_selection
+          .prod-gallery__wrapper
+            - 
+              var value 
+              var arr = [
+                "img/selection/selection-preview.jpg",
+                "img/selection/small-selection.png",
+                "img/selection/selection-preview.jpg",
+                "img/selection/selection-preview.jpg",
+                "img/selection/selection-preview.jpg",
+              ]
+            - 
+              var links 
+              var linksArr = [
+                "https://lipsum.app/id/62/1600x1200",
+                "https://fancyapps.com/img/product_2_b.jpg",
+                "https://fancyapps.com/img/product_3_b.jpg",
+                "https://fancyapps.com/img/product_5_b.jpg",
+                "https://fancyapps.com/img/product_5_s.jpg",
+              ]
+            +cloneArr(arr)
+              a.prod-gallery__item.product-preview(data-bullet=value data-fancybox="gallery" href=value)
+                img(src=value loading="lazy")
+        .image-pag
+        .bullet-pag
+    .sticky-menu_hide.h6.page__text
+      |Despite the fact that the French brand Longchamp has existed since
+      |1948, its most famous model is considered to be the functional
+      |Le Pliage made of nylon and leather. What is its special feature?
+      |Firstly, the bag is very practical, as its name suggests.
+      |Translated from French as "foldable".
+      |The fact is that a fabric bag can be folded in three counts
+      | - so it will take up much less space in a closet, suitcase
+      |or another bag. Secondly, the model is budget-friendly. And thirdly, the bag
+      |Le Pliage is a new it-bag, which is loved by fashionistas from all over the world.
+    .sticky-menu-sample
+      .catalog-content
+        +clone(17)
+          include ../blocks/_product-card
+
+section.page__block.page__block_full-width-mob
+  .selection-slider(data-content="api/unpacking.json")
+    .selection-slider__head
+      h2.page-block-head A selection of images from a stylist
+      a.btn-all(href="#")
+        span All
+        +svgIcon('arrow-next')
+      .slider-navigation
+        .slider-navigation__prev
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12L4.25736 12M10.7574 20L4.87868 14.1213C3.70711 12.9497 3.70711 11.0503 4.87868 9.87868L10.7574 4" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        .slider-navigation__next
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12L19.7426 12M13.2426 4L19.1213 9.87868C20.2929 11.0503 20.2929 12.9497 19.1213 14.1213L13.2426 20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+    .selection-slider__wrapper
+      +clone(11) 
+        a.selection-item(href="#")
+          .selection-item__author 
+            .selection-item__styler 
+              img(src="img/selection/kate.jpg" alt="")
+            .selection-item__author-info 
+              p Stylist DoBuy
+              p @malina-elena
+          .product-grid_slider-dsk.product-grid_slider
+            .prod-card(data-item-id=((cardContent && cardContent.id) || "0000"))
+              .prod-price
+              .rod-side__add-to-cart
+              .prod-card__gallery(href="/product")
+                .prod-card-slider
+                  .prod-card-slider__wrapper
+                    each card, key in ((cardContent && cardContent.images) || (prodCardDef && prodCardDef.images))
+                      - var src = ((cardContent ? cardContent.prevs[key] : prodCardDef.prevs[key] ))
+                      .prod-card-slider__slide
+                        img(data-src="img/selection/selection-img.jpg" lazy-slide loading="lazy" src=("img/selection/selection-img.jpg" || "img/pv.webp") alt="")
+                  .prod-card-pag
+              .prod-card__title(href="/product")
+                span.selection-item__title Smartphone Samsung Galaxy S23 Ultra 12/256 GB, black phantom
+                .selection-item__subtitle Sport

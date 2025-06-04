@@ -1,0 +1,161 @@
+
+section.page__block
+  .ui-ctr
+    .ui-ctr
+      .button place an order
+      .button._active place an order
+      .button.button_hollow place an order
+      .button.button_hollow._active place an order
+      .button 
+        +svgIcon('cart-add')
+        span place an order
+      .button._active 
+        +svgIcon('cart-add')
+        span place an order
+      .button.button_hollow 
+        +svgIcon('cart-add')
+        span place an order
+      .button.button_hollow._active 
+        +svgIcon('cart-add')
+        span place an order
+      .button.button_check
+        +svgIcon('cart-check')
+        span in cart
+    .ui-ctr
+      .button.button_small place an order
+      .button.button_small._active place an order
+      .button.button_small.button_hollow place an order
+      .button.button_small.button_hollow._active place an order
+      .button.button_small 
+        +svgIcon('cart-add')
+        span place an order
+      .button.button_small._active 
+        +svgIcon('cart-add')
+        span place an order
+      .button.button_small.button_hollow 
+        +svgIcon('cart-add')
+        span place an order
+      .button.button_small.button_hollow._active 
+        +svgIcon('cart-add')
+        span place an order
+      .button.button_small.button_check
+        +svgIcon('cart-check')
+        span in cart
+    .ui-ctr
+      .button.button_transp place an order
+      .button.button_transp._active place an order
+      +checkbox('sas')
+        .button checkbox 
+      +radio('sas')
+        .button radio 
+      +radio('sas')
+        .button radio
+      .switch-wrapper 
+        +toggleSwitch
+      //- include ../blocks/_double-range
+      +doubleRange('price', '0', '1000')
+      +doubleRange('price', '0', '2000')
+      +doubleRange('price', '0', '3000')
+      include ../blocks/_filter-checked
+  .ui-ctr
+    .ui-ctr
+      a.param(href="#")
+        span 128 gb
+      +checkbox('sas')
+        .param 
+          span 128 gb
+      +checkbox('sas')(disabled)
+        .param 
+          span 128 gb
+      +checkbox('sas')(class="focus-visible")
+        .param 
+          span 128 gb
+      +checkbox('sas')(checked)
+        .param 
+          span 128 gb
+      +radio('color')
+        .color-param(style="--c: #373738")
+      +radio('color')
+        .color-param(style="--c: #373738")
+      +radio('color')(checked)
+        .color-param(style="--c: #373738")
+      +radio('color')(disabled)
+        .color-param(style="--c: #373738")
+    .ui-ctr
+      .badge Badge
+      .badge.badge_new New
+      .badge.badge_hit HIT
+      .badge.badge_sale -15%
+    .ui-ctr 
+      +uiInput('biba', "text", "")
+        block label
+          | Text your name
+      +uiInput('biba', "text", "Vlad")
+        block label
+          | Text your name
+      +uiInput('biba', "text", "Vlad")(class="is-focused has-error")
+        block label
+          | Text your name
+      +uiInput('biba', "text", "Vlad")(class="has-error")
+        block label
+          | Text your name
+    .ui-ctr
+      .prod-available
+        span Available
+      .prod-available.prod-available_not
+        span Not available
+    .ui-ctr
+      
+          
+  .ui-ctr
+  
+    .ui-ctr
+      +search-field
+      .amount-panel
+        button.amount-panel__minus            
+          +svgIcon("minus")
+        .amount-panel__val            
+          span 
+        button.amount-panel__plus
+          +svgIcon("plus")
+    .ui-ctr
+      .textbtn
+        +svgIcon('heart')
+        span Add to favorites
+      .textbtn
+        span Add to favorites
+        +svgIcon('heart')
+  .ui-ctr
+    .ui-ctr
+      -
+        var value
+        var srcs = [
+          "arrow-down",
+          "arrow-left",
+          "arrow-next",
+          "arrow-right",
+          "box",
+          "burger",
+          "cart-add",
+          "cart-check",
+          "cart",
+          "catalog",
+          "check",
+          "close",
+          "copy",
+          "delete",
+          "delivery",
+          "exit",
+          "filter",
+          "find",
+          "flower",
+          "heart",
+          "home",
+          "minus",
+          "plus",
+          "profile",
+          "share"
+        ]
+      +cloneArr(srcs)
+        h6=value
+        +svgIcon(value)

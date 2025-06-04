@@ -1,0 +1,169 @@
+
+.reviews
+  
+  &__inner
+    padding: var(--aCalc60) 0
+    border-radius: var(--aCalc12)
+    background-color: $WhiteGray
+    +mob 
+      border-radius: 12px
+      padding: 16px 0
+    & > .h2 
+      margin-left: var(--aCalc24)
+      +mob 
+        margin-left: 16px
+  &__title
+    text-align: center
+    padding: 0 var(--aCalc24)
+    +mob 
+      padding: 0 16px
+      text-align: left
+  &__btn 
+    margin: 0 auto
+    
+    +mob 
+      display: none
+  &__slider 
+    @extend .swiper
+    position: relative
+    margin-top: var(--aCalc60)
+    +dsk
+      &:not(.swiper-initialized) .reviews__wrapper 
+        display: grid
+        grid-auto-flow: column
+        transform: translate3d(0)
+        grid-template-columns: repeat(3, 52.6389%)
+        justify-content: center
+        gap: aCalc(118)
+      &:not(.swiper-initialized) .reviews-slide
+      &:not(.swiper-initialized) div.reviews-slide:nth-child(1n+4)
+        display: none
+    +mob 
+      margin-top: 16px
+      margin-bottom: 0   
+  &__wrapper
+    @extend .swiper-wrapper
+  .reviews-slide
+    padding: 0 var(--aCalc24)
+    +mob 
+      padding: 0 16px
+
+.product
+  .reviews
+    &__title
+      text-align: left
+    &__inner
+      padding: var(--aCalc24) 0
+      +mob
+        padding: 15px 0
+    &__slider
+      +dsk
+        margin-top: var(--aCalc24)
+        &:not(.swiper-initialized) .reviews__wrapper 
+          grid-auto-flow: unset
+          grid-template-columns: 1fr
+        &:not(.swiper-initialized) div.reviews-slide:nth-child(1n+2)
+          display: none
+
+.reviews 
+  .progress-pag
+    +aProp(--gap, 10)
+    --bullet-collor: #100030
+    --bullet-bg: #AFA9BA
+    margin: var(--aCalc60) 0
+    padding: 0 var(--aCalc24)
+    &-bullet
+      cursor: pointer
+    +mob
+      display: none
+    
+
+.rater
+  height: var(--aCalc16)
+  width: var(--aCalc80)
+  background-size: var(--aCalc16)
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.202 1.607c.327-.643 1.27-.643 1.596 0l1.744 3.43c.13.255.38.432.67.473l3.9.553c.73.104 1.021.975.493 1.475l-2.82 2.667a.85.85 0 0 0-.257.765l.665 3.767c.125.706-.637 1.245-1.29.912l-3.49-1.781a.912.912 0 0 0-.827 0l-3.489 1.78c-.653.334-1.415-.205-1.29-.91l.665-3.768a.85.85 0 0 0-.256-.765l-2.82-2.667c-.53-.5-.239-1.371.491-1.475L5.79 5.51a.888.888 0 0 0 .669-.473l1.744-3.43Z' fill='%23e5e2ec' /%3E%3C/svg%3E") !important
+  position: relative
+  background-repeat: repeat-x
+  +mob
+    background-size: 16px
+    height: 16px
+    width: 80px 
+  &::after
+    content: ''
+    position: absolute
+    height: 100%
+    
+    width: calc(10% * (var(--rating) * 2))
+    background: inherit
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='a' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='1' y='1' width='16' height='15'%3E%3Cpath d='M8.202 1.607c.327-.643 1.27-.643 1.596 0l1.744 3.43c.13.255.38.432.67.473l3.9.553c.73.104 1.021.975.493 1.475l-2.82 2.667a.85.85 0 0 0-.257.765l.665 3.767c.125.706-.637 1.245-1.29.912l-3.49-1.781a.912.912 0 0 0-.827 0l-3.489 1.78c-.653.334-1.415-.205-1.29-.91l.665-3.768a.85.85 0 0 0-.256-.765l-2.82-2.667c-.53-.5-.239-1.371.491-1.475L5.79 5.51a.888.888 0 0 0 .669-.473l1.744-3.43Z' fill='%23FFD480'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath d='M8.202 1.607c.327-.643 1.27-.643 1.596 0l1.744 3.43c.13.255.38.432.67.473l3.9.553c.73.104 1.021.975.493 1.475l-2.82 2.667a.85.85 0 0 0-.257.765l.665 3.767c.125.706-.637 1.245-1.29.912l-3.49-1.781a.912.912 0 0 0-.827 0l-3.489 1.78c-.653.334-1.415-.205-1.29-.91l.665-3.768a.85.85 0 0 0-.256-.765l-2.82-2.667c-.53-.5-.239-1.371.491-1.475L5.79 5.51a.888.888 0 0 0 .669-.473l1.744-3.43Z' fill='%23FFB119'/%3E%3C/g%3E%3C/svg%3E") !important
+
+// grey star background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none'%3E%3Cmask id='a' width='16' height='15' x='1' y='1' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23bcbcbc' d='M8.202 1.607c.327-.643 1.27-.643 1.596 0l1.744 3.43a.89.89 0 0 0 .67.473l3.9.553c.73.104 1.021.975.493 1.475l-2.82 2.667a.85.85 0 0 0-.257.765l.665 3.767c.125.706-.637 1.245-1.29.912l-3.49-1.781a.912.912 0 0 0-.827 0l-3.489 1.78c-.653.334-1.415-.205-1.29-.91l.665-3.768a.85.85 0 0 0-.256-.765l-2.82-2.667c-.53-.5-.239-1.371.491-1.475L5.79 5.51a.888.888 0 0 0 .669-.473l1.744-3.43Z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%23bcbcbc' d='M8.202 1.607c.327-.643 1.27-.643 1.596 0l1.744 3.43a.89.89 0 0 0 .67.473l3.9.553c.73.104 1.021.975.493 1.475l-2.82 2.667a.85.85 0 0 0-.257.765l.665 3.767c.125.706-.637 1.245-1.29.912l-3.49-1.781a.912.912 0 0 0-.827 0l-3.489 1.78c-.653.334-1.415-.205-1.29-.91l.665-3.768a.85.85 0 0 0-.256-.765l-2.82-2.667c-.53-.5-.239-1.371.491-1.475L5.79 5.51a.888.888 0 0 0 .669-.473l1.744-3.43Z'/%3E%3C/g%3E%3C/svg%3E")
+
+.reviews-slide 
+  @extend .swiper-slide
+  height: auto
+  +mob 
+    max-width: unset
+    padding: 0 16px
+
+.review-el 
+  cursor: default
+  &__primary 
+    background-color: $Violet
+    padding: var(--aCalc24)
+    border-radius: var(--aCalc12)
+    margin-bottom: var(--aCalc8)
+    +mob 
+      border-radius: 12px
+      padding: 16px
+      margin-bottom: 8px
+  &__stars 
+    min-height: aCalc(28)
+    +mob 
+      min-height: 22px
+  &__title 
+    font-weight: 500
+    color: $White
+    +lineLimit(4)
+  &__user 
+    display: flex
+    justify-content: space-between
+    +mob 
+      align-items: center
+  &__data 
+    .h7
+      margin-top: var(--aCalc4)
+      +mob 
+        margin-top: 4px
+  &__icon
+    width: aCalc(56)
+    height: aCalc(56)
+    +mob
+      width: 56px
+      height: 56px
+
+
+.pagination-inprogress
+  +mob 
+    margin-top: 24px
+  .swiper-pagination
+    display: none
+    +mob 
+      position: relative
+      width: 165px
+      border-radius: 2px
+      margin: 0 auto
+      height: 1px
+      transition: .3s opacity
+      display: block
+      background-color: $Gray
+  .swiper-pagination-progressbar-fill 
+    +mob 
+      border-radius: 2px
+      transform-origin: left top
+      width: 100%
+      height: 1px
+      display: block
+      transition: all .3s
+      background-color: $Violet

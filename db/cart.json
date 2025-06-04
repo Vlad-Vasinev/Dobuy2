@@ -1,0 +1,71 @@
+{
+  "freeDelivery": true,
+  "deliveryBadgeText": "text example 111",
+  "dutyWarningBadge": {
+    "val": "4 200 ₽"
+  },
+  "orderCost": {
+    "clearTotal": "31 000 ₽",
+    "extraPrices": [
+      {
+        "name": "Delivery",
+        "value": "2 800 ₽"
+      }
+    ],
+    "sales": [
+      {
+        "name": "Discount",
+        "value": "-3 000 ₽"
+      },
+      {
+        "name": "Discount for duty",
+        "value": "-5 003 ₽",
+        "popup": "duty-info"
+      },
+      {
+        "name": "Discount for duty",
+        "value": "-1 000 ₽",
+        "popupText": "Fugiat ipsum irure voluptate esse est aliqua tempor velit."
+      }
+    ],
+    "finalTotal": "28 000 ₽"
+  },
+  "items": [
+    {
+      "id": "0011",
+      "amount": "1",
+      "title": "Smartphone Samsung Galaxy S23 Ultra 12/256 GB, green",
+      "price": {
+        "value": "119 999 ₽"
+      },
+      "images": ["img/product/1/img0.png"],
+      "href": "#"
+    },
+    {
+      "id": "0001",
+      "amount": "2",
+      "title": "Smartphone Samsung Galaxy S23 Ultra 12/256 GB, green",
+      "price": {
+        "value": "119 999 ₽",
+        "discount": {
+          "old": "135 000 ₽",
+          "sale": "15%"
+        }
+      },
+      "images": ["img/product/1/img0.png"]
+    },
+    {
+      "id": "0002",
+      "amount": "1",
+      "title": "3232323",
+      "price": {
+        "value": "119 999 ₽",
+        "discount": {
+          "old": "135 000 ₽",
+          "dutySale": "-11 344 ₽"
+        }
+      },
+      "images": ["img/product/1/img0.png"]
+    }
+  ]
+}

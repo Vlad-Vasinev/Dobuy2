@@ -1,0 +1,186 @@
+.badge
+  @extend .h8
+  display: block
+  // padding: var(--aCalc4) aCalc(6)
+  padding: aCalc(2) aCalc(5)
+  width: max-content
+  border-radius: aCalc(6)
+  color: #0E9B15
+  background-color: $Violet
+  +mob
+    border-radius: 4px
+    padding: 2px 4px
+  &:empty
+    display: none
+  span
+  &_new
+    background-color: #C7FAC9
+    font-size: aCalc(11)
+    +r($sm)
+      font-size: 10px
+    p 
+      color: #0E9B15
+    font-weight: 700
+    display: grid
+    align-items: center
+    text-transform: uppercase
+  &_hit
+    color: #FF7C24
+    background-color: #FDF0D3
+    &.badge_hit_sale, &.badge_hit_event
+      background-color: transparent
+      color: #F109DA
+      // padding-left: aCalc(20)
+      position: relative
+      width: aCalc(127)
+      +r($sm)
+        padding-left: 18px
+        width: 105px
+      &::before 
+        z-index: 10
+        background-image: url('../img/banner/badge-arrow.png')
+        background-repeat: no-repeat
+        background-size: cover
+        left: aCalc(4)
+        top: 50%
+        transform: translateY(-50%)
+        position: absolute
+        content: ""
+        width: aCalc(16)
+        height: aCalc(16)
+        +r($sm) 
+          left: 4px
+          width: 14px
+          height: 14px
+      img, svg 
+        width: aCalc(16)
+        height: aCalc(16)
+        object-fit: cover
+        +r($sm)
+          width: 14px
+          height: 14px
+    &.badge_hit_sale
+      &::before 
+        width: aCalc(13)
+        height: aCalc(13)
+        +r($sm)
+          width: 13px
+          height: 13px
+    &.badge_hit_event
+      width: max-content
+      padding-left: aCalc(17)
+      +r($sm)
+        padding-left: 15px
+      p 
+        text-align: left
+        color: #657E4F
+        margin-left: aCalc(4)
+        +r($sm)
+          margin-left: 4px
+      &::before 
+        left: 0
+        background-image: url('../img/choco-new.svg')
+    p
+      text-transform: uppercase
+      text-align: center
+      font-weight: 700
+  &_img
+    background-color: transparent
+    height: aCalc(39)
+    padding: 0
+    +mob
+      height: 38px
+    img
+      width: auto
+      height: 100%
+    &.badge-event
+      height: aCalc(20)
+      +r($sm)
+        height: 19px
+
+  &_sale
+    color: $Black
+    background-color: #FFB119
+
+.badge-review
+  background-color: $White
+  padding: var(--aCalc8)
+  display: flex
+  gap: var(--aCalc8)
+  background-color: $White
+  border-radius: var(--aCalc8)
+  z-index: 1
+  +r($sm)
+    gap: 8px
+    padding: 8px
+    border-radius: 8px
+  &__content 
+    img 
+      width: var(--aCalc60)
+      height: var(--aCalc60)
+      object-fit: cover
+      +r($sm)
+        width: 60px
+        height: 60px
+  &__info 
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    gap: aCalc(3)
+    +r($sm) 
+      gap: 3px
+  .restrict-height
+    -webkit-line-clamp: 2
+  .h7:not(.restrict-height)
+    color: $VioletBlue
+    font-weight: 500
+
+.duty-sale-inline
+  display: flex
+  align-items: center
+  gap: var(--aCalc8)
+  +mob
+    gap: 5px
+  > span
+    // @extend .h8 
+    white-space: nowrap
+    text-transform: uppercase
+    color: $GrayBlack
+
+.badge-duty-sale
+  display: flex
+  border-radius: var(--aCalc24)
+  align-items: center
+  background-color: $WhiteGray
+  width: max-content
+  +fsa(14, 14, 12, 12)
+  font-weight: 800
+  height: max-content
+  +mob
+    border-radius: 24px
+  &__icon
+    +wah(aCalc(22))
+    margin-right: aCalc(6)
+    +mob
+      +wah(20px)
+      margin-right: 5px
+
+    img
+      display: block
+      +wah(100%)
+      object-fit: contain
+  > span
+    white-space: nowrap
+    display: block
+    padding: aCalc(3) var(--aCalc8) 
+    padding-left: 0
+    +mob
+      padding: 4px 6px
+      padding-left: 0
+
+.restrict-height
+  overflow: hidden !important
+  text-overflow: ellipsis !important
+  display: -webkit-box !important
+  -webkit-line-clamp: 4
+  -webkit-box-orient: vertical 

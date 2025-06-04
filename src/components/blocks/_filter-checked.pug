@@ -1,0 +1,29 @@
+.filter-checked  
+  label.checker-wrapper 
+    span Brand quadro
+  input.checker(type="checkbox")
+  div(icon-tgl-crt)
+    +svgIcon('minus')
+    +svgIcon('plus')
+    +svgIcon('arrow-next')
+  .checkboxes-list
+    +clone(4) 
+      +checkbox('sas')
+        .chbox__box
+        div.h6 Choose brand
+          span 3
+
+.filter-checked  
+  label.checker-wrapper 
+    span Brand rounded
+  input.checker(type="checkbox")
+  div(icon-tgl-crt)
+    +svgIcon('minus')
+    +svgIcon('plus')
+    +svgIcon('arrow-next')
+  .checkboxes-list
+    +clone(20)
+      +radio('sas')
+        .chbox__box
+        div.h6 Based on quality reviews
+          span 3

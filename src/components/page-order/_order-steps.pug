@@ -1,0 +1,135 @@
+form.order-steps(data-action=endpoint+"/order" name="order")
+  mixin uiInputPopup(name="noname", inputType="text", value=undefined)
+    .ui-input.ui-input_label.ui-input_popup
+      input(type=inputType name=name value=value)&attributes(attributes)
+      label.ui-input__float-label
+        block
+      .ui-input__change Change
+      .ui-input__arrow
+        +svgIcon('arrow-right')
+  mixin uiTextAreaPopup(name="noname", inputType="text", value=undefined)
+    .ui-input.ui-input_label.ui-input_popup.textarea
+      textarea(type=inputType name=name value=value)&attributes(attributes)
+      label.ui-input__float-label
+        block
+      .ui-input__change Change
+      .ui-input__arrow
+        +svgIcon('arrow-right')
+  .order-step
+    .h2.order-step__number 1
+    .order-step__inner
+      .order-step__section
+        span.h2 Recipient
+        +uiInput('name', 'text', "Vlad")
+          | Name
+        +uiInput('surname', 'text', "VladVlad")
+          | Second name
+        +uiInput('patronymic', 'text', 'VladVladVlad')
+          | Surname
+        +uiInput('tel', 'tel', '+7 (999) 999-99-99')
+          | Phone
+  .order-step
+    .h2.order-step__number 2
+    .order-step__inner
+      .order-step__section
+        span.h2 Delivery method
+        .order-step__opt-crt.order-step__opt-crt-cdek
+          +uiTextAreaPopup('city-input-cdek', 'text')(order - ignore)
+            | Location
+          +radio('delivery', 'CDEK')(checked)
+            .order-opt.order-opt__new
+              .order-opt__name
+                .chbox__box
+                .h6 SDEK to the pick-up point
+              .order-opt__icon-crt
+                img(src="/img/product/cdek.svg")
+              .h7
+              .h7
+                |About customs clearance
+                |Method of payment of customs duties
+
+                |SDEK ID for simplified receipt of the parcel
+
+                |Importance of placing an order for the person who will receive the parcel
+              .hidden.linkForWidjet
+                p.h6.cdek-pvz
+                  span
+                  input(disabled name="pvzCode" type="text" value="" hidden=true)
+                p.h6.cdek-address
+                  span
+                  input(disabled name="pvzName" type="text" value="" hidden=true)
+              .button.button_hollow.button_small.cdek-open-btn._active Выбрать пункт выдачи
+
+        .order-step__opt-crt.order-step__opt-crt-mail
+          +radio('delivery', 'EMS Russian Post')()
+            .order-opt
+              .order-opt__name
+                .chbox__box
+                .h6 EMS Russian Post
+              .order-opt__icon-crt
+                img(src="img/order/ems.svg")
+              
+              .order-opt__delivery-date
+                .h7 Estimated delivery date
+                .h6 January 10, 2024
+        .order-step__opt-crt.order-step__opt-crt-emsDelivery
+          +radio('delivery', 'EMS Russian Post emsDelivery')()
+            .order-opt
+              .order-opt__name
+                .chbox__box
+                .h6 EMS Russian Post emsDelivery
+              .order-opt__icon-crt
+                img(src="img/order/ems.svg")
+              
+              .order-opt__delivery-date
+                .h7 Estimated delivery date emsDelivery
+                .h6 January 10, 2024
+      .order-step__section.order-step__section_address
+        span.h2 Address and delivery
+        include ../blocks/_addressInput-order
+  .order-step
+    .h2.order-step__number 3
+    .order-step__inner
+      .order-step__section
+        span.h2  Payment
+        fieldset.order-step__opt-crt.order-step__opt-crt_list
+          +radio('payment', 'pay-qr')(checked)
+            .order-opt
+              .order-opt__name
+                .chbox__box
+                span.h6 QR-code
+              .order-opt__icon-crt
+                .order-payment__icon
+                  img(src="img/payment/qrcode.svg")
+          +radio('payment', 'pay-card')
+            .order-opt
+              .order-opt__name
+                .chbox__box
+                span.h6 By bank card
+              .order-opt__icon-crt
+                img(src="img/footer/payment-1.svg")
+                img(src="img/footer/payment-2.svg")
+                img(src="img/footer/payment-3.svg")
+          +radio('payment', 'pay-card')
+            .order-opt
+              .order-opt__name
+                .chbox__box
+                span.h6 Apply for a loan
+              .order-opt__icon-crt
+                img(src="img/footer/payment-1.svg")
+          +radio('payment', 'pay-card')
+            .order-opt._text
+              .order-opt__wrapper
+                .order-opt__name
+                  .chbox__box
+                  span.h6 MTS Pay
+                .order-opt__icon-crt
+                  img(src="img/payment/mts-pay.svg")
+                  .mts-flex 
+                    img(src="img/flex-mts.svg")
+              p.h6 Payments via the FLEX service are possible only with cards of the MIR payment system. If you try to pay with cards of other payment systems, the operation will not go through.
+                
+        .sign-order-customs
+          .h4 Customs Notice
+          p.h6 We remind you that any goods imported into the territory of the Russian Federation undergo mandatory customs inspection. For goods exceeding the cost of €1,000, a customs duty of 15% is charged, for amounts over €1,000. The duty can be paid to the courier upon receipt.
+          a.hl.h6(href="#" target="_blank") Read all the rules

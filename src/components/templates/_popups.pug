@@ -1,0 +1,27 @@
+template.tpl--popup--blank
+  .info-popup
+    .info-popup__inner
+template.tpl--popup--loan-info
+  .info-popup
+    .info-popup__inner
+      div To use the credit service, add the product to the cart and proceed to checkout
+      div The minimum payment may vary depending on the bank you choose when applying for a 24-month loan. No additional services.
+template.tpl--popup--duty-info
+  .info-popup
+    .info-popup__inner
+      div Customs Notice
+      div From 1 April 2024, a customs duty of 15% will be charged on goods valued over €200, for amounts over €200. The duty can be paid to the courier upon receipt.
+      a(href="#" target="_blank") Read all the rules
+template.tpl--popup--duty-sale-info
+  .info-popup
+    .info-popup__inner
+      img._mob(src="img/duty.png" alt="")
+      div Just add the product to your cart and the given discount will compensate you for part of the customs duty.
+template.tpl--popup--share
+  .share-popup
+    .share-popup__inner
+      button.textbtn(data-copy-href icon-tgl-trg ui-inited )
+        svg(icon-tgl-crt)
+          +svgIcon('copy')
+          +svgIcon('check')
+        span.h7 Copy link

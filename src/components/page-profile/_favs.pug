@@ -1,0 +1,11 @@
+extends ./_profile
+
+block content
+  .sticky-menu__content.customer-info__content.customer-info__content_wide
+    .h1 The products you like will be stored here
+    .catalog-content
+      - var index
+      +clone(6)
+        - cardId = ("001" + index)
+        - isFav = false
+        include ../blocks/_product-card

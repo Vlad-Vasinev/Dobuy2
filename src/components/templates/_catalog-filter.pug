@@ -1,0 +1,110 @@
+
+template.tpl--filter-dsk
+  .modal
+    .modal__head
+      .modal__title
+        span 
+      button.modal__close(modal-close)
+        +svgIcon('close')
+    .modal__body
+      form(action="/search").filter 
+        .h1._dsk Filters
+        .filter__inner 
+          .filter__section
+            .filter__opt
+              .h5 Discounted
+              +toggleSwitch('sale')
+            .filter__opt
+              .h5 New
+              +toggleSwitch('new')
+            .filter__opt
+              .h5 Hits
+              +toggleSwitch('hit')
+          .filter__section
+            .filter__opt
+              +doubleRange('price', '0', '1000')
+          .filter__section
+            .filter__opt
+              +rolloutChecked('Brand')
+            .filter__opt
+              +rolloutChecked('Model')
+            .filter__opt
+              +rolloutChecked('Color')
+        .filter__bottom 
+          button.button(type="submit") Show
+
+template.tpl--filter-mob
+  form.modal.modal_step-menu.modal_step-menu_filter()
+    .modal__head
+      button.modal__back(modal-back)
+        +svgIcon('arrow-left')
+      .modal__title
+        span Filters
+      button.modal__close(modal-close)
+        +svgIcon('close')
+    .modal__body.filter-steps
+      .modal__step.filter-steps__step(default-step step-name="all-filters")
+        .filter-steps__section
+          .textbtn(open-step="sort-by")
+            span Sort by
+            +svgIcon('arrow-next')
+        .filter-steps__section
+          .filter__opt
+              .h5 Discounted
+              +toggleSwitch('sale')
+          .filter__opt
+            .h5 New
+            +toggleSwitch('new')
+          .filter__opt
+            .h5 Hits
+            +toggleSwitch('hit')
+        .filter-steps__section
+          +doubleRange('price', '0', '1000')
+        .filter-steps__section.filter-steps__section_links
+          .textbtn(open-step="brand")
+            span Brand
+            +svgIcon('arrow-next')
+          .textbtn(open-step="model")
+            span Model
+            +svgIcon('arrow-next')
+          .textbtn(open-step="color")
+            span Color
+            +svgIcon('arrow-next')
+      .modal__step.filter-steps__step(step-name="sort-by")
+        .checkboxes-list
+          +radio('sort', 'def')(checked)
+            .chbox__box
+            div.h6 by popularity
+          - var index
+          +clone(3)
+            +radio('sort', index)
+              .chbox__box
+              div.h6 by popularity
+            
+      .modal__step.filter-steps__step(step-name="brand")
+        .checkboxes-list
+          - var index
+          +clone(14)
+            +checkbox('brands', index)
+              .chbox__box
+              div.h6 Brand
+                span 3
+      .modal__step.filter-steps__step(step-name="model")
+        .checkboxes-list
+          - var index
+          +clone(8)
+            +checkbox('models', index)
+              .chbox__box
+              div.h6 Model
+      .modal__step.filter-steps__step(step-name="color")
+        .checkboxes-list
+          - var index
+          +clone(6)
+            +checkbox('colors', index)
+              .chbox__box
+              div.h6 Color
+                span 3
+    .modal__bottom
+      button.button.button_white(type="button") Reset all
+      button.button Show
+      

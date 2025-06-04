@@ -1,0 +1,18 @@
+[
+  {
+    "type": "banner",
+    "bgImage": "img/banners/special.jpg",
+    "href": "#"
+  },
+  {
+    "type": "card",
+    "new": true,
+    "slides": [
+      "img/books/product-card/1-1.jpg",
+      "img/books/product-card/2-1.jpg",
+      "img/books/product-card/3-1.jpg",
+      "img/books/product-card/4-1.jpg"
+    ],
+    "href": "#"
+  }
+]

@@ -1,0 +1,35 @@
+template.tpl--mobile--hdr-ctlg-list 
+  .hdr-ctlg-list.modal__step(data-title)
+    a.hdr-ctlg-list__view-all
+      span See all
+      svg.sprite-icon
+        use(href='img/spriteMono.svg#arrow-next')
+    .hdr-ctlg-list__icons
+      
+    .hdr-ctlg-list__brands
+      span.h3 Popular brands
+      .hdr-ctlg-list__brands-ctr
+        
+template.tpl--mobile--hdr-ctlg-list-item
+  a.hdr-ctlg-list__item
+    span(tpl-name)
+    img(lazy tpl-img src data-src) 
+template.tpl--mobile--hdr-ctlg-list-brand
+  a.hdr-ctlg-list__brand(href)
+    img(lazy tpl-img src data-src) 
+
+template.tpl--mobile--search-modal-inner
+  .search-inner(data-action="api/search-result.json" data-recommended="api/search-recommendations.json")
+    .search-inner__search
+      +search-field('I want to find')
+    .search-inner__result-empty
+      span.h3 Nothing found matching your request.
+    .search-inner__queries
+      span.h3 Popular queries
+      .search-inner__queries-ctr
+        template.tpl--search-query
+          a.button.button_small(href)
+            span
+    .search-inner__result
+      span.h2(result-title) Pay attention
+      .flat-prod-cart-container.search-inner__cards

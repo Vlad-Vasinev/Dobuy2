@@ -1,0 +1,60 @@
+mixin item(file, title)
+  a(href=(file + '.html'))
+    | #{title}
+    b 
+      small=(file)
++item('index', 'Index')
++item('product', 'Product')
+//- +item('product2', 'Product2')
++item('products-user', 'Products-user')
+.pl__ul
+  .pl__h Order
+  +item('order', 'Order')
+  +item('order-payment', 'Order-payment')
+  +item('order-confirm', 'Order-confirm')
+.pl__ul
+  .pl__h Search
+  +item('search', 'Search')
+  +item('search-result', 'Search-result')
+  +item('search-nothing-found', 'Search-nothing-found')
+.pl__ul
+  .pl__h Catalog
+  +item('catalog', 'Catalog')
+  +item('catalog-first', 'Catalog-first')
+  +item('catalog-second', 'Catalog-second')
+  +item('catalog-third', 'Catalog-third')
+  //- +item('catalog-iherb', 'Catalog-iherb')
+.pl__ul
+  .pl__h Blog
+  +item('blog', 'Blog')
+  +item('blog-page', 'Blog-page')
+.pl__ul
+  .pl__h Profile
+  +item('profile-data', "Profile-data")
+  +item('profile-favs', "Profile-favs")
+  +item('profile-favs-empty', "Profile-favs-empty")
+  +item('profile-orders', "Profile-orders")
+  +item('profile-orders-empty', "Profile-orders-empty")
+  +item('profile-order-detail', "Profile-order-detail")
+  a(href="/verification?openmodal=auth")
+    | #{"Registration successful"}
+    b 
+      small verification
+.pl__ul
+  .pl__h Info for clients
+  +item('customer-delivery', "Customer-delivery")
+  +item('customer-payment', "Customer-payment")
+  +item('customer-garantie', "Customer-garantie")
+  +item('customer-return', "Customer-return")
+  +item('customer-order', "Customer-order")
+  +item('customer-contact', "Customer-contact")
+  +item('customer-brand-list', "Customer-brand-list")
+//- .pl__ul
+//-   .pl__h Ideas for gifts
+//-   +item('gifts', "Gifts")
+.pl__ul
+  .pl__h Selection
+  +item('selection', "Selection")
+  +item('selection-page', "Selection-page")
+
++item('ui', 'UI')

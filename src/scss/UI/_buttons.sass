@@ -1,0 +1,257 @@
+.btnM
+  +fsa(18, 26, 16, 22)
+  font-weight: 700
+  text-transform: uppercase
+.btnS
+  +fsa(16, 22, 14, 19)
+  font-weight: 600
+  text-transform: uppercase
+
+.scale-on-click, button
+  &:active
+    transform: scale(.97)
+    transform-origin: center
+  
+.btnXs
+  +fsa(12, 16, 12, 16)
+  font-weight: 600
+  text-transform: uppercase
+  color: #100030
+  padding: aCalc(8) aCalc(12)
+  background-color: #F3F0F7
+  border-radius: aCalc(8)
+  min-width: max-content
+  &._active
+    color: $White
+    background-color: #4C00C9
+  +r($sm)
+    padding: 8px 12px
+    border-radius: 8px
+
+
+.button, .button_medium
+  @extend .btnM
+  
+  background: $Violet
+  color: $White
+  border: 1.5px solid $Violet
+  padding: aCalc(19) aCalc(31)
+  +aProp(border-radius, 6)
+  min-width: max-content
+  width: max-content
+  flex-shrink: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  height: max-content
+  // gap: var(--aCalc8)
+  //
+  transition: all 0.1s, outline 0s
+  transition-timing-function: linear
+  *
+    transition: all 0.1s
+    transition-delay: 0s
+    transition-timing-function: linear
+
+  +mob
+    // gap: 8px
+    padding: 13px 31px
+    border-radius: 6px
+  &:active
+    transform: scale(.97)
+  &:focus-visible, &.focus-visible, &_focus
+    border-color: $Black !important
+  &:disabled, &[disabled]
+    opacity: 0.5
+
+  &._active, &:active, &:hover,  &_active
+    background-color: $VioletWhite
+    border-color: $VioletWhite
+    color: $White
+  .sprite-icon, svg
+    transition: all 0.05s
+    +wah(var(--aCalc24))
+    +mob
+      +wah(24px)
+  span + svg, svg + span
+    margin-left: var(--aCalc8)
+    +mob
+      margin-left: 8px
+
+  &_transp
+    background-color: transparent
+    border-color: transparent
+    border-radius: 0
+    color: $Black
+    //-
+    padding: aCalc(20) var(--aCalc32)
+    border: none
+    +mob
+      padding: 14px 32px
+    &._active, &:active, &:hover
+      background-color: transparent
+      border-color: transparent
+      color: $Violet
+
+  &_hollow
+    background-color: transparent
+    border-color: $VioletWhite1
+    color: $Black
+    &:active, &:hover
+      background-color: transparent
+      border-color: $VioletWhite
+      color: $VioletWhite
+    &._active
+      background-color: $Violet
+      border-color: $Violet
+      color: $White
+
+  &_white 
+    background-color: #ffffff
+    border-color: #ffffff
+    color: $Violet
+    &._active, &:active, &:hover
+      background-color: #ffffff
+      border-color: #ffffff
+      color: $Violet
+  &_check
+    background-color: $Green
+    border-color: $Green
+    color: $Black
+    &._active, &:active, &:hover
+      background-color: $Green
+      border-color: $Green
+      color: $Black
+  &_buy
+    background-color: $Gray
+    border-color: $Gray
+    color: $Black
+    > span
+      display: block
+      overflow: hidden
+    &:active, &:hover
+      background-color: $Violet
+      border-color: $Violet
+      color: $White
+    &._active
+      @extend .button_check
+      > span
+        opacity: 0
+        max-width: 0
+        margin: 0
+        // display: none
+      &:active, &:hover
+        background-color: $Green
+        border-color: $Green
+        color: $Black
+
+.btn-all
+  display: flex
+  align-items: center
+  font-size: aCalc(14)
+  height: aCalc(32)
+  line-height: 100%
+  font-weight: 700
+  padding: aCalc(9) aCalc(2) aCalc(9) aCalc(14)
+  border-radius: aCalc(6)
+  border: 1px solid #E5E2EC
+  margin-right: aCalc(16)
+  +r($sm)
+    font-size: 14px
+    height: 32px
+    padding: 9px 2px 9px 14px 
+    border-radius: 6px
+    margin-right: unset
+  
+
+@mixin btn-theme($c, $bg, $c-a, $bg-a)
+  background-color: $bg
+  border-color: $bg
+  color: $c
+  &._active, &:active, &:hover
+    background-color: $bg-a
+    border-color: $bg-a
+    color: $c-a
+  
+.button_active
+.button_small
+  @extend .button_medium
+  @extend .btnS
+  
+  padding: aCalc(13) aCalc(23)
+  +mob
+    padding: 9px 15px
+
+.button
+      
+.chbox
+  input:focus-visible
+    & + 
+      .button
+        @extend .button_focus
+  input:checked 
+    & + 
+      .button
+        @extend .button_active
+      
+
+.textbtn
+  display: flex
+  width: max-content
+  align-items: center
+  justify-content: flex-start
+  gap: var(--aCalc8)
+  cursor: pointer
+  white-space: nowrap
+  +mob
+    gap: 8px
+  &:hover
+    color: $Violet
+  span
+    line-height: 1
+  svg, img
+    +wah(var(--aCalc24))
+    +mob
+      +wah(24px)
+  img
+    object-fit: contain
+  &__counter
+    font-size: aCalc(14)
+    line-height: 1
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 100%
+    height: var(--aCalc24)
+    width: var(--aCalc24)
+    background-color: $Violet
+    color: #fff
+    +mob
+      height: 24px
+      width: 24px
+      font-size: 14px
+    &:empty
+      display: none
+  &_inline
+    display: inline-flex
+
+
+.textbtn, .button, .button_medium
+  &_heart
+    border-color: $WhiteGray
+    background-color: transparent !important
+    color: $Black
+    &:hover, &._active, &:active
+      color: $VioletWhite
+    svg
+      path
+        transition: all 0.1s
+    &._active, &:active
+      border-color: $WhiteGray
+      svg
+        path
+          stroke: currentcolor
+          fill: currentcolor
+    &:hover
+      border-color: $VioletWhite

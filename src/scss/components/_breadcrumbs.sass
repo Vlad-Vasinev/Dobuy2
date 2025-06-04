@@ -1,0 +1,22 @@
+.breadcrumbs 
+  +mob 
+    display: none
+  a 
+    color: $GrayBlack
+  a + a 
+    margin-left: var(--aCalc10)
+    padding-left: var(--aCalc10)
+    position: relative
+    &::before 
+        position: absolute
+        content: ""
+        width: 1px 
+        top: 25%
+        height: var(--aCalc10)
+        left: 0
+        background-color: $GrayBlack
+        +mob 
+            height: 10px
+    +mob 
+        margin-left: 10px
+        padding-left: 10px

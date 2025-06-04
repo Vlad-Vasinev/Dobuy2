@@ -1,0 +1,72 @@
+template.tpl--cart
+  .mini-cart
+    .mini-cart__section.mini-cart__section_empty
+      .h1 there is nothing in the basket...
+      .h6 check out our new releases or use the search if you are looking for something specific
+      a.button(href="/catalog-first") Go to new items
+      
+    .mini-cart__section.mini-cart__section_cards
+      .mini-cart__section.mini-cart__section_title
+        .h1 Basket
+        button.mini-cart__delete-all._active
+          span.h6 Delete all
+        <button class="mini-cart__share-all">
+          .h6 Share
+          <img src="img/share-ic.png" alt="">
+        </button>
+      .mini-cart__section.mini-cart__section_delivery
+      .flat-prod-cart-container.mini-cart__cards
+      
+      .sale-banner.no-card.sale-banner_first(data-item-id="000")
+        //-.prod-price
+        .button_buy
+          <picture>
+            <source media="(min-width:768px)" data-srcset="img/choco.png">
+            <source media="(max-width:768px)" data-srcset="img/choco.png">
+            <img lazy data-src="img/choco.png" alt="main image 1">
+          </picture>
+
+      .sale-banner.sale-banner_enlarged.no-card.sale-banner_second(data-item-id="000")
+        //-.prod-price
+        .sale-banner__info 
+          .sale-banner__text 
+            .h3 FIXmania promotion
+            .h6 Take Choco with you for 1₽ when purchasing from 50,000₽
+            button.h6.button_buy Add to order
+          +l-img("img/choco.png")
+
+      .h2 Order amount
+      .summary-price
+      .duty-badge.duty-badge_sign
+        span 
+          | Parcel from abroad, there will be a duty:
+        span.duty-badge__val 5 003 ₽
+        .duty-badge__info(info-popup="duty-info")
+          +svgIcon('info')
+    .mini-cart__section.mini-cart__section_price
+      .button.mini-cart__order-btn(auth-open data-after-auth-redirect="/order") place an order
+      
+template.tpl--cart--mobile-card-options
+  .cart-item-options 
+    .cart-item-options__option
+      span.h5 Change quantity
+      .amount-panel.cart-item-options__amount
+        button.amount-panel__minus            
+          +svgIcon("minus")
+        .amount-panel__val            
+          span 
+        button.amount-panel__plus
+          +svgIcon("plus")
+    .cart-item-options__option
+      span.h3 Delete
+      button.cart-item-options__delete
+        +svgIcon("delete")
+
+template.tpl--cart--delivery-non-free
+  .delivery-badge
+    +svgIcon("delivery")
+    span Free shipping from 9,000₽
+template.tpl--cart--delivery-free
+  .delivery-badge.delivery-badge_free
+    span free shipping
+  

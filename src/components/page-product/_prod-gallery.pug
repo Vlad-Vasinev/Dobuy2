@@ -1,0 +1,25 @@
+.prod-gallery
+  .prod-gallery__wrapper
+    - 
+      var value 
+      var arr = [
+        "img/product/4/img4.jpg",
+        "img/product/4/img0.png",
+        "img/product/4/img1.png",
+        "img/product/4/img2.png",
+        "img/product/4/img3.png",
+      ]
+    - 
+      var links 
+      var linksArr = [
+        "https://lipsum.app/id/62/1600x1200",
+        "https://fancyapps.com/img/product_2_b.jpg",
+        "https://fancyapps.com/img/product_3_b.jpg",
+        "https://fancyapps.com/img/product_5_b.jpg",
+        "https://fancyapps.com/img/product_5_s.jpg",
+      ]
+    +cloneArr(arr)
+      a.prod-gallery__item.product-preview(data-bullet=value data-fancybox="gallery" href=value)
+        img(src=value loading="lazy")
+  .image-pag
+  .bullet-pag

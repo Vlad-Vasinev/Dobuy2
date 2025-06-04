@@ -1,0 +1,138 @@
+
+.items-reviews
+  @extend .swiper
+  &:not(.swiper-initialized)
+    .items-reviews__wrapper
+      gap: aCalc(24)
+      display: grid
+      grid-auto-columns: calc((100% - var(--aCalc60)) / 5)
+      grid-auto-flow: column
+      grid-template-columns: unset
+      +r($sm)
+        gap: 8px
+        grid-auto-columns: calc((100% - var(--aCalc8)) / 1.7)
+  +r($sm)
+    overflow: unset
+  &__top 
+    display: flex
+    justify-content: space-between
+    margin-bottom: aCalc(24)
+    +r($sm)
+      margin-bottom: 16px
+  .slider-navigation svg 
+    color: #000000 !important
+    .sprite-icon
+      fill: #000000 !important
+  &__wrapper
+    @extend .swiper-wrapper
+  &__item
+    @extend .swiper-slide
+    cursor: pointer
+    &-img
+      height: aCalc(400)
+      margin-bottom: aCalc(16)
+      +r($sm)
+        //height: 400px
+        height: 300px
+        margin-bottom: 8px
+    img, video 
+      width: 100%
+      object-fit: cover
+      height: 100%
+      border-radius: aCalc(6)
+      +r($sm)
+        width: 100%
+        border-radius: 6px
+        object-fit: cover
+    .rater
+      margin-bottom: aCalc(8)
+      +r($sm)
+        margin-bottom: 8px
+    .h5 
+      margin-bottom: aCalc(8)
+      +r($sm)
+        margin-bottom: 8px
+      &.restrict-height
+        width: max-content
+        // overflow: hidden !important
+        // text-overflow: ellipsis !important
+        // display: -webkit-box !important
+        // -webkit-line-clamp: 1
+        // -webkit-box-orient: vertical
+        // width: aCalc(156)
+        // -webkit-box-orient: vertical
+        // display: -webkit-box !important
+        // -webkit-line-clamp: 1
+        // overflow: hidden !important
+        // text-overflow: ellipsis !important
+
+
+        display: inline-block !important
+        width: aCalc(140) !important
+        white-space: nowrap !important
+        overflow: hidden !important
+        text-overflow: ellipsis !important
+        +r($sm) 
+          width: 120px !important
+    &-img 
+      position: relative
+  .badge-review
+    // position: absolute
+    // bottom: aCalc(8)
+    // height: aCalc(75)
+    // top: auto
+    // left: aCalc(8)
+    // right: aCalc(8)
+    margin: 0 auto aCalc(16)
+    border: 1px solid $WhiteGray
+    border-radius: aCalc(6)
+    width: auto
+    +r($sm)
+      // left: 8px
+      // right: 8px
+      width: unset
+      // bottom: 8px
+      margin: 0 auto 16px
+      border-radius: 6px
+      height: 75px
+    img 
+      width: aCalc(60)
+      height: aCalc(60)
+      object-fit: cover
+      margin-bottom: 0
+      border-radius: 0
+      +r($sm)
+        width: 60px
+        height: 60px
+    &__content 
+      flex-shrink: 0
+
+.review-slider
+  margin-top: aCalc(40)
+  @extend .swiper
+  +r($sm)
+    margin-top: 40px
+  &__wrapper 
+    @extend .swiper-wrapper 
+  &__item 
+    cursor: pointer
+    @extend .swiper-slide
+    img 
+      width: aCalc(548)
+      height: aCalc(815)
+      border-radius: aCalc(8)
+      object-fit: cover
+      +r($sm)
+        width: 100%
+        height: 498px
+        border-radius: 8px
+
+.modal-review
+  .review-slider
+    margin-left: aCalc(-80)
+    margin-right: aCalc(-80)
+    padding: 0 aCalc(80)
+    +mob
+      margin-left: -20px 
+      margin-right: -20px
+      padding: 20px

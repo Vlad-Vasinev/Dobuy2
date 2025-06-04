@@ -1,0 +1,65 @@
+{ 
+  "freeDelivery": "false",
+  "orderCost": {
+    "clearTotal": "31 000 ₽",
+    "extraPrices": [
+      {
+        "name": "Delivery",
+        "value": "2 800 ₽"
+      }
+    ],
+    "sales": [
+      {
+        "name": "Discount",
+        "value": "-3 000 ₽"
+      },
+      {
+        "name": "Discount for duty",
+        "value": "-5 003 ₽",
+        "popup": "duty-info"
+      }
+    ],
+    "finalTotal": "28 000 ₽"
+  },
+  "items": [
+    {
+      "id": "0001",
+      "amount": "1",
+      "title": "Smartphone Apple iPhone 15, 128 GB, pink, 1 SIM + eSIM",
+      "price": {
+        "value": "119 999 ₽",
+        "discount": {
+          "old": "135 000 ₽",
+          "sale": "-15%"
+        }
+      },
+      "images": ["img/product/1/img0.png"]
+    },
+    {
+      "id": "0002",
+      "amount": "1",
+      "title": "Smartphone Apple iPhone 15, 128 GB, pink, 1 SIM + eSIM",
+      "price": {
+        "value": "119 999 ₽",
+        "discount": {
+          "old": "135 000 ₽",
+          "sale": "-15%"
+        }
+      },
+      "images": ["img/product/2/img1.jpg"]
+    },
+    {
+      "id": "0003",
+      "amount": "2",
+      "title": "Apple AirPods Max Wireless Headphones, White",
+      "price": {
+        "value": "229 500 ₽",
+        "discount": {
+          "old": "270 000 ₽",
+          "sale": "-15%"
+        }
+      },
+      "images": ["img/product/3/img0.png"]
+    }
+  ]
+}

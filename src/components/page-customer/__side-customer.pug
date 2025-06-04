@@ -1,0 +1,56 @@
+.prof-side#prof-side
+  .prof-side__sect
+    -
+      var value
+      var lines = 
+      [
+        
+        {
+          t: "Payment",
+          h: "/customer-payment",
+          id: 'ci-0'
+        },
+        {
+          t: "Warranty",
+          h: "/customer-garantie",
+          id: 'ci-1'
+        },
+        {
+          t: "Return",
+          h: "/customer-return",
+          id: 'ci-2'
+        },
+        {
+          t: "How to order",
+          h: "/customer-order",
+          id: 'ci-3',
+          active: true
+        },
+        {
+          t: "Contacts",
+          h: "/customer-contact",
+          id: 'ci-4'
+        },
+        {
+          t: "About service",
+          h: "/customer-about",
+          id: 'ci-5'
+        },
+      ]
+    ul.h2
+      li(id="ci-6")
+        a(href="/customer-delivery") Delivery
+      +cloneArr(lines)
+        if(value.active)
+          li(id=value.id)._active
+            a(href=value.h)=value.t
+        else
+          li(id=value.id)  
+            a(href=value.h)=value.t
+  .prof-side__sect._dsk
+    img(src="img/profile/tg.png" alt="")
+    .h6 Need help?
+    a.h5(href="#") 
+      | Text us on
+      span.hl_tg Telegram
+

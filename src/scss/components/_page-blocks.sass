@@ -1,0 +1,121 @@
+//# .page__block_full-width - блок без отступов по бокам
+//# .page__block_header-offset - блок без отступа от шапки (блок будет под шапкой)
+
+.page
+  
+  &__container
+  &._overflow-vis
+    overflow: visible
+  &__block
+    // горизонтальные отступы
+    padding: 0 $page-bloks-x-padding
+    +mob
+      padding: 0 $page-bloks-x-padding-mobile
+    &_full-width
+      padding-left: 0
+      padding-right: 0
+    &_full-width-mob
+      +mob 
+        padding-left: 0
+        padding-right: 0
+    &_header-pull
+    &.page__block_full-width-mob 
+      +r($sm)
+        padding-left: 0
+        padding-right: 0
+    &:first-child:not(#{&}_header-pull)
+      +mob
+        margin-top: var(--header-border)
+  // &__block
+  //   & >
+  //     h2, .h2
+  //       &:first-child
+  //         margin-bottom: var(--aCalc32)
+  //         +mob
+  //           margin-bottom: 16px
+     
+  &__block + &__block
+    // отступы между блоками  .page__block_margin-none
+    margin-top: $pb-margin-between
+    +mob
+      margin-top: $pb-margin-between-mobile
+    &_padding
+      &-none
+        padding: 0
+    &_margin
+      &-none, &-none + &__block
+        margin-top: 0
+        
+        
+      &-stories
+      &-small
+  &__block_margin-none, &__block_margin-none + &__block
+    margin-top: 0    
+  &__block 
+    & > .page__title
+      // Заголовки страниц по умолчанию
+      margin-bottom: var(--aCalc40)
+      +mob 
+        //margin-top: 40px
+        // margin-top: 40px
+        //margin-top: calc(40px + var(--header-border))
+        margin-top: 24px
+        margin-bottom: 16px
+    & > .breadcrumbs
+      margin-top: var(--aCalc16)
+      margin-bottom: var(--aCalc40)
+      +mob 
+        margin-bottom: 24px
+        margin-top: 16px
+    & > .article 
+      +dsk
+        max-width: aCalc(708)
+        margin: 0 auto
+    .page__text
+      width: aCalc(856)
+      text-align: center
+      margin: 0 auto aCalc(40)
+      +r($sm)
+        display: none
+        text-align: left
+        width: unset
+        margin: 16px 15px 24px
+.page-block-head 
+  margin-bottom: var(--aCalc24)
+  //padding-bottom: var(--aCalc8)
+  display: block
+  width: 100%
+  padding-bottom: 0
+  //border-bottom: 1px solid $WhiteGray
+
+  +mob
+    margin-bottom: 16px
+  &.page-block-mesh
+    border-bottom: none
+    padding-bottom: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +r($sm)
+      padding-bottom: 0
+      margin-bottom: 16px
+    a 
+      color: $VioletBlue
+
+
+.page .page__block_only:only-child
+  margin-top: aCalc(120)
+  +mob
+    margin-top: calc(60px + var(--header-border))
+.header_order ~ .page 
+  .page__block:first-child
+    margin-top: var(--aCalc40)
+    +mob
+      margin-top: 24px
+      // margin-top: calc(var(--header-border) + 24px)
+
+    > h1, .h1
+      margin-bottom: var(--aCalc24)
+      +mob
+        margin-bottom: 16px
+

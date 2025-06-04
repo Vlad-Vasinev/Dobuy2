@@ -1,0 +1,45 @@
+.steps-mesh
+  display: grid 
+  grid-template-columns: repeat(3, 1fr)
+  gap: var(--aCalc24)
+  justify-content: start
+  justify-items: start
+  +mob
+    gap: 12px
+    display: flex
+    flex-direction: column
+
+.step-item
+  border: 1px solid $SoftIris
+  padding: var(--aCalc24)
+  border-radius: var(--aCalc12)
+  +mob
+    
+    gap: 12px
+    align-items: center
+    border-radius: 12px
+    padding: 16px
+  .h4
+    margin-bottom: var(--aCalc8)
+    +mob
+      margin-bottom: 8px
+  &__img
+    position: relative
+    
+    
+    margin-bottom: var(--aCalc32)
+    
+    +mob
+      
+      margin-bottom: 16px
+    .h6 
+      position: relative
+      color: $White
+      z-index: 1
+    img 
+      
+      left: 0
+      top: 0
+      height: aCalc(56)
+      +mob
+        height: 48px

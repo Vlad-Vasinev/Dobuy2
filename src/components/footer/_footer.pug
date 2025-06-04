@@ -1,0 +1,115 @@
+footer.footer 
+  .footer__mesh
+    .footer__item 
+      .footer__logo 
+        img(loading="lazy" src="img/footer/footer-logo.svg")
+      .footer__text 
+        p.h8
+          |Laniakea LLC
+          <br>
+          |TIN/KIO 9909637467/63746
+          <br>
+          |KPP 231087001
+          <br>
+          |Tax authority for registration 2310 — Inspectorate of the Federal Tax Service of Russia No. 2 for the city of Krasnodar
+      a.ya-review(href="")
+        .ya-review__left 
+          .h6 We are on Yandex
+        .ya-review__right
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_8226_7418" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="18" height="17">
+            <path d="M9.11372 1.78503C9.4765 1.07166 10.5235 1.07166 10.8863 1.78503L12.8248 5.59687C12.9688 5.87995 13.2467 6.0762 13.5683 6.12182L17.9032 6.73682C18.7141 6.85186 19.0371 7.82048 18.4497 8.37574L15.3159 11.3384C15.0824 11.5591 14.9758 11.8775 15.031 12.1894L15.7705 16.3748C15.9092 17.1594 15.0618 17.7579 14.3365 17.3877L10.4598 15.4088C10.1719 15.2619 9.8281 15.2619 9.54024 15.4088L5.66355 17.3877C4.93824 17.7579 4.09083 17.1594 4.22947 16.3748L4.96903 12.1894C5.02416 11.8775 4.91758 11.5591 4.6841 11.3384L1.55026 8.37574C0.962927 7.82048 1.28595 6.85186 2.09683 6.73682L6.43174 6.12182C6.7533 6.0762 7.03124 5.87995 7.1752 5.59688L9.11372 1.78503Z" fill="#FFD480"/>
+            </mask>
+            <g mask="url(#mask0_8226_7418)">
+            <path d="M9.11372 1.78503C9.4765 1.07166 10.5235 1.07166 10.8863 1.78503L12.8248 5.59687C12.9688 5.87995 13.2467 6.0762 13.5683 6.12182L17.9032 6.73682C18.7141 6.85186 19.0371 7.82048 18.4497 8.37574L15.3159 11.3384C15.0824 11.5591 14.9758 11.8775 15.031 12.1894L15.7705 16.3748C15.9092 17.1594 15.0618 17.7579 14.3365 17.3877L10.4598 15.4088C10.1719 15.2619 9.8281 15.2619 9.54024 15.4088L5.66355 17.3877C4.93824 17.7579 4.09083 17.1594 4.22947 16.3748L4.96903 12.1894C5.02416 11.8775 4.91758 11.5591 4.6841 11.3384L1.55026 8.37574C0.962927 7.82048 1.28595 6.85186 2.09683 6.73682L6.43174 6.12182C6.7533 6.0762 7.03124 5.87995 7.1752 5.59688L9.11372 1.78503Z" fill="#FFB119"/>
+            </g>
+          </svg>
+          .h6 4,9  
+      .footer-credits 
+        span.h7 We accept payment
+        .footer-credits__crt
+          .footer-credits__item
+            img( loading="lazy" src="img/footer/payment-1.svg")
+          .footer-credits__item
+            img( loading="lazy" src="img/footer/payment-2.svg")
+          .footer-credits__item
+            img( loading="lazy" src="img/footer/payment-3.svg")
+      .footer-credits 
+        span.h7 We are always in touch
+        .footer-credits__crt.footer-credits__crt_icons
+          a.footer-credits__item(href="#" target="_blank")
+            img( loading="lazy" src="img/footer/social-icon-1.svg")
+            span.h7 Telegram
+          a.footer-credits__item(href="#" target="_blank")
+            img( loading="lazy" src="img/footer/social-icon-2.svg")
+            span.h7 Vkontakte
+          a.footer-credits__item(href="#" target="_blank")
+            img( loading="lazy" src="img/footer/social-icon-dzen.svg")
+            span.h7 Dzen
+    .footer__item.footer__item_list.footer__item_list-open
+      .footer__item-title 
+        span.h3 DoBuy
+        +svgIcon('arrow-down')
+      .footer__list 
+        - 
+          var value 
+          var arr = [
+            'Russia',
+            'Belarus',
+            'Kazakhstan',
+            'UAE',
+          ]
+        +cloneArr(arr)
+          a(href="#" target="_blank").h5=value
+    .footer__item.footer__item_list
+      .footer__item-title 
+        span.h3 Catalog
+        +svgIcon('arrow-down')
+      .footer__list 
+        - 
+          var value 
+          var arr = [
+            'Smartphones and gadgets',
+            'Laptops and computers',
+            'Game consoles',
+            'Household goods',
+            'Tablets',
+            'TV and multimedia',
+            'Cameras'
+          ]
+        +cloneArr(arr)
+          a(href="#" target="_blank").h5=value
+    .footer__item.footer__item_list
+      .footer__item-title
+        span.h3 For customers
+        +svgIcon('arrow-down')
+      .footer__list 
+        - 
+          var value 
+          var arr = [
+            'Help Desk',
+            'How to order',
+            'Payment',
+            'Delivery',
+            'Guarantee',
+            'Return'
+          ]
+        +cloneArr(arr)
+          a(href="#" target="_blank").h5=value
+    .footer__item.footer__item_list
+      .footer__item-title 
+        span.h3 Company
+        +svgIcon('arrow-down')
+      ul.footer__list 
+        - 
+          var value 
+          var arr = [
+            'About the service',
+            'Contacts',
+          ]
+        +cloneArr(arr)
+          a(href="#" target="_blank").h5=value
+    .footer__bottom-el.h7 2023 © DoBuy. All rights reserved
+    a.footer__bottom-el.h7(href="#" target="_blank") Rules for processing personal data
+    a.footer__bottom-el.h7(href="#" target="_blank") User Agreement
+    a.footer__bottom-el.h7(href="#" target="_blank") Website creation – NetLab

@@ -1,0 +1,21 @@
+@import "./vendor/normalize";
+
+// стили для свайпера
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// базовые подключения
+@import "mixins/*";
+@import "theme";
+@import "vars";
+@import "fonts";
+@import "general";
+@import "UI/_ui.sass";
+
+@import "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox";
+// @import '../../node_modules/@fancyapps/ui/dist/carousel/carousel.thumbs';
+
+// базовые стили для историй
+@import "../components/blocks/stories/_stories.sass";
+// подключения компонентов страницы
+@import "./components/blocks/**/*";
+@import "./components/*";

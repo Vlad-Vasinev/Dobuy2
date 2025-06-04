@@ -1,0 +1,104 @@
+.prod-side
+  .prod-side__section
+    h1.h2.prod-side__title=(productData && productData.title) || "Smartphone Apple iPhone 15 Pro Max 256 GB, titanium blue, 1 SIM + eSIM"
+    .prod-options
+      span Storage
+      .prod-options__line
+        a.param(href="#") 
+          span 128 GB
+        a.param.param_checked(href="#") 
+          span 256 GB
+        .param.param_disabled() 
+          span 512 GB
+      span Color 
+      .prod-options__line
+        a.color-param(style="--c: #373738" href="#" title="цвет#1")
+        a.color-param.color-param_checked(style="--c: #373738" title="цвет#2" href="#")
+        .color-param.color-param_disabled(style="--c: #373738" title="цвет#3")
+  .prod-side__section.prod-side__section_buy-btn
+    .prod-side__buy-btn.prod-side__buy-btn_duty-sale
+      .duty-sale-inline
+        .badge-duty-sale(info-popup="duty-sale-info")
+          .badge-duty-sale__icon
+            img(src="img/duty-icon.png" alt="")
+          span -11 344 ₽ 
+        span duty discount
+      .duty-badge
+        span 
+          | There will be a duty ≈
+          span 5 003 ₽
+        .duty-badge__info(info-popup="duty-info")
+          +svgIcon('info')
+      .prod-price.prod-price_large
+        span.prod-price__val 119 999 ₽
+          .badge.badge_hit.badge_hit_sale
+            p.h9 price reduced
+        .prod-price__discount
+          span.prod-price__old 135 000 ₽ 
+      .prod-available.prod-available_not
+        span Not available for order
+      .button.button_small.prod-side__add-to-cart(data-item-id="1312") Add to cart
+      a.button.button_small._link(href="#") Check availability
+      .prod-side__txt-btns
+        a.textbtn(href="#")
+          img(src="img/apple-logo.svg")
+          span All Apple products
+        button.textbtn.textbtn_heart.prod-side__add-to-fav
+          +heartSvg
+          span._dsk Add to favorites
+        div(data-share-popup)
+          .textbtn(data-share-popup-trg)
+            +svgIcon('share')
+            span._dsk Share
+    .prod-side__buy-btn
+      .prod-price.prod-price_large
+        span.prod-price__val 119 999 ₽
+        .prod-price__discount
+          span.prod-price__old 135 000 ₽ 
+          .badge.badge_sale -15%
+      .prod-available
+        span Available to order
+      .prod-available.prod-available_not
+        span Not available for order
+      .button.button_small.prod-side__add-to-cart(data-item-id="1312") Add to cart
+      .prod-side__txt-btns
+        a.textbtn(href="#")
+          img(src="img/apple-logo.svg")
+          span All Apple products
+        button.textbtn.textbtn_heart.prod-side__add-to-fav
+          +heartSvg
+          span._dsk Add to favorites
+        div(data-share-popup)
+          .textbtn(data-share-popup-trg)
+            +svgIcon('share')
+            span._dsk Share
+    // ---
+   
+  .prod-side__section
+    .prod-side__flex
+      .sign-delivery
+        .sign-delivery__icons
+          .deliv-icon.deliv-icon_orange
+            img(src="/img/product/cdek.svg")
+        .sign-delivery__text
+          .h5 
+            |To the pick-up point
+            |in 8-10 days
+          .h7(style="color: #4C00C9") Free shipping with absolute guarantee
+      .sign-delivery
+        .sign-delivery__icons
+          .deliv-icon.deliv-icon_orange
+            img(src="/img/product/ems.png")
+        .sign-delivery__text
+          .h5 
+            | To any region of Russia in 8-10 days
+          .h7(style="color: #4C00C9") Free shipping with absolute guarantee
+    .prod-side__grid
+      .sign-advantage
+        span Product from the UAE
+        .sign-advantage__icon
+          img(src="img/sign/flag.png")
+      .sign-advantage
+        span Original product
+        .sign-advantage__icon
+          img(src="img/sign/check.svg")

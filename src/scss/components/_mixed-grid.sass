@@ -1,0 +1,62 @@
+.mixed-grid
+  display: flex
+  
+  width: 100%
+  
+  //gap: var(--aCalc24)
+  gap: var(--aCalc20)
+  grid-template-columns: auto auto
+  justify-content: space-between
+  // grid-template-columns: auto auto
+  +mob
+    flex-direction: column
+    gap: 24px
+  .prod-card__gallery
+    margin-bottom: aCalc(8)
+    height: aCalc(199)
+    +r($sm)
+      height: unset
+  .banner 
+    height: auto
+    width: 39.1666666667%
+    flex-shrink: 0
+    +dsk
+      flex-grow: 1
+      position: relative
+    +mob 
+      aspect-ratio: 1
+      height: 220px
+      order: -1
+      width: 100%
+    &__img
+      +dsk
+        position: absolute
+        width: 100%
+        height: 100%
+
+  .product-grid
+    //flex-shrink: 0
+.mixed-grid
+  .product-grid_slider.product-grid_slider-mob
+    min-width: 0
+    +dsk
+      overflow: visible
+    .product-grid__wrapper
+      +dsk
+        overflow: visible
+        display: grid 
+        //grid-template-columns: aCalc(199) aCalc(199) aCalc(199) aCalc(199)
+        //grid-template-columns: aCalc(269) aCalc(269)
+        //grid-template-columns: aCalc(199) aCalc(199) aCalc(199) aCalc(199)
+        grid-template-columns: repeat(4, minmax(aCalc(190), 1fr))
+        //grid-template-columns: repeat(auto-fill, minmax(aCalc(190), 1fr))
+        width: unset
+        grid-auto-flow: unset
+        grid-auto-columns: unset
+      +r($sm)
+        padding: 0 15px
+        width: max-content
+  .product-grid_slider-mob
+    +mob
+      width: auto
+      margin: 0 -15px

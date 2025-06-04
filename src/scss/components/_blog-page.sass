@@ -1,0 +1,80 @@
+
+.blog
+  +mob 
+    margin-top: 8px
+  &__mesh 
+    display: grid
+    gap: var(--aCalc80) var(--aCalc24)
+    grid-template-columns: repeat(3, 1fr)
+    margin-bottom: var(--aCalc80)
+    +mob 
+      gap: 40px
+      grid-template-columns: repeat(1, 1fr)
+      margin-bottom: 40px
+  &__item 
+    &:hover 
+      .blog__item-link
+          color: $Violet 
+    &-img 
+      margin-bottom: var(--aCalc24)
+      border-radius: var(--aCalc12)
+      +mob 
+        margin-bottom: 24px
+        border-radius: 12px
+      img 
+        max-width: aCalc(464)
+        border-radius: inherit
+        width: 100%
+        +mob 
+          max-width: unset
+    &-link 
+      color: $Black
+    &-data 
+      color: #8C8697
+      display: block 
+      margin-bottom: var(--aCalc8) 
+      +r($sm)  
+        margin-bottom: 8px
+  &__btn 
+    margin: 0 auto var(--aCalc24)
+    +mob 
+      margin: 0 auto 24px
+  &.blog-slider-mob
+    .blog__item .blog__item-img img 
+      height: aCalc(300)
+      +mob
+        height: 165px
+    .blog-wrapper
+      @extend .swiper
+      +mob
+        overflow: unset
+        margin-right: 12px
+      &:not(.swiper-initialized)
+        .blog__mesh
+          +mob
+            display: flex
+            gap: 12px
+        .blog__item 
+          +mob
+            width: 293px
+    .blog__mesh
+      @extend .swiper-wrapper
+      margin-bottom: 0    
+      display: grid
+      gap: var(--aCalc80) var(--aCalc24)
+      grid-template-columns: repeat(3, 1fr)
+      margin-bottom: 0
+      +mob
+        display: flex
+        scrollbar-width: unset
+        overflow: unset
+        padding-left: 0
+        // gap: 12px
+        // grid-auto-columns: 52.412%
+        // -ms-grid-columns: unset
+        // grid-template-columns: unset
+        // grid-auto-flow: column
+    .blog__item 
+      @extend .swiper-slide
+      +mob
+        margin: 0

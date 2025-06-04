@@ -1,0 +1,7 @@
+extends ./shared/_layout
+prepend head
+  -var title = "Gifts"
+block content
+  include ../components/gifts/_gifts
+append modals
+  include ../components/page-catalog/_catalog-modals

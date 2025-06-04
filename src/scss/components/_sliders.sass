@@ -1,0 +1,66 @@
+
+.progress-pag
+  @extend .appearance-animation
+  +aProp(--gap, 16)
+  --bullet-collor: #fff
+  --bullet-bg: #D9D9D980
+  animation-duration: 0.6s
+  position: static
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: var(--gap, 16px)
+  width: 100%
+  --duration: 3100ms
+  min-height: 10px
+  +mob
+    --gap: 16px
+    
+  
+  .progress
+    height: 2px
+    width: 100%
+    position: relative
+    background-color: var(--bullet-bg, #D9D9D980)
+    &::before
+      content: ""
+      display: block
+      height: 100%
+      background: var(--bullet-collor, #fff)
+      position: absolute
+      border-radius: 4px
+      z-index: 99
+      width: 100%
+      +mob
+        height: 2px
+  &-bullet
+    padding: 4px 0
+    height: auto
+    min-height: 2px
+    margin: 0
+    opacity: 1
+    background-color: unset
+    transition: all 0.3s 
+    flex: 1
+  
+  &-bullet._active
+    flex: 3
+    .progress::before
+      animation: 0s linear 0s progress
+      animation-duration: var(--duration)
+      animation-play-state: running
+      animation-fill-mode: forwards
+  &-bullet._active ~ &-bullet 
+    .progress::before
+      width: 0
+  @keyframes progress
+    0%
+      width: 0%
+    100%
+      width: 100%
+
+._autoplay-paused
+  .progress-pag
+    &-bullet._active
+      .progress::before
+        animation-play-state: paused

@@ -1,0 +1,57 @@
+
+block vars
+  - var pageTitle = "A selection of images from a stylist"
+  - var breadcrumbText = ["Main", "Catalog", "Smartphones and gadgets"]
+
+.page__block.page__block_margin-none
+  include ../blocks/_breadcrumbs
+.page__block.page__block_margin-none
+  include ../blocks/_page-title
+
+.page__block.page__block_margin-none 
+  .category-hide.selection-item.selection-item_quote(href="#")
+    .selection-item__text
+      img(src="img/selection/kate.jpg" alt="")
+      .selection-item__info
+        .selection-item__title.h3 Katya Galas
+        .selection-item__subtitle Fashion stylist, ambassador of the DoBuy service
+    .selection-item__quote.h6
+      |"I believe that fashion knows no boundaries.
+      |Fashion and style are not rocket science, they are accessible to everyone.
+      |I strive to help every woman to reach her potential and enjoy
+      |a stylish look."
+
+.page__block.page__block_margin-none.page__block_full-width-mob 
+  .category-text 
+    a.btnXs._active(href="#") Все
+    +clone(7) 
+      a.btnXs(href="#") категория 1
+
+.page__block.page__block_margin-none.page__block_full-width-mob 
+  .selection-grid 
+    .selection-item.selection-item_quote
+      img(src="img/selection/photo.jpg" alt="")
+      .selection-item__title.h3 Katya Galas
+      .selection-item__subtitle Fashion stylist, ambassador of the DoBuy service
+      .selection-item__quote.h6
+        |"I believe that fashion knows no boundaries.
+        |Fashion and style are not rocket science, they are accessible to everyone.
+        |I strive to help every woman to reach her potential and enjoy
+        |a stylish look."
+    +clone(15) 
+      a.selection-item(href="#")
+        .prod-card(data-item-id=((cardContent && cardContent.id) || "0000"))
+          .prod-price
+          .prod-card__gallery(href="/product")
+            .prod-card-slider
+            
+              .prod-card-slider__wrapper
+                each card, key in ((cardContent && cardContent.images) || (prodCardDef && prodCardDef.images))
+                  - var src = ((cardContent ? cardContent.prevs[key] : prodCardDef.prevs[key] ))
+                  .prod-card-slider__slide
+                    img(data-src="img/selection/selection-img.jpg" lazy-slide loading="lazy" src=("img/selection/selection-img.jpg" || "img/pv.webp") alt="")
+              .prod-card-pag
+          .prod-card__title(href="/product")
+            span.selection-item__title Smartphone Samsung Galaxy S23 Ultra 12/256 GB, black phantom
+            .selection-item__subtitle Sport
+  include ../blocks/_pagination

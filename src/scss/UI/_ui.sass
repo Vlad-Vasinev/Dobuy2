@@ -1,0 +1,194 @@
+@import "lazy"
+@import "typo"
+@import "inputs"
+@import "badge"
+@import "checkbox"
+@import "toggleSwitch"
+@import "buttons"
+@import "search"
+@import "amount-panel"
+
+
+
+@import "colorpick"
+.hl, [hl]
+  color: $Violet
+.hl_tg, [hl-tg]
+  color: $TGBlue
+
+
+.cls-btn-rotate
+  +dsk
+    svg
+      transition: transform 0.3s
+    +hover
+      svg
+        transform: rotate(90deg)
+.cls-btn-rotate-svg
+  +dsk
+    transition: transform 0.3s
+    +hover
+      transform: rotate(90deg)
+
+.check-list
+  li, &__item
+    display: flex
+    align-items: center
+    // width: max-content
+    &::before
+      display: block
+      flex-shrink: 0
+      position: static
+      align-self: flex-start
+      content: ''
+      background: no-repeat center/100%
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath stroke='%234C00C9' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m19 8-7.1 6.96a3.675 3.675 0 0 1-5.125 0L5 13.22'/%3E%3C/svg%3E")
+      margin-right: var(--aCalc10)
+      margin-top: var(--aCalc4)
+      +wah(var(--aCalc24))
+      +mob
+        margin-right: 10px
+        margin-top: 2px
+        +wah(18px)
+  &__item + &__item, li + li
+    margin-top: var(--aCalc10)
+    +mob
+      margin-top: 4px
+
+.loading-pulse-eff
+  animation: 1s linear 1s infinite alternate loading-pulse-eff
+
+@keyframes loading-pulse-eff
+  0%
+    opacity: 1
+  100%
+    opacity: 0.5
+// Выбор подкатегории
+
+// .toggle-tag
+//   @extend .h6
+//   +aProp(border-radius, 8)
+//   padding: var(--aCalc8) var(--aCalc16) var(--aCalc10)
+//   color: #202020
+
+//   width: max-content
+//   white-space: nowrap
+//   background-color: $WhiteGray
+//   // vertical-align: center
+//   align-items: center
+//   display: flex
+//   cursor: pointer
+//   +no-select
+//   +mob
+//     border-radius: 8px
+//     padding: 12px 12px
+//   &.toggle-tag_active
+//     background-color: $Violet
+//     +aProp(padding-top, 6)
+//     +aProp(padding-bottom, 8)
+//     color: #fff
+//     +mob
+//       padding: 8px 12px
+//   &.toggle-tag_active,
+//   &.slide-button.toggle-tag_active .slide-button-inner > span,
+//   &.slide-button.toggle-tag_active > span:only-child
+
+//     &:after
+//       content: ''
+//       display: block
+//       mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23fff' stroke-width='1.5' d='M6 18 18 6M6 6l12 12' /%3E%3C/svg%3E")
+//       mask-size: 100%
+//       background-color: #fff
+//       +aProp(height, 24)
+//       width: auto
+//       aspect-ratio: 1
+//       font-size: inherit
+//       line-height: inherit
+//       background-size: 100%
+//       +mob
+//         height: 24px
+
+
+.styled-scroll
+  scrollbar-width: thin
+  scrollbar-color: $Black $Gray
+  &::-webkit-scrollbar
+    height: 2px
+    width: 2px
+    
+
+  &::-webkit-scrollbar-track
+    border-radius: 2px
+    background-color: $Gray
+
+  &::-webkit-scrollbar-thumb
+    border-radius: 2px
+    background-color: $Black
+  // @supports #{'selector\(::-webkit-scrollbar\)'}
+  @supports selector(::-webkit-scrollbar)
+    scrollbar-width: unset
+    scrollbar-color: unset
+
+
+
+.radio
+  +aProp(width, 24)
+  +aProp(height, 24)
+  aspect-ratio: 1
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: $WhiteGray
+  position: relative
+  cursor: pointer
+  +aProp(border-radius, 4)
+  +mob
+    border-radius: 4px
+    width: 24px
+    height: 24px
+
+  input
+    opacity: 0
+  &.active-box
+    background-color: $Violet
+    &::after
+      content: ''
+      position: absolute
+      +aProp(width, 16)
+      +aProp(height, 16)
+      // background: #202020
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-width='1.5' d='m2 8.63 4 4.7 8-10'/%3E%3C/svg%3E")
+      border-radius: 100%
+      +aProp(top, 4)
+      +aProp(left, 4)
+      +mob
+        left: 4px
+        top: 4px
+        width: 16px
+        height: 16px
+  &.disabled
+    touch-action: none
+    h6
+      color: #9a9a9a
+    .radio
+      &.active-box
+        &::after
+          background: #9a9a9a
+
+[icon-tgl-crt]
+  position: relative
+  svg
+    transition: opacity 50ms
+    // &:first-child
+    &:last-child
+      position: absolute
+      opacity: 0
+      top: 0
+      left: 0
+[icon-tgl-crt][icon-tgl-active], .ui-input.is-focused [icon-tgl-crt], .icon-tgl-active
+  svg
+    &:first-child
+      opacity: 0
+    &:last-child
+      
+      opacity: 1

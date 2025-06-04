@@ -1,0 +1,13 @@
+
+section.page__block
+  h1 Placing an order
+  .sticky-menu.order(data-sticky-container ) 
+    .sticky-menu__side.order__side
+      include ./_order-side
+    .sticky-menu__content.order__content
+      include ./_order-steps
+section.page__block
+  h2.page-block-head Most Viewed
+  - var amount = 5
+  include ../blocks/_prod-gird-slider
+  

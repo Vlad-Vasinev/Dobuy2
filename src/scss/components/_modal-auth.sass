@@ -1,0 +1,130 @@
+.auth-modal, .modal.modal_step-menu.auth-modal
+  .auth-modal
+    &__back
+      width: max-content
+      margin-bottom: var(--aCalc24)
+      +mob
+        display: none
+    &__step
+      display: grid
+      align-items: center
+      align-content: center
+      padding: 0 aCalc(122)
+      +mob
+        padding: 24px 16px
+        align-content: unset
+      &_greetings
+    &__step-inner
+      
+      p + p
+        margin-top: var(--aCalc8)
+        +mob
+          margin-top: 16px
+      p + .auth-modal-form, p + img
+        margin-top: var(--aCalc24)
+        +mob
+          margin-top: 16px
+      .button
+        width: 100%
+      > img, video
+        width: 100%
+        height: auto
+        border-radius: var(--aCalc12)
+        +mob
+          border-radius: 12px
+      > .button
+        //margin-top: var(--aCalc40)
+        margin-top: var(--aCalc80)
+        +mob
+          margin-top: 84px
+          // margin-top: 24px
+    &__pass-res
+      color: $Violet
+      white-space: nowrap
+
+.form-error-label, .auth-modal-form__error-label
+  position: relative
+  color: $Red
+  opacity: 0
+  transition: all 0.2s
+  &._shown
+    opacity: 1
+  span
+    position: absolute
+.auth-modal-form
+  //- Перенести в файл buttons.sass
+  button:disabled
+    opacity: 0.5
+  
+  &__field_flex &__error-label
+    width: 100%
+    text-align: end
+    span
+      right: 0
+    
+  &__field
+    &_flex
+      display: flex
+      justify-content: space-between
+    
+    &_hidden
+      max-height: 100vh
+      transition: max-height 0.3s
+      overflow: hidden
+
+      &._hidden
+        // position: absolute
+        max-height: 0px
+  &__field + &__field
+    margin-top: var(--aCalc16)
+    +mob
+      margin-top: 1
+  &__field + &__field_xm
+    margin-top: var(--aCalc24)
+    +mob
+      margin-top: 16px
+    // добполнительный отступ
+
+  &__field + &__field_hidden
+    margin-top: 0
+    .ui-input
+      margin-top:  var(--aCalc16)
+      +mob
+        margin-top: 16px
+  &__buttons
+    margin-top: 85%
+    //margin-top:  var(--aCalc40)
+    +mob
+      margin-top: 100px
+    .button + .button
+      margin-top:  var(--aCalc12)
+      +mob
+        margin-top: 12px
+  &__resend-code
+      
+    &:not(._switched)
+      button
+        display: none
+    &._switched
+      p 
+        display: none
+
+.modal__step[step-name="registration"]
+  .auth-modal-form__buttons 
+    margin-top: 28%
+
+// a.button.button_transp.icon-auth
+//   svg path 
+//     fill: $Violet
+
+  // position: relative
+  // .icon-btn-auth 
+  //   position: absolute
+  //   top: 0
+  //   right: 0
+  //   svg 
+  //     width: aCalc(18)
+  //     height: aCalc(18)
+  //     +r($sm)
+  //       width: 16px
+  //       height: 16px

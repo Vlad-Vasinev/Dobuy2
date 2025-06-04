@@ -1,0 +1,46 @@
+.category-text 
+  display: flex
+  justify-content: center
+  gap: aCalc(4)
+  margin: 0 auto aCalc(40)
+  +r($sm)
+    justify-content: flex-start
+    overflow-x: scroll
+    gap: 4px
+    margin: 0 -15px 24px
+    padding: 0 30px
+  a
+    transition: background-color .3s
+  a:hover 
+    color: #100030
+    background-color: #E5E2EC
+
+.category-hide 
+  display: none
+  +r($sm)
+    display: block
+.category-hide.selection-item.selection-item_quote 
+  +r($sm)
+    display: block
+    border: none
+    height: unset
+    margin-bottom: 24px
+    .selection-item__title
+      font-size: 16px
+      font-weight: 700
+      line-height: 19px
+    .selection-item__title, .selection-item__subtitle
+      padding: 0
+    .selection-item__text
+      display: flex
+      justify-content: flex-start
+      align-items: center
+    .selection-item__info
+      display: flex
+      flex-direction: column
+      gap: 4px
+    img, video 
+      width: 64px
+      height: 64px
+      border-radius: 48px
+      margin-right: 12px

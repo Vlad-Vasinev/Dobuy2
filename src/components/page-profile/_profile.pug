@@ -1,0 +1,20 @@
+section.page__block.page__block_margin-none._mob
+  - var pageTitle = "Personal account"
+  include ../blocks/_page-title
+section.page__block.page__block_full-width-mob
+  .sticky-menu.customer-info.profile(data-sticky-container) 
+    .sticky-menu__side.customer-info__side
+      block side
+        include ./_side
+    block content
+      .sticky-menu__content.customer-info__content
+
+    a.profile__exit-mob(href="#")
+      .h4 Log out of profile
+      +svgIcon('exit')
+    .profile__support-mob
+      img(src="img/profile/tg.png", alt="")
+      .h6 Need help?
+      a.h5(href="#") 
+        | Text to us on
+        span.hl_tg Telegram

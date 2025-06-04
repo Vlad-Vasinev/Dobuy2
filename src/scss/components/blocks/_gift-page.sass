@@ -1,0 +1,251 @@
+
+.gifts 
+  position: relative
+  +r($sm)
+    margin-top: -24px
+  &__block 
+    width: aCalc(464)
+    position: absolute
+    top: aCalc(74)
+    left: 0
+    right: 0 
+    margin: 0 auto 
+    z-index: 1
+    text-align: center
+    +r($sm)
+      width: 100%
+      padding: 0 15px
+      top: 32px
+    & * 
+      color: $White
+    h1, .h1 
+      margin-bottom: aCalc(16)
+      +r($sm)
+        margin-bottom: 12px
+  .breadcrumbs
+    position: absolute
+    z-index: 1
+  .banner
+    height: aCalc(500)
+    +r($sm)
+      height: 271px
+    &__img
+      border-radius: 0
+      +r($sm)
+
+.badge-filler
+  min-height: aCalc(22)
+  margin-bottom: aCalc(4)
+  +r($sm)
+    min-height: 22px
+
+.mesh-cells
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  margin-top: aCalc(-42)
+  +r($sm)
+    display: flex
+    flex-direction: column 
+    gap: 40px
+  .prod-card__title, .prod-price
+    padding-left: 0
+  .prod-price
+    justify-self: auto
+    display: block
+    margin-bottom: aCalc(12)
+    +r($sm)
+      margin-bottom: 8px
+    .badge.badge_sale
+      margin-bottom: aCalc(4)
+      max-height: aCalc(22)
+      +r($sm)
+        max-height: unset
+        margin-bottom: 8px
+  .prod-card__btns
+    padding-left: 0
+  .prod-card_cart-item .prod-card__title
+    margin-bottom: aCalc(12)
+    +r($sm)
+      margin-bottom: 8px
+  .button.button_heart
+    border: none
+  .badge-duty-sale__icon img 
+    width: 100%
+    height: 100%
+  .prod-card__gallery 
+    padding-right: 0
+    img
+      width: 100%
+      height: 100%
+      +r($sm)
+        height: 169px
+  .prod-price__duty-sale-span
+    display: inline
+    +r($sm)
+      align-self: auto
+  .duty-wrapp
+    display: flex
+    margin-bottom: aCalc(4)
+    +r($sm)
+      margin-bottom: 8px
+      flex-direction: column
+    &.duty-wrapp_empty 
+      height: aCalc(22)
+      +r($sm)
+        display: none
+  .prod-card-info
+    display: flex
+    flex-direction: column
+    +r($sm)
+      flex-grow: 3
+  &__item 
+    &-top
+      video, img
+        object-fit: cover
+        width: 100%
+        height: aCalc(708)
+        margin-bottom: aCalc(16)
+        +r($sm)
+          width: 100%
+          height: 345px
+          margin-bottom: 12px
+    &-bottom
+      display: flex
+      gap: aCalc(24)
+      margin-top: auto
+      +r($sm)
+        display: grid
+        gap: 7px
+        grid-template-columns: repeat(auto-fill, minmax(169px, 1fr))
+        grid-template-columns: repeat(2, 1fr)
+      .prod-card__gallery 
+        img, video 
+          height: aCalc(342)
+          +r($sm)
+            height: 169px
+        
+  &__item:nth-child(2n)
+    .mesh-cells__item-top
+      order: 2
+  .mesh-cells__item:first-child .mesh-cells__item-top
+    +r($sm)
+      order: 2
+
+.badge-duty_hidden
+  display: none !important
+  
+.mesh-cells
+  display: flex
+  flex-direction: column
+
+.mesh-cells__item 
+  display: flex 
+  gap: aCalc(24)
+  +r($sm)
+    display: grid 
+    gap: 40px 7px
+    grid-template-columns: repeat(1fr)
+  .prod-card__title 
+    span
+      height: aCalc(44)
+      display: block
+      +r($sm)
+        height: unset
+  .prod-price__discount
+    height: aCalc(18)
+    +r($sm)
+      height: unset
+  .prod-card__gallery
+    border-radius: aCalc(12)
+    +r($sm)
+      border-radius: 12px
+    &_big 
+      width: 100%
+      height: aCalc(708)
+      +r($sm)
+        height: 345px
+      img, video 
+        height: 100%
+    &_small 
+      height: aCalc(342)
+      +r($sm)
+        height: 169px
+      img, video 
+        height: 100%
+    min-height: aCalc(44)
+    +r($sm)
+      min-height: unset
+  img, video 
+    width: 100%
+    object-fit: cover
+  .prod-card 
+    display: flex
+    flex-direction: column
+    .prod-card__gallery img 
+      +r($sm)
+        height: 170px
+  .prod-price__duty-sale-span
+    margin-bottom: 0
+    +r($sm)
+      margin: 8px 0
+  .prod-price
+    margin-top: auto
+    +r($sm)
+      margin-top: auto
+  &-right
+    .prod-price
+      margin-top: auto
+  &-left 
+    width: aCalc(708)
+    flex-shrink: 0
+    +r($sm)
+      width: 100%
+      grid-column: span 2
+    img, video 
+      width: 100%
+      object-fit: cover
+      +r($sm)
+        height: 345px
+  .prod-card.prod-cardBig
+    
+  &-reverse 
+    margin-top: aCalc(-266)
+    margin-bottom: aCalc(140)
+    +r($sm)
+      margin-bottom: 0
+      margin-top: 0
+      display: flex
+      flex-direction: column
+    // .prod-card.prod-cardBig .prod-card__title
+    //   span 
+    //     display: ruby-text
+    .gift-smallMesh
+      margin-top: auto
+    .prod-card 
+      display: flex
+      flex-direction: column
+      // align-self: flex-end
+      +r($sm)
+        align-self: unset
+      .prod-card__gallery img, video
+        +r($sm)
+          height: 345px
+    .mesh-cells__item-left 
+      display: flex
+      gap: aCalc(24)
+      +r($sm)
+        grid-column: unset
+      .prod-card .prod-card__gallery img, video 
+        width: 100%
+        height: aCalc(342)
+        object-fit: cover
+        +r($sm)
+          height: 169px
+
+.gift-smallMesh
+  display: flex
+  gap: aCalc(24)
+  height: max-content
+  +r($sm) 
+    display: grid
+    grid-template-columns: repeat(2, 1fr)

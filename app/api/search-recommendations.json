@@ -1,0 +1,27 @@
+{
+  "cards": [
+    "api/products/product1.json",
+    "api/products/product2.json",
+    "api/products/product3.json",
+    "api/products/product4.json",
+    "api/products/product1.json",
+    "api/products/product1.json",
+    "api/products/product2.json",
+    "api/products/product3.json",
+    "api/products/product4.json",
+    "api/products/product1.json",
+    "api/products/product2.json"
+  ],
+  "suggestions": [
+    
+    { "text":  "iphone 15", "href": "#" },
+    { "text":  "iphone 14 pro", "href": "#" },
+    { "text":  "airpods", "href": "#" },
+    { "text":  "PS5 slim", "href": "#" },
+    { "text":  "Hair dryer Dyson", "href": "#" },
+    { "text":  "Headphones", "href": "#" },
+    { "text":  "Apple MacBook Pro", "href": "#" },
+    { "text":  "Apple iPad", "href": "#" },
+    { "text":  "Apple Watch", "href": "#" }
+  ]
+}

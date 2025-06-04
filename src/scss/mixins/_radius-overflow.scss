@@ -1,0 +1,6 @@
+// в safari сочетание border-radius и overflow: hidden плохо работает без этого миксина
+
+@mixin radius-overflow() {
+    mask-image: radial-gradient(white, black);
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}

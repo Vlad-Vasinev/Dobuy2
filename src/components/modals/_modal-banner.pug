@@ -1,0 +1,21 @@
+template.tpl--modal--session-popup
+  .modal.modal_sheet.modal-ad-banner.n-popup
+    .modal__head.modal-ad-banner__top-img
+      button.modal__close(modal-close)
+        +svgIcon('close')
+    .modal__body
+      img(src='img/n-ball.png')
+      .n-h6 We are playing the ball in our telegram channel
+      a.n-h8(href="#") I'm participating
+
+template.tpl--modal--cookies-popup
+  .modal.modal_sheet.modal-ad-banner.cookie-popup
+    .modal__body
+      .h3 We use cookies
+      .p1
+        |This site uses cookies to provide you with a better browsing experience,
+        |analyze traffic, and personalize content. By continuing to use the site,
+        |you agree to our use of cookies.
+      .modal__body-btns 
+        button.modal__close(modal-close) okay
+        a(href="#") More details

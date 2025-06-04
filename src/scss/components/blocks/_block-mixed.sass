@@ -1,0 +1,50 @@
+
+.block-mixed 
+  display: flex
+  +r($sm)
+    flex-direction: column
+  &__wrapper 
+    display: grid 
+    grid-template-columns: aCalc(564) 1fr
+    gap: aCalc(20)
+    +r($sm)
+      display: flex 
+      flex-direction: column
+      gap: 40px
+  &__column 
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    gap: aCalc(40)
+    +r($sm)
+      gap: 40px
+    &-item 
+      display: flex
+      flex-direction: column
+      gap: aCalc(16)
+      +r($sm)
+        gap: 12px
+      img, video 
+        border-radius: aCalc(6)  
+        height: aCalc(320)
+        object-fit: unset
+        +r($sm)
+          border-radius: 6px
+          height: 100%
+          order: 2
+  &__ordinary 
+    display: flex
+    flex-direction: column
+    gap: aCalc(16)
+    +r($sm)
+      //gap: 40px
+      gap: 12px
+    img, video 
+      border-radius: aCalc(6)  
+      width: aCalc(856)
+      height: 100%
+      object-fit: cover
+      +r($sm)
+        width: auto
+        border-radius: 6px
+        order: 2

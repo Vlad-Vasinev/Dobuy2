@@ -1,0 +1,10 @@
+.page__title
+  if pageTitle
+    h1.title-extended= pageTitle
+        .title-extended__info
+            span.h3 Click on
+            .sprite-wrapper
+                +svgIcon('heart')
+            span.h3 to add a product to your favorites
+  else
+    h1 Blog

@@ -1,0 +1,154 @@
+
+
+.page__block.page__block_full-width
+  .gifts
+    .page__block
+      .gifts__block
+        h1 Gift ideas
+        p
+          |The gift set includes 12 full-size products
+          |to create unique looks - from everyday to creative.
+    .banner 
+      .banner__img 
+        img(data-src="img/banner-gift.jpg" loading="lazy" src=("img/banner-gift.jpg" || "") alt="")
+.page__block
+  .mesh-cells
+    +clone(3) 
+      .mesh-cells__item 
+        .mesh-cells__item-left
+          .prod-card(data-item-id=((cardContent && cardContent.id) || "0000"))   
+            a.prod-card__gallery.prod-card__gallery_big(href="/product")
+              +l-video(undefined, "img/stories/waffle.mp4")
+            .prod-card-info
+              a.prod-card__title(href="/product")
+                span Apple iPad Pro 11 (2022) Tablet, 128 GB,<br> Wi-Fi + Cellular, Space Gray
+              .prod-price
+                .duty-wrapp
+                  .badge-duty-sale(info-popup="duty-sale-info")
+                    .badge-duty-sale__icon
+                      img(src="img/duty-icon.png" alt="")
+                    span -11 344 ₽ 
+                  span.prod-price__duty-sale-span duty discount
+                .prod-price__discount
+                  span.prod-price__val 119 999 ₽
+                  span.prod-price__old 135 000 ₽ 
+              .prod-card__btns
+                button.button.button_buy
+                  +svgIcon('cart-add')
+                  span buy
+                if isFav
+                  +buttonHeart._active
+                else
+                  +buttonHeart
+        .gift-smallMesh
+          .prod-card(data-item-id=((cardContent && cardContent.id) || "0000")) 
+            a.prod-card__gallery.prod-card__gallery_small(href="/product")
+              +l-img("img/banner-gift.jpg")
+            .prod-card-info
+              a.prod-card__title(href="/product")
+                span Apple iPad Pro 11 (2022) 128GB Wi-Fi + Cellular Space Gray
+              .prod-price
+                .duty-wrapp
+                  .badge-duty-sale(info-popup="duty-sale-info")
+                    .badge-duty-sale__icon
+                      img(src="img/duty-icon.png" alt="")
+                    span -11 344 ₽ 
+                  span.prod-price__duty-sale-span duty discount
+                .prod-price__discount
+                  span.prod-price__val 119 999 ₽
+                  span.prod-price__old 135 000 ₽ 
+              .prod-card__btns
+                button.button.button_buy
+                  +svgIcon('cart-add')
+                  span buy
+                if isFav
+                  +buttonHeart._active
+                else
+                  +buttonHeart
+          .prod-card(data-item-id=((cardContent && cardContent.id) || "0000"))   
+            a.prod-card__gallery.prod-card__gallery_small(href="/product")
+              +l-img("img/banner-gift.jpg")
+            .prod-card-info
+              a.prod-card__title(href="/product")
+                span Apple iPad Pro 11 (2022) 128GB Wi-Fi + Cellular Space Gray
+              .prod-price
+                .badge.badge_sale -15%
+                .prod-price__discount
+                  span.prod-price__val 119 999 ₽
+                  span.prod-price__old 135 000 ₽ 
+              .prod-card__btns
+                button.button.button_buy
+                  +svgIcon('cart-add')
+                  span buy
+                if isFav
+                  +buttonHeart._active
+                else
+                  +buttonHeart
+      .mesh-cells__item.mesh-cells__item-reverse
+        .mesh-cells__item-left
+          .gift-smallMesh
+            .prod-card(data-item-id=((cardContent && cardContent.id) || "0000"))    
+              a.prod-card__gallery.prod-card__gallery_small(href="/product")
+                //+l-img("img/banner-gift.jpg")
+                +l-video(undefined, "img/stories/waffle.mp4")
+              .prod-card-info
+                a.prod-card__title(href="/product")
+                  span Apple iPad Pro 11 (2022) 128GB Wi-Fi + Cellular Space Gray
+                .badge-filler
+                .prod-price
+                  .prod-price__discount
+                    span.prod-price__val 119 999 ₽
+                    span.prod-price__old 135 000 ₽ 
+                .prod-card__btns
+                  button.button.button_buy
+                    +svgIcon('cart-add')
+                    span buy
+                  if isFav
+                    +buttonHeart._active
+                  else
+                    +buttonHeart
+            .prod-card(data-item-id=((cardContent && cardContent.id) || "0000"))
+              a.prod-card__gallery.prod-card__gallery_small(href="/product")
+                //+l-img("img/stories/1.png")
+                +l-video(undefined, "img/stories/waffle.mp4")
+              .prod-card-info
+                a.prod-card__title(href="/product")
+                  span Apple iPad Pro 11 (2022) 128GB Wi-Fi + Cellular Space Gray
+                .prod-price
+                  .duty-wrapp
+                    .badge-duty-sale(info-popup="duty-sale-info")
+                      .badge-duty-sale__icon
+                        img(src="img/duty-icon.png" alt="")
+                      span -11 344 ₽ 
+                    span.prod-price__duty-sale-span duty discount
+                  .prod-price__discount
+                    span.prod-price__val 119 999 ₽
+                    span.prod-price__old 135 000 ₽ 
+                .prod-card__btns
+                  button.button.button_buy
+                    +svgIcon('cart-add')
+                    span buy
+                  if isFav
+                    +buttonHeart._active
+                  else
+                    +buttonHeart
+        .prod-card.prod-cardBig(data-item-id=((cardContent && cardContent.id) || "0000"))
+          a.prod-card__gallery.prod-card__gallery_big(href="/product")
+            //+l-video(undefined, "img/stories/waffle.mp4")
+            +l-img("img/banner-gift.jpg")
+          .prod-card-info
+            a.prod-card__title(href="/product")
+              span Apple iPad Pro 11 (2022) 128GB Wi-Fi + Cellular Space Gray
+            .badge-filler
+            .prod-price
+              .prod-price__discount
+                span.prod-price__val 119 999 ₽
+                span.prod-price__old 135 000 ₽ 
+            .prod-card__btns
+              button.button.button_buy
+                +svgIcon('cart-add')
+                span buy
+              if isFav
+                +buttonHeart._active
+              else
+                +buttonHeart

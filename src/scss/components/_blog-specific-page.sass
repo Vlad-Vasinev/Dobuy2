@@ -1,0 +1,89 @@
+.blog-page 
+    width: aCalc(708)
+    margin: var(--aCalc24) auto 0
+    +mob 
+        width: unset
+        margin-top: 8px
+    &__title 
+        margin-bottom: var(--aCalc24)
+        +mob 
+            margin-bottom: 16px
+    &__img 
+        margin-bottom: var(--aCalc24)
+        +mob 
+            margin-bottom: 16px
+        img 
+            max-width: aCalc(708px)
+            width: 100%
+            object-fit: cover
+            border-radius: var(--aCalc12)
+            +mob 
+                max-width: unset
+                border-radius: 12px
+    .h6 
+        font-weight: 400
+        margin-bottom: var(--aCalc16)
+        +mob 
+            margin-bottom: 16px
+    &__info 
+        display: flex
+        justify-content: space-between
+        margin-bottom: var(--aCalc24)
+        align-items: flex-start
+        .h6 
+            margin-bottom: 0
+        +mob 
+            margin-bottom: 16px
+    .h2, h2
+        margin-top: var(--aCalc64)
+        margin-bottom: var(--aCalc16)
+        +mob 
+            margin-top: 32px
+            margin-bottom: 16px
+    &__product 
+        padding-bottom: var(--aCalc8)
+        border-bottom: 1px solid $WhiteGray
+        +mob 
+            padding-bottom: 8px
+    &__prod-grid 
+        .product-grid.product-grid_slider-mob 
+            .prod-card
+                min-width: aCalc(220)
+                +mob 
+                    min-width: 220px
+    .product-grid.product-grid_slider-mob 
+        .product-grid__wrapper
+            overflow: hidden
+            +mob
+                overflow: unset
+        .prod-card 
+            min-width: aCalc(220)
+            +mob 
+                min-width: unset
+
+.share-link
+    position: relative
+    display: flex
+    align-items: center
+    span 
+        margin-left: var(--aCalc8)
+        +mob 
+            margin-left: 8px
+    &:hover 
+        span 
+            color: $Violet
+        svg
+            color: $Violet
+        svg 
+            transition: color .3s 
+        span
+            cursor: pointer
+            transition: color .3s 
+            margin-left: var(--aCalc8)
+            +mob 
+                margin-left: 8px
+
+.share-link_active  
+    visibility: visible
+    opacity: 1
+
